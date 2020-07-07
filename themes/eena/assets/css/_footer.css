@@ -1,0 +1,130 @@
+/*
+----------------
+ Footer Css
+----------------
+*/
+.footer-wrp{
+  background: #111111;
+}
+nav.ulc ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.ftr-col-main{
+  padding-top: 45px;
+  padding-bottom: 70px;
+  position: relative;
+}
+.ftr-col-main span.ftr-angle-w {
+    position: absolute;
+    left: 0;
+    top: -1px;
+    bottom: -1px;
+    width: 130px;
+    background: #fff;
+    transform: skew(28deg);
+    border-left: 30px solid #1d1d1d;
+}
+.ftr-col-main .ftr-col{
+  float: left;
+}
+.ftr-col-1{
+  width: 22%;
+  padding-right:50px;
+}
+.ftr-col-2{
+  width: 19%;
+  padding-right: 20px;
+}
+.ftr-col-3{
+  width: 19%;
+  padding-right: 20px;
+}
+.ftr-col-4{
+  width: 19%;
+  padding-right: 20px;
+}
+.ftr-col-5{
+  width: 19%;
+  padding-right: 20px;
+}
+.ftr-logo{
+  margin-bottom: 40px;
+}
+.ftr-logo a{
+  display: inline-block;
+  vertical-align: baseline;
+  max-width: 255px;
+  position: relative;
+}
+.ftr-title{
+  font-size: 18px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 35px;
+  font-weight: 700;
+  position: relative;
+  padding-left: 35px;
+  margin-top: 48px;
+}
+.ftr-title:before{
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: url(../images/ftr-title-angle.svg);
+	width: 26px;
+	height: 18px;
+}
+.ftr-title span{
+  display: inline-block;
+  vertical-align: baseline;
+  position: relative;
+}
+.ftr-col ul li{ 
+  padding: 0;
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  padding-left: 35px;
+}
+.ftr-col ul li a{
+  color: #CCCCCC;
+    transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  text-transform: uppercase;
+}
+.ftr-col ul li a:hover{
+  color: #f7c042;
+
+}
+.ftr-col ul li::before{
+  content: none;
+}
+.ftr-btm{
+  padding: 55px 0;
+  background: #fff;
+}
+.ftr-btm-col-1{
+  float: left;
+}
+.ftr-btm-col-2{
+  float: right;
+}
+.ftr-btm-col-1 span{
+  font-size: 14px;
+  line-height: 16px;
+  color: #616161;
+}
+.ftr-btm-col-2 a{
+  font-size: 14px;
+  line-height: 16px;
+  color: #616161;
+}
+.ftr-btm-col-2 a:hover{
+  color: #f5bf41;
+}

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Home</title>
+	<title>Contact</title>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -60,16 +60,89 @@
   </div>
 </header>
 
-<section class="main-content">
+<section class="contact-form-sec-wrp">
   <div class="container">
-      <div class="row">
-        <div class="col-md-6">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="contact-form-cntlr clearfix">
+          <div class="contact-form-lft">
+            <div class="contact-form-dsc">
+              <h2 class="contact-form-dsc-title">E-mail ons</h2>
+              <p>Et tellus quis mi id non facilisi ac nibh. In lectus etiam augue tristique turpis at. Eget sapien duis molestie in. Consectetur tincidunt arcu ac ornare a turpis fermentum.</p>
+            </div>
+            <div class="contact-form-wrp clearfix">
+              <div class="wpforms-container">
+                <form class="wpforms-form">
+                  
+                  <div class="wpforms-field-container">
+                    
+                    <div class="wpforms-field">
+                      <label class="wpforms-field-label">Voornaam<span class="wpforms-required-label">.</span> </label>
+                      <input type="text" name="name" placeholder="Voornaam" required>
+                    </div>
+                    <div class="wpforms-field">
+                      <label class="wpforms-field-label">achternaam<span class="wpforms-required-label">.</span></label>
+                      <input type="text" name="name" placeholder="Achternaam" required>
+                    </div>
 
-        </div>
-        <div class="col-md-6">
+                    <div class="wpforms-field">
+                      <label class="wpforms-field-label">Telefoon<span class="wpforms-required-label">.</span></label>
+                      <input type="text" name="text" placeholder="Telefoon" required>
+                    </div>
 
+                    <div class="wpforms-field wpforms-has-error">
+                      <label class="wpforms-field-label">e-mailadres<span class="wpforms-required-label">.</span></label>
+                      <input type="email" name="email" placeholder="E-mailadres" class="form-control" required>
+                    </div>
+
+                    <div class="wpforms-field wpforms-field-select">
+                      <label class="wpforms-field-label" for="select1">ONDERWERP</label>
+                      <select id="select1" name="select1">
+                        <option value="First Choice">Ticketing</option>
+                        <option value="Second Choice">Ticketing</option>
+                        <option value="Third Choice">Ticketing</option>
+                      </select>
+                    </div>
+
+                    <div class="wpforms-field wpforms-field-textarea">
+                      <label class="wpforms-field-label">Bericht<span class="wpforms-required-label">.</span></label>
+                      <textarea name="message" placeholder="Bericht"></textarea>
+                    </div>
+                  </div><!-- end of .wpforms-field-container-->
+
+                  <div class="wpforms-submit-container">
+                    <button type="submit" name="submit" class="wpforms-submit">verzenden</button>
+                  </div>
+
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="contact-form-rgt clearfix">
+            <div id="googlemap" data-latitude="38.03898" data-longitude="23.804699"></div>
+            <div class="contact-map-info">
+              <div class="contact-map-info-dsc">
+                <ul class="ulc">
+                  <li>
+                    <h6 class="contact-map-title">Stadion</h6>
+                    <a href="#">Bredestraat, 9300 Aalst</a>
+                  </li>
+                  <li>
+                    <h6 class="contact-map-title">JEUGDCENTRUM</h6>
+                    <a href="#">Zandberg 4, 9300 Aalst</a>
+                  </li>
+                  <li>
+                    <h6 class="contact-map-title">COntact Info</h6>
+                    <span>Tel: <a href="tel:+32 (0)474 432 100"> +32 (0)474 432 100</a></span>
+                    <span>Mail: <a href="#mailto:secretariaat@eendracht-aalst.be">secretariaat@eendracht-aalst.be</a></span>
+                  </li>
+                </ul>               
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+    </div>
   </div>    
 </section>
 

@@ -11,6 +11,7 @@
 	width: 68%;
 	float: left;
 	padding-right: 24px;
+	padding-left: 35px;
 }
 .contact-form-dsc-title{
 	display: block;
@@ -218,4 +219,134 @@
 }
 .contact-map-info-dsc ul li a:hover{
 	color: #fed056;
+}
+
+/*
+----------------------
+ contact-info-sec-wrp
+----------------------
+*/
+.contact-info-sec-wrp{
+	padding: 80px 0 0;
+}
+.contact-info-wrp{
+	border-bottom: 4px solid#F9F9F9;
+	padding-bottom: 80px;
+}
+.contact-info-lft{
+	width: 36%;
+	float: left;
+}
+.contact-info-lft-img{
+	background-repeat: no-repeat !important;
+	background-size: cover !important;
+	background-position: center center !important;
+	height: 680px !important;
+}
+.contact-info-rgt {
+    width: 64%;
+    float: right;
+    padding-left: 70px;
+    padding-top: 8px;
+}
+.contact-info-dsc-title{
+	font-size: 36px;
+	line-height: 38px;
+	color: #111111;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+.contact-info-dsc{
+	color: #6A6A6A;
+}
+.contact-info-adrs-wrp{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-top: 40px;
+}
+.contact-info-adrs-wrp ul{
+	padding-left: 35px;
+	width: 50%;
+	float: left;
+}
+.contact-info-adrs-wrp ul:last-child{
+	margin-top: 22px;
+	margin-left: 95px;
+}
+.contact-info-adrs-wrp ul li {
+    padding-bottom: 55px;
+}
+.contact-info-adrs-wrp ul li:nth-child(4){
+	padding-bottom: 0;
+}
+.contact-info-adrs-title {
+    font-size: 18px;
+    line-height: 20px;
+    color: #111111;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: relative;
+    margin-bottom: 12px;
+}
+.contact-info-adrs-title:before {
+    content: "";
+    position: absolute;
+    left: -35px;
+    top: 0;
+    background: url(../images/ftr-title-angle.svg);
+    width: 26px;
+    height: 18px;
+}
+.contact-info-adrs span {
+    display: inline-block;
+    vertical-align: baseline;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 800;
+    color: #f6c042;
+    padding-bottom: 8px;
+    padding-top: 7px;
+}
+.contact-info-adrs a{
+	display: inline-block;
+	vertical-align: baseline;
+	text-decoration: none;
+	font-size: 16px;
+	line-height: 18px;
+	color: #6A6A6A;
+	font-weight: 600;
+	padding-left: 30px;
+	position: relative;
+}
+.contact-info-adrs a i{
+	position: absolute;
+	left: 0;
+	top: 1px;
+	bottom: 0;
+}
+.contact-info-adrs a:hover{
+	color: #f6c042;
+}
+.contact-info-adrs a:hover i svg{
+	fill: #f6c042;
+}
+
+.rst-from-box-img{
+	background-repeat: no-repeat !important;
+	background-size: cover !important;
+	background-position: center center !important;
+	height: 440px;
+}
+.wpforms-field-select-half{
+    width: 50%;
+    float: left;
+    padding-right: 10px;
+}
+.contact-form-wrp .wpforms-field-select .wpforms-field-select-half select {
+    background-position: 95% center !important;
+}
+.fst-box-rgt{
+	padding-top: 0;
 }

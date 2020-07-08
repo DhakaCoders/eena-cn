@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Contact</title>
+	<title>Resto Form</title>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -74,8 +74,8 @@
         <div class="contact-form-cntlr clearfix">
           <div class="contact-form-lft">
             <div class="contact-form-dsc">
-              <h2 class="contact-form-dsc-title">E-mail ons</h2>
-              <p>Et tellus quis mi id non facilisi ac nibh. In lectus etiam augue tristique turpis at. Eget sapien duis molestie in. Consectetur tincidunt arcu ac ornare a turpis fermentum.</p>
+              <h2 class="contact-form-dsc-title">DINER RESERVEREN</h2>
+              <p>U kan makkelijk online reserveren voor ons clubrestaurant door onderstaand formulier in te vullen. Meer informatie en het menu kan u hier vinden.</p>
             </div>
             <div class="contact-form-wrp clearfix">
               <div class="wpforms-container">
@@ -103,17 +103,71 @@
                     </div>
 
                     <div class="wpforms-field wpforms-field-select">
-                      <label class="wpforms-field-label" for="select1">ONDERWERP</label>
+                      <label class="wpforms-field-label" for="select1">WEDSTRIJD</label>
                       <select id="select1" name="select1">
-                        <option value="First Choice">Ticketing</option>
-                        <option value="Second Choice">Ticketing</option>
-                        <option value="Third Choice">Ticketing</option>
+                        <option value="First Choice">15/03 E.Aalst - Hades Hasselt</option>
+                        <option value="Second Choice">15/03 E.Aalst - Hades Hasselt</option>
+                        <option value="Third Choice">15/03 E.Aalst - Hades Hasselt</option>
                       </select>
                     </div>
 
+                    <div class="wpforms-field">
+                      <label class="wpforms-field-label">Organisatie<span class="wpforms-required-label">.</span> </label>
+                      <input type="text" name="name" placeholder="Organisatie" required>
+                    </div>
+
+                    <div class="wpforms-field">
+                      <label class="wpforms-field-label">BTW Nummer<span class="wpforms-required-label">.</span></label>
+                      <input type="text" name="name" placeholder="BTW Nummer" required>
+                    </div>
+
+                    <div class="wpforms-field">
+                      <label class="wpforms-field-label">Straat + NR<span class="wpforms-required-label">.</span> </label>
+                      <input type="text" name="name" placeholder="Straat + NR" required>
+                    </div>
+
+                    <div class="wpforms-field">
+                      <label class="wpforms-field-label">Gemeente<span class="wpforms-required-label">.</span></label>
+                      <input type="text" name="name" placeholder="Gemeente" required>
+                    </div>
+
+
+                    <div class="wpforms-field wpforms-field-select">
+                      <div class="wpforms-field-select-half">
+                        <label class="wpforms-field-label" for="select1">Volwassenen</label>
+                        <select id="select1" name="select1">
+                          <option value="First Choice">0</option>
+                          <option value="Second Choice">1</option>
+                          <option value="Third Choice">2</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="wpforms-field wpforms-field-select">
+                      <div class="wpforms-field-select-half">
+                        <label class="wpforms-field-label" for="select1">Kinderen (-13j)</label>
+                        <select id="select1" name="select1">
+                          <option value="First Choice">0</option>
+                          <option value="Second Choice">1</option>
+                          <option value="Third Choice">2</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="wpforms-field wpforms-field-select">
+                      <div class="wpforms-field-select-half">
+                        <label class="wpforms-field-label" for="select1">Tickets (eretribune)</label>
+                        <select id="select1" name="select1">
+                          <option value="First Choice">0</option>
+                          <option value="Second Choice">1</option>
+                          <option value="Third Choice">2</option>
+                        </select>
+                      </div>
+                    </div>
+
                     <div class="wpforms-field wpforms-field-textarea">
-                      <label class="wpforms-field-label">Bericht<span class="wpforms-required-label">.</span></label>
-                      <textarea name="message" placeholder="Bericht"></textarea>
+                      <label class="wpforms-field-label">OPMERKINGEN<span class="wpforms-required-label">.</span></label>
+                      <textarea name="message" placeholder="Opmerkingen"></textarea>
                     </div>
                   </div><!-- end of .wpforms-field-container-->
 
@@ -125,26 +179,8 @@
               </div>
             </div>
           </div>
-          <div class="contact-form-rgt clearfix">
-            <div id="googlemap" data-latitude="38.03898" data-longitude="23.804699"></div>
-            <div class="contact-map-info">
-              <div class="contact-map-info-dsc">
-                <ul class="ulc">
-                  <li>
-                    <h6 class="contact-map-title">Stadion</h6>
-                    <a href="#">Bredestraat, 9300 Aalst</a>
-                  </li>
-                  <li>
-                    <h6 class="contact-map-title">JEUGDCENTRUM</h6>
-                    <a href="#">Zandberg 4, 9300 Aalst</a>
-                  </li>
-                  <li>
-                    <h6 class="contact-map-title">COntact Info</h6>
-                    <span>Tel: <a href="tel:+32 (0)474 432 100"> +32 (0)474 432 100</a></span>
-                    <span>Mail: <a href="#mailto:secretariaat@eendracht-aalst.be">secretariaat@eendracht-aalst.be</a></span>
-                  </li>
-                </ul>               
-              </div>
+          <div class="contact-form-rgt fst-box-rgt clearfix">
+            <div class="rst-from-box-img" style="background:url(assets/images/rst-from-box-img.png);">
             </div>
           </div>
         </div>
@@ -153,110 +189,6 @@
   </div>    
 </section>
 
-
-<section class="contact-info-sec-wrp">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="contact-info-wrp clearfix">
-          <div class="contact-info-lft">
-            <div class="contact-info-lft-img" style="background: url(assets/images/contact-info-lft-img.png);"></div>
-          </div>
-          <div class="contact-info-rgt">
-            <div class="contact-info-dsc">
-              <h2 class="contact-info-dsc-title">Contact</h2>
-              <p>S.C. Eendracht Aalst is een grote organisatie met tal van medewerkers, vrijwilligers, trainers en spelers. Hieronder kan u de belangrijkste contactpersonen vinden. Voor uw algemene vragen kan u het contactformulier rechts invulen.</p>
-            </div>
-            <div class="contact-info-adrs-wrp">
-              <ul class="ulc">
-                <li>
-                  <div class="contact-info-adrs">
-                    <h5 class="contact-info-adrs-title">SECRETARIAAT / ADMINISTRATIE</h5>
-                    <a href="mailto:secretariaat@eendracht-aalst.be">
-                    <i>  
-                      <svg class="contact-info-email-svg" width="18" height="18" viewBox="0 0 18 18" fill="#6A6A6A">
-                        <use xlink:href="#contact-info-email-svg"></use>
-                      </svg>
-                    </i>
-                    secretariaat@eendracht-aalst.be
-                   </a>
-                  </div>
-                </li>
-                <li>
-                  <div class="contact-info-adrs">
-                    <h5 class="contact-info-adrs-title">GERECHTIGDE CORRESPONDENT</h5>
-                    <span>Gregor DE VRIENDT</span>
-                    <a href="mailto:gregordevriendt@eendracht-aalst.be">
-                    <i>  
-                      <svg class="contact-info-email-svg" width="18" height="18" viewBox="0 0 18 18" fill="#6A6A6A">
-                        <use xlink:href="#contact-info-email-svg"></use>
-                      </svg>
-                    </i>
-                    gregordevriendt@eendracht-aalst.be</a>
-                  </div>
-                </li>
-                <li>
-                  <div class="contact-info-adrs">
-                    <h5 class="contact-info-adrs-title">TICKETING</h5>
-                    <span>Tamara MICHIELS</span>
-                    <a href="mailto:ticketing@eendracht-aalst.be">
-                    <i>  
-                      <svg class="contact-info-email-svg" width="18" height="18" viewBox="0 0 18 18" fill="#6A6A6A">
-                        <use xlink:href="#contact-info-email-svg"></use>
-                      </svg>
-                    </i>
-                    ticketing@eendracht-aalst.be</a>
-                  </div>
-                </li>
-                <li>
-                  <div class="contact-info-adrs">
-                    <h5 class="contact-info-adrs-title">FACTURATIE</h5>
-                    <span>Tamara MICHIELS</span>
-                    <a href="mailto:facturatie@eendracht-aalst.be">
-                    <i>  
-                      <svg class="contact-info-email-svg" width="18" height="18" viewBox="0 0 18 18" fill="#6A6A6A">
-                        <use xlink:href="#contact-info-email-svg"></use>
-                      </svg>
-                    </i>
-                    facturatie@eendracht-aalst.be</a>
-                  </div>
-                </li>
-              </ul>
-              <ul class="ulc">
-                <li>
-                  <div class="contact-info-adrs">
-                    <h5 class="contact-info-adrs-title">COMMUNICATIE / PERS</h5>
-                    <span>Kenneth DEMARET</span>
-                    <a href="mailto:kennethdemaret@eendracht-aalst.be">
-                    <i>  
-                      <svg class="contact-info-email-svg" width="18" height="18" viewBox="0 0 18 18" fill="#6A6A6A">
-                        <use xlink:href="#contact-info-email-svg"></use>
-                      </svg>
-                    </i>
-                    kennethdemaret@eendracht-aalst.be</a>
-                  </div>
-                </li>
-                <li>
-                  <div class="contact-info-adrs">
-                    <h5 class="contact-info-adrs-title">VEILIGHEID</h5>
-                    <span>Filip DE SUTTER</span>
-                    <a href="mailto:filipdesutter@eendracht-aalst.be">
-                    <i>  
-                      <svg class="contact-info-email-svg" width="18" height="18" viewBox="0 0 18 18" fill="#6A6A6A">
-                        <use xlink:href="#contact-info-email-svg"></use>
-                      </svg>
-                    </i>
-                    filipdesutter@eendracht-aalst.be</a>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 
 <section class="ftr-tp-brand-logo-sec-wrp">
   <div class="container">

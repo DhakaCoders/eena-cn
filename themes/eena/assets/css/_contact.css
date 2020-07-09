@@ -13,15 +13,16 @@
 	padding-right: 24px;
 	padding-left: 35px;
 }
-.contact-form-dsc-title{
-	display: block;
-	font-size: 60px;
-	line-height: 45px;
-	text-transform: uppercase;
-	color: #111111;
-	font-weight: 900;
-	margin-bottom: 35px;
-	font-family: 'Muli', sans-serif;
+.contact-form-dsc-title {
+    display: block;
+    font-size: 60px;
+    line-height: 72px;
+    text-transform: uppercase;
+    color: #111111;
+    font-weight: 900;
+    margin-bottom: 27px;
+    font-family: 'Muli', sans-serif;
+    margin-top: -15px;
 }
 .contact-form-dsc {
     font-size: 16px;
@@ -29,6 +30,9 @@
     font-weight: 600;
     color: #6A6A6A;
     padding-bottom: 42px;
+}
+.abo-frm-sec-wrp .contact-form-dsc p{
+	margin-bottom: 30px;
 }
 
 /*
@@ -51,6 +55,9 @@
     padding: 0 12px;
     margin-bottom: 20px;
     position: relative;
+}
+.contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .WpFullwidth{
+	width: 100%;
 }
 .contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .subjectField{
 	width: 100%;
@@ -349,4 +356,17 @@
 }
 .fst-box-rgt{
 	padding-top: 0;
+}
+
+/*
+------------------
+ Abo Form Css
+------------------
+*/
+.ab-frm-title{
+	font-size: 30px;
+	line-height: 32px;
+	font-weight: 800;
+	text-transform: uppercase;
+	color: #111111;
 }

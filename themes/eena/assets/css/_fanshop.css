@@ -71,27 +71,39 @@ fanshop-post-grid-sec-wrp
 .fanshop-post-grid-wrp ul li:nth-child(3n+1){
 	clear: left;
 }
-.fanshop-post-grid-inr{
-	background: #ffffff;
-	padding: 40px 40px 35px;
-	position: relative;
+.fanshop-post-grid-inr {
+    background: #ffffff;
+    padding: 45px 45px 35px;
+    position: relative;
+    overflow: hidden;
 }
-.fanshop-post-grid-inr span{
-	display: inline-block;
+.info-stick-wrap {
+    position: absolute;
+    left: -45px;
+    top: 29px;
+    overflow: hidden;
+    width: 192px;
+    height: 46px;
+    background: #fed056;
+    transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+.info-stick-wrap span{
+    position: absolute;
+    z-index: 2;
+    display: inline-block;
 	vertical-align: baseline;
 	font-size: 16px;
 	line-height: 18px;
 	color: #fff;
 	font-weight: 700;
 	text-transform: uppercase;
-	position: absolute;
-	left: 0;
-	top: 0;
-	background: #fed056;
-	transform: skew(28deg);
-	padding: 20px 10px;
-	max-width: 192px;
-	width: 100%;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
 }
 .fanshop-post-grid-img{
 	background-repeat:no-repeat !important;

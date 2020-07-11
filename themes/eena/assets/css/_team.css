@@ -1,0 +1,110 @@
+
+
+.a-kern-section{
+	background: #fff;
+}
+.a-kern-innr{
+	text-align: center;
+	padding-top: 110px;
+	padding-bottom: 68px;
+
+}
+.a-kern-title{
+	font-weight: 900;
+	line-height: 1.2;
+	font-style: normal;
+	color: #000;
+	margin-bottom: 25px;
+	/* line-height: 72px; */
+} 
+.a-kern-desc{
+	padding-bottom: 45px;
+}
+.a-kern-pages{
+	text-align: center;
+}
+.a-kern-pages ul{
+	display: flex;
+	justify-content: center;
+}
+.a-kern-pages > ul > li{
+	padding-left: 35px;
+	padding-right: 35px;
+	position: relative;
+}
+.a-kern-pages > ul > li:after{
+	position: absolute;
+	content: "";
+	right: -2px;
+	top: 0;
+	margin-top: 2px;
+    transform: rotate(25deg);
+	height: 16px;
+	width: 2px;
+	background: #6A6A6A;
+}
+.a-kern-pages > ul > li:first-child{
+	padding-left: 0;
+}
+.a-kern-pages > ul > li:last-child{
+	padding-right: 0;
+}
+.a-kern-pages > ul > li:last-child:after{
+	display: none;
+}
+.a-kern-pages > ul > li > h4{
+	margin-bottom: 0;
+	line-height: 1;
+}
+.a-kern-pages > ul > li a{
+	display: inline-block;
+	font-weight: 800;
+	text-transform: uppercase;
+	color: #6A6A6A;
+	cursor: pointer;
+}
+.a-kern-pages > ul > li a:hover{
+	color: yellow;
+}
+
+
+.team-players{
+
+}
+.team-players-innr{
+
+}
+.team-players-title{
+
+}
+.doelmannen-players{
+	
+}
+.doelmannen-player:hover .doelmannen-player-img img{
+	transform: scale(1.1);
+	transition: all 0.3s ease-out 0s;
+	-moz-transition: all 0.3s ease-out 0s;
+	-webkit-transition: all 0.3s ease-out 0s;
+}
+.doelmannen-players > ul{
+	margin-left: -13px;
+	margin-right: -13px;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.doelmannen-players > ul > li{
+	padding-left: 13px;
+	padding-right: 13px;
+	margin-bottom: 45px;
+	width: 20%;
+}
+.doelmannen-player-img-cntrl{
+	overflow: hidden;
+}
+.doelmannen-player-img{
+	min-height: 320px;
+	transition: all 0.3s ease-out 0s;
+	-moz-transition: all 0.3s ease-out 0s;
+	-webkit-transition: all 0.3s ease-out 0s;
+}

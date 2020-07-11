@@ -16,10 +16,11 @@ a, a:hover, a:focus, button:hover, button:focus{
 }
 
 body {
-    background: #ffffff;
-    color: #000000;
+    background: #E5E5E5;
+    color: #6A6A6A;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 20px;
+    font-weight: 600;
     font-family: 'Muli', sans-serif;
 }
 p{

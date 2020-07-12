@@ -13,6 +13,7 @@
 	font-weight: 900;
 	line-height: 1.2;
 	font-style: normal;
+	text-transform: uppercase;
 	color: #000;
 	margin-bottom: 25px;
 	/* line-height: 72px; */
@@ -63,24 +64,30 @@
 	color: #6A6A6A;
 	cursor: pointer;
 }
-.a-kern-pages > ul > li a:hover{
-	color: yellow;
+.a-kern-pages > ul > li a:hover,
+.a-kern-pages > ul > li .active{
+	color: #111111;
 }
 
 
 .team-players{
-
+	padding-top: 85px;
+	padding-bottom: 45px;
+	background: #f9f9f9;
 }
 .team-players-innr{
 
 }
 .team-players-title{
-
+	font-weight: 800;
+	text-align: center;
+	text-transform: uppercase;
+	margin-bottom: 25px;
 }
 .doelmannen-players{
 	
 }
-.doelmannen-player:hover .doelmannen-player-img img{
+.doelmannen-player:hover .doelmannen-player-img{
 	transform: scale(1.1);
 	transition: all 0.3s ease-out 0s;
 	-moz-transition: all 0.3s ease-out 0s;
@@ -96,15 +103,40 @@
 .doelmannen-players > ul > li{
 	padding-left: 13px;
 	padding-right: 13px;
-	margin-bottom: 45px;
+	margin-bottom: 40px;
 	width: 20%;
+}
+.doelmannen-players > ul > li:nth-child(5n+1){
+	clear: left;
 }
 .doelmannen-player-img-cntrl{
 	overflow: hidden;
 }
 .doelmannen-player-img{
 	min-height: 320px;
+	position: relative;
 	transition: all 0.3s ease-out 0s;
 	-moz-transition: all 0.3s ease-out 0s;
 	-webkit-transition: all 0.3s ease-out 0s;
+}
+.doelmannen-player-hdng{
+	display: flex;
+	justify-content: center;
+}
+.doelmannen-player-title{
+	text-transform: uppercase;
+	font-weight: 800;
+	margin-top: 17px;
+	margin-bottom: 15px;
+}
+.doelmannen-player-title a{
+	color: #6A6A6A;
+}
+.doelmannen-player-title a:hover{
+	color: #f7c042;
+}
+.tm-pl-sub-con-innr,
+.tm-pl-sub-con2-innr,
+.tm-pl-sub-con3-innr{
+	padding-top: 33px;
 }

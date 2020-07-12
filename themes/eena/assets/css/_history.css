@@ -1,0 +1,54 @@
+
+.Geschiedenis-section{
+	background: #fff;
+}
+.Geschiedenis-innr{
+	text-align: center;
+	padding-top: 110px;
+	padding-bottom: 95px;
+
+}
+.Geschiedenis-title{
+	font-weight: 900;
+	line-height: 1.2;
+	text-transform: uppercase;
+	font-style: normal;
+	color: #000;
+	margin-bottom: 25px;
+	/* line-height: 72px; */
+} 
+.Geschiedenis-desc{
+	padding-bottom: 23px;
+}
+.Geschiedenis-pages{
+	text-align: center;
+}
+.Geschiedenis-pages ul{
+	display: flex;
+	justify-content: center;
+}
+.Geschiedenis-pages > ul > li{
+	padding-left: 8px;
+	padding-right: 8px;
+}
+.Geschiedenis-pages > ul > li:first-child{
+	padding-left: 0;
+}
+.Geschiedenis-pages > ul > li:last-child{
+	padding-right: 0;
+}
+.Geschiedenis-pages > ul > li >a{
+	display: inline-block;
+	font-weight: 800;
+	text-transform: uppercase;
+	color: #fff;
+	padding: 20px 57px 16px 57px;
+	font-size: 12px;
+	background: #111111;
+	cursor: pointer;
+}
+.Geschiedenis-pages > ul > li >a:hover,
+.Geschiedenis-pages > ul > li .active{
+	background: #fed056;
+	color: #000;
+}

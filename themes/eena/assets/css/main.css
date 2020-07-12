@@ -8,13 +8,14 @@
 @import url('_sponsors-overview.css');
 @import url('_fanshop.css');
 @import url('_contact.css');
-@import url('_footer.css');
+
 
 
 
 
 
 @import url('_team.css');
+@import url('_history.css');
 /*End-of-noyon */
 
 
@@ -23,3 +24,4 @@
 
 /*End-of-Ranojit */
 
+@import url('_footer.css');

@@ -175,10 +175,9 @@
 .firstLine{
     position: absolute;
     left: 50%;
-    top: 0;
-    bottom: 0;
+    top: 50px;
+    bottom: 230px;
     transform: translateX(-50%);
-    height: 100%;
     width: 2px;
     background: #ebebeb;
     z-index: 1;

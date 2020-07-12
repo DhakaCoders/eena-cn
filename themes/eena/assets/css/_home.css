@@ -86,6 +86,14 @@
 }
 
 .hbitsdate{
+	padding: 0 0 0 36px;
+	color: #F6C042;
+	position: relative;
+	margin-bottom: 28px;
+	display: block;
+}
+.hbitsdate:before{
+	content: "";
 	background: url(../images/angle-line-sm.svg);
 	width: 26px;
 	height: 18px;
@@ -94,7 +102,4 @@
 	position: absolute;
 	left: 0;
 	top: 0;
-}
-.hbitsdate:before{
-	content: 
 }

@@ -5,14 +5,13 @@
 @import url('_header.css');
 @import url('_page.css');
 @import url('_home.css');
-<<<<<<< HEAD
-@import url('_sponsors-overview.css');
-@import url('_fanshop.css');
-@import url('_contact.css');
-=======
+
+
+
+
+
 @import url('_binnenpagina.css');
 /*End-of-Ranojit */
->>>>>>> db90d41e117ab62134514dbd66d44e7234614722
 
 
 
@@ -42,5 +41,3 @@
 @import url('_contact.css');
 @import url('_footer.css');
 /*End-of-Milon */
-
-@import url('_footer.css');

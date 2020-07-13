@@ -1,0 +1,212 @@
+.eena-breadcrumbs-sec{
+	background: #111111;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	position: relative;
+}
+.eena-breadcrumbs-sec-inr ul li{
+	display: inline-block;
+	padding-left: 42px;
+	padding-right: 42px;
+	position: relative;
+}
+.eena-breadcrumbs-sec-inr ul li:first-child{
+	padding-left: 75px;
+}
+.eena-breadcrumbs-sec-inr ul li:last-child{
+	padding-right: 0;
+}
+
+.eena-breadcrumbs-sec-inr ul li:after{
+	content: "";
+	position: absolute;
+	top: 5px;
+	left: 0%;
+	transform: translateX(-50%);
+	height: 18px;
+	width: 26px;
+	background: url('../images/eena-brdcrmb-line-white-icon.svg');
+	background-size: 100% 100%;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+.eena-breadcrumbs-sec-inr ul li:first-child:after{
+	content: none;
+}
+.eena-breadcrumbs-sec-inr ul li a{
+	font-size: 14px;
+	color: #fff;
+	font-weight: 800;
+	padding-bottom: 5px;
+	position: relative;
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+}
+
+.eena-breadcrumbs-sec-inr ul li a:hover:before{
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 3px;
+	background: #fff;
+}
+
+.eena-brdcrmb-left{
+	position: absolute;
+	top: 0;
+	background: red;
+	padding: 40px 0;
+	text-align: center;
+	background: url('../images/enna-brdcrmb-left-bg.png');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-position: center center;
+}
+
+.eena-brdcrmb-left strong{
+	font-size: 26px;
+	text-transform: uppercase;
+	color: #111111;
+	font-weight: 800;
+	line-height: 1;
+}
+
+
+
+.eena-no-grid-sec{
+	padding: 90px 0 50px;
+	background: #F9F9F9;
+}
+
+.eena-no-link{
+	margin-bottom: 85px;
+}
+.eena-no-link strong{
+	display: inline-block;
+	font-size: 20px;
+	text-transform: uppercase;
+	color: #111111;
+	font-weight: 800;
+	margin-right: 30px;
+}
+
+.eena-no-link ul{
+	display: inline-block;
+}
+.eena-no-link ul li{
+	display: inline-block;
+	padding-left: 28px;
+	padding-right: 28px;
+}
+.eena-no-link ul li a{
+	font-size: 18px;
+	color: #BABABA;
+	text-transform: uppercase;
+	font-weight: 800;
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+}
+.eena-no-link ul li.current a,
+.eena-no-link ul li a:hover{
+	color: #F6C042;
+}
+
+
+.eena-no-grid-items ul{
+	margin-left: -12px;
+	margin-right: -12px;
+}
+.eena-no-grid-items ul li{
+	float: left;
+	width: 33.3333%;
+	padding: 0 12px 25px 12px;
+}
+.eena-no-grid-items ul li:nth-child(3n+1){
+	clear: left;
+}
+
+.eena-grd-item{
+	background: #FFFFFF;
+	box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+.eena-grd-item-fea-img-ctlr{
+	position: relative;
+	overflow: hidden;
+}
+
+.eena-grd-item-fea-img{
+	min-height: 370px;
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+}
+
+
+.eena-grd-item-des{
+	padding: 40px 32px;
+}
+.eena-grd-item-des strong{
+	font-size: 14px;
+	color: #F6C042;
+	text-transform: uppercase;
+	padding-left: 32px;
+	padding-bottom: 12px;
+	display: block;
+	font-weight: 700;
+	position: relative;
+}
+.eena-grd-item-des strong:before{
+	content: "";
+	position: absolute;
+	top: 0px;
+	left: 0;
+	height: 18px;
+	width: 26px;
+	background: url('../images/eena-grd-item-yellow-icon.svg');
+	background-repeat: no-repeat!important;
+	background-size: 100% 100%!important;
+	background-position: center center!important;
+}
+
+.eena-gid-title{
+	display: block;
+	font-size: 26px;
+	line-height: 1;
+	margin-bottom: 15px;
+	font-weight: 800;
+	letter-spacing: 0.01em;
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+}
+.eena-gid-title > a{
+	color: #111111;
+}
+.eena-gid-title > a:hover{
+	color: #FFD056;
+}
+
+.eena-grd-item-des p{
+	margin-bottom: 20px;
+}
+.eena-grd-item-des > a{
+	width: 180px;
+	height: 48px;
+	font-size: 12px;
+	color: #2B2B2B;
+	background: #FFD056;
+	text-transform: uppercase;
+	font-weight: 800;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+}

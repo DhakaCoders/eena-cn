@@ -1,11 +1,12 @@
 .innerpage-con-wrap{
 	overflow: hidden;
 	position: relative;
+	border-bottom: 8px solid #F9F9F9;
 }
+
 .default-page-con {
-	padding-top: 72px;
-	padding-bottom: 85px;
-	border-bottom: 2px solid #F4F4F4;
+	padding-top: 85px;
+	padding-bottom: 120px;
 }
 
 .fl-dft-overflow-controller {
@@ -285,6 +286,11 @@ Gallery design
 	line-height: 1;
 	text-align: center;
 	color:  #111111;
+	font-weight: 600;
+}
+.table-dsc table thead tr th,
+.table-dsc table tbody tr td{
+	padding: 20px 10px;
 }
 .table-dsc table thead tr th,
 .table-dsc table tbody tr td:first-child{
@@ -295,8 +301,15 @@ Gallery design
 .table-dsc table tbody tr td:first-child{
 	font-size: 14px; 
 	text-align: left;
+	padding-left: 30px;
 
 }
+.table-dsc table thead tr th,
+.table-dsc table tbody tr:nth-child(2n+2) td,
+.table-dsc table tbody tr td:nth-child(2n+2){
+	background: #f9f9f9;
+}
+
 
 
 

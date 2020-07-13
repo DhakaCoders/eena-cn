@@ -68,6 +68,7 @@ nav.ulc ul {
   position: relative;
   padding-left: 35px;
   margin-top: 48px;
+  display: block;
 }
 .ftr-title:before{
 	content: "";
@@ -106,7 +107,7 @@ nav.ulc ul {
   content: none;
 }
 .ftr-btm{
-  padding: 55px 0;
+  padding: 60px 0;
   background: #fff;
 }
 .ftr-btm-col-1{
@@ -135,7 +136,7 @@ nav.ulc ul {
 ---------------------------
 */
 .ftr-tp-brand-logo-sec-wrp {
-    padding-top: 88px;
+    padding-top: 80px;
     padding-bottom: 45px;
 }
 .brand-logo-head-title{
@@ -145,6 +146,8 @@ nav.ulc ul {
   font-weight: 800;
   text-align: center;
   margin-bottom: 90px;
+  display: block;
+  text-transform: uppercase;
 }
 .brand-logo-tp-wrp{
   max-width: 880px;
@@ -183,5 +186,5 @@ nav.ulc ul {
 }
 .brand-logo-btm-wrp ul li{
   float: left;
-  padding: 0 36px 20px;
+  padding: 0 35px 20px;
 }

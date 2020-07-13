@@ -4,11 +4,11 @@
 ----------------------
 */
 .contact-form-sec-wrp{
-	padding: 85px 0 80px;
+	padding: 100px 0 80px;
 	background: #F9F9F9;
 }
 .contact-form-lft{
-	width: 68%;
+	width: 70%;
 	float: left;
 	padding-right: 24px;
 	padding-left: 35px;
@@ -29,10 +29,16 @@
     line-height: 24px;
     font-weight: 600;
     color: #6A6A6A;
-    padding-bottom: 42px;
+    padding-bottom: 60px;
 }
 .abo-frm-sec-wrp .contact-form-dsc p{
 	margin-bottom: 30px;
+}
+.rs-contact-form-sec .contact-form-dsc{
+	padding-bottom: 40px;
+}
+.rs-contact-form-sec .contact-form-dsc-title{
+	margin-bottom: 22px;
 }
 
 /*
@@ -178,6 +184,7 @@
 	cursor: pointer;
 	padding: 13px 0 14px;
 	margin-top: 15px;
+	font-family: 'Muli', sans-serif;
 }
 .contact-form-wrp .wpforms-container .wpforms-form .wpforms-submit-container button:hover{
 	background: transparent;
@@ -223,18 +230,17 @@
 }
 
 .contact-form-rgt{
-	width: 32%;
+	width: 30%;
 	float: right;
-	padding-top: 8px;
 }
 
 
 #googlemap{
 	height: 380px;
 }
-.contact-map-info{
-	background: #fff;
-	padding: 40px 35px 22px;
+.contact-map-info {
+    background: #fff;
+    padding: 40px 35px 5px;
 }
 .contact-map-title{
 	font-size: 18px;
@@ -246,8 +252,8 @@
 	font-weight: 800;
 	margin-bottom: 15px;
 }
-.contact-map-info-dsc ul li{
-	padding-bottom: 15px;
+.contact-map-info-dsc ul li {
+    padding-bottom: 32px;
 }
 .contact-map-info-dsc ul li span,
 .contact-map-info-dsc ul li a{
@@ -268,7 +274,7 @@
 ----------------------
 */
 .contact-info-sec-wrp{
-	padding: 80px 0 0;
+	padding: 85px 0 0;
 }
 .contact-info-wrp{
 	border-bottom: 4px solid#F9F9F9;
@@ -297,6 +303,7 @@
 	margin-bottom: 20px;
 	text-transform: uppercase;
 	font-weight: 700;
+	display: block;
 }
 .contact-info-dsc{
 	color: #6A6A6A;
@@ -330,6 +337,7 @@
     text-transform: uppercase;
     position: relative;
     margin-bottom: 12px;
+    display: block;
 }
 .contact-info-adrs-title:before {
     content: "";
@@ -397,12 +405,14 @@
  Abo Form Css
 ------------------
 */
-.ab-frm-title{
-	font-size: 30px;
-	line-height: 32px;
-	font-weight: 800;
-	text-transform: uppercase;
-	color: #111111;
+.ab-frm-title {
+    font-size: 30px;
+    line-height: 32px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #111111;
+    display: block;
+    margin-bottom: 25px;
 }
 
 
@@ -496,6 +506,7 @@
 	color: #111111;
 	font-weight: 800;
 	text-transform: uppercase;
+	display: block;
 }
 .abo-form-person a{
 	display: inline-block;

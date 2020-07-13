@@ -14,7 +14,7 @@
 	line-height: 1.2;
 	font-style: normal;
 	text-transform: uppercase;
-	color: #000;
+	color: #111111;
 	margin-bottom: 25px;
 	/* line-height: 72px; */
 } 
@@ -80,9 +80,11 @@
 }
 .team-players-title{
 	font-weight: 800;
+	font-size: 30px;
+	color: #111111;
 	text-align: center;
 	text-transform: uppercase;
-	margin-bottom: 25px;
+	margin-bottom: 37px;
 }
 .doelmannen-players{
 	
@@ -130,7 +132,7 @@
 	margin-bottom: 15px;
 }
 .doelmannen-player-title a{
-	color: #6A6A6A;
+	color: #111111;
 }
 .doelmannen-player-title a:hover{
 	color: #f7c042;

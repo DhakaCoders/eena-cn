@@ -33,7 +33,7 @@ if($('.mHc5').length){
 //$('[data-toggle="tooltip"]').tooltip();
 
 //banner animation
-$(window).scroll(function() {
+/*$(window).scroll(function() {
   var scroll = $(window).scrollTop();
   $('.page-banner-bg').css({
     '-webkit-transform' : 'scale(' + (1 + scroll/2000) + ')',
@@ -42,7 +42,7 @@ $(window).scroll(function() {
     '-o-transform'      : 'scale(' + (1 + scroll/2000) + ')',
     'transform'         : 'scale(' + (1 + scroll/2000) + ')'
   });
-});
+});*/
 
 
 if($('.fancybox').length){
@@ -165,6 +165,42 @@ $(".eena-brdcrmb-left").css({
 
 
 /* End of Milon*/
+
+//products counter
+if( $('.qty').length ){
+  $('.qty').each(function() {
+    var spinner = $(this),
+      input = spinner.find('input[type="number"]'),
+      btnUp = spinner.find('.plus'),
+      btnDown = spinner.find('.minus'),
+      min = 1,
+      max = input.attr('max');
+
+    btnUp.click(function() {
+      var oldValue = parseFloat(input.val());
+      if (oldValue <= max) {
+        var newVal = oldValue;
+      } else {
+        var newVal = oldValue + 1;
+      }
+      spinner.find("input").val(newVal);
+      spinner.find("input").trigger("change");
+    });
+
+    btnDown.click(function() {
+      var oldValue = parseFloat(input.val());
+      if (oldValue <= min) {
+        var newVal = oldValue;
+      } else {
+        var newVal = oldValue - 1;
+      }
+      spinner.find("input").val(newVal);
+      spinner.find("input").trigger("change");
+    });
+
+  });
+
+}
 
 
 

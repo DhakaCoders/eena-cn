@@ -1,0 +1,105 @@
+.hm-back-in-time-sec{
+	background: #141414; 
+	padding: ;
+}
+.hm-back-in-time-sec{
+	min-height: 756px;
+	position: relative;
+	overflow: hidden;
+}
+.hm-back-in-time-sec-fea-img{
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	width: 55%;
+	z-index: 1;
+}
+.hm-back-in-time-sec-fea-img .inline-bg{
+	width: 100%;
+	height: 100%;
+}
+.hm-back-in-time-sec-angle{
+	position: absolute;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	width: 60%;
+	background: linear-gradient(0deg, rgba(17, 17, 17, 0.49), rgba(17, 17, 17, 0.49)), #171717;
+	transform: rotate(-180deg);
+	z-index: 2;
+}
+
+.hm-back-in-time-sec-des{
+	color: #fff;
+	position: relative;
+	z-index: 5;
+	padding: 105px 0 120px;
+}
+.hmbitsdes-title{
+	text-transform: uppercase;
+	font-size: 36px;
+	line-height: 1;
+	font-weight: 800;
+	margin: 0 0 70px 0;
+}
+.hmbits-btns{
+	display: flex;
+	align-items: center;
+	margin-top: 10px;
+}
+.hmbits-btn{
+	display: flex;
+}
+.hmbits-btns a{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 180px;
+	height: 56px;
+	color: #2B2B2B;
+	background: #F6C042;
+	font-weight: 800;
+	font-size: 12px;
+	line-height: 18px;
+	border: 2px solid #F6C042;
+	text-transform: uppercase;
+}
+.hmbits-btn-1{
+	padding-right: 10px;
+}
+.hmbits-btn-2 a{
+	background: transparent;
+	color: #fff;
+	border-color: #fff;
+}
+.hm-back-in-time-sec-des p{
+	margin-bottom: 30px;
+}
+
+.hm-back-in-time-sec-des strong{
+	display: block;
+	font-weight: 800;
+	font-size: 26px;
+	line-height: 34px;
+	margin: 0 0 50px 0;
+}
+
+.hbitsdate{
+	padding: 0 0 0 36px;
+	color: #F6C042;
+	position: relative;
+	margin-bottom: 28px;
+	display: block;
+}
+.hbitsdate:before{
+	content: "";
+	background: url(../images/angle-line-sm.svg);
+	width: 26px;
+	height: 18px;
+	background-repeat: no-repeat;
+	background-size:  100% auto;
+	position: absolute;
+	left: 0;
+	top: 0;
+}

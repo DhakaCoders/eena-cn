@@ -25,3 +25,15 @@
 	width: 16px;
 	height: 16px;
 }
+
+.page-banner{
+	height: 528px;
+	position: relative;
+}
+.page-banner-bg{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+}

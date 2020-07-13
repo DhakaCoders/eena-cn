@@ -143,3 +143,31 @@
 	text-align: center;
 	margin: 0 0 40px 0;
 }
+.sp-fanshop-gallery-btm{
+	padding: 50px 0 0;
+}
+.sp-fanshop-gallery-btm ul{
+	margin: 0 -12px;
+}
+.sp-fanshop-gallery-btm ul li{
+	float: left;
+	width: 50%;
+	padding: 0 12px 24px;
+}
+.sp-fanshop-btm-gallery-item-inr{
+	height: 240px;
+	display: flex;
+	align-items: center;
+	color: #fff;
+	padding: 10px 10px 10px 50%;
+}
+.sp-fanshop-btm-gallery-item-inr h3{
+	color: #fff;
+	margin: 0 0 15px;
+}
+.sp-fanshop-btm-gallery-item-inr h3 a{
+	color: #fff;
+}
+.hm-sp-fanshop-gallery-sec-cntlr.sp-fanshop-gallery-sec-wrp{
+	padding-bottom: 0;
+}

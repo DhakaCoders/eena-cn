@@ -19,10 +19,13 @@
 .default-page-con h5{
 	margin-bottom: 25px;
 	line-height: 1.1;
+	text-transform: uppercase;
 }
 .default-page-con h2{
-	margin-bottom: 20px;
 	padding-top: 20px;
+}
+.dfp-promo-module-title{
+	color: #111111;
 }
 .default-page-con hr{
 	margin-top: 55px;
@@ -52,7 +55,7 @@ ul li::before {
 	content: "";
 	position: absolute;
 	left: 0;
-	top: 7px;
+	top: 13px;
 	background: url(../images/list-icon.svg);
 	background-repeat: no-repeat;
 	background-size: 100% auto;
@@ -101,10 +104,10 @@ ol li::before {
 	padding-bottom: 25px;
 }
 .dfp-promo-module-title{
-	font-weight: 700;
+	font-weight: 800;
 	display: block;
 	margin-bottom: 20px;
-	font-size: 40px;
+	font-size: 60px;
 }
 .dftPromoModuleSlider{
 	margin-bottom: 0!important;
@@ -140,8 +143,8 @@ ol li::before {
 }
 .fl-dft-lftimg-rgtdes-rgt {
 	padding-left: 25px;
-	padding-top: 20px;
-	padding-bottom: 20px;
+	padding-top: 0;
+	padding-bottom: 0;
 }
 .fl-dft-lftimg-rgtdes-rgt p:last-child{
 	margin-bottom: 0;
@@ -274,121 +277,25 @@ Gallery design
 	padding: 0;
 	background-color: #fff;
 	border-top: none;
-	border-bottom: 2px solid #F8F8F8;
-	
-
-}
-.table-dsc table tbody tr td:last-child{
-	border-right: 2px solid #F8F8F8;
-	padding-left: 0;
-	padding-right: 36px;
-}
-.table-dsc table tbody tr td:last-child span,
-.table-dsc table thead tr th:last-child span{
-	padding-left: 35px;
 }
 .table-dsc table{
 	width: 100%;
 	padding: 20px;
 	border: none;
-}
-
-.table-dsc table tbody{
-
-}
-/*.table-dsc table tr th:nth-child(1){
-	padding: ;
-}
-.table-dsc table tr th:nth-child(1) span{
-    border-right: 2px solid #8DC63F;
-    display: block;
-}*/
-.table-dsc table tr th:last-child,
-.table-dsc table tr td:last-child{
-    padding-left: 0;
-}
-.table-dsc table tr th:last-child span{
-	border-right: none;
-}
-
-.table-dsc table tbody tr:first-child td span{
-	display: block;
-}
-.table-dsc table tbody tr:first-child td:last-child span{
-	border-right: none;
-}
-.table-dsc table tbody tr td:first-child span{
-	font-weight: 700;
-	border-bottom: none;
-}
-.table-dsc table thead tr th:first-child,
-.table-dsc table tbody tr td:first-child{
-	padding-left: 25px;
-	padding-right: 25px;
-	width: 100px;
-	text-align: center;
-}
-.table-dsc table tbody tr td:first-child{
-	background: #F4F4F4;
-
-}
-.table-dsc table tr th {
-	border: none;
-	color: #fff;
-	font-weight: 700;
-	padding: 30px 0;
-	line-height: 17px;
-	letter-spacing: 0.02em;
-	background: #474747;
-	font-size: 18px;
-	line-height: 25px;
-	text-transform: uppercase;
-}
-.table-dsc table tr th span{
-	display: block;
-}
-.table-dsc table thead th span{
-	font-weight: 600;
-	font-size: 14px;
 	line-height: 1;
-	text-transform: uppercase;
+	text-align: center;
+	color:  #111111;
 }
 .table-dsc table thead tr th,
-.table-dsc table tbody tr td{
-	padding-left: 51px;
-	padding-right: 0;
+.table-dsc table tbody tr td:first-child{
+	font-weight: 800;
+	text-transform: uppercase;
 }
-
-
 .table-dsc table thead tr th:first-child,
-.table-dsc table thead tr td:first-child{
-	padding-left: 30px;
-	padding-right: 30px;
-	font-weight: 700;
-}
+.table-dsc table tbody tr td:first-child{
+	font-size: 14px; 
+	text-align: left;
 
-
-.table-dsc table tbody{
-	border-top: 0;
-	margin: 0 3px;
-}
-.table-dsc table tbody tr td span{
-	padding-top: 26px;
-	padding-bottom: 26px;
-}
-.table-dsc table span{
-	display: block;
-}
-.table-dsc table tbody tr td span{
-	border-bottom: 1px solid #F8F8F8;
-}
-.table-dsc table tbody tr:last-child span{
-	border-bottom: none;
-}
-
-.table-dsc table tbody tr{
-	border-left: 0;
-	border-right: 0;
 }
 
 
@@ -398,61 +305,43 @@ Gallery design
 	position: relative;
 }
 /*extra*/
-.dft-fea-boxs{
+.dft-fanshop-items .sp-fanshop-gallery-wrp ul li{
+	width: 50%;
+	padding-bottom: 30px;
+}
+.dft-fanshop-items .sp-fanshop-gallery-wrp ul li .sp-fanshop-gallery-dsc{
+	max-width: 310px;
+}
+.dft-fanshop-items .sp-fanshop-gallery-wrp ul{
+	padding: 0;
+}
+.dft-clint-logos{
+	padding-top: 10px;
+	padding-bottom: 40px;
+}
+.dft-clint-logos ul{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	padding: 53px 0 30px;
+	border-top: 1px solid #e2e2e2;
+	border-bottom: 1px solid #e2e2e2;
+}
+.dft-clint-logos ul li{
+	width: 25%;
+	padding: 0 10px 30px;
+}
+.dft-news-overview-grds ul{
+	padding: 0;
 	margin: 0 -12px;
 }
-.dft-fea-box-item{
-	position: relative;
+.dft-news-overview-grds ul li{
 	width: 50%;
 	float: left;
 	padding: 0 12px 24px;
 }
-.dft-fea-box-item-inr{
-	background: #474747;
-	color: #fff;
-	text-align: center;
-	padding: 30px 50px 5px;
-}
-.dft-fea-box-item:nth-child(2n+1) .dft-fea-box-item-inr{
-	background: linear-gradient(210.88deg, #FF0000 18.2%, #C90707 100%), #C90707;
-}
-.dft-fea-box-item-icon{
-	margin-bottom: 25px;
-}
-.dft-fea-box-item-icon,
-.dft-fea-box-item-title{
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-.dft-fea-box-item-title{
-	display: block;
-	text-transform: uppercase;
-	font-size: 20px;
-	line-height: 1;
-	font-weight: 700;
-	margin: 0 0 10px 0!important;
-}
-.dft-fea-box-item p{
-	font-size: 14px;
-	line-height: 20px;
-}
-
-
-.dft-pro-items{
-	margin-bottom: 44px;
-	padding: 100px 20px 50px;
-	background: linear-gradient(226.83deg, #FFFFFF 3.15%, rgba(255, 255, 255, 0) 67.79%), #F4F4F4;
-}
-.dft-pro-item .hm-pro-bxe-item{
-	max-width: 600px;
-	width: 100%;
-	margin: 0 auto;
-	padding: 0 0 50px 0;
-	background: transparent;
-}
-.dft-overons-logos-cntlr .hm-overons-sec-des-logos{
-	margin-bottom: 58px!important;
+.dft-news-overview-grds .eena-gid-title{
+	text-transform: initial;
 }
 @media(max-width: 1199px){
 	
@@ -506,16 +395,8 @@ Gallery design
 	.dfp-tbl-wrap{
 		margin-bottom: 0;
 	}
-	.dft-fea-box-item-inr{
-		padding-left: 20px;
-		padding-right: 20px;
-	}
 	.fl-dft-lftimg-rgtdes-rgt{
 		padding-bottom: 0;
-	}
-	.dft-pro-items{
-		padding-top: 75px;
-		padding-bottom: 15px;
 	}
 	.dft-map{
 		margin-top: 45px;
@@ -529,13 +410,7 @@ Gallery design
 
 
 @media(max-width: 639px){
-	.dft-fea-box-item{
-		width: 100%;
-	}
-	.dft-fea-box-item-inr{
-		padding-left: 100px;
-		padding-right: 100px;
-	}
+
 }
 
 
@@ -595,13 +470,6 @@ Gallery design
 	.dft-services-item-module .hm-services-item{
 		padding-left: 20px;
 		padding-right: 20px;
-	}
-	.dft-fea-box-item-inr{
-		padding-left: 20px;
-		padding-right: 20px;
-	}
-	.dft-pro-items{
-		margin-bottom: 30px;
 	}
 	.default-page-con{
 		padding-bottom: 40px;

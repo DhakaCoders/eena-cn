@@ -212,3 +212,50 @@
 .hm-sp-fanshop-gallery-sec-cntlr.sp-fanshop-gallery-sec-wrp{
 	padding-bottom: 0;
 }
+
+.hm-ranking-section{
+	padding: 90px 0 75px;
+}
+.hm-ranking-sec-rgt-des{
+	background: #fff;
+	padding: 50px 50px 45px;
+}
+.hm-ranking-tbl{
+	padding: 33px;
+	background: #f9f9f9;
+}
+.hm-ranking-tbl table{
+	width: 100%;
+	color: #111111;
+	line-height: 1;
+	text-align: center;
+	text-transform: uppercase;
+}
+.hm-ranking-tbl table span{
+	display: block;
+}
+.hm-ranking-tbl table thead tr th{
+    background: #111111;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 20px 5px;
+}
+.hm-ranking-tbl table thead tr th:nth-child(2) span,
+.hm-ranking-tbl table tbody tr td:nth-child(2) span{
+	text-align: left;
+}
+
+.hm-ranking-tbl table tbody td{
+	padding: 15px;
+}
+
+.hrsrd-title{
+	text-transform: uppercase;
+	font-weight: 800;
+	font-size: 26px;
+	line-height: 1;
+	display: block;
+	margin: 0 0 45px 0;
+}

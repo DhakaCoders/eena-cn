@@ -356,6 +356,64 @@ Gallery design
 .dft-news-overview-grds .eena-gid-title{
 	text-transform: initial;
 }
+
+.post-date{
+    font-size: 14px;
+    color: #F6C042;
+    text-transform: uppercase;
+    padding-left: 32px;
+    padding-bottom: 12px;
+    display: block;
+    font-weight: 700;
+    position: relative;
+}
+.post-date:before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0;
+    height: 18px;
+    width: 26px;
+    background: url(../images/eena-grd-item-yellow-icon.svg);
+    background-repeat: no-repeat!important;
+    background-size: 100% 100%!important;
+    background-position: center center!important;
+}
+.default-page-con .social-media{
+	padding-top: 10px;
+	padding-bottom: 45px;
+	display: flex;
+	align-items: center;
+}
+.default-page-con .social-media ul{
+	padding-left: 0;
+}
+.default-page-con .social-media ul li{
+	padding-bottom: 0;
+	padding-top: 0;
+}
+.prv-nxt-page-btns{
+	padding: 70px 0 0;
+	display: flex;
+	align-items: center;
+	border-top: 1px solid #e2e2e2;
+}
+.prv-nxt-page-btns a{
+	font-size: 14px;
+	line-height: 1;
+	color: #111111;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+.prv-page-btn span{
+	padding-left: 14px;
+}
+.nxt-page-btn span{
+	padding-right: 14px;
+}
+.nxt-page-btn{
+	margin-left: auto;
+}
 @media(max-width: 1199px){
 	
 }

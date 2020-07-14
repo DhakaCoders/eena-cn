@@ -296,7 +296,7 @@ nav.main-nav > ul > li.menu-item-has-children > ul.sub-menu > li.menu-item-has-c
 	left: -7px;
 	border-top: 9px solid transparent;
 	border-bottom: 9px solid transparent;
-	border-right: 19px solid #fff;
+	border-right: 19px solid #f9f9f9;
 }
 nav.main-nav > ul > li.menu-item-has-children > ul.sub-menu > li.menu-item-has-children ul.sub-menu a{
 	color: #111111;

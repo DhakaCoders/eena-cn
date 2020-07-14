@@ -294,7 +294,10 @@ if( $('.hmNewsSecSlider').length ){
 
 
 
+var container = $(".container").width();
+var sideWidh = (windowWidth - container) / 2;
 
+$('.hdr-lft-opacity-bg').css("width", sideWidh);
 
 
 })(jQuery);

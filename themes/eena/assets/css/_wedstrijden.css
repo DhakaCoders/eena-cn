@@ -1,0 +1,4 @@
+.Wed-am-thead tr th:last-child,
+.Wed-am-tbody tr td:last-child{
+	padding-left: 45px;
+}

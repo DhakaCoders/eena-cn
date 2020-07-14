@@ -23,6 +23,7 @@ fanshop-catagory-sec-wrp
 	text-transform: uppercase;
 	font-weight: 800;
 	margin-bottom: 25px;
+	display: block;
 }
 .fanshop-catagory-menu ul{
 	display: flex;
@@ -76,6 +77,9 @@ fanshop-post-grid-sec-wrp
     padding: 45px 45px 35px;
     position: relative;
     overflow: hidden;
+    -webkit-box-shadow: 2px 10px 20px -10px rgb(180, 179, 179);
+    -moz-box-shadow: 2px 10px 20px -10px rgb(180, 179, 179);
+    box-shadow: 2px 10px 20px -10px rgb(180, 179, 179);
 }
 .info-stick-wrap {
     position: absolute;
@@ -131,6 +135,7 @@ fanshop-post-grid-sec-wrp
 	font-weight: 800;
 	display: block;
 	margin-bottom: 22px;
+	display: block;
 }
 .fanshop-post-grid-title a{
 	color: inherit;
@@ -228,6 +233,7 @@ fanshop-post-grid-sec-wrp
 	text-transform: uppercase;
 	margin-bottom: 15px;
 	margin-top: 20px;
+	display: block;
 }
 .fanshop-service-dsc{
 	font-weight: 600;
@@ -304,8 +310,9 @@ fanshop-post-grid-sec-wrp
     left: 0;
     top: 50%;
 }
-.single-product-des-top-innr p{
-	padding-top: 30px;
+.single-product-des-top-innr p {
+    padding-top: 30px;
+    margin-bottom: 0;
 }
 .single-product-des-top .single-product-des-top-innr > span{
 	line-height: 30px;
@@ -322,11 +329,8 @@ fanshop-post-grid-sec-wrp
 	padding-top: 5px !important;
 	padding-bottom: 20px !important;
 }
-.custom-order-wrp {
-    padding-top: 30px;
-}
-.custom-size{
-	margin-bottom: 30px;
+.custom-size {
+    margin-bottom: 45px;
 }
 .custom-size strong{
 	display: inline-block;
@@ -579,10 +583,11 @@ fanshop-v1-post-sec-wrp
 .fanshop-v1-post-sec-wrp{
 	padding-top: 80px;
 }
-.fanshop-v1-post-sec-wrp .fanshop-catagory-head{
-	max-width: 820px;
-	width: 100%;
-	margin: 0 auto;
+.fanshop-v1-post-sec-wrp .fanshop-catagory-head {
+    max-width: 820px;
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 40px;
 }
 .fanshop-post-grid-wrp{
 	padding-bottom: 85px;

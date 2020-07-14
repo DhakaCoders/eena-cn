@@ -8,6 +8,9 @@
 	width: 33.3333%;
 	text-align: center;
 }
+.eenamr-left-team{
+	padding-left: 90px;
+}
 .eenamr-left-team img{
 	margin-bottom: 30px;
 }
@@ -58,8 +61,9 @@
 }
 .eena-mr-cr-link ul li{
 	display: inline-block;
-	padding-left: 7px;
-	padding-right: 7px;
+	vertical-align: baseline;
+	padding-left: 6px;
+	padding-right: 6px;
 }
 .eena-mr-cr-link ul li.current a,
 .eena-mr-cr-link ul li a:hover{
@@ -93,7 +97,7 @@
 .eena-md-cr-right-event{
 	float: right;
 	width: 32.9629%;
-	padding-left: 22px;
+	padding-left: 24px;
 }
 
 .eena-md-cr-des-title{
@@ -101,7 +105,7 @@
 	font-size: 36px;
 	line-height: 1;
 	margin-bottom: 20px;
-	font-weight: 800px;
+	font-weight: 800;
 	text-transform: uppercase;
 	letter-spacing: 0.02em;
 	color: #111111;
@@ -122,11 +126,11 @@
 	background: #FFFFFF;
 	box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.02);
 	padding: 18px 18px 0 18px;
-	margin-bottom: 28px;
+	margin-bottom: 30px;
 }
 .md-cr-wine{
 	padding-bottom: 25px;
-	margin-bottom: 35px;
+	margin-bottom: 38px;
 }
 .md-cr-aalst{
 	margin-bottom: 0;
@@ -149,7 +153,7 @@
 
 .md-cr-event ul li{
 	padding-top: 30px;
-	padding-bottom: 35px;
+	padding-bottom: 32px;
 	border-bottom: 3px solid #F9F9F9;
 	position: relative;
 }

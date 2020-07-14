@@ -163,7 +163,11 @@
 	padding-left: 6px;
 	padding-right: 6px;
 }
-
+.plyr-btm-img-01 img,
+.plyr-btm-img-02 img,
+.plyr-btm-img-03 img{
+	width: 100%;
+}
 
 .social-media{
 	padding-top: 42px;

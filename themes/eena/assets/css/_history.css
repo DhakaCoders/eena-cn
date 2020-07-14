@@ -12,13 +12,11 @@
 	font-weight: 900;
 	line-height: 1.2;
 	text-transform: uppercase;
-	font-style: normal;
-	color: #000;
+	color: #111111;
 	margin-bottom: 25px;
-	/* line-height: 72px; */
 } 
 .Geschiedenis-desc{
-	padding-bottom: 23px;
+	padding-bottom: 21px;
 }
 .Geschiedenis-pages{
 	text-align: center;
@@ -47,8 +45,8 @@
 	background: #111111;
 	cursor: pointer;
 }
-.Geschiedenis-pages > ul > li >a:hover,
-.Geschiedenis-pages > ul > li .active{
+.Geschiedenis-pages > ul > li .active,
+.Geschiedenis-pages > ul > li a:hover{
 	background: #fed056;
 	color: #000;
 }
@@ -57,7 +55,7 @@
 .history-timeline-sec{
 	background: #f9f9f9;
 	padding-top: 110px;
-	padding-bottom: 80px;
+	padding-bottom: 120px;
 }
 .history-timeline-main {
     position: relative;
@@ -68,7 +66,10 @@
     position: relative;
     display: flex;
     align-items: center;
-    margin-bottom: 105px;
+    margin-bottom: 100px;
+}
+.history-timeline-main ul li:last-child{
+	margin-bottom: 0;
 }
 .history-timeline-main ul li .time-line-img{
 	width: 50%;
@@ -101,11 +102,11 @@
     font-weight: 900;
     display: block;
     font-size: 60px;
-    margin-bottom: 22px;
+    margin-bottom: 24px;
     line-height: 1;
 }
 .time-line-des .time-line-des-title{
-    margin-bottom: 30px;
+    margin-bottom: 33px;
 	margin-top: 0;
 	color: #111111;
 	text-transform: uppercase;
@@ -139,7 +140,7 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    right: -139px;
+    right: -144px;
     width: 36px;
     height: 110px;
     background: #f9f9f9;

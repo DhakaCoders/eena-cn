@@ -1,6 +1,34 @@
 .hdr-cntlr{
 	position: relative;
+	overflow: hidden;
 }
+.hdr-lft-opacity-bg{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(7,7,7,.9);
+	z-index: 6;
+}
+.hdr-inr-logo{
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	z-index: 5;
+}
+.hdr-inr-logo img{
+	max-width: 300px;
+}
+/*.logo-bg{
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	width: 30%;
+	z-index: 1;
+	background: linear-gradient(0deg, rgba(7, 7, 7, 0.8), rgba(7, 7, 7, 0.8)), #424242;
+}*/
 .hdr-main-nav-cntlr-inr{
 	position: relative;
 }
@@ -32,15 +60,7 @@ header.header{
 	align-items: center;
 	z-index: 50;
 }
-.logo-bg{
-	position: absolute;
-	left: 0;
-	top: 0;
-	bottom: 0;
-	width: 30%;
-	z-index: 1;
-	background: linear-gradient(0deg, rgba(7, 7, 7, 0.8), rgba(7, 7, 7, 0.8)), #424242;
-}
+
 .logo-bg img{
 	width: 100%;
 	height: 100%;

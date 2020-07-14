@@ -33,7 +33,7 @@ if($('.mHc5').length){
 //$('[data-toggle="tooltip"]').tooltip();
 
 //banner animation
-$(window).scroll(function() {
+/*$(window).scroll(function() {
   var scroll = $(window).scrollTop();
   $('.page-banner-bg').css({
     '-webkit-transform' : 'scale(' + (1 + scroll/2000) + ')',
@@ -42,7 +42,7 @@ $(window).scroll(function() {
     '-o-transform'      : 'scale(' + (1 + scroll/2000) + ')',
     'transform'         : 'scale(' + (1 + scroll/2000) + ')'
   });
-});
+});*/
 
 
 if($('.fancybox').length){
@@ -149,12 +149,96 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
 }
 
+var container = $(".container").width();
+var sidewidth = windowWidth - container;
+var leftsidewidth = sidewidth / 2;
+$(".eena-brdcrmb-left").css({
+  width : leftsidewidth,
+  left : 0
+});
+
+
+
 /* End of Shoriful*/
 
 
 
 
 /* End of Milon*/
+
+//products counter
+if( $('.qty').length ){
+  $('.qty').each(function() {
+    var spinner = $(this),
+      input = spinner.find('input[type="number"]'),
+      btnUp = spinner.find('.plus'),
+      btnDown = spinner.find('.minus'),
+      min = 1,
+      max = input.attr('max');
+
+    btnUp.click(function() {
+      var oldValue = parseFloat(input.val());
+      if (oldValue <= max) {
+        var newVal = oldValue;
+      } else {
+        var newVal = oldValue + 1;
+      }
+      spinner.find("input").val(newVal);
+      spinner.find("input").trigger("change");
+    });
+
+    btnDown.click(function() {
+      var oldValue = parseFloat(input.val());
+      if (oldValue <= min) {
+        var newVal = oldValue;
+      } else {
+        var newVal = oldValue - 1;
+      }
+      spinner.find("input").val(newVal);
+      spinner.find("input").trigger("change");
+    });
+
+  });
+
+}
+
+/*
+-----------------------
+Start Contact Google Map ->> 
+-----------------------
+*/
+if( $('#googlemap').length ){
+    var latitude = $('#googlemap').data('latitude');
+    var longitude = $('#googlemap').data('longitude');
+
+    var myCenter= new google.maps.LatLng(latitude,  longitude);
+    var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
+    function initialize(){
+        var mapProp = {
+          center:myCenter,
+
+          mapTypeControl:false,
+          scrollwheel: false,
+
+          zoomControl: false,
+          disableDefaultUI: true,
+          zoom:17,
+          streetViewControl: false,
+          rotateControl: false,
+          mapTypeId:google.maps.MapTypeId.ROADMAP,
+          styles : CustomMapStyles
+      };
+      var map= new google.maps.Map(document.getElementById('googlemap'),mapProp);
+
+      var marker= new google.maps.Marker({
+        position:myCenter,
+        icon:''
+        });
+      marker.setMap(map);
+    }
+
+    google.maps.event.addDomListener(window, 'load', initialize);
+}
 
 
 
@@ -163,6 +247,47 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
 
 
+if( $('.hmNewsSecSlider').length ){
+    $('.hmNewsSecSlider').slick({
+      dots: false,
+      infinite: false,
+      autoplay: true,
+      autoplaySpeed: 2000,
+      speed: 300,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      prevArrow: $('.hmNewsSecSliderPrevNext .fl-prev'),
+      nextArrow: $('.hmNewsSecSliderPrevNext .fl-next'),
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            infinite: true,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+      ]
+    });
+}
 
 
 /*End of Rannojit*/

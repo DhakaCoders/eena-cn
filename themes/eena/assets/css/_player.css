@@ -101,8 +101,12 @@
 .player-fac{
 	float: right;
 	width:  32.9629%;
+	padding-left: 24px;
 }
 
+.list-grd ul li{
+	padding: 18px 0 15px;
+}
 .list-grd ul li:nth-child(odd){
 	background: #F9F9F9;
 }
@@ -111,9 +115,87 @@
 	width:  31.1594%;
 	padding-right: 20px;
 	padding-left: 32px;
+	color: #111111;
+	text-transform: uppercase;
+	font-weight: 800;
 }
 .list-grd ul li span{
 	float: right;
 	width: 68.8405%;
+	color: #111111;
+	padding-right: 30px;
+	text-transform: uppercase;
+	line-height: 26px;
+}
+.list-grd ul li span.ntnl{
+	padding-left: 38px;
+	position: relative;
+}
+.list-grd ul li span.ntnl:before{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 24px;
+	width: 24px;
+	background: url('../images/list-grd-ntnl-icon.svg');
+	background-size: 100% 100%!important;
+	background-position: center center!important;
+	background-repeat: no-repeat!important;
+}
+
+.player-fac-img{
+	border: 8px solid #fff;
+	box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.03);
+	min-height: 550px;
+}
+
+.player-btm-img{
+	margin-left: -6px;
+	margin-right: -6px;
+	padding-top: 18px;
+}
+.plyr-btm-img-01,
+.plyr-btm-img-02,
+.plyr-btm-img-03{
+	float: left;
+	width: 33.3333%;
+	padding-left: 6px;
+	padding-right: 6px;
+}
+
+
+.social-media{
+	padding-top: 42px;
+}
+.social-media strong{
+	display: inline-block;
+	font-size: 20px;
+	color: #BABABA;
+	text-transform: uppercase;
+	font-weight: 800;
+	padding-right: 12px;
+}
+.social-media ul{
+	display: inline-block;
+}
+.social-media ul li{
+	display: inline-block;
+	padding-left: 8px;
+	padding-right: 8px;
+}
+.social-media ul li a i{
+	height: 32px;
+	width: 32px;
+	background: #3A559F;
+	border-radius: 100%;
+	display: inline-block;
+	vertical-align: baseline;
+	line-height: 32px;
+	text-align: center;
+	color: #fff;
+}
+.social-media ul li a i.fa-twitter{
+	background: #55ACEE;
 }
 

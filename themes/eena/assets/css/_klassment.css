@@ -1,0 +1,157 @@
+.amateurliga-season{
+	padding: 105px 0 100px 0;
+	background: #f9f9f9;
+}
+.amateurliga-inr{
+	display: flex;
+}
+.amateurliga-desc{
+	max-width: 66%;
+	width: 100%;
+	padding: 0 50px 45px 50px;
+	background: #fff;
+}
+.amateurliga-desc-title{
+	font-weight: 800;
+	margin-top: 50px;
+	margin-bottom: 40px;
+	text-transform: uppercase;
+	color: #111111;
+}
+.am-table-wrap{
+	background: #f9f9f9;
+	padding: 33px 35px 27px 23px;
+}
+.table-inr{
+
+}
+.table-inr table{
+	font-size: 13px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #111111;
+	width: 100%;
+	border: none;
+}
+.am-thead{
+	background: #111111;
+}
+.am-thead tr{
+	color: #fff;
+	
+	transition: all 0.3s ease-out 0s;
+	-moz-transition: all 0.3s ease-out 0s;
+	-webkit-transition: all 0.3s ease-out 0s;
+}
+.am-thead tr th,
+.am-tbody tr td{
+	padding: 13px 25px;
+	text-align: center;
+}
+.am-tbody tr:focus td,
+.am-tbody tr:hover td{
+	background: #fff;
+	transition: all 0.3s ease-out 0s;
+	-moz-transition: all 0.3s ease-out 0s;
+	-webkit-transition: all 0.3s ease-out 0s;
+}
+.am-tbody tr td:nth-child(2),
+.am-thead tr th:nth-child(2){
+	padding-left: 0;
+	padding-right: 0;
+	text-align: left;
+	min-width: 130px;
+}
+.am-thead tr th:first-child,
+.am-tbody tr td:first-child{
+	padding: 0 22px 0 25px;
+}
+.am-tbody{
+
+}
+.amateurliga-volgende-cntlr{
+	max-width: 34%;
+	width: 100%;
+	padding-left: 22px;
+}
+.amateurliga-volgende-inr{
+
+}
+.versus-match-cntlr{
+	background: #fff;
+	padding: 0 31px;
+}
+.versus-match-title{
+	color: #111111;
+	padding-top: 41px;
+	padding-bottom: 33px;
+	margin-bottom: 0;
+	text-transform: uppercase;
+	border-bottom: 3px solid #f9f9f9;
+}
+.am-volgende-top-imgs-cnrlr{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.versus-match{
+	display: flex;
+	align-items: center;
+	padding: 23px 0;
+	border-bottom: 3px solid #f9f9f9;}
+.versus-team{
+	width: 25%;
+	text-align: center;
+}
+.versus-team-name{
+	text-transform: uppercase;
+	color: #111111;
+	margin-bottom: 0;
+	margin-top: 10px;
+}
+.versus-logo{
+	width: 40%;
+	background-size: 100% 100%!important;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.versus-team2{
+	width: 35%;
+	text-align: center;
+}
+.versus-play-time{
+	text-align: center;
+}
+.versus-logo .versus-play-time span{
+	font-size: 12px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #111111;
+	line-height: 1.4;
+}
+.versus-btn{
+	padding: 37px 0;
+}
+.versus-btn a{
+	text-transform: uppercase;
+	color: #F6C042;
+	font-weight: 800;
+}
+.versus-btn a i{
+	padding-bottom: 3px;
+	padding-left: 16px;
+}
+.am-volgende-bottom{
+	padding-top: 29px;
+}
+.am-volgende-bottom > ul > li{
+	margin-bottom: 24px;
+}
+.am-volgende-bottom > ul > li:last-child{
+	margin-bottom: 0;
+}
+.sp-fanshop-gallery-inr .am-volgende-gallery-img{
+	height: 340px!important;
+}

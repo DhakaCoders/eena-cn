@@ -300,4 +300,21 @@ var sideWidh = (windowWidth - container) / 2;
 $('.hdr-lft-opacity-bg').css("width", sideWidh);
 
 
+$('.scrollto').on('click', function(e){
+  e.preventDefault();
+  var togo = $(this).data('to');
+  goToByScroll(togo, 0);
+});
+
+function goToByScroll(id, offset){
+  if(id){
+      // Remove "link" from the ID
+    id = id.replace("link", "");
+      // Scroll
+    $('html,body').animate(
+        {scrollTop: $(id).offset().top - offset},
+      500);
+  }
+}
+
 })(jQuery);

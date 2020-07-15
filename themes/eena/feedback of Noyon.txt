@@ -2,22 +2,22 @@ Team
 ------------------------
 Desktop-->
 
-1. https://prnt.sc/tibk6d
+//1. https://prnt.sc/tibk6d
 	h2 hobe, r font-size bolte hobe, block bolte hobe
 
 2. https://prnt.sc/tibuzq
 	click korle scroll hoye niche jabe. 
 
-3. https://prnt.sc/tibw1x
+//3. https://prnt.sc/tibw1x
 	h3 hobe
 
-4. https://prnt.sc/tibwtn
+//4. https://prnt.sc/tibwtn
 	img ta download kore bosate hobe
 
-5. https://prnt.sc/tibxzm
+//5. https://prnt.sc/tibxzm
 	mHc heading a dite hobe
 
-6. https://prnt.sc/tic1xz
+//6. https://prnt.sc/tic1xz
 	hover korle r akta img hobe
 
 

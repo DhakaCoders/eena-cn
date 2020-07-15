@@ -700,6 +700,10 @@ fanshop-v1-post-sec-wrp
 	    font-size: 26px;
 	    line-height: 30px;
 	}
+	.custom-size input[type=radio] + label,
+	.custom-size input[type=checkbox] + label{
+		margin-bottom: 10px;
+	}
 }
 
 @media(max-width: 359px){

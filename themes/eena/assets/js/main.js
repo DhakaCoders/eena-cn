@@ -157,7 +157,16 @@ $(".eena-brdcrmb-left").css({
   left : 0
 });*/
 
-
+if( $('.bdcmbSlider').length ){
+    $('.bdcmbSlider').slick({
+      dots: false,
+      infinite: true,
+      autoplay: true,
+      autoplaySpeed: 1000,
+      speed: 300,
+      slidesToShow: 3
+    });
+}
 
 /* End of Shoriful*/
 

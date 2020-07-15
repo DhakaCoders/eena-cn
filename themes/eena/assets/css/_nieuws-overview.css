@@ -5,24 +5,25 @@
 	margin-top: 50px;
 	padding-left: 280px;
 	position: relative;
+	overflow: hidden;
 
 }
-.eena-breadcrumbs-sec-inr ul li{
+.eena-brdcrmb-slider-item{
 	display: inline-block;
 	vertical-align: baseline;
 	padding-left: 42px;
 	padding-right: 42px;
 	position: relative;
 }
-.eena-breadcrumbs-sec-inr ul li:first-child{
+.eena-brdcrmb-slider-item:first-child{
 	padding-left: 75px;
 }
-.eena-breadcrumbs-sec-inr ul li:last-child{
+.eena-brdcrmb-slider-item:last-child{
 	padding-right: 0;
 }
 
 
-.eena-breadcrumbs-sec-inr ul li:after{
+.eena-brdcrmb-slider-item:after{
 	content: "";
 	position: absolute;
 	top: 5px;
@@ -35,10 +36,10 @@
 	background-position: center center;
 	background-repeat: no-repeat;
 }
-.eena-breadcrumbs-sec-inr ul li:first-child:after{
+.eena-brdcrmb-slider-item:first-child:after{
 	content: none;
 }
-.eena-breadcrumbs-sec-inr ul li a{
+.eena-brdcrmb-slider-item a{
 	font-size: 14px;
 	color: #fff;
 	font-weight: 800;
@@ -48,10 +49,10 @@
 	-webkit-transition: all 0.5s;
 	-ms-transition: all 0.5s;
 }
-.eena-breadcrumbs-sec-inr ul li a:hover{
+.eena-brdcrmb-slider-item a:hover{
 	color: #FFD056;
 }
-.eena-breadcrumbs-sec-inr ul li a:hover:before{
+.eena-brdcrmb-slider-item a:hover:before{
 	content: "";
 	position: absolute;
 	bottom: 0;
@@ -86,6 +87,13 @@
 	color: #111111;
 	font-weight: 800;
 	line-height: 1;
+}
+
+.bdcmbSlider .slick-prev, .bdcmbSlider .slick-next{
+	display: none;
+}
+.bdcmbSlider .slick-prev:before, .bdcmbSlider .slick-next:before {
+    content: none;
 }
 
 

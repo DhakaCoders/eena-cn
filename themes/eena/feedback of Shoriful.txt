@@ -3,13 +3,13 @@ Match Details
 Desktop-->
 
 1. https://prnt.sc/ticvo6
-	center a nai
+	center a nai---done
 
 2. https://prnt.sc/ticysd
-	sprite hobe
+	sprite hobe----done
 
 3. https://prnt.sc/tid2dt
-	ai gap ta lagbe
+	ai gap ta lagbe ---done
 
 
 Nieuws Overview
@@ -17,7 +17,7 @@ Nieuws Overview
 Desktop-->
 
 1. https://prnt.sc/tid3ik
-	slider hobe
+	slider hobe ---done
 
 
 Player
@@ -25,8 +25,8 @@ Player
 Desktop-->
 
 1. https://prnt.sc/tidayr
-	name ar serial ta check kore update korte hobe
+	name ar serial ta check kore update korte hobe ---done
 
 2. https://prnt.sc/tidd35
-	fancy hobe
+	fancy hobe ----done
 	

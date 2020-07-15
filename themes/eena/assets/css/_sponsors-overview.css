@@ -135,3 +135,160 @@ sp-fanshop-gallery-sec-wrp
 	color: #fff;
 	margin-bottom: 5px;
 }
+
+/*
+-------------------
+ Responsive Css
+-------------------
+*/
+@media(max-width: 1499px){
+
+}
+
+@media(max-width: 1399px){
+	
+}
+
+@media(max-width: 1299px){
+
+}
+
+@media(max-width: 1199px){
+	.sp-service-title {
+	    font-size: 34px;
+	    line-height: 36px;
+	}
+	.sp-fanshop-gallery-wrp ul li{
+		width: 33.3333%;
+		padding: 0 12px 24px;
+	}
+	.sp-fanshop-gallery-wrp ul li:nth-child(3n+1){
+		clear: left;
+	}
+
+}
+
+@media(max-width: 991px){
+	.sp-service-wrp ul li {
+	    width: 50%;
+	}
+	.sp-service-wrp ul li:nth-child(3n+1) {
+	    clear: none;
+	}
+	.sp-service-wrp ul li:nth-child(2n+1) {
+	    clear: left;
+	}
+	.sp-service-title {
+	    font-size: 32px;
+	    line-height: 34px;
+	    margin-bottom: 50px;
+	}
+	.sp-service-sec-wrp {
+	    padding: 80px 0;
+	}
+	.sp-fanshop-gallery-wrp ul li{
+		width: 50%;
+	}
+	.sp-fanshop-gallery-wrp ul li:nth-child(3n+1){
+		clear: none;
+	}
+	.sp-fanshop-gallery-wrp ul li:nth-child(2n+1){
+		clear: left;
+	}
+	
+}
+
+@media(max-width: 767px){
+	.sp-service-title {
+	    font-size: 30px;
+	    line-height: 32px;
+	}
+	.sp-service-sec-wrp {
+	    padding: 50px 0 60px;
+	}
+	.sp-fanshop-gallery-sec-wrp {
+	    padding-top: 50px;
+	    padding-bottom: 35px;
+	}
+}
+
+@media(max-width: 575px){
+	.sp-service-title {
+	    font-size: 28px;
+	    line-height: 30px;
+	}
+	.sp-service-wrp ul li {
+	    width: 100%;
+	}
+	.sp-service-wrp ul li:nth-child(3n+1) {
+	    clear: none;
+	}
+	.sp-service-wrp ul li:nth-child(2n+1) {
+	    clear: none;
+	}
+	.sp-service-box-hover {
+	    background: none;
+	    position: static;
+	    display: inline-block;
+	    vertical-align: baseline;
+	    opacity: 1;
+	    transform: none;
+	}
+	.sp-service-box-inr {
+	    height: auto;
+	    display: inline-block;
+	    vertical-align: baseline;
+	    text-align: center;
+	    padding: 40px 30px 30px;
+	}
+	.sp-service-box-dsc h3{
+		display: none;
+	}
+	.sp-service-box-dsc {
+	    text-align: center;
+	    padding: 30px 0px 0;
+	    color: #6A6A6A;
+	}
+	.sp-service-box-dsc a {
+	    color: #2B2B2B;
+	    padding-top: 12px;
+	}
+	.sp-fanshop-gallery-wrp ul li{
+		width: 100%;
+	}
+	.sp-fanshop-gallery-wrp ul li:nth-child(3n+1){
+		clear: none;
+	}
+	.sp-fanshop-gallery-wrp ul li:nth-child(2n+1){
+		clear: none;
+	}
+	.sp-fanshop-gallery-img {
+	    height: 280px !important;
+	}
+	.sp-fanshop-gallery-title {
+	    margin-bottom: 15px;
+	}
+	.sp-fanshop-gallery-dsc p {
+	    margin-bottom: 10px;
+	    line-height: 24px;
+	}
+
+}
+
+@media(max-width: 479px){
+	.sp-service-title {
+	    font-size: 26px;
+	    line-height: 28px;
+	}
+	.sp-service-box-inr {
+	    padding: 40px 20px 30px;
+	}
+	.sp-fanshop-gallery-dsc {
+	    padding: 15px 10px;
+	}
+
+}
+
+@media(max-width: 359px){
+
+}

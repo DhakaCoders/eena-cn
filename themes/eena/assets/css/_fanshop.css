@@ -77,9 +77,9 @@ fanshop-post-grid-sec-wrp
     padding: 45px 45px 35px;
     position: relative;
     overflow: hidden;
-    -webkit-box-shadow: 2px 10px 20px -10px rgb(180, 179, 179);
-    -moz-box-shadow: 2px 10px 20px -10px rgb(180, 179, 179);
-    box-shadow: 2px 10px 20px -10px rgb(180, 179, 179);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05);
+    -ms-box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05);
+    -webkit-box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05);
 }
 .info-stick-wrap {
     position: absolute;
@@ -296,6 +296,9 @@ fanshop-post-grid-sec-wrp
 	margin-right: 20px;
 	position: relative;
 }
+.single-product-des-top strong span{
+	display: none;
+}
 .single-product-des-top strong:last-of-type{
 	font-size: 30px;
 	line-height: 32px;
@@ -311,7 +314,7 @@ fanshop-post-grid-sec-wrp
     top: 50%;
 }
 .single-product-des-top-innr p {
-    padding-top: 30px;
+    padding-top: 25px;
     margin-bottom: 0;
 }
 .single-product-des-top .single-product-des-top-innr > span{
@@ -319,8 +322,9 @@ fanshop-post-grid-sec-wrp
 	display: block;
 	text-transform: uppercase;
 }
-.single-product-des-top ul{
-	margin-top: 30px;
+.single-product-des-top ul {
+    margin-top: 12px;
+    margin-bottom: 30px;
 }
 .single-product-des-top li{
 	position: relative;
@@ -592,4 +596,116 @@ fanshop-v1-post-sec-wrp
 .fanshop-post-grid-wrp{
 	padding-bottom: 85px;
 	border-bottom: 1px solid#E2E2E2;
+}
+
+/*
+-----------------
+ Responsive Css
+-----------------
+*/
+@media(max-width: 1499px){
+
+}
+
+@media(max-width: 1399px){
+	.single-product-des {
+	    padding-left: 70px;
+	    padding-right: 20px;
+	}
+}
+
+@media(max-width: 1299px){
+
+}
+
+@media(max-width: 1199px){
+	.single-product-title {
+	    font-size: 34px;
+	    line-height: 38px;
+	}
+	.single-product-sec {
+	    padding-top: 90px;
+	    padding-bottom: 80px;
+	}
+	.single-product-des {
+	    padding-left: 40px;
+	    padding-right: 10px;
+	}
+	.single-product-view {
+	    padding-left: 20px;
+	}
+
+}
+
+@media(max-width: 991px){
+	.single-product-title {
+	    font-size: 32px;
+	    line-height: 36px;
+	    margin-bottom: 15px;
+	}
+	.single-product-sec {
+	    padding-top: 60px;
+	    padding-bottom: 60px;
+	}
+	.single-product-view {
+	    padding-left: 0;
+	    width: 100%;
+	}
+	.single-product-des {
+	    padding-left: 0;
+	    padding-right: 0;
+	    width: 100%;
+	    padding-top: 35px;
+	}
+	.single-product-des-top ul {
+	    margin-bottom: 25px;
+	}
+	.single-product-des-top strong span{
+		display: inline-block;
+		vertical-align: baseline;
+	}
+	.single-product-des-top li{
+		display: block;
+	}
+
+  
+}
+
+@media(max-width: 767px){
+	.single-product-title {
+	    font-size: 30px;
+	    line-height: 34px;
+	}
+	.single-product-sec {
+	    padding-top: 30px;
+	}
+}
+
+@media(max-width: 575px){
+	.single-product-title {
+	    font-size: 28px;
+	    line-height: 32px;
+	}
+	.sp-d2-frm-field {
+	    width: 100%;
+	    padding: 0 8px 25px;
+	}
+	.sp-frm-submit button{
+		margin-top: 0;
+	}
+}
+
+@media(max-width: 479px){
+	.single-product-title {
+	    font-size: 26px;
+	    line-height: 30px;
+	}
+	.custom-size input[type=radio] + label,
+	.custom-size input[type=checkbox] + label{
+		margin-bottom: 10px;
+	}
+}
+
+@media(max-width: 359px){
+
 }

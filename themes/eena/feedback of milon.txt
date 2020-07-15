@@ -1,0 +1,149 @@
+Footer
+------------------------
+Desktop-->
+
+1. https://prnt.sc/ti5ye5
+	prefix hobe
+
+2. https://prnt.sc/ti5zi3
+	angle ta aktu niche ber hoye ache
+
+3. https://prnt.sc/ti61fo
+	ulc tule diye reset-list class ta daw. reset-list class ta dile ulc ta r lagena
+
+Footer Top
+------------------------
+Desktop-->
+1. https://prnt.sc/ti8xzn
+	4 ta ul hobe aikhane , r img gulo center a thakbe
+
+Contact
+------------------------
+Desktop-->
+
+1. https://prnt.sc/ti69v1
+	i) text-shadow missing
+	ii) font-family to body thakei pasche, tahole aikhane new kore keno use kortechi
+	iii) line-height point a diye manage koro, responsive a tahole easy hobe , bar bar line height komate hobena, amon jekhane jekhane line-height px a dicho, change kore point a daw
+
+2. 	i) https://prnt.sc/ti6cij
+	ii) https://prnt.sc/ti6fti
+	box-shadow missing
+
+3. https://prnt.sc/ti6guq
+	# hobena
+
+4. https://prnt.sc/ti6hr0
+	h3 hobe, bcoz age use korlam h2 r ai font ta ager font ar thake choto
+
+5. https://prnt.sc/ti70dt
+	ie te amon dekhay
+
+6. https://prnt.sc/ti76fw
+	aktai ul hobe r 1st li ta width 100% hobe
+
+
+7. https://prnt.sc/ti78ed
+	flex use hobe, jodi child choto boro hoy tahole center a jeno thake
+
+8. https://prnt.sc/ti79f4
+	ie te border ta payni
+
+
+Resto Form
+------------------------
+Desktop-->
+
+1. https://prnt.sc/ti7fft
+	ager motoi fix
+
+2. https://prnt.sc/ti7hah
+	purotai akta img hobena, code kore korte hobe
+
+form ar fix ager motoi
+
+
+
+Abo Form 
+------------------------
+Desktop-->
+
+1. https://prnt.sc/ti7nd2
+	placeholder hobena
+
+2. https://prnt.sc/ti7hah
+	purotai akta img hobena, code kore korte hobe
+
+form ar fix ager motoi
+
+
+Fanshop
+------------------------
+Desktop-->
+
+1. https://prnt.sc/ti7rec
+	img a link hobe , hover korle img scale hobe
+
+2. https://prnt.sc/ti7snl
+	i) ai 2 ta class ai 2 jaygay use koro, jate content boro holeo same thake height gulo
+	ii) title ta flex use hobe, sob dik thake center korte hobe
+
+3. https://prnt.sc/ti7xwt
+	ai page box shadow ta hobe na
+
+4. https://prnt.sc/ti7ys4
+	atar markup and class gulo amon hobe 
+
+	<div class="fl-pagi-ctlr">
+	  <ul class="page-numbers">
+	    <li><span class="page-numbers current">1</span></li>
+	    <li><a class="page-numbers" href="#">2</a></li>
+	    <li><a class="page-numbers" href="#">3</a></li>
+	    <li><a class="page-numbers" href="#">4</a></li>
+	  </ul>
+	</div>
+
+
+5. https://prnt.sc/ti80u7
+	i) 3 tate 3 ta mHc class use hobe, mHc mHc1 mHc2
+	ii) title and img flex kore center rakhte hobe
+
+
+6. https://prnt.sc/ti82o8
+	icon gulo .svg hobe
+
+7. https://prnt.sc/ti8wio
+	li a padding bottom diye rakhte hobe , jodi r akta item bare problem jeno na hoy, r 4 ta item hole 4 no item ta center a thake, so ul a flex use korte hobe, r justify content center
+
+
+
+Fanshop v1
+------------------------
+Desktop-->
+
+1. https://prnt.sc/ti91mi
+	ata r aktu upore uthbe, center a lagtechena
+
+2. https://prnt.sc/ti92h3
+	gap besi hobe
+
+3. https://prnt.sc/ti94s9
+	r akta grd baray dekhte hobe j design thik thak thake kina, grd barteo pare
+
+4. https://prnt.sc/ti96j6
+	ie te hover korle amon dekhay
+
+
+
+Sponsors overview
+------------------------
+Desktop-->
+
+1. https://prnt.sc/ti99kt
+	box shadow missing
+
+2. https://prnt.sc/ti9bgu
+	title a link hobe
+
+3. https://prnt.sc/ti9chh
+	hover korle white color daw

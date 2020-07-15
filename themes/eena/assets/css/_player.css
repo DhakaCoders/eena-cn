@@ -104,9 +104,7 @@
 	padding-left: 24px;
 }
 
-/*.list-grd ul li{
-	padding: 18px 0 15px;
-}*/
+
 .list-grd ul li:nth-child(odd){
 	background: #F9F9F9;
 }
@@ -133,7 +131,7 @@
 .list-grd ul li span.ntnl:before{
 	content: "";
 	position: absolute;
-	top: 0;
+	top: 52%;
 	left: 0;
 	height: 24px;
 	width: 24px;
@@ -141,6 +139,7 @@
 	background-size: 100% 100%!important;
 	background-position: center center!important;
 	background-repeat: no-repeat!important;
+	transform: translateY(-50%);
 }
 
 .player-fac-img{
@@ -170,6 +169,8 @@
 
 .social-media{
 	padding-top: 42px;
+	display: flex;
+	align-items: center;
 }
 .social-media strong{
 	display: inline-block;
@@ -187,7 +188,8 @@
 	padding-left: 8px;
 	padding-right: 8px;
 }
-.social-media ul li a i{
+
+.social-media ul li a{
 	height: 32px;
 	width: 32px;
 	background: #3A559F;
@@ -201,11 +203,10 @@
 	-webkit-transition: all 0.5s;
 	-ms-transition: all 0.5s;
 }
-.social-media ul li a i.fa-twitter{
+.social-media ul li a.twitter{
 	background: #55ACEE;
 }
-
-.social-media ul li a:hover i{
+.social-media ul li a:hover{
 	background: #FFD056;
 }
 

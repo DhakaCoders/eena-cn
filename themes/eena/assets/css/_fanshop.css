@@ -18,7 +18,7 @@ fanshop-catagory-sec-wrp
 }
 .fanshop-catagory-title{
 	font-size: 36px;
-	line-height: 38px;
+	line-height: 1.2;
 	color: #111111;
 	text-transform: uppercase;
 	font-weight: 800;
@@ -58,7 +58,7 @@ fanshop-post-grid-sec-wrp
 */
 .fanshop-post-grid-sec-wrp{
 	padding-top: 45px;
-	padding-bottom: 100px;
+	padding-bottom: 88px;
 	background: #f9f9f9;
 }
 .fanshop-post-grid-wrp ul{
@@ -77,10 +77,12 @@ fanshop-post-grid-sec-wrp
     padding: 45px 45px 35px;
     position: relative;
     overflow: hidden;
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05);
+}
+.fanshop-v1-post-sec-wrp .fanshop-post-grid-inr{
+	box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05);
     -ms-box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05);
     -webkit-box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05);
-}
+} 
 .info-stick-wrap {
     position: absolute;
     left: -45px;
@@ -92,6 +94,7 @@ fanshop-post-grid-sec-wrp
     transform: rotate(-45deg);
     -ms-transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg);
+    z-index: 1;
 }
 .info-stick-wrap span{
     position: absolute;
@@ -109,11 +112,18 @@ fanshop-post-grid-sec-wrp
     top: 50%;
     left: 50%;
 }
+.fanshop-post-grid-img-cntlr{
+	overflow: hidden;
+	position: relative;
+}
 .fanshop-post-grid-img{
 	background-repeat:no-repeat !important;
 	background-position: center center !important;
 	background-size: cover !important;
 	height: 345px !important;
+	transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
 }
 .fanshop-post-grid-dsc{
 	text-align: center;
@@ -130,12 +140,14 @@ fanshop-post-grid-sec-wrp
 }
 .fanshop-post-grid-title{
 	font-size: 22px;
-	line-height: 24px;
+	line-height:1.2;
 	color: #111111;
 	font-weight: 800;
-	display: block;
 	margin-bottom: 22px;
-	display: block;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
 }
 .fanshop-post-grid-title a{
 	color: inherit;
@@ -184,15 +196,15 @@ fanshop-post-grid-sec-wrp
 	justify-content: center;
 	align-items: center;
 }
-.eena-pagination-wrp ul li{
+.fl-pagi-ctlr ul li{
 	float: left;
 	font-size: 16px;
 	line-height: 18px;
 	font-weight: 800;
 	padding: 0 6px;
 }
-.eena-pagination-wrp ul li span,
-.eena-pagination-wrp ul li a{
+.fl-pagi-ctlr ul.page-numbers li span,
+.fl-pagi-ctlr ul.page-numbers li a{
 	display: inline-block;
 	vertical-align: baseline;
 	text-decoration: none;
@@ -204,21 +216,28 @@ fanshop-post-grid-sec-wrp
 	justify-content: center;
 	align-items: center;
 }
-.eena-pagination-wrp ul li a:hover,
-.eena-pagination-wrp ul li span.current{
+.fl-pagi-ctlr ul.page-numbers li a:hover,
+.fl-pagi-ctlr ul.page-numbers li span.current{
 	background: #f6c042;
 	color: #fff;
 }
 .fanshop-service-wrp{
 	padding-top: 65px;
 }
-.fanshop-service-wrp ul{
-	margin: 0 -12px;
+.fanshop-service-wrp ul {
+    margin: 0 -12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 .fanshop-service-wrp ul li{
 	float: left;
 	width: 33.3333%;
-	padding: 0 12px;
+	padding: 0 12px 12px;
+}
+.fanshop-service-wrp ul li:nth-child(3n+1){
+	clear: left;
 }
 .fanshop-service-inr{
 	padding: 55px 80px;
@@ -227,17 +246,24 @@ fanshop-post-grid-sec-wrp
 }
 .fanshop-service-title{
 	font-size: 26px;
-	line-height: 28px;
+	line-height: 1.2px;
 	color: #fff;
 	font-weight: 800;
 	text-transform: uppercase;
 	margin-bottom: 15px;
 	margin-top: 20px;
-	display: block;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 .fanshop-service-dsc{
 	font-weight: 600;
 	color: #fff;
+}
+.fanshop-service-icon{
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 
@@ -277,14 +303,18 @@ fanshop-post-grid-sec-wrp
 .single-product-title{
 	display: block;
 	font-size: 36px;
-	line-height: 40px;
+	line-height: 1.2;
 	font-weight: 800;
 	color: #111111;
 	text-transform: uppercase;
 	margin-bottom: 30px;
 	margin-top: -5px;
 }
-
+.single-product-price{
+	display: flex;
+	justify-content: left;
+	align-items: center;
+}
 .single-product-des-top strong{
 	text-transform: uppercase;
 	font-size: 18px;
@@ -295,6 +325,7 @@ fanshop-post-grid-sec-wrp
 	color: #B4B4B4;
 	margin-right: 20px;
 	position: relative;
+	margin-top: 2px;
 }
 .single-product-des-top strong span{
 	display: none;
@@ -303,6 +334,7 @@ fanshop-post-grid-sec-wrp
 	font-size: 30px;
 	line-height: 32px;
 	color: #f6c042;
+	margin-top: 0;
 }
 .single-product-des-top strong:first-of-type::after{
     content: "";
@@ -533,7 +565,7 @@ fanshop-post-grid-sec-wrp
 	padding: 20px 16px;
 	border: 1px solid#fff;
 }
-.sp-frm-submit button {
+.sp-frm-submit button[type="submit"]{
     max-width: 180px;
     width: 100%;
     height: 56px;
@@ -551,7 +583,8 @@ fanshop-post-grid-sec-wrp
     padding: 13px 0 14px;
     margin-top: 28px;
 }
-.sp-frm-submit button:hover {
+
+.sp-frm-submit button[type="submit"]:hover {
     background: transparent;
     color: #fed056;
     border-color: #fed056 !important;
@@ -621,7 +654,6 @@ fanshop-v1-post-sec-wrp
 @media(max-width: 1199px){
 	.single-product-title {
 	    font-size: 34px;
-	    line-height: 38px;
 	}
 	.single-product-sec {
 	    padding-top: 90px;
@@ -640,7 +672,6 @@ fanshop-v1-post-sec-wrp
 @media(max-width: 991px){
 	.single-product-title {
 	    font-size: 32px;
-	    line-height: 36px;
 	    margin-bottom: 15px;
 	}
 	.single-product-sec {
@@ -674,7 +705,6 @@ fanshop-v1-post-sec-wrp
 @media(max-width: 767px){
 	.single-product-title {
 	    font-size: 30px;
-	    line-height: 34px;
 	}
 	.single-product-sec {
 	    padding-top: 30px;
@@ -684,7 +714,6 @@ fanshop-v1-post-sec-wrp
 @media(max-width: 575px){
 	.single-product-title {
 	    font-size: 28px;
-	    line-height: 32px;
 	}
 	.sp-d2-frm-field {
 	    width: 100%;
@@ -698,11 +727,13 @@ fanshop-v1-post-sec-wrp
 @media(max-width: 479px){
 	.single-product-title {
 	    font-size: 26px;
-	    line-height: 30px;
 	}
 	.custom-size input[type=radio] + label,
 	.custom-size input[type=checkbox] + label{
 		margin-bottom: 10px;
+	}
+	.custom-size {
+	    margin-bottom: 35px;
 	}
 }
 

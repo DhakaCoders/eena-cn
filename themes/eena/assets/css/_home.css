@@ -1,11 +1,41 @@
 .hm-back-in-time-sec{
 	background: #141414; 
 	padding: ;
+	position: relative;
+}
+.hm-back-in-time-sec:after{
+	content: "";
+	position: absolute;
+	right: 
+}
+.hbits-topline{
+	position: absolute;
+	right: 0;
+	top: -13px;
+	z-index: 2;
+	background: #f6c042;
+	height: 15px;
+	width: 450px;
+}
+.hbits-topline:after{
+	content: "";
+	position: absolute;
+	left: -14px;
+	top: 0;
+	bottom: 0;
+	background: url(../images/orange-anlge.png);
+	width: 14px;
+	height: 15px;
+}
+
+.hm-back-in-time-sec-inr{
+	overflow: hidden;
 }
 .hm-back-in-time-sec{
-	min-height: 756px;
 	position: relative;
-	overflow: hidden;
+}
+.hm-back-in-time-sec-des{
+	min-height: 756px;
 }
 .hm-back-in-time-sec-fea-img{
 	position: absolute;
@@ -24,7 +54,7 @@
 	right: 0;
 	top: 0;
 	bottom: 0;
-	width: 60%;
+	width: 40%;
 	background: linear-gradient(0deg, rgba(17, 17, 17, 0.49), rgba(17, 17, 17, 0.49)), #171717;
 	transform: rotate(-180deg);
 	z-index: 2;
@@ -35,6 +65,17 @@
 	position: relative;
 	z-index: 5;
 	padding: 105px 0 120px;
+	background: #141414;
+}
+.black-anlge-lft{
+	position: absolute;
+	top: 0;
+	left: -288px;
+	width: 289px;
+	bottom: 0;
+}
+.black-anlge-lft img{
+	height: 100%;
 }
 .hmbitsdes-title{
 	text-transform: uppercase;
@@ -170,4 +211,51 @@
 }
 .hm-sp-fanshop-gallery-sec-cntlr.sp-fanshop-gallery-sec-wrp{
 	padding-bottom: 0;
+}
+
+.hm-ranking-section{
+	padding: 90px 0 75px;
+}
+.hm-ranking-sec-rgt-des{
+	background: #fff;
+	padding: 50px 50px 45px;
+}
+.hm-ranking-tbl{
+	padding: 33px;
+	background: #f9f9f9;
+}
+.hm-ranking-tbl table{
+	width: 100%;
+	color: #111111;
+	line-height: 1;
+	text-align: center;
+	text-transform: uppercase;
+}
+.hm-ranking-tbl table span{
+	display: block;
+}
+.hm-ranking-tbl table thead tr th{
+    background: #111111;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 20px 5px;
+}
+.hm-ranking-tbl table thead tr th:nth-child(2) span,
+.hm-ranking-tbl table tbody tr td:nth-child(2) span{
+	text-align: left;
+}
+
+.hm-ranking-tbl table tbody td{
+	padding: 15px;
+}
+
+.hrsrd-title{
+	text-transform: uppercase;
+	font-weight: 800;
+	font-size: 26px;
+	line-height: 1;
+	display: block;
+	margin: 0 0 45px 0;
 }

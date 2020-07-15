@@ -149,13 +149,13 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
 }
 
-var container = $(".container").width();
+/*var container = $(".container").width();
 var sidewidth = windowWidth - container;
 var leftsidewidth = sidewidth / 2;
 $(".eena-brdcrmb-left").css({
   width : leftsidewidth,
   left : 0
-});
+});*/
 
 
 
@@ -304,7 +304,10 @@ if( $('.hmNewsSecSlider').length ){
 
 
 
+var container = $(".container").width();
+var sideWidh = (windowWidth - container) / 2;
 
+$('.hdr-lft-opacity-bg').css("width", sideWidh);
 
 
 })(jQuery);

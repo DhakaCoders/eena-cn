@@ -20,15 +20,14 @@
 
 @import url('_team.css');
 @import url('_history.css');
+@import url('_klassment.css');
+@import url('_wedstrijden.css');
+
 /*End-of-noyon */
 
 @import url('_match-details.css');
 @import url('_nieuws-overview.css');
-
-
-
-
-
+@import url('_player.css');
 /*End-of-shariful */
 
 

@@ -7,14 +7,12 @@ fanshop-catagory-sec-wrp
 	padding-top: 110px;
 	padding-bottom: 90px;
 }
-.fanshop-catagory-wrp{
-	max-width: 825px;
-	width: 100%;
-	margin: 0 auto;
-}
 .fanshop-catagory-head{
 	text-align: center;
 	padding-bottom: 20px;
+	max-width: 825px;
+	width: 100%;
+	margin: 0 auto;
 }
 .fanshop-catagory-title{
 	font-size: 36px;
@@ -25,16 +23,23 @@ fanshop-catagory-sec-wrp
 	margin-bottom: 25px;
 	display: block;
 }
+.fanshop-catagory-menu{
+	max-width: 770px;
+	width: 100%;
+	margin: 0 auto;
+}
 .fanshop-catagory-menu ul{
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex-wrap: wrap;
 }
-.fanshop-catagory-menu ul li{
-	font-size: 12px;
-	line-height: 14px;
-	font-weight: 800;
-	padding: 0 8px;
+.fanshop-catagory-menu ul li {
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 800;
+    padding: 0 8px;
+    width: 25%;
 }
 .fanshop-catagory-menu ul li a{
 	display: inline-block;
@@ -58,7 +63,7 @@ fanshop-post-grid-sec-wrp
 */
 .fanshop-post-grid-sec-wrp{
 	padding-top: 45px;
-	padding-bottom: 88px;
+	padding-bottom: 80px;
 	background: #f9f9f9;
 }
 .fanshop-post-grid-wrp ul{
@@ -234,7 +239,7 @@ fanshop-post-grid-sec-wrp
 .fanshop-service-wrp ul li{
 	float: left;
 	width: 33.3333%;
-	padding: 0 12px 12px;
+	padding: 0 12px 20px;
 }
 .fanshop-service-wrp ul li:nth-child(3n+1){
 	clear: left;
@@ -246,7 +251,7 @@ fanshop-post-grid-sec-wrp
 }
 .fanshop-service-title{
 	font-size: 26px;
-	line-height: 1.2px;
+	line-height: 1.2;
 	color: #fff;
 	font-weight: 800;
 	text-transform: uppercase;
@@ -666,6 +671,19 @@ fanshop-v1-post-sec-wrp
 	.single-product-view {
 	    padding-left: 20px;
 	}
+	.fanshop-catagory-title {
+	    font-size: 34px;
+	}
+	.fanshop-catagory-sec-wrp {
+	    padding-top: 80px;
+	    padding-bottom: 70px;
+	}
+	.fanshop-post-grid-inr {
+	    padding: 45px 25px 35px;
+	}
+	.fanshop-service-inr {
+	    padding: 55px 40px;
+	}
 
 }
 
@@ -698,6 +716,31 @@ fanshop-v1-post-sec-wrp
 	.single-product-des-top li{
 		display: block;
 	}
+	.fanshop-catagory-title {
+	    font-size: 32px;
+	}
+	.fanshop-catagory-menu ul li {
+	    width: 33.3333%;
+	    padding-bottom: 10px;
+	}
+	.fanshop-catagory-menu {
+	    max-width: 580px;
+	    width: 100%;
+	    margin: 0 auto;
+	    text-align: center;
+	}
+	.fanshop-post-grid-wrp ul li {
+	    width: 50%;
+	}
+	.fanshop-post-grid-wrp ul li:nth-child(3n+1) {
+	    clear: none;
+	}
+	.fanshop-post-grid-wrp ul li:nth-child(2n+1) {
+	    clear: left;
+	}
+	.fanshop-service-wrp ul li {
+	    width: 50%;
+	}
 
   
 }
@@ -708,6 +751,30 @@ fanshop-v1-post-sec-wrp
 	}
 	.single-product-sec {
 	    padding-top: 30px;
+	}
+	.fanshop-catagory-title {
+	    font-size: 30px;
+	}
+	.fanshop-catagory-menu ul li {
+	    width: 50%;
+	}
+	.fanshop-catagory-menu {
+	    max-width: 390px;
+	    width: 100%;
+	    margin: 0 auto;
+	}
+	.fanshop-catagory-sec-wrp {
+	    padding-top: 60px;
+	    padding-bottom: 50px;
+	}
+	.fanshop-post-grid-sec-wrp{
+	    padding-bottom: 50px;
+	}
+	.fanshop-post-grid-wrp {
+	    padding-bottom: 60px;
+	}
+	.fanshop-service-inr {
+	    padding: 55px 25px;
 	}
 }
 
@@ -722,6 +789,21 @@ fanshop-v1-post-sec-wrp
 	.sp-frm-submit button{
 		margin-top: 0;
 	}
+	.fanshop-catagory-title {
+	    font-size: 28px;
+	}
+	.fanshop-post-grid-wrp ul li {
+	    width: 100%;
+	}
+	.fanshop-post-grid-wrp ul li:nth-child(3n+1) {
+	    clear: none;
+	}
+	.fanshop-post-grid-wrp ul li:nth-child(2n+1) {
+	    clear: none;
+	}
+	.fanshop-service-wrp ul li {
+	    width: 100%;
+	}
 }
 
 @media(max-width: 479px){
@@ -734,6 +816,12 @@ fanshop-v1-post-sec-wrp
 	}
 	.custom-size {
 	    margin-bottom: 35px;
+	}
+	.fanshop-catagory-title {
+	    font-size: 26px;
+	}
+	.fanshop-catagory-menu ul li {
+	    width: 100%;
 	}
 }
 

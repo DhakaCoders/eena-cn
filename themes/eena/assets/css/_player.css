@@ -104,17 +104,16 @@
 	padding-left: 24px;
 }
 
-.list-grd ul li{
+/*.list-grd ul li{
 	padding: 18px 0 15px;
-}
+}*/
 .list-grd ul li:nth-child(odd){
 	background: #F9F9F9;
 }
 .list-grd ul li strong{
 	float: left;
 	width:  31.1594%;
-	padding-right: 20px;
-	padding-left: 32px;
+	padding: 18px 20px 15px 32px;
 	color: #111111;
 	text-transform: uppercase;
 	font-weight: 800;
@@ -123,7 +122,7 @@
 	float: right;
 	width: 68.8405%;
 	color: #111111;
-	padding-right: 30px;
+	padding: 18px 30px 15px 0;
 	text-transform: uppercase;
 	line-height: 26px;
 }
@@ -208,5 +207,130 @@
 
 .social-media ul li a:hover i{
 	background: #FFD056;
+}
+
+
+
+
+@media(max-width: 1499px){
+
+}
+
+@media(max-width: 1399px){
+	
+}
+
+@media(max-width: 1299px){
+	.player-defender {
+	    padding-right: 35px;
+	}
+	.player-mid {
+	    padding-right: 25px;
+	}
+	.player-des {
+	    padding: 50px 40px 32px 40px;
+	}
+}
+
+@media(max-width: 1199px){
+	.player-category-sec {
+	    padding-top: 60px;
+	    padding-bottom: 35px;
+	}
+	.player-targer {
+	    width: 20%;
+	}
+	.player-defender {
+	    padding-right: 0px;
+	    width: 25%;
+	}
+	.player-mid {
+	    padding-right: 0px;
+	    width: 30%;
+	}
+	.player-attact {
+	    width: 25%;
+	}
+	.pt-title, 
+	.pd-title, 
+	.pmid-title, 
+	.player-attact {
+	    font-size: 18px;
+	    margin-bottom: 15px;
+	}
+	.player-details-sec {
+	    padding: 60px 0 40px;
+	}
+	.player-details-title {
+	    font-size: 52px;
+	    margin-bottom: 40px;
+	}
+	.player-des {
+	    padding: 45px 30px 32px 30px;
+	    width: 65%;
+	}
+	.player-fac {
+	    width: 35%;
+	    padding-left: 15px;
+	}
+	.list-grd ul li strong {
+	    width: 40%;
+	}
+	.list-grd ul li span {
+	    width: 60%;
+	    line-height: 22px;
+	}
+	.list-grd ul li span br{
+		display: none;
+	}
+	.social-media {
+	    padding-top: 35px;
+	}
+}
+
+@media(max-width: 991px){
+	.player-details-sec {
+	    padding: 50px 0 30px;
+	}
+	.player-details-title {
+	    font-size: 45px;
+	    margin-bottom: 35px;
+	}
+	.player-fac {
+	    width: 100%;
+	    padding-left: 0px;
+	    margin-bottom: 20px;
+	}
+	.player-fac-img {
+	    min-height: 500px;
+	    max-width: 330px;
+	    margin: 0 auto;
+	}
+	.player-btm-img {
+	    max-width: 330px;
+	    margin: 0 auto;
+	}
+	.player-des {
+	    width: 100%;
+	}
+	
+}
+
+@media(max-width: 767px){
+	
+}
+
+@media(max-width: 575px){
+	
+
+}
+
+@media(max-width: 479px){
+
+
+}
+
+@media(max-width: 359px){
+
 }
 

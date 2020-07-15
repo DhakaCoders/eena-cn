@@ -9,7 +9,7 @@ sp-service-sec-wrp
 }
 .sp-service-title{
 	font-size: 36px;
-	line-height: 38px;
+	line-height: 1.2;
 	color: #111111;
 	font-weight: 800;
 	text-transform: uppercase;
@@ -36,10 +36,11 @@ sp-service-sec-wrp
     align-items: center;
     position: relative;
     padding: 15px 15px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.02);
 }
 .sp-service-box-dsc-title{
 	font-size: 26px;
-	line-height: 28px;
+	line-height: 1;
 	color:#fff;
 	margin-bottom: 20px;
 	font-weight: 800;
@@ -122,7 +123,7 @@ sp-fanshop-gallery-sec-wrp
 }
 .sp-fanshop-gallery-title{
 	font-size: 26px;
-	line-height: 28px;
+	line-height: 1;
 	color: #fff;
 	margin-top: 20px;
 	margin-bottom: 10px;
@@ -130,10 +131,21 @@ sp-fanshop-gallery-sec-wrp
 	font-weight: 800;
 	display: block;
 }
+.sp-fanshop-gallery-title a{
+	color: inherit;
+	display: inline-block;
+	vertical-align: baseline;
+}
+.sp-fanshop-gallery-title:hover a{
+	color: #fed056;
+}
 .sp-fanshop-gallery-dsc p{
 	font-size: 16px;
 	color: #fff;
 	margin-bottom: 5px;
+}
+.sp-fanshop-gallery-dsc a:hover i svg{
+	fill: #fff;
 }
 
 /*
@@ -156,7 +168,6 @@ sp-fanshop-gallery-sec-wrp
 @media(max-width: 1199px){
 	.sp-service-title {
 	    font-size: 34px;
-	    line-height: 36px;
 	}
 	.sp-fanshop-gallery-wrp ul li{
 		width: 33.3333%;
@@ -180,7 +191,6 @@ sp-fanshop-gallery-sec-wrp
 	}
 	.sp-service-title {
 	    font-size: 32px;
-	    line-height: 34px;
 	    margin-bottom: 50px;
 	}
 	.sp-service-sec-wrp {
@@ -215,7 +225,6 @@ sp-fanshop-gallery-sec-wrp
 @media(max-width: 575px){
 	.sp-service-title {
 	    font-size: 28px;
-	    line-height: 30px;
 	}
 	.sp-service-wrp ul li {
 	    width: 100%;
@@ -278,7 +287,6 @@ sp-fanshop-gallery-sec-wrp
 @media(max-width: 479px){
 	.sp-service-title {
 	    font-size: 26px;
-	    line-height: 28px;
 	}
 	.sp-service-box-inr {
 	    padding: 40px 20px 30px;

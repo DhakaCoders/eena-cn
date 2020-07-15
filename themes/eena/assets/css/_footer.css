@@ -138,25 +138,26 @@ nav.ulc ul {
 */
 .ftr-tp-brand-logo-sec-wrp {
     padding-top: 80px;
-    padding-bottom: 45px;
+    padding-bottom: 55px;
 }
 .brand-logo-head-title{
   font-size: 36px;
-  line-height: 38px;
+  line-height: 1.1;
   color: #111111;
   font-weight: 800;
   text-align: center;
-  margin-bottom: 90px;
+  margin-bottom: 80px;
   display: block;
   text-transform: uppercase;
 }
-.brand-logo-tp-wrp{
-  max-width: 880px;
-  width: 100%;
-  margin: 0 auto;
-}
 .brand-logo-tp-wrp ul{
-  margin: 0 -35px;
+    margin: 0 -35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.brand-logo-tp-wrp ul:nth-child(2){
+  padding-bottom: 15px;
 }
 .brand-logo-tp-wrp ul li{
   float: left;
@@ -165,16 +166,7 @@ nav.ulc ul {
 .brand-logo-tp-wrp ul li:nth-child(4n+1){
   clear: left;
 }
-.brand-logo-btm-wrp{
-  padding-top: 30px;
-}
-.brand-logo-btm-wrp ul{
-  margin: 0 -35px;
-}
-.brand-logo-btm-wrp ul li{
-  float: left;
-  padding: 0 35px 20px;
-}
+
 
 
 /*

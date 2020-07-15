@@ -1,41 +1,45 @@
+.history-section-wrap{
 
-.Geschiedenis-section{
+}
+.history-entry-hdr{
 	background: #fff;
 }
-.Geschiedenis-innr{
+.history-entry-hdr-innr{
 	text-align: center;
 	padding-top: 110px;
 	padding-bottom: 95px;
 
 }
-.Geschiedenis-title{
+.history-entry-hdr-title{
 	font-weight: 900;
 	line-height: 1.2;
+	font-size: 60px;
+	display: block;
 	text-transform: uppercase;
 	color: #111111;
 	margin-bottom: 25px;
 } 
-.Geschiedenis-desc{
+.history-entry-hdr-desc{
 	padding-bottom: 21px;
 }
-.Geschiedenis-pages{
+.history-entry-hdr-tab{
 	text-align: center;
 }
-.Geschiedenis-pages ul{
+.history-entry-hdr-tab ul{
 	display: flex;
 	justify-content: center;
 }
-.Geschiedenis-pages > ul > li{
+.history-entry-hdr-tab > ul > li{
 	padding-left: 8px;
 	padding-right: 8px;
 }
-.Geschiedenis-pages > ul > li:first-child{
+.history-entry-hdr-tab > ul > li:first-child{
 	padding-left: 0;
 }
-.Geschiedenis-pages > ul > li:last-child{
+.history-entry-hdr-tab > ul > li:last-child{
 	padding-right: 0;
 }
-.Geschiedenis-pages > ul > li >a{
+.history-entry-hdr-tab > ul > li >a{
 	display: inline-block;
 	font-weight: 800;
 	text-transform: uppercase;
@@ -45,8 +49,8 @@
 	background: #111111;
 	cursor: pointer;
 }
-.Geschiedenis-pages > ul > li .active,
-.Geschiedenis-pages > ul > li a:hover{
+.history-entry-hdr-tab > ul > li .current,
+.history-entry-hdr-tab > ul > li a:hover{
 	background: #fed056;
 	color: #000;
 }

@@ -16,20 +16,22 @@
 .contact-form-dsc-title {
     display: block;
     font-size: 60px;
-    line-height: 72px;
+    line-height: 1.2;
     text-transform: uppercase;
     color: #111111;
     font-weight: 900;
     margin-bottom: 27px;
-    font-family: 'Muli', sans-serif;
     margin-top: -15px;
+	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	-ms-text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	-webkit-text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .contact-form-dsc {
     font-size: 16px;
     line-height: 24px;
     font-weight: 600;
     color: #6A6A6A;
-    padding-bottom: 60px;
+    padding-bottom: 40px;
 }
 .abo-frm-sec-wrp .contact-form-dsc p{
 	margin-bottom: 30px;
@@ -102,6 +104,9 @@
     -webkit-transition: all 0.5s;
     border-radius: 0;
     border:1px solid#fff;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.02);
+    -ms-box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.02);
+    -webkit-box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.02);
 }
 .contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field-textarea{
 	width: 100%;
@@ -123,6 +128,10 @@
 	resize: none;
 	border-radius: 0;
 	border:1px solid#fff;
+	box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.02);
+	-ms-box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.02);
+	-webkit-box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.02);
+	outline-offset:0 !important; 
 }
 .contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field-textarea textarea:focus,
 .contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field input:focus{
@@ -159,6 +168,9 @@
     transition: all 0.5s;
     -ms-transition: all 0.5s;
     -webkit-transition: all 0.5s;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.02);
+    -ms-box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.02);
+    -webkit-box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.02);
 }
 .contact-form-wrp .wpforms-field-select select option{
 	font-size: 14px !important;
@@ -166,7 +178,6 @@
 	display: inline-block !important;
 	vertical-align: baseline !important;
 }
-
 .contact-form-wrp .wpforms-container .wpforms-form .wpforms-submit-container button{
 	max-width: 180px;
 	width: 100%;
@@ -184,7 +195,6 @@
 	cursor: pointer;
 	padding: 13px 0 14px;
 	margin-top: 15px;
-	font-family: 'Muli', sans-serif;
 }
 .contact-form-wrp .wpforms-container .wpforms-form .wpforms-submit-container button:hover{
 	background: transparent;
@@ -241,13 +251,15 @@
 .contact-map-info {
     background: #fff;
     padding: 40px 35px 5px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.02);
+    -ms-box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.02);
+    -webkit-box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.02);
 }
 .contact-map-title{
 	font-size: 18px;
-	line-height: 20px;
+	line-height: 1.2;
 	color: #111111;
 	display: block;
-	font-family: 'Muli', sans-serif;
 	text-transform: uppercase;
 	font-weight: 800;
 	margin-bottom: 15px;
@@ -276,9 +288,12 @@
 .contact-info-sec-wrp{
 	padding: 85px 0 0;
 }
-.contact-info-wrp{
-	border-bottom: 4px solid#F9F9F9;
-	padding-bottom: 80px;
+.contact-info-wrp {
+    border-bottom: 4px solid#F9F9F9;
+    padding-bottom: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .contact-info-lft{
 	width: 36%;
@@ -298,7 +313,7 @@
 }
 .contact-info-dsc-title{
 	font-size: 36px;
-	line-height: 38px;
+	line-height: 1.1;
 	color: #111111;
 	margin-bottom: 20px;
 	text-transform: uppercase;
@@ -316,22 +331,22 @@
 }
 .contact-info-adrs-wrp ul{
 	padding-left: 35px;
-	width: 50%;
 	float: left;
-}
-.contact-info-adrs-wrp ul:last-child{
-	margin-top: 22px;
-	margin-left: 95px;
 }
 .contact-info-adrs-wrp ul li {
     padding-bottom: 55px;
+    width: 50%;
+    float: left;
 }
-.contact-info-adrs-wrp ul li:nth-child(4){
+.contact-info-adrs-wrp ul li:first-child{
+	width: 100%;
+}
+.contact-info-adrs-wrp ul li:nth-child(6){
 	padding-bottom: 0;
 }
 .contact-info-adrs-title {
     font-size: 18px;
-    line-height: 20px;
+    line-height: 1.2;
     color: #111111;
     font-weight: 700;
     text-transform: uppercase;
@@ -352,7 +367,7 @@
     display: inline-block;
     vertical-align: baseline;
     font-size: 16px;
-    line-height: 18px;
+    line-height: 1;
     font-weight: 800;
     color: #f6c042;
     padding-bottom: 8px;
@@ -441,7 +456,6 @@
     text-transform: none;
     padding-right: 0;
     cursor: pointer;
-    font-family: 'Muli', sans-serif;
 }
 /* Hide the browser's default checkbox */
 .contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field-checkbox ul li label input {
@@ -502,7 +516,7 @@
 }
 .abo-form-person-title{
 	font-size: 30px;
-	line-height: 32px;
+	line-height: 1.1;
 	color: #111111;
 	font-weight: 800;
 	text-transform: uppercase;
@@ -555,7 +569,6 @@
 @media(max-width: 1299px){
 	.contact-form-dsc-title {
 	    font-size: 56px;
-	    line-height: 58px;
 	}
 }
 
@@ -573,7 +586,6 @@
 	}
 	.contact-form-dsc-title {
 	    font-size: 55px;
-	    line-height: 55px;
 	    margin-top: 0;
 	}
 	.contact-form-dsc-title br{
@@ -601,7 +613,6 @@
 	}
 	.contact-info-dsc-title {
 	    font-size: 34px;
-	    line-height: 36px;
 	}
 	.sp-fanshop-gallery-dsc p br{
 		display: none;
@@ -614,7 +625,6 @@
 	}
 	.contact-form-dsc-title {
 	    font-size: 50px;
-	    line-height: 52px;
 	    margin-bottom: 22px;
 	}
 	.contact-form-lft {
@@ -646,7 +656,6 @@
 	}
 	.contact-info-dsc-title {
 	    font-size: 32px;
-	    line-height: 34px;
 	}
 	.fst-box-rgt{
 		padding-bottom: 40px;
@@ -663,28 +672,24 @@
 @media(max-width: 767px){
 	.contact-form-dsc-title {
 	    font-size: 45px;
-	    line-height: 47px;
 	}
 	.contact-form-dsc {
 	    padding-bottom: 25px;
 	}
 	.contact-info-dsc-title {
 	    font-size: 30px;
-	    line-height: 32px;
 	}
 }
 
 @media(max-width: 575px){
 	.contact-form-dsc-title {
 	    font-size: 40px;
-	    line-height: 42px;
 	}
 	.contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field {
 	    width: 100%;
 	}
 	.contact-info-dsc-title {
 	    font-size: 28px;
-	    line-height: 30px;
 	}
 	.wpforms-field-select-half {
 	    width: 100%;
@@ -701,14 +706,12 @@
 @media(max-width: 479px){
 	.contact-form-dsc-title {
 	    font-size: 35px;
-	    line-height: 37px;
 	}
 	.contact-map-info-dsc ul li span a{
 		display:block;
 	}
 	.contact-info-dsc-title {
 	    font-size: 26px;
-	    line-height: 28px;
 	}
 }
 

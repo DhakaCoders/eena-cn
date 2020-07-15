@@ -2,8 +2,10 @@
 	background: #111111;
 	padding-top: 40px;
 	padding-bottom: 40px;
-	position: relative;
 	margin-top: 50px;
+	padding-left: 280px;
+	position: relative;
+
 }
 .eena-breadcrumbs-sec-inr ul li{
 	display: inline-block;
@@ -73,6 +75,9 @@
 	background-position: center center!important;
 	height: 100%;
 	width: 280px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .eena-brdcrmb-left strong{
@@ -81,9 +86,6 @@
 	color: #111111;
 	font-weight: 800;
 	line-height: 1;
-	display: flex;
-	align-items: center;
-	justify-content: center;
 }
 
 
@@ -238,3 +240,117 @@
 .eena-no-grid-sec .eena-pagination-wrp {
     padding-top: 35px;
 }
+
+
+
+@media(max-width: 1499px){
+
+}
+
+@media(max-width: 1399px){
+	
+}
+
+@media(max-width: 1299px){
+	.eena-no-grid-sec {
+	    padding: 75px 0 45px;
+	}
+	.eena-no-link {
+	    margin-bottom: 70px;
+	}
+	.eena-no-link ul li {
+	    padding-left: 22px;
+	    padding-right: 22px;
+	}
+	.eena-no-grid-sec .eena-pagination-wrp {
+	    padding-top: 30px;
+	}
+}
+
+@media(max-width: 1199px){
+	.eena-no-grid-sec {
+	    padding: 60px 0 40px;
+	}
+	.eena-no-link {
+	    margin-bottom: 55px;
+	}
+	.eena-no-link strong {
+	    font-size: 18px;
+	    margin-right: 20px;
+	}
+	.eena-no-link ul li {
+	    padding-left: 15px;
+	    padding-right: 15px;
+	}
+	.eena-no-link ul li a {
+	    font-size: 16px;
+	}
+	.eena-grd-item-des {
+	    padding: 40px 25px;
+	}
+	.eena-gid-title {
+	    font-size: 24px;
+	}
+	.eena-no-grid-sec .eena-pagination-wrp {
+	    padding-top: 25px;
+	}
+
+
+}
+
+@media(max-width: 991px){
+	.eena-no-grid-sec {
+	    padding: 45px 0 30px;
+	}
+	.eena-no-link {
+	    margin-bottom: 40px;
+	}
+	.eena-no-link strong {
+	    font-size: 15px;
+	}
+	.eena-no-link ul li {
+	    padding-left: 10px;
+	    padding-right: 10px;
+	}
+	.eena-no-link ul li a {
+	    font-size: 12px;
+	}
+	.eena-no-grid-items ul li {
+	    width: 50%;
+	}
+	.eena-no-grid-items ul li:nth-child(3n+1) {
+	    clear: none;
+	}
+	.eena-no-grid-items ul li:nth-child(2n+1) {
+	    clear: left;
+	}
+	.eena-grd-item-des {
+	    padding: 30px 25px;
+	}
+	.eena-gid-title {
+	    font-size: 22px;
+	}
+	.eena-no-grid-sec .eena-pagination-wrp {
+	    padding-top: 15px;
+	}
+	
+}
+
+@media(max-width: 767px){
+	
+}
+
+@media(max-width: 575px){
+	
+
+}
+
+@media(max-width: 479px){
+
+
+}
+
+@media(max-width: 359px){
+
+}
+

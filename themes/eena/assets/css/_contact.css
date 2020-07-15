@@ -109,7 +109,7 @@
 }
 .contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field-textarea textarea{
 	width: 100%;
-	height: 200px;
+	height: 258px;
 	background: #FFFFFF;
 	box-sizing: border-box;
 	color: #ACABAB;
@@ -137,7 +137,7 @@
     background: url(../images/select-angle-icon.svg)!important;
     background-size: 13px 8px;
     background-repeat: no-repeat !important;
-    background-position: 98% center !important;
+    background-position: 97% center !important;
 }
 .contact-form-wrp .wpforms-field-select select {
     outline: 0;
@@ -394,7 +394,7 @@
     padding-right: 10px;
 }
 .contact-form-wrp .wpforms-field-select .wpforms-field-select-half select {
-    background-position: 95% center !important;
+    background-position: 96% center !important;
 }
 .fst-box-rgt{
 	padding-top: 0;
@@ -526,4 +526,194 @@
 .abo-form-person a:hover{
 	border-color: #fed056;
 	color: #fed056;
+}
+
+
+
+/*
+-----------------
+ Responsive Css
+-----------------
+*/
+@media(max-width: 1499px){
+
+}
+
+@media(max-width: 1399px){
+  	.contact-map-info {
+	   padding: 40px 25px 5px 30px;
+	 }
+	.contact-info-rgt {
+	    width: 64%;
+	    padding-left: 40px;
+	}
+	.contact-info-adrs-wrp ul:last-child {
+	    margin-left: 40px;
+	}
+}
+
+@media(max-width: 1299px){
+	.contact-form-dsc-title {
+	    font-size: 56px;
+	    line-height: 58px;
+	}
+}
+
+@media(max-width: 1199px){
+	.contact-form-lft {
+	    width: 66%;
+	    padding-right: 20px;
+	    padding-left: 20px;
+	}
+	.contact-form-rgt {
+	    width: 34%;
+	}
+	.contact-map-info {
+	    padding: 40px 10px 5px 20px;
+	}
+	.contact-form-dsc-title {
+	    font-size: 55px;
+	    line-height: 55px;
+	    margin-top: 0;
+	}
+	.contact-form-dsc-title br{
+		display: none;
+	}
+	.contact-info-adrs-wrp {
+	    display: inline-block;
+	    vertical-align: baseline;
+	}
+	.contact-info-adrs-wrp ul {
+	    width: 100%;
+	    float: left;
+	}
+	.contact-info-adrs-wrp ul:last-child {
+	    margin-left: 0;
+	}
+	.contact-info-adrs a{
+		display: block;
+	}
+	.contact-info-adrs-wrp ul li {
+	    padding-bottom: 40px;
+	}
+	.contact-info-adrs-wrp ul li:last-child{
+		padding-bottom: 0;
+	}
+	.contact-info-dsc-title {
+	    font-size: 34px;
+	    line-height: 36px;
+	}
+	.sp-fanshop-gallery-dsc p br{
+		display: none;
+	}
+}
+
+@media(max-width: 991px){
+	.contact-form-sec-wrp {
+	    padding: 55px 0 50px;
+	}
+	.contact-form-dsc-title {
+	    font-size: 50px;
+	    line-height: 52px;
+	    margin-bottom: 22px;
+	}
+	.contact-form-lft {
+	    width: 100%;
+	    padding-right: 0;
+	    padding-left: 0;
+	}
+	.contact-form-rgt {
+	    width: 100%;
+	    padding-top: 50px;
+	}
+	.contact-map-info-dsc ul li span{
+		display: block;
+	}
+	.contact-info-lft {
+	    width: 100%;
+	    float: left;
+	}
+	.contact-info-rgt {
+	    width: 100%;
+	    padding-left: 0;
+	    padding-top: 35px;
+	}
+	.contact-info-wrp {
+	    padding-bottom: 55px;
+	}
+	.contact-info-sec-wrp {
+	    padding: 40px 0 0;
+	}
+	.contact-info-dsc-title {
+	    font-size: 32px;
+	    line-height: 34px;
+	}
+	.fst-box-rgt{
+		padding-bottom: 40px;
+	}
+	.abo-frm-sec-wrp{
+		padding-top: 10px;
+	}
+	.contact-form-dsc {
+	    padding-bottom: 30px;
+	}
+	
+}
+
+@media(max-width: 767px){
+	.contact-form-dsc-title {
+	    font-size: 45px;
+	    line-height: 47px;
+	}
+	.contact-form-dsc {
+	    padding-bottom: 25px;
+	}
+	.contact-info-dsc-title {
+	    font-size: 30px;
+	    line-height: 32px;
+	}
+}
+
+@media(max-width: 575px){
+	.contact-form-dsc-title {
+	    font-size: 40px;
+	    line-height: 42px;
+	}
+	.contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field {
+	    width: 100%;
+	}
+	.contact-info-dsc-title {
+	    font-size: 28px;
+	    line-height: 30px;
+	}
+	.wpforms-field-select-half {
+	    width: 100%;
+	    float: left;
+	    padding-right: 0;
+	}
+	.contact-form-wrp .wpforms-field-select .wpforms-field-select-half select {
+	    background-position: 96% center !important;
+	}
+
+
+}
+
+@media(max-width: 479px){
+	.contact-form-dsc-title {
+	    font-size: 35px;
+	    line-height: 37px;
+	}
+	.contact-map-info-dsc ul li span a{
+		display:block;
+	}
+	.contact-info-dsc-title {
+	    font-size: 26px;
+	    line-height: 28px;
+	}
+}
+
+@media(max-width: 359px){
+	.contact-map-info {
+	    padding: 40px 10px 5px 15px;
+	}
 }

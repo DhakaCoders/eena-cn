@@ -19,6 +19,7 @@
 	padding-right: 0;
 }
 
+
 .eena-breadcrumbs-sec-inr ul li:after{
 	content: "";
 	position: absolute;
@@ -61,14 +62,17 @@
 
 .eena-brdcrmb-left{
 	position: absolute;
-	top: -1px;
-	background: red;
+	top: 0;
+	left: 0;
+	bottom: 0;
 	padding: 40px 0;
 	text-align: center;
 	background: url('../images/enna-brdcrmb-left-bg.png');
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
-	background-position: center center;
+	background-repeat: no-repeat!important;
+	background-size: 100% 100%!important;
+	background-position: center center!important;
+	height: 100%;
+	width: 280px;
 }
 
 .eena-brdcrmb-left strong{
@@ -77,6 +81,9 @@
 	color: #111111;
 	font-weight: 800;
 	line-height: 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 
@@ -91,6 +98,7 @@
 }
 .eena-no-link strong{
 	display: inline-block;
+	vertical-align: baseline;
 	font-size: 20px;
 	text-transform: uppercase;
 	color: #111111;
@@ -100,6 +108,7 @@
 
 .eena-no-link ul{
 	display: inline-block;
+	vertical-align: baseline;
 }
 .eena-no-link ul li{
 	display: inline-block;

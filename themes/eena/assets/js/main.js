@@ -149,13 +149,13 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
 }
 
-var container = $(".container").width();
+/*var container = $(".container").width();
 var sidewidth = windowWidth - container;
 var leftsidewidth = sidewidth / 2;
 $(".eena-brdcrmb-left").css({
   width : leftsidewidth,
   left : 0
-});
+});*/
 
 
 

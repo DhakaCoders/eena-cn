@@ -221,3 +221,186 @@
 .eena-mr-competition-report-sec .social-media {
     padding-top: 55px;
 }
+
+
+
+@media(max-width: 1499px){
+
+}
+
+@media(max-width: 1399px){
+	
+}
+
+@media(max-width: 1299px){
+	.eena-md-cr-des {
+	    padding: 50px 50px 45px 60px;
+	}
+	.eena-md-cr-des p {
+	    line-height: 1.7;
+	}
+}
+
+@media(max-width: 1199px){
+	.eena-match-result-sec {
+	    padding-top: 48px;
+	}
+	.eenamr-left-team-title, 
+	.eenamr-right-team-title {
+	    font-size: 30px;
+	    margin-bottom: 40px;
+	}
+	.eena-mr-competition-report-sec {
+	    padding-top: 50px;
+	    padding-bottom: 35px;
+	}
+	.eena-mr-cr-link {
+	    margin-bottom: 35px;
+	}
+	.eena-mr-cr-link ul li {
+	    padding-left: 4px;
+	    padding-right: 4px;
+	}
+	.eena-md-cr-des {
+	    padding: 40px 45px 38px 45px;
+	}
+	.eena-md-cr-des-title {
+	    font-size: 34px;
+	}
+	.eena-md-cr-des p {
+	    line-height: 1.6;
+	}
+	.md-cr-event-title, 
+	.md-cr-wine-title, 
+	.md-cr-aalst-title {
+	    font-size: 14px;	
+	}
+}
+
+@media(max-width: 991px){
+	.eena-match-result-sec {
+	    padding-top: 48px;
+	}
+	.eenamr-left-team {
+	    padding-left: 0px;
+	}
+	.eenamr-left-team-title, .eenamr-right-team-title {
+	    font-size: 27px;
+	    margin-bottom: 32px;
+	}
+	.eena-mr-competition-report-sec {
+	    padding-top: 40px;
+	    padding-bottom: 30px;
+	}
+	.eena-mr-cr-link {
+	    margin-bottom: 20px;
+	}
+	.eena-mr-cr-link ul li {
+	    padding-bottom: 20px;
+	}
+	.eena-md-cr-des {
+	    width: 100%;
+	    padding: 40px 35px 38px 35px;
+   		margin-bottom: 20px;
+	}
+	.eena-md-cr-des-title {
+	    font-size: 30px;
+	    margin-bottom: 15px;
+	}
+	.eena-md-cr-des p {
+	    line-height: 1.4;
+	}
+	.eena-md-cr-des-img {
+	    text-align: center;
+	    padding: 30px 0 40px;
+	}
+	.eena-md-cr-right-event {
+	    width: 100%;
+	    padding-left: 0px;
+	}
+	.md-cr-event ul li {
+	    padding-top: 25px;
+	    padding-bottom: 25px;
+	}
+	.eena-mr-competition-report-sec .social-media {
+	    padding-top: 40px;
+	}
+}
+
+@media(max-width: 767px){
+	.eena-match-result-sec {
+	    padding-top: 38px;
+	}
+	.eenamr-left-team, 
+	.eenamr-result, 
+	.eenamr-right-team {
+	    width: 100%;
+	}
+	.eenamr-left-team img,
+	.eenamr-right-team img{
+		display: none;
+	}
+	.eenamr-result-title {
+	    font-size: 35px;
+	    margin-bottom: 15px;
+	}
+	.eenamr-result span {
+	    display: none;
+	}
+	.eenamr-left-team-title, 
+	.eenamr-right-team-title {
+	    font-size: 25px;
+	    margin-bottom: 15px;
+	}
+	.eenamr-result {
+	    padding-top: 0px;
+	}
+	.eena-md-cr-des {
+	    padding: 40px 25px 25px 28px;
+	    margin-bottom: 30px;
+	}
+	.eena-md-cr-des-title {
+	    font-size: 25px;
+	    margin-bottom: 15px;
+	}
+	.eena-md-cr-des-img {
+	    text-align: center;
+	    padding: 20px 0 32px;
+	}
+	.md-cr-event, 
+	.md-cr-wine, 
+	.md-cr-aalst {
+	    margin-bottom: 30px;
+	}
+	.md-cr-event ul li {
+	    padding-top: 20px;
+	    padding-bottom: 20px;
+	}
+}
+
+@media(max-width: 575px){
+	.eena-md-cr-des {
+	    padding: 40px 20px 25px 25px;
+	}
+	.eena-md-cr-des-img {
+	    padding: 5px 0 32px;
+	}
+	.eena-mr-competition-report-sec .social-media {
+	    padding-top: 20px;
+	}
+
+}
+
+@media(max-width: 479px){
+	.eena-md-cr-des-title {
+	    font-size: 20px;
+	}
+	.md-cr-wine ul li,
+	.md-cr-aalst ul li{
+		font-size: 14px;
+	}
+}
+
+@media(max-width: 359px){
+
+}

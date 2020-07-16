@@ -1,6 +1,5 @@
 .hdr-cntlr{
 	position: relative;
-	overflow: hidden;
 }
 .hdr-topbar{
 	background: rgba(0,0,0,.7);
@@ -380,4 +379,15 @@ nav.main-nav > ul > li.menu-item-has-children > ul.sub-menu > li.menu-item-has-c
 	text-transform: uppercase;
 	color: #fff;
 	margin: 25px 0 0;
+}
+
+
+.hdr-lft-opacity-bg,
+.hdr-bg-cntlr-wrp{
+	bottom: -30px;
+}
+
+
+.home-banner{
+	height: 1000px;
 }

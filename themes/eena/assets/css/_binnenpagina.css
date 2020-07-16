@@ -329,16 +329,17 @@ Gallery design
 	padding: 0;
 }
 .dft-clint-logos{
-	padding-top: 10px;
-	padding-bottom: 40px;
+	padding: 53px 0 30px;
+	border-top: 1px solid #e2e2e2;
+	border-bottom: 1px solid #e2e2e2;
+	margin-bottom: 40px;
+	margin-top: 5px;
 }
 .dft-clint-logos ul{
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
-	padding: 53px 0 30px;
-	border-top: 1px solid #e2e2e2;
-	border-bottom: 1px solid #e2e2e2;
+	padding: 0;
 }
 .dft-clint-logos ul li{
 	width: 25%;
@@ -347,6 +348,9 @@ Gallery design
 .dft-news-overview-grds ul{
 	padding: 0;
 	margin: 0 -12px;
+}
+.dft-clint-logos ul li div{
+	text-align: center;
 }
 .dft-news-overview-grds ul li{
 	width: 50%;

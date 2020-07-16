@@ -186,6 +186,12 @@ nav.ulc ul {
   .ftr-col-5{
     width: 22%;
   }
+  .brand-logo-tp-wrp ul{
+    margin: 0 -20px;
+  }
+  .brand-logo-tp-wrp ul li {
+      padding: 0 20px 35px;
+  }
 }
 
 @media(max-width: 1299px){
@@ -324,15 +330,19 @@ nav.ulc ul {
       height: 410px;
   }
 .ftr-top span.ftr-angle-w:after {
-    content: "";
-    position: absolute;
-    right: 0;
-    top: -2px;
-    bottom: -2px;
-    width: 100px;
-    background: #fff;
-}
-  
+      content: "";
+      position: absolute;
+      right: 0;
+      top: -2px;
+      bottom: -2px;
+      width: 100px;
+      background: #fff;
+  }
+  .brand-logo-tp-wrp ul:nth-child(4),
+  .brand-logo-tp-wrp ul:nth-child(3){
+    display: none;
+  }
+    
 
   
   
@@ -389,10 +399,7 @@ nav.ulc ul {
   .ftr-top span.ftr-angle-w{
     left: 85px;
   }
-  .brand-logo-tp-wrp ul:nth-child(4),
-  .brand-logo-tp-wrp ul:nth-child(3){
-    display: none;
-  }
+  
   
   
 }

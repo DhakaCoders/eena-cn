@@ -211,6 +211,71 @@
 }
 
 
+.xs-player-list{
+	margin-bottom: 30px;
+	position: relative;
+}
+.xs-player-list strong{
+	display: flex;
+	align-items: center;
+	background: #FFD056;
+	color: #2B2B2B;
+	font-size: 12px;
+	line-height: 1;
+	text-transform: uppercase;
+	min-height: 56px;
+	height: 100%;
+	padding: 5px 40px 5px 28px;
+	position: relative;
+}
+.xs-player-list strong:after{
+	content: "";
+	background: url(../images/md-down-arrow-xs.png);
+	width: 12px;
+	height: 8px;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	right: 28px;
+}
+.xs-player-list strong.md-tabs-btn-expend:after{
+	background: url(../images/md-up-arrow-xs.png);
+}
+
+.xs-player-list ul{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 100%;
+	background: #fff;
+	text-align: center;
+	z-index: 40;
+	padding: 10px 10px 10px;
+	border-radius: 0 0 8px 8px;
+	display: none;
+}
+.xs-player-list ul li{
+	padding-bottom: 10px;
+	float: left;
+	width: 50%;
+}
+.xs-player-list ul li a{
+	color: #111111;
+	text-transform: uppercase;
+}
+.xs-player-list ul li.active a{
+	color: #FFD056;
+}
+
+.xs-player-list{
+	display: none;
+}
+
 
 
 @media(max-width: 1499px){
@@ -314,20 +379,57 @@
 	.player-des {
 	    width: 100%;
 	}
+	.player-category-sec-inr{
+		display: none;
+	}
+	.xs-player-list{
+		display: block;
+	}
 	
 }
 
 @media(max-width: 767px){
-	
+	.player-category-sec {
+	    padding-top: 48px;
+	    padding-bottom: 20px;
+	}
+	.player-details-sec {
+	    padding: 45px 0 30px;
+	}
+	.player-details-title {
+	    font-size: 40px;
+	    margin-bottom: 30px;
+	}
+	.player-des{
+		margin-left: -20px;
+		margin-right: -20px;
+	}
+	.list-grd ul li strong {
+	    width: 50%;
+	    padding: 18px 10px 15px 20px;
+	}
+	.list-grd ul li span {
+	    width: 50%;
+	    padding: 18px 10px 15px 0px;
+	    background: rgba(245, 245, 245, 0.56);
+	}
 }
 
 @media(max-width: 575px){
-	
+	.player-details-title {
+	    font-size: 35px;
+	}
 
 }
 
 @media(max-width: 479px){
-
+	.list-grd ul li strong {
+	    font-size: 12px;
+        word-break: break-all;
+	}
+	.list-grd ul li span{
+		font-size: 12px;
+	}
 
 }
 

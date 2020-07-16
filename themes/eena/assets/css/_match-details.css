@@ -46,8 +46,40 @@
 	font-size: 12px;
 	line-height: 18px;
 	text-transform: uppercase;
-	letter-spacing: 0.01em;
 	color: #111111;
+}
+
+.xs-match-result{
+	display: none;
+}
+.top-team-title,
+.btm-team-title{
+	display: block;
+	font-size: 25px;
+	line-height: 1;
+	margin-bottom: 25px;
+	font-weight: 800;
+	color: #111111;
+	text-transform: uppercase;
+}
+.btm-team-title{
+	margin-bottom: 35px;
+}
+.xs-match-result strong{
+	display: block;
+	font-size: 40px;
+	color: #FFD056;
+	text-transform: uppercase;
+	letter-spacing: 0.02em;
+	font-weight: 900;
+	margin-bottom: 22px;
+}
+.xs-match-result span{
+	font-size: 12px;
+	color: #111111;
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: 700;
 }
 
 .eena-mr-competition-report-sec{
@@ -217,6 +249,62 @@
     padding-top: 55px;
 }
 
+.xs-md-link{
+	margin-bottom: 30px;
+	position: relative;
+}
+.xs-md-link strong{
+	display: flex;
+	align-items: center;
+	background: #FFD056;
+	color: #2B2B2B;
+	font-size: 12px;
+	line-height: 1;
+	text-transform: uppercase;
+	min-height: 56px;
+	height: 100%;
+	padding: 5px 40px 5px 28px;
+	position: relative;
+}
+.xs-md-link strong:after{
+	content: "";
+	background: url(../images/md-down-arrow-xs.png);
+	width: 12px;
+	height: 8px;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	right: 28px;
+}
+.xs-md-link strong.md-tabs-btn-expend:after{
+	background: url(../images/md-up-arrow-xs.png);
+}
+
+.xs-md-link ul{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 100%;
+	background: #fff;
+	text-align: center;
+	z-index: 40;
+	padding: 10px 10px 10px;
+	border-radius: 0 0 8px 8px;
+	display: none;
+}
+.xs-md-link ul li{
+	padding-bottom: 10px;
+}
+.xs-md-link ul li a{
+	color: #111111;
+	text-transform: uppercase;
+}
+
 
 
 @media(max-width: 1499px){
@@ -344,30 +432,14 @@
 @media(max-width: 767px){
 	.eena-match-result-sec {
 	    padding-top: 38px;
+	    padding-bottom: 38px;
 	}
-	.eenamr-left-team, 
-	.eenamr-result, 
-	.eenamr-right-team {
-	    width: 100%;
-	}
-	.eenamr-left-team img,
-	.eenamr-right-team img{
+	.eena-match-result-sec-inr{
 		display: none;
 	}
-	.eenamr-result-title {
-	    font-size: 35px;
-	    margin-bottom: 15px;
-	}
-	.eenamr-result span {
-	    display: none;
-	}
-	.eenamr-left-team-title, 
-	.eenamr-right-team-title {
-	    font-size: 25px;
-	    margin-bottom: 15px;
-	}
-	.eenamr-result {
-	    padding-top: 0px;
+	.xs-match-result{
+		display: block;
+		text-align: center;
 	}
 	.eena-md-cr-des {
 	    padding: 40px 25px 25px 28px;
@@ -390,6 +462,12 @@
 	    padding-top: 20px;
 	    padding-bottom: 20px;
 	}
+	.eena-mr-cr-link{
+		display: none;
+	}
+	.eena-mr-competition-report-sec .social-media {
+	    padding-top: 30px;
+	}
 }
 
 @media(max-width: 575px){
@@ -401,6 +479,12 @@
 	}
 	.eena-mr-competition-report-sec .social-media {
 	    padding-top: 20px;
+	}
+	.eena-mr-competition-report-sec .social-media {
+	    padding-top: 20px;
+	}
+	.eena-md-cr-des-title {
+	    font-size: 20px;
 	}
 
 }

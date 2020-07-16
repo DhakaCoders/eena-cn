@@ -400,6 +400,18 @@ if( $('.hmNewsSecSlider').length ){
 
 
 /*End of Rannojit*/
+if( $('.mainSlider').length ){
+    $('.mainSlider').slick({
+      dots: false,
+      infinite: false,
+      autoplay: false,
+      autoplaySpeed: 2000,
+      speed: 300,
+      slidesToShow: 1,
+      slidesToScroll: 1, 
+    });
+}
+
 
 
 
@@ -408,6 +420,7 @@ var sideWidh = (windowWidth - container) / 2;
 
 $('.hdr-lft-opacity-bg').css("width", sideWidh);
 
+//$('.mainSlideItemDes').css("left", sideWidh);
 
 $('.scrollto').on('click', function(e){
   e.preventDefault();

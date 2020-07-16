@@ -319,3 +319,58 @@
 	background-repeat: no-repeat;
 	background-size: 100% auto;
 }
+
+.hm-back-in-time-sec.hm-webshop-sec{
+	overflow: initial;
+	padding: 55px 0 50px;
+	color: #fff;
+}
+.hm-back-in-time-sec.hm-webshop-sec .hm-back-in-time-sec-inr{
+	overflow: initial;
+}
+
+.hmWebshopSlider{
+	margin-left: -12px;
+	margin-right: -12px;
+	margin-bottom: 40px!important;
+}
+.hmWebshopSlideItem{
+	padding: 0 12px;
+}
+
+.fl-prev-next.hmWebshopSliderPrevNext{
+	position: static;
+	transform: initial;
+}
+
+.hmws-title{
+	display: block;
+	color: #fff;
+	font-weight: 800;
+	font-size: 36px;
+	line-height: 1;
+	margin: 0 0 45px 0;
+	text-transform: uppercase;
+	text-align: center;
+}
+.hm-webshop-sec-btmbar{
+	display: flex;
+	align-items: center;
+}
+.hm-webshop-sec-btmbar-btn{
+	margin-left: auto;
+}
+.hm-webshop-sec-btmbar-btn a{
+	color: #2B2B2B;
+	font-weight: 800;
+	font-size: 12px;
+	line-height: 1;
+	text-transform: uppercase;
+	width: 230px;
+	height: 56px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #F6C042;
+	border: 2px solid #F6C042;
+}

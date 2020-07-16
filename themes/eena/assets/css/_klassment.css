@@ -1,24 +1,25 @@
-.amateurliga-season{
+.classroom-sec-wrap{
 	padding: 105px 0 100px 0;
 	background: #f9f9f9;
 }
-.amateurliga-inr{
+.classroom-inr{
 	display: flex;
 }
-.amateurliga-desc{
-	max-width: 66%;
-	width: 100%;
-	padding: 0 50px 45px 50px;
+.classroom-desc{
+	width: 66%;
+}
+.classroom-desc-cntlr{
+	padding: 0 50px 116px 50px;
 	background: #fff;
 }
-.amateurliga-desc-title{
+.classroom-desc-title{
 	font-weight: 800;
-	margin-top: 50px;
+	padding-top: 50px;
 	margin-bottom: 43px;
 	text-transform: uppercase;
 	color: #111111;
 }
-.am-table-wrap{
+.classroom-table-wrap{
 	background: #f9f9f9;
 	padding: 33px 35px 27px 23px;
 }
@@ -33,54 +34,54 @@
 	width: 100%;
 	border: none;
 }
-.am-thead{
+.classroom-thead{
 	background: #111111;
 }
-.am-thead tr{
+.classroom-thead tr{
 	color: #fff;
 	
 	transition: all 0.3s ease-out 0s;
 	-moz-transition: all 0.3s ease-out 0s;
 	-webkit-transition: all 0.3s ease-out 0s;
 }
-.am-thead tr th{
+.classroom-thead tr th{
 	padding: 14px 25px;
 	text-align: center;
 }
-.am-tbody tr td{
+.classroom-tbody tr td{
 	text-align: center;
+	padding: 14px 0;
 }
-.am-thead tr th:last-child,
-.am-tbody tr td:last-child{
-	padding-left: 45px;
+.classroom-thead tr th:nth-last-child(2),
+.classroom-tbody tr td:nth-last-child(2){
+	width: 105px;
 }
-.am-tbody tr:focus td,
-.am-tbody tr:hover td{
+.classroom-tbody tr:focus td,
+.classroom-tbody tr:hover td{
 	background: #fff;
 	transition: all 0.3s ease-out 0s;
 	-moz-transition: all 0.3s ease-out 0s;
 	-webkit-transition: all 0.3s ease-out 0s;
 }
-.am-tbody tr td:nth-child(2),
-.am-thead tr th:nth-child(2){
+.classroom-tbody tr td:nth-child(2),
+.classroom-thead tr th:nth-child(2){
 	padding-left: 0;
 	padding-right: 0;
 	text-align: left;
 	min-width: 130px;
 }
-.am-thead tr th:first-child,
-.am-tbody tr td:first-child{
+.classroom-thead tr th:first-child,
+.classroom-tbody tr td:first-child{
 	padding: 0 22px 0 25px;
 }
-.am-tbody{
+.classroom-tbody{
 
 }
-.amateurliga-volgende-cntlr{
-	max-width: 34%;
-	width: 100%;
+.classroom-aside-cntlr{
+	width: 34%;
 	padding-left: 22px;
 }
-.amateurliga-volgende-inr{
+.classroom-aside-inr{
 
 }
 .versus-match-cntlr{
@@ -103,6 +104,7 @@
 }
 .versus-match{
 	display: flex;
+	justify-content: space-between;
 	align-items: center;
 	padding: 24px 0;
 	border-bottom: 3px solid #f9f9f9;}
@@ -111,13 +113,19 @@
 	text-align: center;
 }
 .versus-team-name{
+	display: flex;
+	justify-content: center;
 	text-transform: uppercase;
 	color: #111111;
 	margin-bottom: 0;
 	margin-top: 10px;
 }
-.versus-logo{
+.versus-logo-wrap{
 	width: 40%;
+}
+.versus-logo{
+	width: 153px;
+	height: 60px;
 	background-size: 100% 100%!important;
 	display: flex;
 	align-items: center;
@@ -148,16 +156,31 @@
 .versus-btn a i{
 	padding-bottom: 3px;
 	padding-left: 16px;
+	-moz-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
 }
-.am-volgende-bottom{
+.versus-btn a:hover{
+	color: #111111;
+}
+.versus-btn a:hover i{
+	padding-left: 25px;
+	-moz-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
+}
+.versus-btn a:hover i svg{
+	fill: #111111;
+}
+.classroom-aside-bottom{
 	padding-top: 29px;
 }
-.am-volgende-bottom > ul > li{
+.classroom-aside-bottom > ul > li{
 	margin-bottom: 24px;
 }
-.am-volgende-bottom > ul > li:last-child{
+.classroom-aside-bottom > ul > li:last-child{
 	margin-bottom: 0;
 }
-.sp-fanshop-gallery-inr .am-volgende-gallery-img{
+.sp-fanshop-gallery-inr .classroom-aside-gallery-img{
 	height: 340px!important;
 }

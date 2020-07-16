@@ -304,7 +304,16 @@ if( $('#googlemap').length ){
 
 
 
+$('.fl-tabs li a').click(function(e){
+  e.preventDefault();
+  var tab_id = $(this).attr('data-tab');
 
+  $('.fl-tabs li a').removeClass('current');
+  $('.fl-tab-content').removeClass('current');
+
+  $(this).addClass('current');
+  $("#"+tab_id).addClass('current');
+});
 /* End of Noyon */
 
 

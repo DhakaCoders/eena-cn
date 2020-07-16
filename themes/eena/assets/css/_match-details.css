@@ -249,11 +249,11 @@
     padding-top: 55px;
 }
 
-.xs-md-link{
+.xs-link{
 	margin-bottom: 30px;
 	position: relative;
 }
-.xs-md-link strong{
+.xs-link strong{
 	display: flex;
 	align-items: center;
 	background: #FFD056;
@@ -266,7 +266,7 @@
 	padding: 5px 40px 5px 28px;
 	position: relative;
 }
-.xs-md-link strong:after{
+.xs-link strong:after{
 	content: "";
 	background: url(../images/md-down-arrow-xs.png);
 	width: 12px;
@@ -281,11 +281,11 @@
 	-webkit-transform: translateY(-50%);
 	right: 28px;
 }
-.xs-md-link strong.md-tabs-btn-expend:after{
+.xs-link strong.md-tabs-btn-expend:after{
 	background: url(../images/md-up-arrow-xs.png);
 }
 
-.xs-md-link ul{
+.xs-link ul{
 	position: absolute;
 	left: 0;
 	right: 0;
@@ -297,10 +297,10 @@
 	border-radius: 0 0 8px 8px;
 	display: none;
 }
-.xs-md-link ul li{
+.xs-link ul li{
 	padding-bottom: 10px;
 }
-.xs-md-link ul li a{
+.xs-link ul li a{
 	color: #111111;
 	text-transform: uppercase;
 }

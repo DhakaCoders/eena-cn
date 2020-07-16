@@ -390,7 +390,16 @@
 }
 
 @media(max-width: 575px){
-	
+	.eena-breadcrumbs-sec {
+	    padding-left: 150px;
+	}
+	.eena-brdcrmb-left {
+	    width: 150px;
+	}
+	.eena-brdcrmb-left strong {
+	    font-size: 18px;
+	}
+
 
 }
 

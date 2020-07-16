@@ -211,7 +211,7 @@
 }
 
 
-.xs-player-list{
+/*.xs-player-list{
 	margin-bottom: 30px;
 	position: relative;
 }
@@ -267,12 +267,16 @@
 .xs-player-list ul li a{
 	color: #111111;
 	text-transform: uppercase;
+}*/
+.player-category-sec .xs-link ul li{
+	float: left;
+	width: 50%;
 }
-.xs-player-list ul li.active a{
+.player-category-sec .xs-link ul li.active a{
 	color: #FFD056;
 }
 
-.xs-player-list{
+.player-category-sec .xs-link{
 	display: none;
 }
 
@@ -382,7 +386,7 @@
 	.player-category-sec-inr{
 		display: none;
 	}
-	.xs-player-list{
+	.player-category-sec .xs-link{
 		display: block;
 	}
 	

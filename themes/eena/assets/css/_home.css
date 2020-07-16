@@ -160,6 +160,9 @@
 	padding-left: 100px;
 	padding-right: 100px;
 }
+.hm-news-section .hmNewsSecSliderPrevNext{
+	display: block;
+}
 .fl-prev-next{
 	position: absolute;
 	right: 0;
@@ -218,7 +221,7 @@
 }
 .hm-ranking-sec-rgt-des{
 	background: #fff;
-	padding: 50px 50px 45px;
+	padding: 50px 50px 5px;
 }
 .hm-ranking-tbl{
 	padding: 33px;
@@ -248,7 +251,7 @@
 }
 
 .hm-ranking-tbl table tbody td{
-	padding: 15px;
+	padding: 17px 15px;
 }
 
 .hrsrd-title{
@@ -258,4 +261,116 @@
 	line-height: 1;
 	display: block;
 	margin: 0 0 45px 0;
+}
+.hm-training-schedule{
+	background: #FFFFFF;
+	box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.02);
+	-ms-box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.02);
+	-webkit-box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.02);
+	padding: 40px 45px 7px;
+	margin-top: 30px;
+}
+.hm-training-schedule-title{
+	text-transform: uppercase;
+	font-size: 20px;
+	line-height: 1;
+	margin: 0 0 32px 0;
+}
+.hm-training-schedule ul{
+	padding: 30px 0 0;
+	border-bottom: 3px solid #F9F9F9;
+	border-top: 3px solid #F9F9F9;
+	font-size: 13px;
+	line-height: 1.1;
+}
+.hm-training-schedule ul li{
+	padding: 0 0 30px;
+}
+.hm-training-schedule ul li div{
+	display: flex;
+	align-items: center;
+}
+.hm-training-schedule ul li div span{
+	margin-left: auto;
+	padding-left: 10px;
+	color: #B4B4B4;
+}
+.hm-training-schedule ul li div strong{
+	font-weight: 700;
+	color: #111111;
+}
+
+.versus-match-title span{
+	color: #BABABA;
+	padding-left: 80px;
+	position: relative;
+}
+.versus-match-title span:after{
+	content: "";
+	position: absolute;
+	left: 29px;
+	top: 50%;
+	transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	background: url(../images/slice-angle.png);
+	width: 9px;
+	height: 18px;
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+}
+
+.hm-back-in-time-sec.hm-webshop-sec{
+	overflow: initial;
+	padding: 55px 0 50px;
+	color: #fff;
+}
+.hm-back-in-time-sec.hm-webshop-sec .hm-back-in-time-sec-inr{
+	overflow: initial;
+}
+
+.hmWebshopSlider{
+	margin-left: -12px;
+	margin-right: -12px;
+	margin-bottom: 40px!important;
+}
+.hmWebshopSlideItem{
+	padding: 0 12px;
+}
+
+.fl-prev-next.hmWebshopSliderPrevNext{
+	position: static;
+	transform: initial;
+}
+
+.hmws-title{
+	display: block;
+	color: #fff;
+	font-weight: 800;
+	font-size: 36px;
+	line-height: 1;
+	margin: 0 0 45px 0;
+	text-transform: uppercase;
+	text-align: center;
+}
+.hm-webshop-sec-btmbar{
+	display: flex;
+	align-items: center;
+}
+.hm-webshop-sec-btmbar-btn{
+	margin-left: auto;
+}
+.hm-webshop-sec-btmbar-btn a{
+	color: #2B2B2B;
+	font-weight: 800;
+	font-size: 12px;
+	line-height: 1;
+	text-transform: uppercase;
+	width: 230px;
+	height: 56px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #F6C042;
+	border: 2px solid #F6C042;
 }

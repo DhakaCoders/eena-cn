@@ -161,12 +161,48 @@ if( $('.bdcmbSlider').length ){
     $('.bdcmbSlider').slick({
       dots: false,
       infinite: true,
-      autoplay: true,
+      autoplay: false,
       autoplaySpeed: 1000,
       speed: 300,
-      slidesToShow: 3
+      slidesToShow: 3,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 2
+          }
+        },
+        {
+          breakpoint: 992,
+          settings: {
+            slidesToShow: 1
+          }
+        }
+      ]
     });
 }
+
+$('.xs-tabs-btn').on('click', function(){
+  $(this).toggleClass('md-tabs-btn-expend');
+  $('.xs-link ul').slideToggle(500);
+  
+});
+$('.xs-link li').on('click', function(){
+  var selectText = $(this).text();
+  $('.xs-tabs-btn').html(selectText);
+});
+
+/*$('.xs-tabs-btn').on('click', function(){
+  $(this).toggleClass('plyr-tabs-btn-expend');
+  $('.xs-player-list ul').slideToggle(500);
+  
+});
+$('.xs-player-list li').on('click', function(){
+  var selectText = $(this).text();
+  $('.xs-tabs-btn').html(selectText);
+});*/
+
+
 
 /* End of Shoriful*/
 
@@ -180,6 +216,7 @@ if( $('.FanShopPostSlider').length ){
       dots: false,
       infinite: false,
       autoplay: true,
+      arrows:false,
       autoplaySpeed: 2000,
       speed: 300,
       slidesToShow: 3,
@@ -208,7 +245,8 @@ if( $('.FanShopPostSlider').length ){
           settings: {
             slidesToShow: 1,
             slidesToScroll: 1,
-            dots: false
+            arrows:true,
+            dots: true
           }
         }
         // You can unslick at a given breakpoint now by adding:
@@ -362,6 +400,60 @@ if( $('.hmNewsSecSlider').length ){
 
 
 /*End of Rannojit*/
+if( $('.mainSlider').length ){
+    $('.mainSlider').slick({
+      dots: false,
+      infinite: false,
+      autoplay: false,
+      autoplaySpeed: 2000,
+      speed: 300,
+      slidesToShow: 1,
+      slidesToScroll: 1, 
+    });
+}
+
+if( $('.hmWebshopSlider').length ){
+    $('.hmWebshopSlider').slick({
+      dots: false,
+      infinite: false,
+      autoplay: false,
+      autoplaySpeed: 2000,
+      speed: 300,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      prevArrow: $('.hmWebshopSliderPrevNext .fl-prev'),
+      nextArrow: $('.hmWebshopSliderPrevNext .fl-next'),
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            infinite: true,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+      ]
+    });
+}
+
 
 
 
@@ -370,6 +462,7 @@ var sideWidh = (windowWidth - container) / 2;
 
 $('.hdr-lft-opacity-bg').css("width", sideWidh);
 
+//$('.mainSlideItemDes').css("left", sideWidh);
 
 $('.scrollto').on('click', function(e){
   e.preventDefault();

@@ -2,13 +2,17 @@
 	position: relative;
 	overflow: hidden;
 }
+.hdr-topbar{
+	background: rgba(0,0,0,.7);
+	position: relative;
+	z-index: 4;
+}
 .hdr-bg-cntlr-wrp{
 	position: absolute;
 	top: 0;
 	right: 0;
 	bottom: 0;
 	left: 0;
-	z-index: 40;
 }
 .hdr-bg-cntlr-wrp .container,
 .hdr-bg-cntlr-wrp .row,
@@ -21,8 +25,9 @@
 	left: 0;
 	top: 0;
 	bottom: 0;
-	width: 428px;
+	width: 383px;
 	background: #131313;
+	z-index: 5;
 }
 .hdr-lft-bg > div{
 	height: 100%;
@@ -49,14 +54,14 @@
 	bottom: 0;
 	left: 0;
 	background: #131313;
-	z-index: 6;
+	z-index: 5;
 }
 .hdr-inr-logo{
 	position: absolute;
 	left: 0;
 	top: 0;
 	bottom: 0;
-	z-index: 41;
+	z-index: 6;
 	max-width: 675px;
 	width: 100%;
 	background: url(../images/inner-logo.png);
@@ -84,7 +89,7 @@
 	height: 107px;
 	background: #fff;
 	width: 50%;
-	z-index: 5;
+	z-index: 4;
 }
 header.header{
 	position: absolute;
@@ -92,18 +97,14 @@ header.header{
 	right: 0;
 	top: 0;
 	bottom: 0;
-	z-index: 50
 }
 .logo{
 	position: absolute;
-	left: -40px;
-	top: 50%;
-	transform: translateY(-50%);
-	-ms-transform: translateY(-50%);
-	-webkit-transform: translateY(-50%);
+	left: -50px;
 	display: flex;
 	align-items: center;
-	z-index: 50;
+	z-index: 6;
+	top: -20px;
 }
 
 .logo-bg img{
@@ -137,6 +138,8 @@ header.header{
 	padding: 34px 0 29px;
 	display: flex;
 	justify-content: flex-end;
+	position: relative;
+	margin-right: -30px;
 }
 .hdr-topbar-nav li{
 	display: inline-block;
@@ -162,6 +165,11 @@ header.header{
 	background: #fff;
 	display: flex;
 	justify-content: flex-end;
+	position: absolute;
+	z-index: 4;
+	top: 0;
+	right: 0;
+	margin-right: -35px;
 }
 
 .main-nav,.hdr-cart-btn{
@@ -302,7 +310,9 @@ nav.main-nav > ul > li.menu-item-has-children > ul.sub-menu > li.menu-item-has-c
 	color: #111111;
 }
 
-
+.fl-page-bnr-des{
+	margin-left: -50px;
+}
 .fl-page-bnr-des-cntlr{
 	position: absolute;
 	z-index: 60;

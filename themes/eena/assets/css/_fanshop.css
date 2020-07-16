@@ -66,16 +66,25 @@ fanshop-post-grid-sec-wrp
 	padding-bottom: 80px;
 	background: #f9f9f9;
 }
-.fanshop-post-grid-wrp ul{
+.fanshop-post-grid-wrp > ul{
 	margin: 0 -10px;
 }
-.fanshop-post-grid-wrp ul li{
+.fanshop-post-grid-wrp > ul > li{
 	float: left;
 	width: 33.3333%;
 	padding: 0 10px 24px;
 }
-.fanshop-post-grid-wrp ul li:nth-child(3n+1){
+.fanshop-post-grid-wrp > ul > li:nth-child(3n+1){
 	clear: left;
+}
+.FanShopPostSlider{
+	margin: 0 -12px;
+}
+.FanShopPostSlider .FanShopPostSlideItem{
+	padding: 0 12px 25px;
+}
+.FanShopPostSlider.slick-dotted.slick-slider{
+    margin-bottom: 0;
 }
 .fanshop-post-grid-inr {
     background: #ffffff;
@@ -635,6 +644,9 @@ fanshop-v1-post-sec-wrp
 	padding-bottom: 85px;
 	border-bottom: 1px solid#E2E2E2;
 }
+.hmNewsSecSliderPrevNext{
+	display: none;
+}
 
 /*
 -----------------
@@ -729,13 +741,13 @@ fanshop-v1-post-sec-wrp
 	    margin: 0 auto;
 	    text-align: center;
 	}
-	.fanshop-post-grid-wrp ul li {
+	.fanshop-post-grid-wrp > ul > li {
 	    width: 50%;
 	}
-	.fanshop-post-grid-wrp ul li:nth-child(3n+1) {
+	.fanshop-post-grid-wrp > ul > li:nth-child(3n+1) {
 	    clear: none;
 	}
-	.fanshop-post-grid-wrp ul li:nth-child(2n+1) {
+	.fanshop-post-grid-wrp > ul > li:nth-child(2n+1) {
 	    clear: left;
 	}
 	.fanshop-service-wrp ul li {
@@ -809,6 +821,50 @@ fanshop-v1-post-sec-wrp
 	}
 	.fanshop-service-wrp ul li {
 	    width: 100%;
+	}
+	.fanshop-post-grid-wrp {
+	    padding-bottom: 40px;
+	}
+	.fanshop-v1-post-sec-wrp {
+	    border-bottom: 8px solid #F9F9F9;
+	}
+	.FanShopPostSlider.slick-slider ul.slick-dots{
+		margin-top: 35px;
+	}
+	.FanShopPostSlider.slick-slider .slick-dots li{
+		margin: 0 4px;
+		width: 12px !important;
+		height: 12px !important;
+	}
+	.FanShopPostSlider.slick-slider .slick-dots li button{
+		width: 12px;
+		height: 12px;
+	}
+	.hmNewsSecSliderPrevNext{
+	    position: absolute;
+	    bottom: 42px;
+	    left: 50%;
+	    transform: translateX(-50%);
+	    -ms-transform: translateX(-50%);
+	    -webkit-transform: translateX(-50%);
+	}
+	.hmNewsSecSliderPrevNext .fl-prev{
+		margin-right: 55px;
+		right: 0;
+	}
+	.hmNewsSecSliderPrevNext .fl-next{
+		left: 0;
+		margin-left: 55px;
+	}
+	.hmNewsSecSliderPrevNext .fl-prev,
+	.hmNewsSecSliderPrevNext .fl-next{
+		cursor: pointer;
+	}
+	.fanshop-post-grid-wrp {
+	    border-bottom: 0;
+	}
+	.hmNewsSecSliderPrevNext{
+		display: block;
 	}
 }
 

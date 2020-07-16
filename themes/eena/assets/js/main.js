@@ -180,6 +180,7 @@ if( $('.FanShopPostSlider').length ){
       dots: false,
       infinite: false,
       autoplay: true,
+      arrows:false,
       autoplaySpeed: 2000,
       speed: 300,
       slidesToShow: 3,
@@ -208,7 +209,8 @@ if( $('.FanShopPostSlider').length ){
           settings: {
             slidesToShow: 1,
             slidesToScroll: 1,
-            dots: false
+            arrows:true,
+            dots: true
           }
         }
         // You can unslick at a given breakpoint now by adding:

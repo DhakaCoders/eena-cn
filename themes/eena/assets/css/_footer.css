@@ -34,7 +34,7 @@ nav.ulc ul {
     content: "";
     position: absolute;
     right: 0;
-    top: -1px;
+    top: -2px;
     bottom: -2px;
     width: 100px;
     background: #fff;
@@ -155,6 +155,7 @@ nav.ulc ul {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 .brand-logo-tp-wrp ul:nth-child(2){
   padding-bottom: 15px;

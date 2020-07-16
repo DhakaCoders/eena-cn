@@ -234,6 +234,12 @@
 	.eena-md-cr-des p {
 	    line-height: 1.7;
 	}
+	.eena-mr-competition-report-sec {
+	    padding-right: 69px;
+	}
+	.eena-mr-cr-white-bg {
+	    width: 69px;
+	}
 }
 
 @media(max-width: 1199px){
@@ -248,6 +254,10 @@
 	.eena-mr-competition-report-sec {
 	    padding-top: 50px;
 	    padding-bottom: 35px;
+	    padding-right: 50px;
+	}
+	.eena-mr-cr-white-bg {
+	    width: 50px;
 	}
 	.eena-mr-cr-link {
 	    margin-bottom: 35px;
@@ -255,6 +265,7 @@
 	.eena-mr-cr-link ul li {
 	    padding-left: 4px;
 	    padding-right: 4px;
+	    padding-bottom: 20px;
 	}
 	.eena-md-cr-des {
 	    padding: 40px 45px 38px 45px;
@@ -269,6 +280,9 @@
 	.md-cr-wine-title, 
 	.md-cr-aalst-title {
 	    font-size: 14px;	
+	}
+	.eenamr-result-title {
+	    font-size: 55px;
 	}
 }
 
@@ -286,6 +300,10 @@
 	.eena-mr-competition-report-sec {
 	    padding-top: 40px;
 	    padding-bottom: 30px;
+	    padding-right: 0px;
+	}
+	.eena-mr-cr-white-bg {
+	    width: 0;
 	}
 	.eena-mr-cr-link {
 	    margin-bottom: 20px;
@@ -320,6 +338,7 @@
 	.eena-mr-competition-report-sec .social-media {
 	    padding-top: 40px;
 	}
+
 }
 
 @media(max-width: 767px){

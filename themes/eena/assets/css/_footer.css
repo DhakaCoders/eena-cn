@@ -151,7 +151,7 @@ nav.ulc ul {
   text-transform: uppercase;
 }
 .brand-logo-tp-wrp ul{
-    /*margin: 0 -35px;*/
+    margin: 0 -35px;
     display: flex;
     justify-content: center;
     align-items: center;

@@ -565,9 +565,7 @@
 	    width: 64%;
 	    padding-left: 40px;
 	}
-	.contact-info-adrs-wrp ul:last-child {
-	    margin-left: 40px;
-	}
+	
 }
 
 @media(max-width: 1299px){
@@ -610,7 +608,8 @@
 		display: block;
 	}
 	.contact-info-adrs-wrp ul li {
-	    padding-bottom: 40px;
+	    padding-bottom: 30px;
+	    width: 100%;
 	}
 	.contact-info-adrs-wrp ul li:last-child{
 		padding-bottom: 0;
@@ -620,6 +619,10 @@
 	}
 	.sp-fanshop-gallery-dsc p br{
 		display: none;
+	}
+	.contact-info-adrs-wrp ul li:nth-child(5),
+	.contact-info-adrs-wrp ul li:nth-child(3) {
+	    padding-left: 0;
 	}
 }
 
@@ -674,6 +677,9 @@
 		display: inline-block;
 		vertical-align: baseline;
 	}
+	.contact-info-adrs-wrp ul li {
+	    padding-bottom: 40px;
+	}
 	
 }
 
@@ -705,7 +711,7 @@
 	    padding-right: 0;
 	}
 	.contact-form-wrp .wpforms-field-select .wpforms-field-select-half select {
-	    background-position: 96% center !important;
+	    background-position: 97% center !important;
 	}
 
 
@@ -720,6 +726,9 @@
 	}
 	.contact-info-dsc-title {
 	    font-size: 26px;
+	}
+	.contact-info-adrs-wrp ul li {
+	    padding-bottom: 30px;
 	}
 }
 

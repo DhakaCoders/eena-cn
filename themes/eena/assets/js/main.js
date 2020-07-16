@@ -164,9 +164,45 @@ if( $('.bdcmbSlider').length ){
       autoplay: true,
       autoplaySpeed: 1000,
       speed: 300,
-      slidesToShow: 3
+      slidesToShow: 3,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 2
+          }
+        },
+        {
+          breakpoint: 992,
+          settings: {
+            slidesToShow: 1
+          }
+        }
+      ]
     });
 }
+
+$('.md-tabs-btn').on('click', function(){
+  $(this).toggleClass('md-tabs-btn-expend');
+  $('.xs-md-link ul').slideToggle(500);
+  
+});
+$('.xs-md-link li').on('click', function(){
+  var selectText = $(this).text();
+  $('.md-tabs-btn').html(selectText);
+});
+
+$('.plyr-tabs-btn').on('click', function(){
+  $(this).toggleClass('plyr-tabs-btn-expend');
+  $('.xs-player-list ul').slideToggle(500);
+  
+});
+$('.xs-player-list li').on('click', function(){
+  var selectText = $(this).text();
+  $('.plyr-tabs-btn').html(selectText);
+});
+
+
 
 /* End of Shoriful*/
 

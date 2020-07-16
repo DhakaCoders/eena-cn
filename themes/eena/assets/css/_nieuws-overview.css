@@ -325,9 +325,7 @@
 	.eena-nieuws-link ul li {
 	    padding-left: 10px;
 	    padding-right: 10px;
-	}
-	.eena-nieuws-link ul li a {
-	    font-size: 12px;
+	    padding-bottom: 10px;
 	}
 	.eena-nieuws-grid-items ul li {
 	    width: 50%;
@@ -347,11 +345,48 @@
 	.eena-nieuws-grid-sec .eena-pagination-wrp {
 	    padding-top: 15px;
 	}
+	.eena-breadcrumbs-sec {
+	    margin-top: 30px;
+	}
+	.eena-breadcrumbs-sec {
+	    padding-left: 200px;
+	}
+	.eena-brdcrmb-left {
+	    width: 200px;
+	}
 	
 }
 
 @media(max-width: 767px){
-	
+	.eena-nieuws-grid-sec {
+	    padding: 30px 0 30px;
+	}
+	.eena-nieuws-link {
+	    margin-bottom: 25px;
+	}
+	.eena-nieuws-link {
+	    padding-left: 70px;
+	}
+	.eena-nieuws-link ul li a {
+	    font-size: 14px;
+	}
+	.eena-nieuws-grid-items ul {
+	    margin-left: 0px;
+	    margin-right: 0px;
+	}
+	.eena-nieuws-grid-items ul li {
+	    width: 100%;
+	    padding: 0 0px 25px 0px;
+	}
+	.eena-grd-item{
+		max-width: 440px;
+		width: 100%;
+		margin: 0 auto;
+	}
+	.eena-gid-title {
+	    font-size: 20px;
+	    margin-bottom: 12px;
+	}
 }
 
 @media(max-width: 575px){

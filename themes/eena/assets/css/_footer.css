@@ -186,6 +186,12 @@ nav.ulc ul {
   .ftr-col-5{
     width: 22%;
   }
+  .brand-logo-tp-wrp ul{
+    margin: 0 -20px;
+  }
+  .brand-logo-tp-wrp ul li {
+      padding: 0 20px 35px;
+  }
 }
 
 @media(max-width: 1299px){
@@ -204,9 +210,16 @@ nav.ulc ul {
   .ftr-col-4,
   .ftr-col-2,
   .ftr-col-3{
-    width: 18.5%;
-    padding-right: 20px;
-}
+      width: 18.5%;
+      padding-right: 20px;
+  }
+  .brand-logo-tp-wrp ul {
+      margin: 0;
+  }
+  .brand-logo-head-title {
+      font-size: 34px;
+      margin-bottom: 60px;
+  }
   
 
 
@@ -234,21 +247,22 @@ nav.ulc ul {
     display: inline-block;
     vertical-align: baseline;
   }
-  .ftr-col-main span.ftr-angle-w {
-      left: 0;
-      bottom: 70%;
-      width: 150px;
-      transform: skew(-590deg);
-      -ms-transform: skew(-590deg);
-      -webkit-transform: skew(-590deg);
-  }
   .ftr-col-main {
       padding-top: 50px;
       padding-bottom: 30px;
   }
+  .ftr-logo{
+    padding-bottom: 35px;
+  }
   .ftr-title {
       margin-bottom: 35px;
-      margin-top: 30px;
+      margin-top: 0;
+  }
+  .ftr-col ul{
+    padding-bottom: 30px;
+  }
+  .ftr-col:last-of-type ul{
+    padding-bottom: 0;
   }
   .ftr-col ul li {
       padding-left: 0;
@@ -265,7 +279,70 @@ nav.ulc ul {
   .ftr-btm {
       padding: 35px 0 40px;
   }
-  
+  .brand-logo-tp-wrp ul li {
+      padding: 0 30px 35px;
+  }
+  .brand-logo-tp-wrp ul:nth-child(2) {
+      padding-bottom: 0;
+  }
+  .ena-xs-view-more-btn{
+    text-align: center;
+  }
+  .ena-xs-view-more-btn a{
+    display: inline-block;
+    vertical-align: baseline;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 16px;
+    color: #F6C042;
+    font-weight: 800;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    padding-right: 24px;
+  }
+  .ena-xs-view-more-btn a:after{
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 3px;
+    background: url(../images/ena-xs-view-more-btn-icon.svg);
+    background-repeat: no-repeat;
+    background-size: 12px 8px;
+    width: 12px;
+    height: 8px;
+  }
+  .brand-logo-head-title {
+      font-size: 32px;
+      margin-bottom: 50px;
+  }
+
+  .ftr-top span.ftr-angle-w {
+      position: absolute;
+      left: 190px;
+      top: 0;
+      bottom: auto;
+      width: 50px;
+      background: #1d1d1d;
+      transform: skew(28deg);
+      -ms-transform: skew(28deg);
+      -webkit-transform: skew(-50deg);
+      height: 410px;
+  }
+.ftr-top span.ftr-angle-w:after {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: -2px;
+      bottom: -2px;
+      width: 100px;
+      background: #fff;
+  }
+  .brand-logo-tp-wrp ul:nth-child(4),
+  .brand-logo-tp-wrp ul:nth-child(3){
+    display: none;
+  }
+    
 
   
   
@@ -277,6 +354,7 @@ nav.ulc ul {
   }
   .ftr-col h6 span {
       padding-right: 22px;
+      position: relative;
   }
   .ftr-col h6 span::after{
       content: "";
@@ -295,8 +373,33 @@ nav.ulc ul {
   }
   .ftr-col h6.active span::after{
       content: "";
+      content: "";
       background: url(../images/ftr-angle-btm-icon.svg);
+      background-repeat: no-repeat;
+      background-size: 12px 7px;
   }
+  .ftr-col > ul{
+    display: none;
+  }
+  .ftr-col.ftr-col-2 > ul{
+    display: block;
+  }
+  .brand-logo-tp-wrp ul li {
+      padding: 0 15px 35px;
+      width: 33.3333%;
+      text-align: center;
+  }
+  .ftr-tp-brand-logo-sec-wrp {
+      padding-top: 55px;
+  }
+  .brand-logo-head-title {
+      font-size: 30px;
+      margin-bottom: 30px;
+  }
+  .ftr-top span.ftr-angle-w{
+    left: 85px;
+  }
+  
   
   
 }
@@ -309,15 +412,37 @@ nav.ulc ul {
       -webkit-transform: skew(-592deg);
       left: -65px;
   }
+  .brand-logo-tp-wrp ul li {
+      padding: 0 10px 35px;
+      width: 33.3333%;
+      text-align: center;
+  }
+  .brand-logo-head-title {
+      font-size: 28px;
+  }
+  .ftr-top span.ftr-angle-w {
+      left: 45px;
+  }
     
 
 }
 
 @media(max-width: 479px){
-
+  .brand-logo-tp-wrp ul li {
+      padding: 0 10px 25px;
+      width: 50%;
+  }
+  .brand-logo-head-title {
+      font-size: 26px;
+  }
+  .ftr-top span.ftr-angle-w {
+      left: -30px;
+  }
 
 }
 
 @media(max-width: 359px){
-
+  .ftr-top span.ftr-angle-w {
+      left: -50px;
+  }
 }

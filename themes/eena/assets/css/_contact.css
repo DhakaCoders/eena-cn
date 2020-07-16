@@ -341,6 +341,10 @@
 .contact-info-adrs-wrp ul li:first-child{
 	width: 100%;
 }
+.contact-info-adrs-wrp ul li:nth-child(5),
+.contact-info-adrs-wrp ul li:nth-child(3){
+	padding-left: 60px;
+}
 .contact-info-adrs-wrp ul li:nth-child(6){
 	padding-bottom: 0;
 }
@@ -665,6 +669,10 @@
 	}
 	.contact-form-dsc {
 	    padding-bottom: 30px;
+	}
+	.contact-info-wrp{
+		display: inline-block;
+		vertical-align: baseline;
 	}
 	
 }

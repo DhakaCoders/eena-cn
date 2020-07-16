@@ -388,6 +388,11 @@ nav.main-nav > ul > li.menu-item-has-children > ul.sub-menu > li.menu-item-has-c
 }
 
 
-.home-banner{
+.home-banner-cntlr{
 	height: 1000px;
+}
+.mainSlider,
+.mainSlideItem{
+	height: 100%;
+	width: 100%;
 }

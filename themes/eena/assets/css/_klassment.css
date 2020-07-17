@@ -77,6 +77,34 @@
 .classroom-tbody{
 
 }
+.classroom-btn{
+	display: none;
+}
+.classroom-btn a{
+	text-transform: uppercase;
+	display: inline-block;
+	color: #F6C042;
+	font-weight: 800;
+}
+.classroom-btn a:hover{
+	color: #111111;
+}
+.classroom-btn a i{
+	padding-bottom: 3px;
+	padding-left: 16px;
+	-moz-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
+}
+.classroom-btn a:hover i{
+	padding-left: 25px;
+	-moz-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
+}
+.classroom-btn a:hover i svg{
+	fill: #111111;
+}
 .classroom-aside-cntlr{
 	width: 34%;
 	padding-left: 22px;
@@ -110,6 +138,7 @@
 	border-bottom: 3px solid #f9f9f9;}
 .versus-team{
 	width: 25%;
+	padding: 0 5px;
 	text-align: center;
 }
 .versus-team-name{
@@ -122,9 +151,9 @@
 }
 .versus-logo-wrap{
 	width: 40%;
+	padding: 0 5px;
 }
 .versus-logo{
-	width: 153px;
 	height: 60px;
 	background-size: 100% 100%!important;
 	display: flex;
@@ -133,6 +162,7 @@
 }
 .versus-team2{
 	width: 35%;
+	padding: 0 5px;
 	text-align: center;
 }
 .versus-play-time{
@@ -183,4 +213,97 @@
 }
 .sp-fanshop-gallery-inr .classroom-aside-gallery-img{
 	height: 340px!important;
+}
+/* responsive */
+@media(max-width: 1499px){
+
+}
+@media(max-width: 1399px){
+
+}
+@media(max-width: 1299px){
+	.versus-match-cntlr{
+		padding: 0 15px;
+	}
+}
+@media(max-width: 1199px){
+	.classroom-desc-cntlr {
+		padding: 0 15px 116px 15px;
+		background: #fff;
+	}
+	.classroom-table-wrap {
+		background: #f9f9f9;
+		padding: 30px 15px 27px 15px;
+	}
+}
+@media(max-width: 991px){
+	.classroom-sec-wrap{
+		padding-bottom: 45px;
+	}
+	.classroom-inr{
+		display: initial;
+	}
+	.classroom-desc{
+		width: 100%;
+	}
+	.classroom-desc-cntlr {
+		padding: 0 50px 116px 50px;
+		background: #fff;
+	}
+	.classroom-aside-cntlr{
+		width: 100%;
+		padding: 0 180px;
+		margin-top: 30px;
+	}
+}
+@media(max-width: 767px){
+	.classroom-desc-cntlr{
+		background: #fff;
+	}
+	.classroom-desc-cntlr{
+		padding: 0 25px;
+	}
+	.classroom-table-wrap{
+		background: #fff;
+		padding: 0;
+	}
+	.classroom-tbody tr:focus td,
+	.classroom-tbody tr:hover td{
+		background: #f9f9f9;
+		transition: all 0.3s ease-out 0s;
+		-moz-transition: all 0.3s ease-out 0s;
+		-webkit-transition: all 0.3s ease-out 0s;
+	}
+	.classroom-thead tr th:last-child,
+	.classroom-tbody tr td:last-child{
+		display: none;
+	}
+	.classroom-thead tr th:nth-last-child(2), .classroom-tbody tr td:nth-last-child(2){
+		width: initial;
+	}
+	.classroom-btn{
+		display: block;
+		padding: 25px 0;
+	}
+	.classroom-aside-cntlr{
+		padding: 0 100px;
+	}
+}
+@media(max-width: 639px){
+	.classroom-table-wrap{
+		overflow-x: scroll;
+		overflow-y: hidden;
+		white-space: nowrap;
+	}
+	.classroom-aside-cntlr{
+		padding: 0 50px;
+	}
+}
+@media(max-width: 575px){
+	.classroom-aside-cntlr{
+		padding: 0;
+	}
+}
+@media(max-width: 479px){
+	
 }

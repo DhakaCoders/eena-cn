@@ -24,6 +24,7 @@
 }
 .default-page-con h2{
 	padding-top: 20px;
+	padding-right: 20px;
 }
 .dfp-promo-module-title{
 	color: #111111;
@@ -329,16 +330,17 @@ Gallery design
 	padding: 0;
 }
 .dft-clint-logos{
-	padding-top: 10px;
-	padding-bottom: 40px;
+	padding: 53px 0 30px;
+	border-top: 1px solid #e2e2e2;
+	border-bottom: 1px solid #e2e2e2;
+	margin-bottom: 40px;
+	margin-top: 5px;
 }
 .dft-clint-logos ul{
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
-	padding: 53px 0 30px;
-	border-top: 1px solid #e2e2e2;
-	border-bottom: 1px solid #e2e2e2;
+	padding: 0;
 }
 .dft-clint-logos ul li{
 	width: 25%;
@@ -347,6 +349,9 @@ Gallery design
 .dft-news-overview-grds ul{
 	padding: 0;
 	margin: 0 -12px;
+}
+.dft-clint-logos ul li div{
+	text-align: center;
 }
 .dft-news-overview-grds ul li{
 	width: 50%;
@@ -414,8 +419,71 @@ Gallery design
 .nxt-page-btn{
 	margin-left: auto;
 }
+.innerpage-con-wrap .list-module ul{
+	margin: 0;
+	padding: 0;
+	background: #F9F9F9;
+}
+.innerpage-con-wrap .list-module ul li{
+	margin: 0;
+	padding: 0;
+}
+.list-module ul li div{
+	display: flex;
+	align-items: center;
+	padding: 20px 20px 20px 30px;
+}
+.list-module ul li div strong{
+	width: 30%;
+	text-transform: uppercase;
+	padding-right: 20px;
+	font-weight: 800;
+	color: #111111;
+}
+.list-module ul li div span{
+	width: 70%;
+}
+.list-module ul li:nth-child(2n+2) div{
+	background: #fff;
+}
+.list-module{
+	padding-bottom: 110px;
+}
+.dft-back-in-time-sec .hm-back-in-time-sec-des{
+	min-height: 370px;
+}
+.dft-back-in-time-sec .black-anlge-lft{
+	width: 142px;
+	left: -141px;
+}
+.dft-back-in-time-sec{
+	padding-bottom: 55px;
+}
+.dft-back-in-time-sec .hm-back-in-time-sec-des{
+	padding: 60px 85px 55px 35px;
+}
+.dft-back-in-time-sec .hm-back-in-time-sec-des strong{
+	margin-bottom: 30px;
+}
+.dft-versus-match-cntlr .versus-match-cntlr{
+	background: #FFFFFF;
+	box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.03);
+}
+.dft-versus-match-cntlr{
+	padding-bottom: 30px;
+}
+.dft-versus-match-cntlr .versus-logo{
+	background: url(../images/vs-icon.png);
+	width: 191px;
+	height: 103px;
+}
+.dft-versus-match-cntlr .versus-logo .versus-play-time span{
+	font-size: 14px;
+}
 @media(max-width: 1199px){
-	
+	.default-page-con h2{
+		padding-right: 0;
+	}
 }
 
 

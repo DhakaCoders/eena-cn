@@ -794,6 +794,9 @@ fanshop-v1-post-sec-wrp
 	.fanshop-v1-post-sec-wrp .fanshop-catagory-head {
 	    padding-bottom: 30px;
 	}
+	.eena-pagination-wrp {
+	    padding-top: 0;
+	}
 }
 
 @media(max-width: 575px){

@@ -669,6 +669,9 @@ Gallery design
 	.dft-clint-logos-module-title{
 		font-size: 20px;
 	}
+	.dft-clint-logos ul li {
+	    width: 50%;
+	}
 }
 
 

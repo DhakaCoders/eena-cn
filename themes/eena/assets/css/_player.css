@@ -407,6 +407,7 @@
 	.player-des{
 		margin-left: -20px;
 		margin-right: -20px;
+		width: auto;
 	}
 	.list-grd ul li strong {
 	    width: 50%;

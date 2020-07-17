@@ -350,9 +350,9 @@ Gallery design
 	width: 25%;
 	padding: 0 10px 30px!important;
 }
-.dft-news-overview-grds ul{
+.dftNewsOverviewSlider{
 	padding: 0;
-	margin: 0 -12px;
+	margin: 0 -12px!important;
 }
 .dft-clint-logos ul li div{
 	text-align: center;
@@ -360,10 +360,11 @@ Gallery design
 	align-items: center;
 	justify-content: center;
 }
-.dft-news-overview-grds ul li{
-	width: 50%;
-	float: left;
+.dftNewsOverviewSlideItem{
 	padding: 0 12px 24px;
+}
+.dft-news-overview-grds{
+	padding-bottom: 25px;
 }
 .dft-news-overview-grds .eena-gid-title{
 	text-transform: initial;
@@ -574,6 +575,27 @@ Gallery design
 	.dft-clint-logos-module-title{
 		display: block;
 	}
+	.dftNewsOverviewSlider{
+		margin-left: -20px;
+		margin-right: -20px;
+	}
+	.dftNewsOverviewSlideItem{
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.dftNewsOverviewSlider .slick-next{
+		right: 15px;
+	}
+	.dftNewsOverviewSlider .slick-prev{
+		left: 15px;
+	}
+	.dftNewsOverviewSlideItem{
+		padding-bottom: 40px;
+	}
+	.dft-news-overview-grds{
+		padding-bottom: 45px;
+	}
+
 }
 
 

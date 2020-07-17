@@ -102,6 +102,13 @@
 	h5{
 		font-size: 18px;
 	}
+	.slick-next,
+	.slick-prev{
+		bottom: 0;
+		top: auto;
+		transform: initial;
+	}
+
 }
 
 @media(max-width: 575px){

@@ -455,6 +455,30 @@ if( $('.hmWebshopSlider').length ){
 }
 
 
+if( $('.dftNewsOverviewSlider').length ){
+    $('.dftNewsOverviewSlider').slick({
+      dots: false,
+      infinite: false,
+      autoplay: false,
+      autoplaySpeed: 2000,
+      speed: 300,
+      slidesToShow: 2,
+      slidesToScroll: 1,
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            dots: true,
+          }
+        }
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+      ]
+    });
+}
 
 
 var container = $(".container").width();

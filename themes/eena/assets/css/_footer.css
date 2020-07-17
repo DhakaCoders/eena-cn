@@ -228,7 +228,7 @@ nav.ulc ul {
 @media(max-width: 991px){
   .ftr-top {
       position: relative;
-      overflow: hidden;
+      /*overflow: hidden;*/
   }
   .ftr-col-1 {
       width: 100%;

@@ -2,10 +2,6 @@
 	padding-bottom: 50px;
 }
 @media(max-width: 767px){
-	.Wed-am-thead tr th:last-child,
-	.Wed-am-tbody tr td:last-child{
-		display: block;
-	}
 	.Wed-am-thead tr th:nth-last-child(2),
 	.Wed-am-tbody tr td:nth-last-child(2){
 		display: none;

@@ -116,6 +116,9 @@
 	background: #fff;
 	padding: 0 31px;
 }
+.versus-match-cntlr .versus-match-title >span{
+	display: none;
+}
 .versus-match-title{
 	color: #111111;
 	padding-top: 42px;
@@ -274,10 +277,10 @@
 		-moz-transition: all 0.3s ease-out 0s;
 		-webkit-transition: all 0.3s ease-out 0s;
 	}
-	.classroom-thead tr th:last-child,
+	/* .classroom-thead tr th:last-child,
 	.classroom-tbody tr td:last-child{
 		display: none;
-	}
+	} */
 	.classroom-thead tr th:nth-last-child(2), .classroom-tbody tr td:nth-last-child(2){
 		width: initial;
 	}
@@ -287,6 +290,14 @@
 	}
 	.classroom-aside-cntlr{
 		padding: 0 100px;
+	}
+	.versus-match-cntlr .versus-match-title >span{
+		display: block;
+		padding-left: 0;
+		padding-top: 15px;
+	}
+	.versus-match-cntlr .versus-match-title >span:after{
+		display: none;
 	}
 }
 @media(max-width: 639px){

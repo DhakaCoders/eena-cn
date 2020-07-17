@@ -404,6 +404,27 @@
 	    padding-left: 0;
 	    padding-top: 7px;
 	}
+	.hm-back-in-time-sec-fea-img{
+		width: 100%;
+		height: 350px;
+		position: static;
+	}
+	.hm-back-in-time-sec-angle{
+		display: none;
+	}
+	.black-anlge-lft {
+	    width: 100%!important;
+	    left: 0!important;
+	    right: 0!important;
+	    bottom: 100%!important;
+	    top: auto!important;
+	    height: 135px;
+	    border-bottom: 150px solid #141414;
+	    border-right: 150px solid transparent;
+	}
+	.black-anlge-lft img{
+		display: none!important;
+	}
 }
 
 @media(max-width: 575px){

@@ -479,13 +479,21 @@ if( $('.dftNewsOverviewSlider').length ){
       ]
     });
 }
-
+var hmBackInTimeSecDesWidth = $('.hm-back-in-time-sec-des').outerWidth();
+$('.black-anlge-lft').css("border-right-width", hmBackInTimeSecDesWidth);
+$( window ).resize(function() {
+  var hmBackInTimeSecDesWidth = $('.hm-back-in-time-sec-des').outerWidth();
+  $('.black-anlge-lft').css("border-right-width", hmBackInTimeSecDesWidth);
+});
 
 var container = $(".container").width();
 var sideWidh = (windowWidth - container) / 2;
 
 $('.hdr-lft-opacity-bg').css("width", sideWidh);
 
+$( window ).resize(function() {
+  $('.hdr-lft-opacity-bg').css("width", sideWidh);
+});
 //$('.mainSlideItemDes').css("left", sideWidh);
 
 $('.scrollto').on('click', function(e){

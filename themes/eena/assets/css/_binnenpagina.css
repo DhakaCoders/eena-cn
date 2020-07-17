@@ -511,16 +511,24 @@ Gallery design
 		font-size: 20px;
 		line-height: 24px;
 	}
-	
+	.dft-back-in-time-sec .hm-back-in-time-sec-des{
+		padding-right: 30px;
+	}
+	.hm-back-in-time-sec-des{
+		padding-top: 20px;
+	}
+	.list-module {
+	    padding-bottom: 80px;
+	}
 }
-@media(max-width: 850px){
+@media(max-width: 890px){
 	.table-dsc {
 	    overflow-x: scroll;
 	    overflow-y: hidden;
 	    white-space: nowrap;
 	}
 	.table-dsc table {
-	    width: 800px;
+	    width: 850px;
 	}
 }
 
@@ -595,7 +603,29 @@ Gallery design
 	.dft-news-overview-grds{
 		padding-bottom: 45px;
 	}
-
+	.list-module-cntlr{
+		overflow-x: scroll;
+	    overflow-y: hidden;
+	    white-space: nowrap;
+	}
+	.list-module-cntlr ul{
+		width: 700px;
+	}
+	.list-module-cntlr,
+	.dfp-tbl-wrap{
+		margin-left: -20px;
+		margin-right: -20px;
+	}
+	.list-module {
+	    padding-bottom: 70px;
+	}
+	.hm-back-in-time-sec-des{
+		padding: 20px 20px 40px!important;
+		min-height: auto!important;
+	}
+	.dft-back-in-time-sec{
+		padding-bottom: 40px;
+	}
 }
 
 
@@ -668,7 +698,7 @@ Gallery design
 		padding-right: 20px;
 	}
 	.default-page-con{
-		padding-bottom: 40px;
+		padding-bottom: 60px;
 	}
 	.fl-dft-lftimg-rgtdes-lft{
 		height: 280px;
@@ -683,7 +713,9 @@ Gallery design
 	.dft-clint-logos{
 		margin-bottom: 35px;
 	}
-	
+	.list-module {
+	    padding-bottom: 60px;
+	}
 }
 
 

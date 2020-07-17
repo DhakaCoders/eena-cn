@@ -160,6 +160,7 @@ $(".eena-brdcrmb-left").css({
 if( $('.bdcmbSlider').length ){
     $('.bdcmbSlider').slick({
       dots: false,
+      arrows: false,
       infinite: true,
       autoplay: true,
       autoplaySpeed: 1000,
@@ -369,26 +370,17 @@ if( $('.hmNewsSecSlider').length ){
       nextArrow: $('.hmNewsSecSliderPrevNext .fl-next'),
       responsive: [
         {
-          breakpoint: 1024,
+          breakpoint: 992,
           settings: {
-            slidesToShow: 3,
-            slidesToScroll: 3,
-            infinite: true,
+            slidesToShow: 2,
             dots: true
           }
         },
         {
-          breakpoint: 600,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2
-          }
-        },
-        {
-          breakpoint: 480,
+          breakpoint: 768,
           settings: {
             slidesToShow: 1,
-            slidesToScroll: 1
+            dots: true
           }
         }
         // You can unslick at a given breakpoint now by adding:

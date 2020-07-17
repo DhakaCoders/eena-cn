@@ -40,7 +40,7 @@
 	content: none;
 }
 .eena-brdcrmb-slider-item a{
-	font-size: 14px;
+	font-size: 13px;
 	color: #fff;
 	font-weight: 800;
 	padding-bottom: 5px;
@@ -256,6 +256,15 @@
 }
 
 
+
+@media(min-width: 1921px){
+	.eena-breadcrumbs-sec-inr{
+		max-width: 1400px;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
 
 @media(max-width: 1499px){
 

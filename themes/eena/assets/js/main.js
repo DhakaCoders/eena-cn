@@ -167,7 +167,7 @@ if( $('.bdcmbSlider').length ){
       slidesToShow: 3,
       responsive: [
         {
-          breakpoint: 1024,
+          breakpoint: 1300,
           settings: {
             slidesToShow: 2
           }

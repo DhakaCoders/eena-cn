@@ -68,7 +68,7 @@ ul li.refGridItem:before{
 	display: none;
 }
 .default-page-con ol, ol {
-	padding: 0 0 0 30px;
+	padding: 10px 0 0 30px;
 	line-height: 24px;
 	font-weight: 600;
 	list-style: none;
@@ -82,18 +82,22 @@ ul li.refGridItem:before{
 	-webkit-counter-increment: my-awesome-counter;
 	padding-bottom: 27px;
 	line-height: 24px;
+	padding-left: 30px;
+	position: relative;
 }
 .default-page-con ol li::before,
 ol li::before {
 	content: counter(my-awesome-counter) ".";
 	color: #F6C042;
 	font-weight: 800;
-	margin-right: 8px;
 	text-align: center;
 	font-size: 16px;
 	line-height: 16px;
 	text-align: center;
 	padding: 0 5.5px;
+	position: absolute;
+	left: 0;
+	top: 5px;
 }
 .default-page-con p {
     margin-bottom: 30px;
@@ -202,7 +206,7 @@ Gallery design
 
 .gallery-wrap{
 	padding-top: 13px;
-	padding-bottom: 6px;
+	padding-bottom: 25px;
 }
 .gallery {
 	margin-left: -12px;
@@ -344,7 +348,7 @@ Gallery design
 }
 .dft-clint-logos ul li{
 	width: 25%;
-	padding: 0 10px 30px;
+	padding: 0 10px 30px!important;
 }
 .dft-news-overview-grds ul{
 	padding: 0;
@@ -352,6 +356,9 @@ Gallery design
 }
 .dft-clint-logos ul li div{
 	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 .dft-news-overview-grds ul li{
 	width: 50%;
@@ -468,6 +475,8 @@ Gallery design
 .dft-versus-match-cntlr .versus-match-cntlr{
 	background: #FFFFFF;
 	box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.03);
+	padding-left: 45px;
+	padding-right: 45px;
 }
 .dft-versus-match-cntlr{
 	padding-bottom: 30px;
@@ -479,6 +488,14 @@ Gallery design
 }
 .dft-versus-match-cntlr .versus-logo .versus-play-time span{
 	font-size: 14px;
+}
+.dft-clint-logos-module-title{
+	font-size: 25px;
+	line-height: 1;
+	text-transform: uppercase;
+	font-weight: 800;
+	text-align: center;
+	display: none;
 }
 @media(max-width: 1199px){
 	.default-page-con h2{
@@ -546,6 +563,16 @@ Gallery design
 	}
 	.default-page-con .sp-fanshop-gallery-img{
 		height: 380px!important;
+	}
+	.dft-versus-match-cntlr .versus-match-cntlr{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	.dft-clint-logos ul li{
+		width: 33.3333%;
+	}
+	.dft-clint-logos-module-title{
+		display: block;
 	}
 }
 
@@ -628,13 +655,20 @@ Gallery design
 	.fl-dft-lftimg-rgtdes.fl-dft-rgtimg-lftdes .fl-dft-lftimg-rgtdes-rgt{
 		padding-right: 0;
 	}
-
+	.default-page-con ol li, ol li{
+		padding-bottom: 20px;
+	}
+	.dft-clint-logos{
+		margin-bottom: 35px;
+	}
+	
 }
 
 
 @media(max-width: 479px){
-	
-	
+	.dft-clint-logos-module-title{
+		font-size: 20px;
+	}
 }
 
 

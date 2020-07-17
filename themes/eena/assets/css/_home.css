@@ -374,3 +374,48 @@
 	background: #F6C042;
 	border: 2px solid #F6C042;
 }
+
+
+
+@media(max-width: 1499px){
+
+}
+
+@media(max-width: 1399px){
+
+}
+
+@media(max-width: 1299px){
+
+}
+
+@media(max-width: 1199px){
+
+
+}
+
+@media(max-width: 991px){
+
+}
+
+@media(max-width: 767px){
+	.versus-match-title span {
+	    display: block;
+	    padding-left: 0;
+	    padding-top: 7px;
+	}
+}
+
+@media(max-width: 575px){
+
+}
+
+@media(max-width: 479px){
+
+
+}
+
+@media(max-width: 359px){
+
+}
+

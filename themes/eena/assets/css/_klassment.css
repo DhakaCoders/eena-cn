@@ -116,7 +116,7 @@
 	background: #fff;
 	padding: 0 31px;
 }
-.versus-match-cntlr .versus-match-title >span{
+.classroom-sec-wrap .versus-match-cntlr .versus-match-title >span{
 	display: none;
 }
 .versus-match-title{
@@ -291,13 +291,20 @@
 	.classroom-aside-cntlr{
 		padding: 0 100px;
 	}
-	.versus-match-cntlr .versus-match-title >span{
+	.classroom-sec-wrap .versus-match-cntlr .versus-match-title >span{
 		display: block;
 		padding-left: 0;
 		padding-top: 15px;
 	}
 	.versus-match-cntlr .versus-match-title >span:after{
 		display: none;
+	}
+	.versus-match-title{
+		padding-bottom: 15px;
+		padding-top: 20px;
+	}
+	.versus-btn{
+		padding-bottom: 33px;
 	}
 }
 @media(max-width: 639px){

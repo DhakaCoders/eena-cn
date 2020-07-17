@@ -419,6 +419,10 @@
 	.eena-brdcrmb-slider-item a span{
 		display: none;
 	}
+	.eena-breadcrumbs-sec{
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
 
 
 }
@@ -426,6 +430,12 @@
 @media(max-width: 479px){
 	.eena-nieuws-link ul li a {
 	    font-size: 14px;
+	}
+	.eena-brdcrmb-slider-item a{
+		font-size: 10px;
+	}
+	.eena-brdcrmb-left strong{
+		font-size: 15px;
 	}
 
 }

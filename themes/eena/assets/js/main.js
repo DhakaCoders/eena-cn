@@ -161,7 +161,7 @@ if( $('.bdcmbSlider').length ){
     $('.bdcmbSlider').slick({
       dots: false,
       infinite: true,
-      autoplay: false,
+      autoplay: true,
       autoplaySpeed: 1000,
       speed: 300,
       slidesToShow: 3,

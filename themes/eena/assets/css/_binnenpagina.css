@@ -716,6 +716,9 @@ Gallery design
 	.list-module {
 	    padding-bottom: 60px;
 	}
+	.prv-nxt-page-btns{
+		padding-top: 50px;
+	}
 }
 
 
@@ -725,6 +728,19 @@ Gallery design
 	}
 	.dft-clint-logos ul li {
 	    width: 50%;
+	}
+	.prv-page-btn span {
+	    padding-left: 0px;
+	}
+	.nxt-page-btn span{
+		padding-right: 0;
+	}
+	.prv-nxt-page-btns a{
+		font-size: 12px;
+	}
+	.prv-nxt-page-btns a i svg{
+		width: 22px!important;
+		height: auto!important;
 	}
 }
 

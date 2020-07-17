@@ -544,12 +544,20 @@ Gallery design
 	.default-page-con{
 		padding-bottom: 70px;
 	}
+	.default-page-con .sp-fanshop-gallery-img{
+		height: 380px!important;
+	}
 }
 
 
 
 @media(max-width: 639px){
-
+	.dft-fanshop-items .sp-fanshop-gallery-wrp ul li{
+		width: 100%;
+	}
+	.default-page-con .sp-fanshop-gallery-img {
+	    height: 350px!important;
+	}
 }
 
 
@@ -612,6 +620,13 @@ Gallery design
 	}
 	.default-page-con{
 		padding-bottom: 40px;
+	}
+	.fl-dft-lftimg-rgtdes-lft{
+		height: 280px;
+	}
+	.fl-dft-lftimg-rgtdes-rgt,
+	.fl-dft-lftimg-rgtdes.fl-dft-rgtimg-lftdes .fl-dft-lftimg-rgtdes-rgt{
+		padding-right: 0;
 	}
 
 }

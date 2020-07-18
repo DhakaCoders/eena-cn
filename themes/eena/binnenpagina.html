@@ -59,6 +59,7 @@
 
 </head>
 <body>
+<div class="bdoverlay"></div>
 <div class="hdr-cntlr">
   <span class="hdr-inr-logo"></span>
   <span class="hdr-bg-logo"></span>
@@ -86,7 +87,7 @@
         <div class="container">
           <div class="row">
             <div class="col-md-12">
-              <div class="hdr-topbar-inr">
+              <div class="hdr-topbar-inr hide-md">
                 <ul class="reset-list hdr-topbar-nav">
                   <li><a href="#">Webshop</a></li>
                   <li><a href="#">Contact</a></li>
@@ -113,7 +114,19 @@
                   </div>
                 </div>
                 <div class="main-nav-white-bg">
-                  <nav class="main-nav">
+                  <div class="hdr-humberger">
+                    <div class="line-icon show-lg">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                    <strong class="menu-txt show-lg">Menu</strong>
+                  </div>
+                  <nav class="main-nav en-hide-lg">
+                    <div class="closebtn show-lg">
+                      <span></span>
+                      <span></span>
+                    </div>
                     <ul class="clearfix reset-list">
                       <li class="current-menu-item"><a href="#">Home</a></li>
                       <li><a href="#">Nieuws</a></li>
@@ -185,6 +198,48 @@
     </div>
     
   </header>
+<div class="main-nav-cntlr">
+  <nav class="main-nav">
+    <div class="popup-cart-btn"><a href="#"><img src="assets/images/popup-cart-btn.png"></a></div>
+    <div class="closebtn show-lg">
+      <span></span>
+      <span></span>
+    </div>
+    <ul class="clearfix reset-list">
+      <li class="current-menu-item"><a href="#">Home</a></li>
+      <li><a href="#">Nieuws</a></li>
+      <li><a href="#">Team</a></li>
+      <li class="menu-item-has-children">
+        <a href="#">Seizoen</a>
+        <ul class="sub-menu">
+          <li class="menu-item-has-children">
+            <a href="#">WEDSTRIJDEN</a>
+            <ul class="sub-menu">
+              <li><a href="#">CROKY CUP</a></li>
+              <li><a href="#">VOORBEREIDING</a></li>
+              <li><a href="#">TWEEDE AMATEURLIGA</a></li>
+            </ul>
+          </li>
+          <li><a href="#">KLASSEMENT</a></li>
+          <li><a href="#">TEGENSTANDERS</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Ticketing</a></li>
+      <li><a href="#">Club</a></li>
+      <li><a href="#">Supporters</a></li>
+    </ul>
+    <div class="xs-popupmenu-2 show-md">
+      <ul class="reset-list hdr-topbar-nav">
+        <li><a href="#">Webshop</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Archief</a></li>
+        <li><a href="#">Business</a></li>
+        <li><a href="#">Restaurant</a></li>
+      </ul>
+    </div>
+  </nav>
+</div>
+
   <section class="page-banner">
     <div class="page-banner-bg inline-bg" style="background: url('assets/images/page-bnr.jpg');"></div>
   </section>

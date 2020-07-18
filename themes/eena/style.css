@@ -12,6 +12,9 @@ Text Domain: clipfresh
 */
 
 @import url('assets/css/main.css');
-.hdr-cntlr{
+/*.hdr-cntlr{
+	display: none;
+}*/
+.footer-wrp{
 	display: none;
 }

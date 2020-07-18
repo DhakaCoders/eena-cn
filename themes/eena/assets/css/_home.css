@@ -36,6 +36,8 @@
 }
 .hm-back-in-time-sec-des{
 	min-height: 756px;
+	display: flex;
+	align-items: center;
 }
 .hm-back-in-time-sec-fea-img{
 	position: absolute;
@@ -427,6 +429,23 @@
 	}
 	.hm-news-sec-cntlr{
 		padding-bottom: 40px;
+	}
+	.hmbitsdes-title{
+		margin-bottom: 40px;
+	}
+	.hmbits-btns a{
+		width: 160px;
+	}
+	body.home .hm-back-in-time-sec-des{
+		padding-bottom: 60px;
+		padding-top: 60px;
+	}
+	.hmbitsdes-title{
+		font-size: 30px;
+	}
+	.hm-back-in-time-sec-des strong{
+		font-size: 24px;
+		margin-bottom: 30px;
 	}
 }
 

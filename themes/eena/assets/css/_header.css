@@ -456,3 +456,87 @@ nav.main-nav > ul > li.menu-item-has-children > ul.sub-menu > li.menu-item-has-c
 .mainSlider{
 	overflow: hidden;
 }
+
+
+
+@media(max-width: 1499px){
+	.hdr-topbar-inr,
+	.main-nav-white-bg{
+		margin-right: 0;
+	}
+	.logo{
+		left: 0;
+	}
+	.fl-page-bnr-des{
+		margin-left: 0;
+	}
+	.hdr-cntlr .container{
+		max-width: 1400px;
+	}
+	.hdr-inr-logo{
+		max-width: 472px;
+	}
+	nav.main-nav > ul > li{
+		padding-left: 11px;
+		padding-right: 11px;
+	}
+	.hdr-topbar-nav li{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}
+
+@media(max-width: 1399px){
+
+}
+
+@media(max-width: 1299px){
+	.logo a{
+		max-width: 120px;
+	}
+	.logo-txt strong{
+		font-size: 26px;
+	}
+	.logo-txt span{
+		font-size: 13px;
+	}
+	.hdr-inr-logo {
+	    max-width: 415px;
+	}
+	.hdr-lft-bg{
+		width: 300px;
+	}
+	.fl-page-bnr-des-cntlr{
+		bottom: 35px;
+	}
+
+}
+
+@media(max-width: 1199px){
+
+
+}
+
+@media(max-width: 991px){
+
+	
+}
+
+@media(max-width: 767px){
+
+
+}
+
+@media(max-width: 575px){
+
+
+}
+
+@media(max-width: 479px){
+
+
+}
+
+@media(max-width: 359px){
+
+}

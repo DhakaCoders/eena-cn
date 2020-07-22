@@ -236,8 +236,11 @@
 .hm-sp-fanshop-gallery-sec-cntlr.sp-fanshop-gallery-sec-wrp{
 	padding-bottom: 0;
 }
-.sp-fanshop-btm-gallery-item{
-	
+.sp-fanshop-btm-gallery-item:hover .spfbg-item-des-cntlr > a{
+	margin-left: 5px;
+}
+.sp-fanshop-btm-gallery-item:hover .spfbg-item-des-cntlr > a svg{
+	fill: #fff;
 }
 .hm-ranking-section{
 	padding: 90px 0 75px;

@@ -116,6 +116,16 @@ sp-fanshop-gallery-sec-wrp
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	position: relative;
+}
+.sp-fanshop-gallery-img:hover .sp-fanshop-gallery-dsc > a{
+	margin-left: 5px;
+}
+.sp-fanshop-gallery-img:hover .sp-fanshop-gallery-dsc > a svg{
+	fill: #fff;
+}
+.sp-fanshop-gallery-img:hover .sp-fanshop-gallery-dsc > img{
+	
 }
 .sp-fanshop-gallery-dsc {
     text-align: center;

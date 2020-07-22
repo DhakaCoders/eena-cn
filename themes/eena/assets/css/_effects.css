@@ -2,10 +2,16 @@
 All Transitions
 */
 .fanshop-post-grid-inr:hover .fanshop-post-grid-img,
-a,input,img,textarea,button,svg{
+a,input,img,textarea,button,svg,.sp-fanshop-gallery-dsc > img{
 	transition: all 0.5s;
 	-ms-transition: all 0.5s;
 	-webkit-transition: all 0.5s;
+}
+.sp-fanshop-gallery-dsc > a,
+.spfbg-item-des-cntlr > a{
+	transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-webkit-transition: all 0.3s;	
 }
 .fanshop-post-grid-inr:hover .fanshop-post-grid-img,
 .scale{
@@ -14,7 +20,12 @@ a,input,img,textarea,button,svg{
 	-webkit-transform: scale(1.1);
 	-o-transform: scale(1.1);
 }
-
+.sp-fanshop-gallery-img:hover .sp-fanshop-gallery-dsc > img{
+		transform: scale(1.03);
+	-ms-transform: scale(1.03);
+	-webkit-transform: scale(1.03);
+	-o-transform: scale(1.03);
+}
 /**
 All Hovers
 */

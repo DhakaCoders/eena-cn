@@ -39,6 +39,18 @@
 .eena-brdcrmb-slider-item:first-child:after{
 	content: none;
 }
+.eena-brdcrmb-sliders{
+	position: relative;
+}
+/*.eena-brdcrmb-sliders:after{
+	content: "";
+	position: absolute;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background: linear-gradient(270deg, #111111 -28.16%, rgba(17, 17, 17, 0.34) 74.74%), #FFFFFF;
+	width: 30%;
+}*/
 
 
 .eena-brdcrmb-slider-item a{

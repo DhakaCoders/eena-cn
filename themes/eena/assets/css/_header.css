@@ -1,6 +1,16 @@
 .hdr-cntlr{
 	position: relative;
 }
+.bnr-lft-angle{
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: -45px;
+	z-index: 20;
+}
+.bnr-lft-angle img{
+	height: 100%;
+}
 .hdr-topbar{
 	background: rgba(0,0,0,.7);
 	position: relative;
@@ -102,7 +112,7 @@ header.header{
 	left: -50px;
 	display: flex;
 	align-items: center;
-	z-index: 6;
+	z-index: 30;
 	top: -20px;
 }
 
@@ -396,7 +406,7 @@ nav.main-nav > ul > li.menu-item-has-children > ul.sub-menu > li.menu-item-has-c
 	height: 100%;
 	width: 100%;
 }
-.mainSlideItemDes{
+.mainSlideItemDesSlider-cntlr{
 	position: absolute;
 	left: 0;
 	right: 0;

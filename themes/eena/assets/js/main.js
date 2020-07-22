@@ -529,4 +529,27 @@ if (windowWidth <= 1199) {
   });
 }
 
+function  headerObjects(){
+  var w1 = $(window).width();
+  var w2 = $('.hdr-main-nav-cntlr .container').outerWidth();
+  var w3 = $('.main-nav-white-bg').outerWidth();
+
+  var wv1 = w1 - w2;
+  var wv2 = wv1 / 2; // width on one side
+  var wv3 = w2 - w3;
+
+  var wac = wv2 + wv3;
+  var wac2 = wac - 900;
+
+  $('.bnr-lft-angle').width(wac + 100);
+  $('.bnr-lft-angle-bg').width(wac2);
+  $('.logo').css('left', wv2);
+  $('.bnr-lft-angle, .bnr-lft-angle-bg, .logo').css('opacity', 1);
+}
+headerObjects();
+
+$(window).on('resize', function(){
+  headerObjects();
+});
+
 })(jQuery);

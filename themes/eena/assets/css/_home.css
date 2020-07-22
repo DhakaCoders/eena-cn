@@ -117,6 +117,16 @@
 	color: #fff;
 	border-color: #fff;
 }
+.hmbits-btn-1 a:hover{
+	background: transparent;
+	color: #fff;
+	border-color: #fff;
+}
+.hmbits-btn-2 a:hover{
+	border-color: #F6C042;
+	background: #F6C042;
+	color: #2B2B2B;
+}
 .hm-back-in-time-sec-des p{
 	margin-bottom: 30px;
 }
@@ -180,6 +190,12 @@
 .fl-next{
 	cursor: pointer;
 }
+.fl-prev:hover svg{
+	fill:#F6C042;
+}
+.fl-next:hover svg{
+	fill:#F6C042;
+}
 .hmns-title{
 	font-weight: 800;
 	font-size: 36px;
@@ -213,6 +229,9 @@
 }
 .sp-fanshop-btm-gallery-item-inr h3 a{
 	color: #fff;
+}
+.sp-fanshop-btm-gallery-item-inr h3 a:hover{
+	color: #FFD056;
 }
 .hm-sp-fanshop-gallery-sec-cntlr.sp-fanshop-gallery-sec-wrp{
 	padding-bottom: 0;

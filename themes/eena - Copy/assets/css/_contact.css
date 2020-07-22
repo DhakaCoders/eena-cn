@@ -1,0 +1,743 @@
+/*
+----------------------
+ contact-form-sec-wrp
+----------------------
+*/
+.contact-form-sec-wrp{
+	padding: 100px 0 80px;
+	background: #F9F9F9;
+}
+.contact-form-lft{
+	width: 70%;
+	float: left;
+	padding-right: 24px;
+	padding-left: 35px;
+}
+.contact-form-dsc-title {
+    display: block;
+    font-size: 60px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: #111111;
+    font-weight: 900;
+    margin-bottom: 27px;
+    margin-top: -15px;
+	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	-ms-text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	-webkit-text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.contact-form-dsc {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    color: #6A6A6A;
+    padding-bottom: 40px;
+}
+.abo-frm-sec-wrp .contact-form-dsc p{
+	margin-bottom: 30px;
+}
+.rs-contact-form-sec .contact-form-dsc{
+	padding-bottom: 40px;
+}
+.rs-contact-form-sec .contact-form-dsc-title{
+	margin-bottom: 22px;
+}
+
+/*
+---------------------
+ Contact Form
+---------------------
+*/
+.contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container:after,
+.contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container:before{
+	content: "";
+	clear: both;
+	display: table;
+}
+.contact-form-wrp  div.wpforms-container-full .wpforms-form .wpforms-field{
+	clear: initial;
+}
+.contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field {
+    width: 50%;
+    float: left;
+    padding: 0 12px;
+    margin-bottom: 20px;
+    position: relative;
+}
+.contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .WpFullwidth{
+	width: 100%;
+}
+.contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .subjectField{
+	width: 100%;
+}
+.contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container{
+	margin: 0 -12px;
+}
+.contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field label{
+	display: inline-block;
+	vertical-align: baseline;
+	width: 100%;
+	margin: 0;
+	font-size: 13px;
+	line-height: 15px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #111111;
+	margin-bottom: 10px;
+}
+.contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field label span{
+	color: #ff2021;
+}
+.contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field input {
+    width: 100%;
+    max-width: 100%;
+    height: 60px;
+    background: #FFFFFF;
+    box-sizing: border-box;
+    padding: 17px 16px 18px;
+    color: #C2C2C2;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    border-radius: 0;
+    border:1px solid#fff;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.02);
+    -ms-box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.02);
+    -webkit-box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.02);
+}
+.contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field-textarea{
+	width: 100%;
+	margin-bottom: 20px;
+}
+.contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field-textarea textarea{
+	width: 100%;
+	height: 258px;
+	background: #FFFFFF;
+	box-sizing: border-box;
+	color: #ACABAB;
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: 400;
+	padding: 22px 18px;
+	transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	resize: none;
+	border-radius: 0;
+	border:1px solid#fff;
+	box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.02);
+	-ms-box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.02);
+	-webkit-box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.02);
+	outline-offset:0 !important; 
+}
+.contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field-textarea textarea:focus,
+.contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field input:focus{
+	border-color: #c0bebe;
+	box-shadow: none;
+}
+
+.contact-form-wrp .wpforms-field-container .wpforms-field-select{
+	width: 100% !important;
+}
+.contact-form-wrp .wpforms-field-select select {
+    background: url(../images/select-angle-icon.svg)!important;
+    background-size: 13px 8px;
+    background-repeat: no-repeat !important;
+    background-position: 97% center !important;
+}
+.contact-form-wrp .wpforms-field-select select {
+    outline: 0;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    padding-right: 40px;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: 60px !important;
+    background-color: #ffffff !important;
+    border: 0;
+    padding: 18px 16px;
+    font-size: 12px !important;
+    line-height: 14px;
+    color: #111111 !important;
+    font-weight: 600 !important;
+    position: relative;
+    transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.02);
+    -ms-box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.02);
+    -webkit-box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.02);
+}
+.contact-form-wrp .wpforms-field-select select option{
+	font-size: 14px !important;
+	line-height: 22px !important;
+	display: inline-block !important;
+	vertical-align: baseline !important;
+}
+.contact-form-wrp .wpforms-container .wpforms-form .wpforms-submit-container button{
+	max-width: 180px;
+	width: 100%;
+	height: 56px;
+	border: 2px solid#fed056!important;
+	background: #fed056;
+	font-size: 12px;
+	line-height: 14px;
+	text-transform: uppercase;
+	color: #2B2B2B;
+	font-weight: 900;
+	transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	cursor: pointer;
+	padding: 13px 0 14px;
+	margin-top: 15px;
+}
+.contact-form-wrp .wpforms-container .wpforms-form .wpforms-submit-container button:hover{
+	background: transparent;
+	color: #fed056;
+	border-color: #fed056 !important;
+	transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+}
+
+.contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #C2C2C2;
+  opacity: 1;
+}
+.contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field input::-moz-placeholder { /* Firefox 19+ */
+  color: #C2C2C2;
+  opacity: 1;
+}
+.contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field input:-ms-input-placeholder { /* IE 10+ */
+  color: #C2C2C2;
+  opacity: 1;
+}
+.contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field input:-moz-placeholder { /* Firefox 18- */
+  color: #C2C2C2;
+  opacity: 1;
+}
+
+.contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field textarea::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #C2C2C2;
+  opacity: 1;
+}
+.contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field textarea::-moz-placeholder { /* Firefox 19+ */
+  color: #C2C2C2;
+  opacity: 1;
+}
+.contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field textarea:-ms-input-placeholder { /* IE 10+ */
+  color: #C2C2C2;
+  opacity: 1;
+}
+.contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field textarea:-moz-placeholder { /* Firefox 18- */
+  color: #C2C2C2;
+  opacity: 1;
+}
+
+.contact-form-rgt{
+	width: 30%;
+	float: right;
+}
+
+
+#googlemap{
+	height: 380px;
+}
+.contact-map-info {
+    background: #fff;
+    padding: 40px 35px 5px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.02);
+    -ms-box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.02);
+    -webkit-box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.02);
+}
+.contact-map-title{
+	font-size: 18px;
+	line-height: 1.2;
+	color: #111111;
+	display: block;
+	text-transform: uppercase;
+	font-weight: 800;
+	margin-bottom: 15px;
+}
+.contact-map-info-dsc ul li {
+    padding-bottom: 32px;
+}
+.contact-map-info-dsc ul li span,
+.contact-map-info-dsc ul li a{
+	text-decoration: none;
+	font-size: 16px;
+	line-height: 20px;
+	color: #848484;
+	display: inline-block;
+	vertical-align: baseline;
+}
+.contact-map-info-dsc ul li a:hover{
+	color: #fed056;
+}
+
+/*
+----------------------
+ contact-info-sec-wrp
+----------------------
+*/
+.contact-info-sec-wrp{
+	padding: 85px 0 0;
+}
+.contact-info-wrp {
+    border-bottom: 4px solid#F9F9F9;
+    padding-bottom: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-info-lft{
+	width: 36%;
+	float: left;
+}
+.contact-info-lft-img{
+	background-repeat: no-repeat !important;
+	background-size: cover !important;
+	background-position: center center !important;
+	height: 680px !important;
+}
+.contact-info-rgt {
+    width: 64%;
+    float: right;
+    padding-left: 70px;
+    padding-top: 8px;
+}
+.contact-info-dsc-title{
+	font-size: 36px;
+	line-height: 1.1;
+	color: #111111;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+	font-weight: 700;
+	display: block;
+}
+.contact-info-dsc{
+	color: #6A6A6A;
+}
+.contact-info-adrs-wrp{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-top: 40px;
+}
+.contact-info-adrs-wrp ul{
+	padding-left: 35px;
+	float: left;
+}
+.contact-info-adrs-wrp ul li {
+    padding-bottom: 55px;
+    width: 50%;
+    float: left;
+}
+.contact-info-adrs-wrp ul li:first-child{
+	width: 100%;
+}
+.contact-info-adrs-wrp ul li:nth-child(5),
+.contact-info-adrs-wrp ul li:nth-child(3){
+	padding-left: 60px;
+}
+.contact-info-adrs-wrp ul li:nth-child(6){
+	padding-bottom: 0;
+}
+.contact-info-adrs-title {
+    font-size: 18px;
+    line-height: 1.2;
+    color: #111111;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: relative;
+    margin-bottom: 12px;
+    display: block;
+}
+.contact-info-adrs-title:before {
+    content: "";
+    position: absolute;
+    left: -35px;
+    top: 0;
+    background: url(../images/ftr-title-angle.svg);
+    width: 26px;
+    height: 18px;
+}
+.contact-info-adrs span {
+    display: inline-block;
+    vertical-align: baseline;
+    font-size: 16px;
+    line-height: 1;
+    font-weight: 800;
+    color: #f6c042;
+    padding-bottom: 8px;
+    padding-top: 7px;
+}
+.contact-info-adrs a{
+	display: inline-block;
+	vertical-align: baseline;
+	text-decoration: none;
+	font-size: 16px;
+	line-height: 18px;
+	color: #6A6A6A;
+	font-weight: 600;
+	padding-left: 30px;
+	position: relative;
+}
+.contact-info-adrs a i{
+	position: absolute;
+	left: 0;
+	top: 1px;
+	bottom: 0;
+}
+.contact-info-adrs a:hover{
+	color: #f6c042;
+}
+.contact-info-adrs a:hover i svg{
+	fill: #f6c042;
+}
+
+.rst-from-box-img{
+	background-repeat: no-repeat !important;
+	background-size: cover !important;
+	background-position: center center !important;
+	height: 440px;
+}
+.wpforms-field-select-half{
+    width: 50%;
+    float: left;
+    padding-right: 10px;
+}
+.contact-form-wrp .wpforms-field-select .wpforms-field-select-half select {
+    background-position: 96% center !important;
+}
+.fst-box-rgt{
+	padding-top: 0;
+}
+
+/*
+------------------
+ Abo Form Css
+------------------
+*/
+.ab-frm-title {
+    font-size: 30px;
+    line-height: 32px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #111111;
+    display: block;
+    margin-bottom: 25px;
+}
+
+
+/*
+---------------------
+ Input type checkbox Css
+---------------------
+*/
+.contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field-checkbox {
+    width: 100%;
+    padding-left: 12px;
+    padding-right: 0;
+}
+.contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field-checkbox ul li {
+    padding: 0 !important;
+    margin: 0 !important;
+    position: relative;
+}
+.contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field-checkbox ul li label{
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 600;
+    color: #6A6A6A;
+    margin: 0;
+    padding-left: 35px;
+    text-transform: none;
+    padding-right: 0;
+    cursor: pointer;
+}
+/* Hide the browser's default checkbox */
+.contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field-checkbox ul li label input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    box-sizing: border-box;
+    left: 0;
+    top: 2px;
+    background: #fff;
+}
+
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field-checkbox ul li label input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field-checkbox ul li label .checkmark:after {
+    left: 7px;
+    top: 2px;
+    width: 6px;
+    height: 12px;
+    border: solid #111111;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    position: absolute;
+    content: "";
+}
+
+
+
+
+.abo-form-person{
+	border-top: 3px solid#fff;
+	border-bottom: 3px solid#fff;
+	padding: 35px 0;
+	margin-top: 8px;
+	margin-bottom: 10px;
+}
+.abo-form-person-title{
+	font-size: 30px;
+	line-height: 1.1;
+	color: #111111;
+	font-weight: 800;
+	text-transform: uppercase;
+	display: block;
+}
+.abo-form-person a{
+	display: inline-block;
+	vertical-align: baseline;
+	text-decoration: none;
+	font-size: 12px;
+	line-height: 14px;
+	color: #2B2B2B;
+	text-transform: uppercase;
+	border:2px solid#111111;
+	padding: 16px 48px 15px 48px;
+	font-weight: 800;
+}
+.abo-form-person a i{
+	padding-right: 10px;
+}
+.abo-form-person a:hover{
+	border-color: #fed056;
+	color: #fed056;
+}
+
+
+
+/*
+-----------------
+ Responsive Css
+-----------------
+*/
+@media(max-width: 1499px){
+
+}
+
+@media(max-width: 1399px){
+  	.contact-map-info {
+	   padding: 40px 25px 5px 30px;
+	 }
+	.contact-info-rgt {
+	    width: 64%;
+	    padding-left: 40px;
+	}
+	
+}
+
+@media(max-width: 1299px){
+	.contact-form-dsc-title {
+	    font-size: 56px;
+	}
+}
+
+@media(max-width: 1199px){
+	.contact-form-lft {
+	    width: 66%;
+	    padding-right: 20px;
+	    padding-left: 20px;
+	}
+	.contact-form-rgt {
+	    width: 34%;
+	}
+	.contact-map-info {
+	    padding: 40px 10px 5px 20px;
+	}
+	.contact-form-dsc-title {
+	    font-size: 55px;
+	    margin-top: 0;
+	}
+	.contact-form-dsc-title br{
+		display: none;
+	}
+	.contact-info-adrs-wrp {
+	    display: inline-block;
+	    vertical-align: baseline;
+	}
+	.contact-info-adrs-wrp ul {
+	    width: 100%;
+	    float: left;
+	}
+	.contact-info-adrs-wrp ul:last-child {
+	    margin-left: 0;
+	}
+	.contact-info-adrs a{
+		display: block;
+	}
+	.contact-info-adrs-wrp ul li {
+	    padding-bottom: 30px;
+	    width: 100%;
+	}
+	.contact-info-adrs-wrp ul li:last-child{
+		padding-bottom: 0;
+	}
+	.contact-info-dsc-title {
+	    font-size: 34px;
+	}
+	.sp-fanshop-gallery-dsc p br{
+		display: none;
+	}
+	.contact-info-adrs-wrp ul li:nth-child(5),
+	.contact-info-adrs-wrp ul li:nth-child(3) {
+	    padding-left: 0;
+	}
+}
+
+@media(max-width: 991px){
+	.contact-form-sec-wrp {
+	    padding: 55px 0 50px;
+	}
+	.contact-form-dsc-title {
+	    font-size: 50px;
+	    margin-bottom: 22px;
+	}
+	.contact-form-lft {
+	    width: 100%;
+	    padding-right: 0;
+	    padding-left: 0;
+	}
+	.contact-form-rgt {
+	    width: 100%;
+	    padding-top: 50px;
+	}
+	.contact-map-info-dsc ul li span{
+		display: block;
+	}
+	.contact-info-lft {
+	    width: 100%;
+	    float: left;
+	}
+	.contact-info-rgt {
+	    width: 100%;
+	    padding-left: 0;
+	    padding-top: 35px;
+	}
+	.contact-info-wrp {
+	    padding-bottom: 55px;
+	}
+	.contact-info-sec-wrp {
+	    padding: 40px 0 0;
+	}
+	.contact-info-dsc-title {
+	    font-size: 32px;
+	}
+	.fst-box-rgt{
+		padding-bottom: 40px;
+		padding-top: 0;
+	}
+	.abo-frm-sec-wrp{
+		padding-top: 10px;
+	}
+	.contact-form-dsc {
+	    padding-bottom: 30px;
+	}
+	.contact-info-wrp{
+		display: inline-block;
+		vertical-align: baseline;
+	}
+	.contact-info-adrs-wrp ul li {
+	    padding-bottom: 40px;
+	}
+	.sp-fanshop-gallery-dsc {
+	    max-width: 400px;
+	}
+	
+}
+
+@media(max-width: 767px){
+	.contact-form-dsc-title {
+	    font-size: 45px;
+	}
+	.contact-form-dsc {
+	    padding-bottom: 25px;
+	}
+	.contact-info-dsc-title {
+	    font-size: 30px;
+	}
+}
+
+@media(max-width: 575px){
+	.contact-form-dsc-title {
+	    font-size: 40px;
+	}
+	.contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field {
+	    width: 100%;
+	}
+	.contact-info-dsc-title {
+	    font-size: 28px;
+	}
+	.wpforms-field-select-half {
+	    width: 100%;
+	    float: left;
+	    padding-right: 0;
+	}
+	.contact-form-wrp .wpforms-field-select .wpforms-field-select-half select {
+	    background-position: 97% center !important;
+	}
+
+
+}
+
+@media(max-width: 479px){
+	.contact-form-dsc-title {
+	    font-size: 35px;
+	}
+	.contact-map-info-dsc ul li span a{
+		display:block;
+	}
+	.contact-info-dsc-title {
+	    font-size: 26px;
+	}
+	.contact-info-adrs-wrp ul li {
+	    padding-bottom: 30px;
+	}
+}
+
+@media(max-width: 359px){
+	.contact-map-info {
+	    padding: 40px 10px 5px 15px;
+	}
+}

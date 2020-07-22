@@ -1,0 +1,504 @@
+.eena-match-result-sec{
+	padding-top: 55px;
+}
+.eenamr-left-team,
+.eenamr-result,
+.eenamr-right-team{
+	float: left;
+	width: 33.3333%;
+	text-align: center;
+}
+.eenamr-left-team{
+	padding-left: 90px;
+}
+.eenamr-left-team img{
+	margin-bottom: 30px;
+}
+.eenamr-right-team img{
+	margin-bottom: 25px;
+}
+.eenamr-left-team-title,
+.eenamr-right-team-title{
+	display: block;
+	font-size: 36px;
+	line-height: 1;
+	margin-bottom: 50px;
+	font-weight: 800;
+	text-transform: uppercase;
+	letter-spacing: 0.02em;
+	color: #111111;
+} 
+
+.eenamr-result{
+	padding-top: 40px;
+}
+.eenamr-result-title{
+	display: block;
+	font-size: 60px;
+	color: #FFD056;
+	text-transform: uppercase;
+	letter-spacing: 0.02em;
+	font-weight: 900;
+	margin-bottom: 25px;
+}
+.eenamr-result span{
+	display: block;
+	font-size: 12px;
+	line-height: 18px;
+	text-transform: uppercase;
+	color: #111111;
+}
+
+.xs-match-result{
+	display: none;
+}
+.top-team-title,
+.btm-team-title{
+	display: block;
+	font-size: 25px;
+	line-height: 1;
+	margin-bottom: 25px;
+	font-weight: 800;
+	color: #111111;
+	text-transform: uppercase;
+}
+.btm-team-title{
+	margin-bottom: 35px;
+}
+.xs-match-result strong{
+	display: block;
+	font-size: 40px;
+	color: #FFD056;
+	text-transform: uppercase;
+	letter-spacing: 0.02em;
+	font-weight: 900;
+	margin-bottom: 22px;
+}
+.xs-match-result span{
+	font-size: 12px;
+	color: #111111;
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: 700;
+}
+
+.eena-mr-competition-report-sec{
+	background: #F9F9F9;
+	padding-top: 65px;
+	padding-bottom: 35px;
+	padding-right: 166px;
+	position: relative;
+}
+.eena-mr-cr-white-bg{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	width: 166px;
+	height: 100%;
+	background: #fff;
+}
+.eena-mr-cr-link{
+	text-align: center;
+	margin-bottom: 45px;
+}
+.eena-mr-cr-link ul li{
+	display: inline-block;
+	vertical-align: baseline;
+	padding-left: 6px;
+	padding-right: 6px;
+}
+.eena-mr-cr-link ul li.current a,
+.eena-mr-cr-link ul li a:hover{
+	background: #FFD056;
+	color: #2B2B2B;
+}
+.eena-mr-cr-link ul li a{
+	width: 180px;
+	height: 56px;
+	font-size: 12px;
+	text-transform: uppercase;
+	color: #fff;
+	background: #111111;
+	font-weight: 800;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+}
+
+
+.eena-md-cr-des{
+	float: left;
+	width:  67.0370%;
+	background: #FFFFFF;
+	box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.02);
+	padding: 60px 50px 45px 60px;
+}
+.eena-md-cr-right-event{
+	float: right;
+	width: 32.9629%;
+	padding-left: 24px;
+}
+
+.eena-md-cr-des-title{
+	display: block;
+	font-size: 36px;
+	line-height: 1;
+	margin-bottom: 20px;
+	font-weight: 800;
+	text-transform: uppercase;
+	letter-spacing: 0.02em;
+	color: #111111;
+}
+.eena-md-cr-des p{
+	margin-bottom: 26px;
+	line-height: 1.9;
+}
+.eena-md-cr-des-img{
+	text-align: center;
+	padding: 35px 0 55px;
+}
+
+
+.md-cr-event,
+.md-cr-wine,
+.md-cr-aalst{
+	background: #FFFFFF;
+	box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.02);
+	padding: 18px 18px 15px 18px;
+	margin-bottom: 30px;
+}
+.md-cr-wine{
+	padding-bottom: 25px;
+	margin-bottom: 38px;
+}
+.md-cr-aalst{
+	margin-bottom: 0;
+}
+
+.md-cr-event-title,
+.md-cr-wine-title,
+.md-cr-aalst-title{
+	display: block;
+	font-size: 16px;
+	line-height: 1;
+	margin-bottom: 0px;
+	font-weight: 800;
+	text-transform: uppercase;
+	letter-spacing: 0.01em;
+	color: #fff;
+	background: #111111;
+	padding: 15px 0 14px 24px;
+}
+
+.md-cr-event ul li{
+	padding-top: 30px;
+	padding-bottom: 32px;
+	border-bottom: 3px solid #F9F9F9;
+	padding-left: 38px;
+	position: relative;
+}
+.md-cr-event ul li:first-child{
+	padding-top: 25px;
+}
+.md-cr-event ul li:last-child{
+	border-bottom: none;
+}
+.md-cr-event ul li span{
+	display: inline-block;
+	vertical-align: baseline;
+}
+.md-cr-event ul li i{
+	position: absolute;
+	top: 45%;
+	left: 0;
+	transform: translateY(-50%);
+}
+.md-cr-event ul li:first-child i{
+	position: absolute;
+	top: 35%;
+	left: 0;
+	transform: translateY(-50%);
+}
+.md-cr-event ul li:nth-child(2) i{
+	position: absolute;
+	top: 45%;
+	left: 0;
+	transform: translateY(-50%);
+	background: #F0C816;
+	height: 24px;
+	width: 24px;
+	border-radius: 100%;
+}
+
+.md-cr-wine ul li,
+.md-cr-aalst ul li{
+	padding: 12px 0 12px 24px;
+}
+.md-cr-wine ul li:nth-child(even),
+.md-cr-aalst ul li:nth-child(even){
+	background: #F9F9F9;
+}
+
+
+
+.eena-mr-competition-report-sec .social-media {
+    padding-top: 55px;
+}
+
+.xs-link{
+	margin-bottom: 30px;
+	position: relative;
+}
+.xs-link strong{
+	display: flex;
+	align-items: center;
+	background: #FFD056;
+	color: #2B2B2B;
+	font-size: 12px;
+	line-height: 1;
+	text-transform: uppercase;
+	min-height: 56px;
+	height: 100%;
+	padding: 5px 40px 5px 28px;
+	position: relative;
+}
+.xs-link strong:after{
+	content: "";
+	background: url(../images/md-down-arrow-xs.png);
+	width: 12px;
+	height: 8px;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	right: 28px;
+}
+.xs-link strong.md-tabs-btn-expend:after{
+	background: url(../images/md-up-arrow-xs.png);
+}
+
+.xs-link ul{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 100%;
+	background: #fff;
+	text-align: center;
+	z-index: 40;
+	padding: 10px 10px 10px;
+	border-radius: 0 0 8px 8px;
+	display: none;
+}
+.xs-link ul li{
+	padding-bottom: 10px;
+}
+.xs-link ul li a{
+	color: #111111;
+	text-transform: uppercase;
+}
+
+
+
+@media(max-width: 1499px){
+
+}
+
+@media(max-width: 1399px){
+	
+}
+
+@media(max-width: 1299px){
+	.eena-md-cr-des {
+	    padding: 50px 50px 45px 60px;
+	}
+	.eena-md-cr-des p {
+	    line-height: 1.7;
+	}
+	.eena-mr-competition-report-sec {
+	    padding-right: 69px;
+	}
+	.eena-mr-cr-white-bg {
+	    width: 69px;
+	}
+}
+
+@media(max-width: 1199px){
+	.eena-match-result-sec {
+	    padding-top: 48px;
+	}
+	.eenamr-left-team-title, 
+	.eenamr-right-team-title {
+	    font-size: 30px;
+	    margin-bottom: 40px;
+	}
+	.eena-mr-competition-report-sec {
+	    padding-top: 50px;
+	    padding-bottom: 35px;
+	    padding-right: 50px;
+	}
+	.eena-mr-cr-white-bg {
+	    width: 50px;
+	}
+	.eena-mr-cr-link {
+	    margin-bottom: 35px;
+	}
+	.eena-mr-cr-link ul li {
+	    padding-left: 4px;
+	    padding-right: 4px;
+	    padding-bottom: 20px;
+	}
+	.eena-md-cr-des {
+	    padding: 40px 45px 38px 45px;
+	}
+	.eena-md-cr-des-title {
+	    font-size: 34px;
+	}
+	.eena-md-cr-des p {
+	    line-height: 1.6;
+	}
+	.md-cr-event-title, 
+	.md-cr-wine-title, 
+	.md-cr-aalst-title {
+	    font-size: 14px;	
+	}
+	.eenamr-result-title {
+	    font-size: 55px;
+	}
+}
+
+@media(max-width: 991px){
+	.eena-match-result-sec {
+	    padding-top: 48px;
+	}
+	.eenamr-left-team {
+	    padding-left: 0px;
+	}
+	.eenamr-left-team-title, .eenamr-right-team-title {
+	    font-size: 27px;
+	    margin-bottom: 32px;
+	}
+	.eena-mr-competition-report-sec {
+	    padding-top: 40px;
+	    padding-bottom: 30px;
+	    padding-right: 0px;
+	}
+	.eena-mr-cr-white-bg {
+	    width: 0;
+	}
+	.eena-mr-cr-link {
+	    margin-bottom: 20px;
+	}
+	.eena-mr-cr-link ul li {
+	    padding-bottom: 20px;
+	}
+	.eena-md-cr-des {
+	    width: 100%;
+	    padding: 40px 35px 38px 35px;
+   		margin-bottom: 20px;
+	}
+	.eena-md-cr-des-title {
+	    font-size: 30px;
+	    margin-bottom: 15px;
+	}
+	.eena-md-cr-des p {
+	    line-height: 1.4;
+	}
+	.eena-md-cr-des-img {
+	    text-align: center;
+	    padding: 30px 0 40px;
+	}
+	.eena-md-cr-right-event {
+	    width: 100%;
+	    padding-left: 0px;
+	}
+	.md-cr-event ul li {
+	    padding-top: 25px;
+	    padding-bottom: 25px;
+	}
+	.eena-mr-competition-report-sec .social-media {
+	    padding-top: 40px;
+	}
+
+}
+
+@media(max-width: 767px){
+	.eena-match-result-sec {
+	    padding-top: 38px;
+	    padding-bottom: 38px;
+	}
+	.eena-match-result-sec-inr{
+		display: none;
+	}
+	.xs-match-result{
+		display: block;
+		text-align: center;
+	}
+	.eena-md-cr-des {
+	    padding: 40px 25px 25px 28px;
+	    margin-bottom: 30px;
+	}
+	.eena-md-cr-des-title {
+	    font-size: 25px;
+	    margin-bottom: 15px;
+	}
+	.eena-md-cr-des-img {
+	    text-align: center;
+	    padding: 20px 0 32px;
+	}
+	.md-cr-event, 
+	.md-cr-wine, 
+	.md-cr-aalst {
+	    margin-bottom: 30px;
+	}
+	.md-cr-event ul li {
+	    padding-top: 20px;
+	    padding-bottom: 20px;
+	}
+	.eena-mr-cr-link{
+		display: none;
+	}
+	.eena-mr-competition-report-sec .social-media {
+	    padding-top: 30px;
+	}
+}
+
+@media(max-width: 575px){
+	.eena-md-cr-des {
+	    padding: 40px 20px 25px 25px;
+	}
+	.eena-md-cr-des-img {
+	    padding: 5px 0 32px;
+	}
+	.eena-mr-competition-report-sec .social-media {
+	    padding-top: 20px;
+	}
+	.eena-mr-competition-report-sec .social-media {
+	    padding-top: 20px;
+	}
+	.eena-md-cr-des-title {
+	    font-size: 20px;
+	}
+
+}
+
+@media(max-width: 479px){
+	.eena-md-cr-des-title {
+	    font-size: 20px;
+	}
+	.md-cr-wine ul li,
+	.md-cr-aalst ul li{
+		font-size: 14px;
+	}
+}
+
+@media(max-width: 359px){
+
+}

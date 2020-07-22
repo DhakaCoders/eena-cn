@@ -1,0 +1,895 @@
+/*
+------------------------
+fanshop-catagory-sec-wrp
+------------------------
+*/
+.fanshop-catagory-sec-wrp{
+	padding-top: 110px;
+	padding-bottom: 90px;
+}
+.fanshop-catagory-head{
+	text-align: center;
+	padding-bottom: 20px;
+	max-width: 825px;
+	width: 100%;
+	margin: 0 auto;
+}
+.fanshop-catagory-title{
+	font-size: 36px;
+	line-height: 1.2;
+	color: #111111;
+	text-transform: uppercase;
+	font-weight: 800;
+	margin-bottom: 25px;
+	display: block;
+}
+.fanshop-catagory-menu{
+	max-width: 770px;
+	width: 100%;
+	margin: 0 auto;
+}
+.fanshop-catagory-menu ul{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.fanshop-catagory-menu ul li {
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 800;
+    padding: 0 8px;
+    width: 25%;
+}
+.fanshop-catagory-menu ul li a{
+	display: inline-block;
+	vertical-align: baseline;
+	text-decoration: none;
+	color: #fff;
+	text-transform: uppercase;
+	background: #111111;
+	padding: 22px 55px;
+}
+.fanshop-catagory-menu ul li a:hover,
+.fanshop-catagory-menu ul li a.active{
+	background: #fed056;
+	color: #2B2B2B;
+}
+
+/*
+-------------------------
+fanshop-post-grid-sec-wrp
+-------------------------
+*/
+.fanshop-post-grid-sec-wrp{
+	padding-top: 45px;
+	padding-bottom: 80px;
+	background: #f9f9f9;
+}
+.fanshop-post-grid-wrp > ul{
+	margin: 0 -10px;
+}
+.fanshop-post-grid-wrp > ul > li{
+	float: left;
+	width: 33.3333%;
+	padding: 0 10px 24px;
+}
+.fanshop-post-grid-wrp > ul > li:nth-child(3n+1){
+	clear: left;
+}
+.FanShopPostSlider{
+	margin: 0 -12px;
+}
+.FanShopPostSlider .FanShopPostSlideItem{
+	padding: 0 12px 25px;
+}
+.FanShopPostSlider.slick-dotted.slick-slider{
+    margin-bottom: 0;
+}
+.fanshop-post-grid-inr {
+    background: #ffffff;
+    padding: 45px 45px 35px;
+    position: relative;
+    overflow: hidden;
+}
+.fanshop-v1-post-sec-wrp .fanshop-post-grid-inr{
+	box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05);
+    -ms-box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05);
+    -webkit-box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05);
+} 
+.info-stick-wrap {
+    position: absolute;
+    left: -45px;
+    top: 29px;
+    overflow: hidden;
+    width: 192px;
+    height: 46px;
+    background: #fed056;
+    transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    z-index: 1;
+}
+.info-stick-wrap span{
+    position: absolute;
+    z-index: 2;
+    display: inline-block;
+	vertical-align: baseline;
+	font-size: 16px;
+	line-height: 18px;
+	color: #fff;
+	font-weight: 700;
+	text-transform: uppercase;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+}
+.fanshop-post-grid-img-cntlr{
+	overflow: hidden;
+	position: relative;
+}
+.fanshop-post-grid-img{
+	background-repeat:no-repeat !important;
+	background-position: center center !important;
+	background-size: cover !important;
+	height: 345px !important;
+	transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+}
+.fanshop-post-grid-dsc{
+	text-align: center;
+	padding-top: 25px;
+}
+.fanshop-post-grid-dsc strong{
+	display: inline-block;
+	vertical-align: baseline;
+	font-size: 20px;
+	line-height: 22px;
+	color: #f7c041;
+	font-weight: 700;
+	padding-bottom: 15px;
+}
+.fanshop-post-grid-title{
+	font-size: 22px;
+	line-height:1.3;
+	color: #111111;
+	font-weight: 800;
+	margin-bottom: 22px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+.fanshop-post-grid-title a{
+	color: inherit;
+}
+.fanshop-post-grid-title a:hover{
+	color: #f7c041;
+}
+.fanshop-post-grid-dsc > a{
+	display: inline-block;
+	vertical-align: baseline;
+	text-decoration: none;
+	font-size: 16px;
+	line-height: 18px;
+	color: #B4B4B4;
+	font-weight: 800;
+	text-transform: uppercase;
+	padding-right: 35px;
+	position: relative;
+	transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+}
+.fanshop-post-grid-dsc > a i{
+    position: absolute;
+    right: 0;
+    top: -2px;
+    bottom: 0;
+    transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+}
+.fanshop-post-grid-dsc > a:hover{
+	color: #f7c041;
+}
+.fanshop-post-grid-dsc > a:hover i svg{
+	fill: #f7c041;
+}
+.fanshop-post-grid-dsc > a:hover i{
+	right: -5px;
+}
+.eena-pagination-wrp{
+	padding-top: 48px;
+}
+.eena-pagination-wrp ul{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.fl-pagi-ctlr ul li{
+	float: left;
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: 800;
+	padding: 0 6px;
+}
+.fl-pagi-ctlr ul.page-numbers li span,
+.fl-pagi-ctlr ul.page-numbers li a{
+	display: inline-block;
+	vertical-align: baseline;
+	text-decoration: none;
+	color: #111111;
+	width: 32px;
+	height: 32px;
+	border-radius: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.fl-pagi-ctlr ul.page-numbers li a:hover,
+.fl-pagi-ctlr ul.page-numbers li span.current{
+	background: #f6c042;
+	color: #fff;
+}
+.fanshop-service-wrp{
+	padding-top: 65px;
+}
+.fanshop-service-wrp ul {
+    margin: 0 -12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.fanshop-service-wrp ul li{
+	float: left;
+	width: 33.3333%;
+	padding: 0 12px 20px;
+}
+.fanshop-service-wrp ul li:nth-child(3n+1){
+	clear: left;
+}
+.fanshop-service-inr{
+	padding: 55px 80px;
+	background: #f6c042;
+	text-align: center;
+}
+.fanshop-service-title{
+	font-size: 26px;
+	line-height: 1.2;
+	color: #fff;
+	font-weight: 800;
+	text-transform: uppercase;
+	margin-bottom: 15px;
+	margin-top: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.fanshop-service-dsc{
+	font-weight: 600;
+	color: #fff;
+}
+.fanshop-service-icon{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+/*
+------------------
+ Fanshop Css
+------------------
+*/
+.single-product-sec{
+	background: #f9f9f9;
+	padding-top: 120px;
+	padding-bottom: 100px;
+}
+.single-product-view{
+	float: left;
+	width:43%;
+	padding-left: 40px;
+}
+.single-product-view-v2-img,
+.single-product-view-img{
+	background-repeat: no-repeat !important;
+	background-size: cover !important;
+	background-position: center center !important;
+	height: 744px !important;
+	position: relative;
+	overflow: hidden;
+}
+.single-product-view-v2-img{
+	height: 400px !important;
+}
+.single-product-des {
+    float: right;
+    width: 57%;
+    padding-left: 110px;
+    padding-right: 45px;
+}
+.single-product-title{
+	display: block;
+	font-size: 36px;
+	line-height: 1.2;
+	font-weight: 800;
+	color: #111111;
+	text-transform: uppercase;
+	margin-bottom: 30px;
+	margin-top: -5px;
+}
+.single-product-price{
+	display: flex;
+	justify-content: left;
+	align-items: center;
+}
+.single-product-des-top strong{
+	text-transform: uppercase;
+	font-size: 18px;
+	line-height: 20px;
+	font-weight: 700;
+	display: inline-block;
+	vertical-align: baseline;
+	color: #B4B4B4;
+	margin-right: 20px;
+	position: relative;
+	margin-top: 2px;
+}
+.single-product-des-top strong span{
+	display: none;
+}
+.single-product-des-top strong:last-of-type{
+	font-size: 30px;
+	line-height: 32px;
+	color: #f6c042;
+	margin-top: 0;
+}
+.single-product-des-top strong:first-of-type::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background: #B4B4B4;
+    left: 0;
+    top: 50%;
+}
+.single-product-des-top-innr p {
+    padding-top: 25px;
+    margin-bottom: 0;
+}
+.single-product-des-top .single-product-des-top-innr > span{
+	line-height: 30px;
+	display: block;
+	text-transform: uppercase;
+}
+.single-product-des-top ul {
+    margin-top: 12px;
+    margin-bottom: 30px;
+}
+.single-product-des-top li{
+	position: relative;
+	display: inline-block;
+	vertical-align: baseline;
+	padding-top: 5px !important;
+	padding-bottom: 20px !important;
+}
+.custom-size {
+    margin-bottom: 45px;
+}
+.custom-size strong{
+	display: inline-block;
+	vertical-align: baseline;
+	font-size: 16px;
+	line-height: 18px;
+	color: #111111;
+	font-weight: 800;
+	text-transform: uppercase;
+	padding-right: 15px;
+}
+.custom-size span{
+	display: inline-block;
+	vertical-align: baseline;
+	font-size: 13px;
+	line-height: 15px;
+	color: #B4B4B4;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-decoration: underline;
+}
+.custom-size-btn {
+    padding-top: 20px;
+    margin-left: -5px;
+    margin-right: -5px;
+}
+.single-product-des .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
+    width: 218px !important;
+}
+.single-product-des form .bootstrap-select .caret::before {
+  content: none !important;
+}
+.color-slct .open > .dropdown-toggle.btn-default:hover .caret{
+    top: -10px;
+}
+.custom-size li{
+	float: left;
+	width:44px;
+	height: 50px;
+	text-align: center;
+	border: 1px solid #000;
+	border-left: none;
+	-ms-transition:all .3s ease;
+	-webkit-transition:all .3s ease;
+	transition:all .3s ease;
+}
+
+.custom-quantity span.d-an{
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: 800;
+	text-transform: uppercase;
+	color: #111111;
+	display: inline-block;
+	vertical-align: baseline;
+	padding-bottom: 22px;
+}
+
+.custom-size input[type=radio],
+.custom-size input[type=checkbox]{
+  display:none;
+}
+
+.custom-size input[type=radio] + label,
+.custom-size input[type=checkbox] + label {
+    display: inline-block;
+    margin: 0 5px;
+    margin-bottom: 0;
+    color: #2B2B2B;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background-color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 800;
+    border-radius: 0;
+    line-height: 30px;
+    padding: 4px 6px;
+    width: 40px;
+    height: 40px;
+}
+
+.custom-size input[type=radio]:checked + label,
+.custom-size input[type=checkbox]:checked + label{
+  outline: 0;
+  background-color:#f6c042;
+  color: #fff;
+  border: none;
+}
+
+
+
+.pro-counter .qty {
+    width: 140px;
+    height: 48px;
+    position: relative;
+    color: #fff;
+    background-color: #fff;
+    border: 0;
+}
+.pro-counter .qty .plus,
+.pro-counter .qty .minus{
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: baseline;
+  position: absolute;
+  z-index: 2;
+  color: #B6B6B6;
+}
+.pro-counter .qty .plus {
+  right: 16px;
+  top: 50%;
+  font-size: 8px;
+  line-height: 10px;
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.pro-counter .qty .minus {
+    left: 16px;
+    top: 50%;
+    font-size: 8px;
+    line-height: 10px;
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.pro-counter .qty input[type="number"]{  
+  width: 12px;
+  border: none;
+  background: transparent;
+  -moz-appearance:textfield;
+  appearance: none;
+  letter-spacing: 0.6px;
+  font-size: 16px;
+  line-height: 19px;
+  opacity: 1;
+  font-weight: 800;
+  width:100%;
+  height: 100%;
+  text-align:center;
+  color:#2B2B2B;
+}         
+.pro-counter .qty input[type=number]::-webkit-inner-spin-button, 
+.pro-counter .qty input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+  opacity: 0;
+}
+.pro-counter .qty i.fa{
+  margin-top: 0;
+  -ms-transition:all .3s ease;
+  -webkit-transition:all .3s ease;
+  transition:all .3s ease;
+}
+.pro-counter .qty i.fa:hover{
+  opacity: .5
+}
+.sp-single-form-title{
+	display: block;
+	font-size: 16px;
+	line-height: 18px;
+	color: #111111;
+	font-weight: 800;
+	text-transform: uppercase;
+	margin-top: 45px;
+	margin-bottom: 35px;
+}
+.sp-d2-frm-fields{
+	margin: 0 -8px;
+}
+.sp-d2-frm-field{
+	width: 50%;
+	float: left;
+	padding: 0 8px;
+}
+.sp-d2-frm-field label{
+	display: block;
+	font-size: 13px;
+	line-height: 15px;
+	color: #111111;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+}
+.sp-d2-frm-field input[type="text"]{
+	width: 100%;
+	height: 60px;
+	background: #fff;
+	font-size: 14px;
+	line-height: 18px;
+	font-weight: 700;
+	padding: 20px 16px;
+	border: 1px solid#fff;
+}
+.sp-frm-submit button[type="submit"]{
+    max-width: 180px;
+    width: 100%;
+    height: 56px;
+    border: 2px solid#fed056!important;
+    background: #fed056;
+    font-size: 12px;
+    line-height: 14px;
+    text-transform: uppercase;
+    color: #2B2B2B;
+    font-weight: 900;
+    transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    cursor: pointer;
+    padding: 13px 0 14px;
+    margin-top: 28px;
+}
+
+.sp-frm-submit button[type="submit"]:hover {
+    background: transparent;
+    color: #fed056;
+    border-color: #fed056 !important;
+    transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+.sp-d2-frm-field input[type="text"]:focus{
+	border-color: #C2C2C2;
+}
+.sp-d2-frm-field input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #C2C2C2;
+  opacity: 1;
+}
+.sp-d2-frm-field input::-moz-placeholder { /* Firefox 19+ */
+  color: #C2C2C2;
+  opacity: 1;
+}
+.sp-d2-frm-field input:-ms-input-placeholder { /* IE 10+ */
+  color: #C2C2C2;
+  opacity: 1;
+}
+.sp-d2-frm-field input:-moz-placeholder { /* Firefox 18- */
+  color: #C2C2C2;
+  opacity: 1;
+}
+
+/*
+-----------------------
+fanshop-v1-post-sec-wrp
+-----------------------
+*/
+.fanshop-v1-post-sec-wrp{
+	padding-top: 80px;
+}
+.fanshop-v1-post-sec-wrp .fanshop-catagory-head {
+    max-width: 820px;
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 40px;
+}
+.fanshop-post-grid-wrp{
+	padding-bottom: 85px;
+	border-bottom: 1px solid#E2E2E2;
+}
+.hmNewsSecSliderPrevNext{
+	display: none;
+}
+
+/*
+-----------------
+ Responsive Css
+-----------------
+*/
+@media(max-width: 1499px){
+
+}
+
+@media(max-width: 1399px){
+	.single-product-des {
+	    padding-left: 70px;
+	    padding-right: 20px;
+	}
+}
+
+@media(max-width: 1299px){
+
+}
+
+@media(max-width: 1199px){
+	.single-product-title {
+	    font-size: 34px;
+	}
+	.single-product-sec {
+	    padding-top: 90px;
+	    padding-bottom: 80px;
+	}
+	.single-product-des {
+	    padding-left: 40px;
+	    padding-right: 10px;
+	}
+	.single-product-view {
+	    padding-left: 20px;
+	}
+	.fanshop-catagory-title {
+	    font-size: 34px;
+	}
+	.fanshop-catagory-sec-wrp {
+	    padding-top: 80px;
+	    padding-bottom: 70px;
+	}
+	.fanshop-post-grid-inr {
+	    padding: 45px 25px 35px;
+	}
+	.fanshop-service-inr {
+	    padding: 55px 40px;
+	}
+
+}
+
+@media(max-width: 991px){
+	.single-product-title {
+	    font-size: 32px;
+	    margin-bottom: 15px;
+	}
+	.single-product-sec {
+	    padding-top: 60px;
+	    padding-bottom: 60px;
+	}
+	.single-product-view {
+	    padding-left: 0;
+	    width: 100%;
+	}
+	.single-product-des {
+	    padding-left: 0;
+	    padding-right: 0;
+	    width: 100%;
+	    padding-top: 35px;
+	}
+	.single-product-des-top ul {
+	    margin-bottom: 25px;
+	}
+	.single-product-des-top strong span{
+		display: inline-block;
+		vertical-align: baseline;
+	}
+	.single-product-des-top li{
+		display: block;
+	}
+	.fanshop-catagory-title {
+	    font-size: 32px;
+	}
+	.fanshop-catagory-menu ul li {
+	    width: 33.3333%;
+	    padding-bottom: 10px;
+	}
+	.fanshop-catagory-menu {
+	    max-width: 580px;
+	    width: 100%;
+	    margin: 0 auto;
+	    text-align: center;
+	}
+	.fanshop-post-grid-wrp > ul > li {
+	    width: 50%;
+	}
+	.fanshop-post-grid-wrp > ul > li:nth-child(3n+1) {
+	    clear: none;
+	}
+	.fanshop-post-grid-wrp > ul > li:nth-child(2n+1) {
+	    clear: left;
+	}
+	.fanshop-service-wrp ul li {
+	    width: 50%;
+	}
+	.fanshop-v1-post-sec-wrp {
+	    padding-top: 55px;
+	}
+
+  
+}
+
+@media(max-width: 767px){
+	.single-product-title {
+	    font-size: 30px;
+	}
+	.single-product-sec {
+	    padding-top: 30px;
+	}
+	.fanshop-catagory-title {
+	    font-size: 30px;
+	}
+	.fanshop-catagory-menu ul li {
+	    width: 50%;
+	}
+	.fanshop-catagory-menu {
+	    max-width: 390px;
+	    width: 100%;
+	    margin: 0 auto;
+	}
+	.fanshop-catagory-sec-wrp {
+	    padding-top: 60px;
+	    padding-bottom: 50px;
+	}
+	.fanshop-post-grid-sec-wrp{
+	    padding-bottom: 50px;
+	}
+	.fanshop-post-grid-wrp {
+	    padding-bottom: 60px;
+	}
+	.fanshop-service-inr {
+	    padding: 55px 25px;
+	}
+	.fanshop-v1-post-sec-wrp .fanshop-catagory-head {
+	    padding-bottom: 30px;
+	}
+	.eena-pagination-wrp {
+	    padding-top: 0;
+	}
+}
+
+@media(max-width: 575px){
+	.single-product-title {
+	    font-size: 28px;
+	}
+	.sp-d2-frm-field {
+	    width: 100%;
+	    padding: 0 8px 25px;
+	}
+	.sp-frm-submit button{
+		margin-top: 0;
+	}
+	.fanshop-catagory-title {
+	    font-size: 28px;
+	}
+	.fanshop-post-grid-wrp ul li {
+	    width: 100%;
+	}
+	.fanshop-post-grid-wrp ul li:nth-child(3n+1) {
+	    clear: none;
+	}
+	.fanshop-post-grid-wrp ul li:nth-child(2n+1) {
+	    clear: none;
+	}
+	.fanshop-service-wrp ul li {
+	    width: 100%;
+	}
+	.fanshop-post-grid-wrp {
+	    padding-bottom: 40px;
+	}
+	.fanshop-v1-post-sec-wrp {
+	    border-bottom: 8px solid #F9F9F9;
+	}
+	.FanShopPostSlider.slick-slider ul.slick-dots{
+		margin-top: 35px;
+	}
+	.FanShopPostSlider.slick-slider .slick-dots li{
+		margin: 0 4px;
+		width: 12px !important;
+		height: 12px !important;
+	}
+	.FanShopPostSlider.slick-slider .slick-dots li button{
+		width: 12px;
+		height: 12px;
+	}
+	.hmNewsSecSliderPrevNext{
+	    position: absolute;
+	    bottom: 42px;
+	    left: 50%;
+	    transform: translateX(-50%);
+	    -ms-transform: translateX(-50%);
+	    -webkit-transform: translateX(-50%);
+	}
+	.hmNewsSecSliderPrevNext .fl-prev{
+		margin-right: 55px;
+		right: 0;
+	}
+	.hmNewsSecSliderPrevNext .fl-next{
+		left: 0;
+		margin-left: 55px;
+	}
+	.hmNewsSecSliderPrevNext .fl-prev,
+	.hmNewsSecSliderPrevNext .fl-next{
+		cursor: pointer;
+	}
+	.fanshop-post-grid-wrp {
+	    border-bottom: 0;
+	}
+	.hmNewsSecSliderPrevNext{
+		display: block;
+	}
+}
+
+@media(max-width: 479px){
+	.single-product-title {
+	    font-size: 26px;
+	}
+	.custom-size input[type=radio] + label,
+	.custom-size input[type=checkbox] + label{
+		margin-bottom: 10px;
+	}
+	.custom-size {
+	    margin-bottom: 35px;
+	}
+	.fanshop-catagory-title {
+	    font-size: 26px;
+	}
+	.fanshop-catagory-menu ul li {
+	    width: 100%;
+	}
+}
+
+@media(max-width: 359px){
+
+}

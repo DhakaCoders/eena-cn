@@ -121,11 +121,47 @@
 }
 .versus-match-title{
 	color: #111111;
-	padding-top: 42px;
-	padding-bottom: 34px;
+	padding-top: 35px;
+	padding-bottom: 30px;
 	margin-bottom: 0;
 	text-transform: uppercase;
 	border-bottom: 3px solid #f9f9f9;
+}
+.match-tabs ul{
+	margin: 0 -40px;
+}
+.match-tabs ul li{
+	display: inline-block;
+	vertical-align: baseline;
+	padding: 5px 40px 5px;
+	position: relative;
+}
+.match-tabs ul li:not(:last-child):after{
+	content: "";
+	position: absolute;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	background: url(../images/slice-angle.png);
+	background-size: 100% auto;
+	width: 9px;
+	height: 18px;
+	background-repeat: no-repeat;
+
+}
+.match-tabs ul li a{
+	font-weight: 800;
+	font-size: 20px;
+	line-height: 34px;
+	color: #BABABA;
+	display: inline-block;
+	vertical-align: baseline;
+	text-transform: uppercase;
+}
+.match-tabs ul li a.tab-link.current{
+	color: #111111;
 }
 .am-volgende-top-imgs-cnrlr{
 	display: flex;
@@ -140,7 +176,7 @@
 	padding: 24px 0;
 	border-bottom: 3px solid #f9f9f9;}
 .versus-team{
-	width: 25%;
+	width: 30%;
 	padding: 0 5px;
 	text-align: center;
 }
@@ -157,14 +193,18 @@
 	padding: 0 5px;
 }
 .versus-logo{
-	height: 60px;
-	background-size: 100% 100%!important;
+	height: 90px;
+	max-width: 140px;
+	width: 100%;
+	background-size: 100% 100% !important;
+	background-repeat: no-repeat!important;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	background-position: center center!important;
 }
 .versus-team2{
-	width: 35%;
+	width: 30%;
 	padding: 0 5px;
 	text-align: center;
 }

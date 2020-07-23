@@ -15,3 +15,19 @@ Text Domain: clipfresh
 /*.hdr-cntlr{
 	display: none;
 }*/
+
+/*
+.eena-breadcrumbs-sec:after {
+    content: "";
+    position: absolute;
+    width: 30%;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+    opacity: .1;
+	background: linear-gradient(270deg, #111111 -28.16%, rgba(17, 17, 17, 0.34) 74.74%), #FFFFFF;
+	-ms-background: linear-gradient(270deg, #111111 -28.16%, rgba(17, 17, 17, 0.34) 74.74%), #FFFFFF;
+	-webkit-background: linear-gradient(270deg, #111111 -28.16%, rgba(17, 17, 17, 0.34) 74.74%), #FFFFFF;
+	z-index: 15;
+}*/

@@ -397,10 +397,13 @@ if( $('.mainSlider').length ){
       dots: false,
       infinite: false,
       autoplay: false,
-      autoplaySpeed: 2000,
+      autoplaySpeed: 700,
       speed: 300,
+      fade: true,
       slidesToShow: 1,
       slidesToScroll: 1, 
+      prevArrow: $('.home-banner-cntlr .fl-prev'),
+      nextArrow: $('.home-banner-cntlr .fl-next'),
     });
 }
 

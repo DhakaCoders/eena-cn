@@ -637,6 +637,9 @@ Gallery design
 	.default-page-con .sp-fanshop-gallery-img {
 	    height: 350px!important;
 	}
+	.default-page-con{
+		padding-top: 35px;
+	}
 }
 
 

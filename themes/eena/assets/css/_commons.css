@@ -150,6 +150,9 @@ img{
 .show-xs{
 	display: none!important;
 }
+.show-639{
+	display: none;
+}
 
 .divider{
 	line-height: 0;

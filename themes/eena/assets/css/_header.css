@@ -1079,9 +1079,9 @@ ul.main-slider-custom-pagi li.cm-pgi-active span{
 	    background-size: 100% 100%!important;
 	    position: absolute;
 	    top: 0;
-	    left: -20px;
-	    right: -20px;
-	    padding: 170px 20px 40px;
+	    left: 0;
+	    right: 0;
+	    padding: 170px 0 40px;
 	    bottom: auto;
 	}
 	.sm-humberger-cntlr.show-sm{
@@ -1092,6 +1092,17 @@ ul.main-slider-custom-pagi li.cm-pgi-active span{
 	}
 	.mainSlideItemDes p{
 		display: none;
+	}
+	.main-slider-item-cntlr{
+		left: 20px;
+	}
+	.main-slider-item-cntlr-inr{
+		display: table;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.msdtitle{
+		margin-bottom: 30px;
 	}
 }
 @media(max-width: 575px){

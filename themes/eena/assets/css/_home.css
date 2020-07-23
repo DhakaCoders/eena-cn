@@ -531,14 +531,55 @@
 	.hm-ranking-section{
 		padding-top: 30px;
 	}
+	.hm-ranking-sec-rgt-des,
+	.hm-training-schedule {
+	    padding-left: 20px;
+	    padding-right: 20px;
+	}
+	.versus-play-time-sm{
+		padding-top: 15px;
+		padding-bottom: 15px;
+		border-bottom: 3px solid #f9f9f9;
+	}
+	.versus-play-time-sm span{
+		font-weight: 700;
+		font-size: 12px;
+		line-height: 18px;
+		text-transform: uppercase;
+		color: #111111;
+	}
+}
+@media(max-width: 639px){
+	.hm-ranking-sec-rgt-des{
+		margin-left: -20px;
+		margin-right: -20px;
+	}
 }
 
-@media(max-width: 575px){
 
+@media(max-width: 575px){
+	.hm-ranking-tbl{
+		background: transparent;
+		padding: 0;
+	}
+	.hrsrd-title{
+		margin-bottom: 35px;
+	}
+	.hm-ranking-tbl{
+		overflow-y: scroll;
+	}
+	.hm-ranking-tbl table{
+		width: 550px;
+	}
+	.hm-ranking-sec-rgt-des{
+		padding-top: 35px;
+	}
 }
 
 @media(max-width: 479px){
-
+	.hrsrd-title{
+		font-size: 20px;
+	}
 
 }
 

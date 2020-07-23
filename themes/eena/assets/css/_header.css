@@ -185,6 +185,9 @@ header.header{
 	vertical-align: baseline;
 	color: #fff;
 }
+.hdr-topbar-nav li a:hover{
+	color: #F6C042;
+}
 
 .hdr-main-nav-cntlr-inr{
 	display: flex;

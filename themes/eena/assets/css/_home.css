@@ -643,6 +643,9 @@
 	.hm-training-schedule{
 		padding-top: 27px;
 	}
+	.hm-ranking-tbl table span{
+		font-size: 13px;
+	}
 }
 
 @media(max-width: 479px){

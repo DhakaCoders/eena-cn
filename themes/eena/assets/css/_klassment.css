@@ -362,6 +362,13 @@
 	.classroom-aside-cntlr{
 		padding: 0;
 	}
+	.versus-btn{
+		padding-bottom: 30px;
+	}
+	.versus-btn{
+		padding-top: 25px;
+		padding-bottom: 25px;
+	}
 }
 @media(max-width: 479px){
 	

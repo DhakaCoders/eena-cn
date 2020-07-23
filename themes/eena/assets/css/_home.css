@@ -66,7 +66,7 @@
 	color: #fff;
 	position: relative;
 	z-index: 5;
-	padding: 105px 0 120px;
+	padding: 105px 0 110px;
 	background: #141414;
 }
 .black-anlge-lft{
@@ -91,9 +91,11 @@
 	display: flex;
 	align-items: center;
 	margin-top: 10px;
+	flex-wrap: wrap;
 }
 .hmbits-btn{
 	display: flex;
+	margin-bottom: 10px;
 }
 .hmbits-btns a{
 	display: flex;
@@ -318,6 +320,7 @@
 .hm-training-schedule ul li div{
 	display: flex;
 	align-items: center;
+	flex-wrap: wrap;
 }
 .hm-training-schedule ul li div span{
 	margin-left: auto;
@@ -445,6 +448,13 @@
 	    padding-left: 40px;
 	    padding-right: 40px;
 	}
+	.hmns-title{
+		font-size: 32px;
+	}
+	.hbits-topline{
+		width: 290px;
+	}
+
 }
 
 @media(max-width: 991px){
@@ -461,7 +471,7 @@
 		width: 160px;
 	}
 	body.home .hm-back-in-time-sec-des{
-		padding-bottom: 60px;
+		padding-bottom: 50px;
 		padding-top: 60px;
 	}
 	.hmbitsdes-title{
@@ -470,6 +480,15 @@
 	.hm-back-in-time-sec-des strong{
 		font-size: 24px;
 		margin-bottom: 30px;
+	}
+	.hmns-title{
+		font-size: 28px;
+	}
+	.hbits-topline {
+	    width: 190px;
+	}
+	.sp-fanshop-btm-gallery-item-inr{
+		padding-left: 35%;
 	}
 }
 
@@ -488,9 +507,9 @@
 		display: none;
 	}
 	.black-anlge-lft {
-	    width: 100%!important;
-	    left: 0!important;
-	    right: 0!important;
+		width: auto!important;
+	    left: -20px!important;
+	    right: -20px!important;
 	    bottom: 100%!important;
 	    top: auto!important;
 	    height: 135px;
@@ -548,11 +567,31 @@
 		text-transform: uppercase;
 		color: #111111;
 	}
+	.hmns-title{
+		font-size: 26px;
+	}
+	.hm-news-section{
+		padding-top: 90px;
+	}
+	.hbits-topline{
+		top: -15px;
+	}
+	.sp-fanshop-btm-gallery-item-inr {
+	    padding-left: 30%;
+	}
+	body.home .hm-back-in-time-sec-des{
+		padding-left: 0!important;
+		padding-right: 0!important;
+	}
+
 }
 @media(max-width: 639px){
 	.hm-ranking-sec-rgt-des{
 		margin-left: -20px;
 		margin-right: -20px;
+	}
+	.hm-news-section{
+		padding-top: 50px;
 	}
 }
 
@@ -574,11 +613,44 @@
 	.hm-ranking-sec-rgt-des{
 		padding-top: 35px;
 	}
+	.sp-fanshop-gallery-btm ul li{
+		width: 100%;
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.sp-fanshop-gallery-btm ul{
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.sp-fanshop-btm-gallery-item-inr{
+		padding-right: 30px;
+	}
+	.hm-training-schedule ul li div{
+		display: block;
+	}
+	.hm-training-schedule ul li div span{
+		display: block;
+		margin-left: 0;
+		padding-left: 0;
+	}
+	.hm-training-schedule ul li{
+		padding-bottom: 25px;
+	}
+	.hm-training-schedule-title{
+		margin-bottom: 25px;
+	}
+	.hm-training-schedule{
+		padding-top: 27px;
+	}
 }
 
 @media(max-width: 479px){
 	.hrsrd-title{
 		font-size: 20px;
+	}
+	.sp-fanshop-btm-gallery-item-inr{
+		padding-right: 20px;
 	}
 
 }

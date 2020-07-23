@@ -1040,8 +1040,60 @@ ul.main-slider-custom-pagi li.cm-pgi-active span{
 	.popup-cart-btn{
 		right: 55px;
 	}
+	.main-slider-item-cntlr{
+		right: 20px;
+		left: auto;
+	}
+	body.home .main-slider-item-cntlr .fl-prev{
+		left: 0!important;
+		top: 4px!important
+	}
+	body.home .main-slider-item-cntlr .fl-next{
+		right: 0!important;
+		top: 4px!important
+	}
+	.mainSlideItem {
+	    height: 675px;
+	}
+	.bnr-lft-angle{
+		bottom: -15px;
+	}
+	.msdtitle {
+	    font-size: 27px;
+	}
+	.mainSlideItemDesInner {
+	    max-width: 358px;
+	}
+	.mainSlideItemDes p br{
+		display: none;
+	}
 }
-
+@media(max-width: 639px){
+	.bnr-lft-angle,
+	.bnr-lft-angle-bg{
+		display: none!important;
+	}
+	.mainSlideItemDesSlider-cntlr{
+		background: url(../images/hm-bnr-lft-angle-xs.png)!important;
+	    background-repeat: no-repeat!important;
+	    background-size: 100% 100%!important;
+	    position: absolute;
+	    top: 0;
+	    left: -20px;
+	    right: -20px;
+	    padding: 170px 20px 40px;
+	    bottom: auto;
+	}
+	.sm-humberger-cntlr.show-sm{
+		z-index: 50;
+	}
+	.mainSlideItemDesInner{
+		max-width: 100%;
+	}
+	.mainSlideItemDes p{
+		display: none;
+	}
+}
 @media(max-width: 575px){
 
 

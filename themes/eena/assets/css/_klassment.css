@@ -115,6 +115,7 @@
 .versus-match-cntlr{
 	background: #fff;
 	padding: 0 31px;
+	overflow: hidden;
 }
 .classroom-sec-wrap .versus-match-cntlr .versus-match-title >span{
 	display: none;

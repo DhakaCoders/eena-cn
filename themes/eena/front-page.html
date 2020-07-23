@@ -94,19 +94,38 @@
 
 </head>
 <body class="home">
+<div class="bdoverlay"></div>
 <div class="hdr-cntlr home-hdr-cntlr">
   <div class="bnr-lft-angle-bg"></div>
   <div class="bnr-lft-angle"></div>
   <div class="logo">
     <a href="#"><img src="assets/images/logo.png"></a>
-    <div class="logo-txt">
+    <div class="logo-txt hide-sm">
       <strong> EENDRACHT-AALST</strong>
       <span>OFFICIELE WEBSITE SC EENDRACHT AALST </span>
     </div>
   </div>
-  <header class="header">
+  <div class="sm-humberger-cntlr show-sm">
+    <div class="hdr-cart-btn">
+      <a href="#">
+        <i>
+          <svg class="cart-icon-svg" width="34" height="34" viewBox="0 0 34 34" fill="#F6C042">
+            <use xlink:href="#cart-icon-svg"></use>
+          </svg> 
+        </i>
+      </a>
+    </div>
+    <div class="hdr-humberger">
+      <div class="line-icon show-lg">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <header class="header ">
     <div class="hdr-inr">
-      <div class="hdr-topbar">
+      <div class="hdr-topbar hide-sm">
         <div class="container">
           <div class="row">
             <div class="col-md-12">
@@ -124,13 +143,21 @@
         </div>
       </div>
 
-      <div class="hdr-main-nav-cntlr">
+      <div class="hdr-main-nav-cntlr hide-sm">
         <div class="container">
           <div class="row">
             <div class="col-md-12">
               <div class="hdr-main-nav-cntlr-inr clearfix">
                 <div class="main-nav-white-bg">
-                  <nav class="main-nav">
+                  <div class="hdr-humberger">
+                    <div class="line-icon show-lg">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                    <strong class="menu-txt show-lg">Menu</strong>
+                  </div>
+                  <nav class="main-nav en-hide-lg">
                     <ul class="clearfix reset-list">
                       <li class="current-menu-item"><a href="#">Home</a></li>
                       <li><a href="#">Nieuws</a></li>
@@ -227,6 +254,49 @@
         </div>
       </div>
     </div>
+  </div>
+
+  <div class="main-nav-cntlr main-nav-cntlr-sm">
+    <nav class="main-nav">
+      <div class="sm-popup-logo show-sm"><a href="#"><img src="assets/images/logo.png"></a></div>
+      <div class="popup-cart-btn"><a href="#"><img src="assets/images/popup-cart-btn.png"></a></div>
+      <div class="closebtn show-lg">
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="clearfix reset-list">
+        <li class="current-menu-item"><a href="#">Home</a></li>
+        <li><a href="#">Nieuws</a></li>
+        <li><a href="#">Team</a></li>
+        <li class="menu-item-has-children">
+          <a href="#">Seizoen</a>
+          <ul class="sub-menu">
+            <li class="menu-item-has-children">
+              <a href="#">WEDSTRIJDEN</a>
+              <ul class="sub-menu">
+                <li><a href="#">CROKY CUP</a></li>
+                <li><a href="#">VOORBEREIDING</a></li>
+                <li><a href="#">TWEEDE AMATEURLIGA</a></li>
+              </ul>
+            </li>
+            <li><a href="#">KLASSEMENT</a></li>
+            <li><a href="#">TEGENSTANDERS</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Ticketing</a></li>
+        <li><a href="#">Club</a></li>
+        <li><a href="#">Supporters</a></li>
+      </ul>
+      <div class="xs-popupmenu-2 show-md">
+        <ul class="reset-list hdr-topbar-nav">
+          <li><a href="#">Webshop</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Archief</a></li>
+          <li><a href="#">Business</a></li>
+          <li><a href="#">Restaurant</a></li>
+        </ul>
+      </div>
+    </nav>
   </div>
 
 </div>

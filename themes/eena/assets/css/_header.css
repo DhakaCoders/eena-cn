@@ -580,14 +580,20 @@ ul.main-slider-custom-pagi li.cm-pgi-active span{
 }
 
 @media(max-width: 1299px){
+	.logo{
+		top: 79px;
+	}
 	.logo a{
-		max-width: 120px;
+		max-width: 95px;
+	}
+	.logo-txt{
+		padding-left: 10px;
 	}
 	.logo-txt strong{
-		font-size: 26px;
+		font-size: 20px;
 	}
 	.logo-txt span{
-		font-size: 13px;
+		font-size: 12px;
 	}
 	.hdr-inr-logo {
 	    max-width: 415px;
@@ -628,7 +634,12 @@ ul.main-slider-custom-pagi li.cm-pgi-active span{
 		right: 70px;
 		top: 20px;
 	}
-
+	.bnr-lft-angle{
+		width: 509px!important;
+	}
+	.mainSlideItem{
+		height: 825px;
+	}
 	body.active-scroll-off{
 		overflow: hidden;
 	}
@@ -929,12 +940,106 @@ ul.main-slider-custom-pagi li.cm-pgi-active span{
 	}
 	.xs-popupmenu-2{
 		border-top: 1px solid #fff;
-		padding: 30px 0 0;	}
+		padding: 30px 0 0;	
+	}
+	.xs-popupmenu-2 ul li{
+		padding-bottom: 25px;
+	}
+	.xs-popupmenu-2 ul li a{
+		font-size: 13px;
+	}
+	.logo {
+	    top: 60px;
+	}
+	.hdr-topbar-inr{
+		display: none;
+	}
+	.msdtitle {
+	    font-size: 37px;
+	}
+	.mainSlideItemDesInner {
+	    max-width: 450px;
+	}
+	.mainSlideItem {
+	    height: 755px;
+	}
+	.main-slider-item-cntlr{
+		left: 35%;
+	}
 }
 
 @media(max-width: 767px){
-
-
+	.sm-humberger-cntlr{
+		position: absolute;
+		right: 20px;
+		top: 50px;
+		z-index: 20;
+		display: flex!important;
+		align-items: center;
+	}
+	.sm-humberger-cntlr.show-sm{
+		display: flex!important;
+	}
+	.logo{
+		left: 20px!important;
+		top: 25px!important;
+		padding-left: 0;
+	}
+	.line-icon span{
+		background: #fff;
+		border-radius: 8px;
+		height: 4px;
+		width: 100%;
+	}
+	.line-icon {
+	    width: 31px;
+	    height: 23px;
+	    margin: 0;
+	}
+	.line-icon span:nth-child(2){
+		top: 8px;
+	}
+	.line-icon span:nth-child(3){
+		top: 16px;
+	}
+	.hdr-cart-btn a i{
+		margin-bottom: 0;
+	}
+	.hdr-humberger{
+		margin-top: 0;
+		margin-left: 12px;
+	}
+	nav.main-nav ul li{
+		text-align: center;
+	}
+	.sm-popup-logo{
+		position: absolute;
+		left: 20px;
+		top: 25px;
+		max-width: 88px;
+	}
+	.popup-cart-btn,
+	nav.main-nav .closebtn{
+		top: 55px;
+		z-index: 50;
+	}
+	.main-nav{
+		padding-top: 135px;
+	}
+	.hdr-humberger{
+		margin-right: 0;
+	}
+	.hdr-cart-btn a i svg{
+		max-width: 25px;
+		width: 100%;
+		height: auto;
+	}
+	.hdr-cart-btn {
+	    margin-top: -5px;
+	}
+	.popup-cart-btn{
+		right: 55px;
+	}
 }
 
 @media(max-width: 575px){

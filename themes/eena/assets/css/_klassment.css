@@ -263,7 +263,14 @@
 
 }
 @media(max-width: 1399px){
-
+	.match-tabs ul{
+		margin-left: -30px;
+		margin-right: -30px;
+	}
+	.match-tabs ul li{
+		padding-left: 30px;
+		padding-right: 30px;
+	}
 }
 @media(max-width: 1299px){
 	.versus-match-cntlr{

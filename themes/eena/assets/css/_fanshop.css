@@ -273,6 +273,7 @@ fanshop-post-grid-sec-wrp
 .fanshop-service-dsc{
 	font-weight: 600;
 	color: #fff;
+	position: relative;
 }
 .fanshop-service-icon{
 	display: flex;
@@ -647,7 +648,10 @@ fanshop-v1-post-sec-wrp
 .hmNewsSecSliderPrevNext{
 	display: none;
 }
-
+.fanshop-post-grid-wrp.btm-bdr-none{
+	border-bottom: none;
+	padding-bottom: 0;
+}
 /*
 -----------------
  Responsive Css

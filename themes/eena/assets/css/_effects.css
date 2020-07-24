@@ -2,7 +2,8 @@
 All Transitions
 */
 .fanshop-post-grid-inr:hover .fanshop-post-grid-img,
-a,input,img,textarea,button,svg,.sp-fanshop-gallery-dsc > img{
+a,input,img,textarea,button,svg,.sp-fanshop-gallery-dsc > img,
+.fanshop-service-icon img{
 	transition: all 0.5s;
 	-ms-transition: all 0.5s;
 	-webkit-transition: all 0.5s;
@@ -14,6 +15,7 @@ a,input,img,textarea,button,svg,.sp-fanshop-gallery-dsc > img{
 	-webkit-transition: all 0.3s;	
 }
 .fanshop-post-grid-inr:hover .fanshop-post-grid-img,
+.fanshop-service-inr:hover .fanshop-service-icon img,
 .scale{
 	transform: scale(1.1);
 	-ms-transform: scale(1.1);

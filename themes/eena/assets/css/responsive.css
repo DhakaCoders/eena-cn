@@ -113,8 +113,8 @@
 
 }
 @media(max-width: 639px){
-	.abo-frm-sec-wrp,.contact-form-sec-wrp{
-		padding-top: 60px;
+	.abo-frm-sec-wrp,.contact-form-sec-wrp,.history-entry-hdr-innr,.contact-form-sec-wrp{
+		padding-top: 65px;
 	}
 }
 
@@ -140,7 +140,19 @@
 	h5{
 		font-size: 18px;
 	}
-
+	.contact-info-wrp{
+		position: relative;
+		border-bottom: none;
+	}
+	.contact-info-wrp:after{
+		content: "";
+		position: absolute;
+		top: 100%;
+		height: 8px;
+		left: -20px;
+		right: -20px;
+		background: #F9F9F9;
+	}
 }
 
 @media(max-width: 479px){

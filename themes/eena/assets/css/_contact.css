@@ -726,6 +726,10 @@
 	.ab-frm-title,.abo-form-person-title{
 		font-size: 25px;
 	}
+	.contact-map-info-dsc ul li span{
+		font-weight: 400;
+	}
+	
 }
 
 @media(max-width: 479px){

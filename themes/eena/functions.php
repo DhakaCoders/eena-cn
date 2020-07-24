@@ -43,6 +43,8 @@ if( !function_exists('cbv_theme_setup') ){
             'cbv_main_menu' => __( 'Hoofdmenu', THEME_NAME ),
             'cbv_fta_menu' => __( 'Footer Menu 1', THEME_NAME ),
             'cbv_ftb_menu' => __( 'Footer Menu 2', THEME_NAME ),
+            'cbv_ftc_menu' => __( 'Footer Menu 3', THEME_NAME ),
+            'cbv_ftd_menu' => __( 'Footer Menu 4', THEME_NAME ),
 		) );
 
 	}

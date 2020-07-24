@@ -1,602 +1,197 @@
-<?php get_header(); ?>
-  <section class="page-banner">
-    <div class="page-banner-bg inline-bg" style="background: url('<?php echo THEME_URI; ?>/assets/images/page-bnr.jpg');"></div>
-  </section>
-  <div class="fl-page-bnr-des-cntlr">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="fl-page-bnr-des">
-            <div class="breadcrumbs hide-639">
-              <ul class="reset-list">
-                <li>
-                  <a href="#" class="fl-home-icon">
-                    <span class="item">Home</span>
-                  </a>
-                </li>  
-                <li>
-                  <a href="#">
-                    <span class="item">Binnenpagina</span>
-                  </a>
-                </li>  
-                <li class="active">
-                  <a href="#">Binnenpagina</a>
-                </li>
-              </ul>              
-            </div>
-            <div class="show-639 xs-back-btn">
-              <a href="javascript:history.go(-1)">Terug</a>
-            </div>
-            <strong class="page-title">Binnenpagina</strong>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+<?php 
+get_header(); 
+while ( have_posts() ) :
+the_post();
 
-  <div class="main-nav-cntlr main-nav-cntlr-sm">
-    <nav class="main-nav">
-      <div class="sm-popup-logo show-sm"><a href="#"><img src="<?php echo THEME_URI; ?>/assets/images/logo.png"></a></div>
-      <div class="popup-cart-btn"><a href="#"><img src="<?php echo THEME_URI; ?>/assets/images/popup-cart-btn.png"></a></div>
-      <div class="closebtn show-lg">
-        <span></span>
-        <span></span>
-      </div>
-      <ul class="clearfix reset-list">
-        <li class="current-menu-item"><a href="#">Home</a></li>
-        <li><a href="#">Nieuws</a></li>
-        <li><a href="#">Team</a></li>
-        <li class="menu-item-has-children">
-          <a href="#">Seizoen</a>
-          <ul class="sub-menu">
-            <li class="menu-item-has-children">
-              <a href="#">WEDSTRIJDEN</a>
-              <ul class="sub-menu">
-                <li><a href="#">CROKY CUP</a></li>
-                <li><a href="#">VOORBEREIDING</a></li>
-                <li><a href="#">TWEEDE AMATEURLIGA</a></li>
-              </ul>
-            </li>
-            <li><a href="#">KLASSEMENT</a></li>
-            <li><a href="#">TEGENSTANDERS</a></li>
-          </ul>
-        </li>
-        <li><a href="#">Ticketing</a></li>
-        <li><a href="#">Club</a></li>
-        <li><a href="#">Supporters</a></li>
-      </ul>
-      <div class="xs-popupmenu-2 show-md">
-        <ul class="reset-list hdr-topbar-nav">
-          <li><a href="#">Webshop</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">Archief</a></li>
-          <li><a href="#">Business</a></li>
-          <li><a href="#">Restaurant</a></li>
-        </ul>
-      </div>
-    </nav>
-  </div>
-
-</div>
-
+?>
 <section class="innerpage-con-wrap">
+  <?php if(have_rows('inhoud')){  ?>
   <div class="container-sm">
     <div class="row">
-      <div class="col-md-12">
+      <div class="col-sm-12">
         <article class="default-page-con">
-          <div class="dfp-promo-module clearfix">
-            <div>
-              <strong class="dfp-promo-module-title">Dolor, in sapien ipsum aliquam.</strong>
-            </div>
-            <div class="dfp-plate-one-img-bx">
-              <img src="<?php echo THEME_URI; ?>/assets/images/dfp-img-01.jpg">
-            </div>
-          </div>
-
-          <div class="dfp-text-module clearfix">
-            <p>Et tellus quis mi id non facilisi ac nibh. In lectus etiam augue tristique turpis at. Eget sapien duis molestie in. Consectetur tincidunt arcu ac ornare a turpis fermentum. </p>
-            <ul>
-              <li>Proin magnis ipsum cras morbi dictumst tellus.</li>
-              <li>Malesuada nisl rhoncus id viverra turpis turpis lacus lobortis.</li>
-              <li>Commodo senectus sed dictum egestas faucibus mi varius condimentum elit. </li>
-              <li>Egestas vulputate quam phasellus adipiscing a. Quis.</li>
-            </ul>
-            <p>Aliquam tristique fermentum neque turpis magna arcu. Sit sit morbi donec sapien, consequat id. Hac gravida sagittis, ut tristique massa neque dignissim erat. Massa accumsan, commodo risus vitae est tempus dui, tincidunt. Consectetur ipsum eget cursus cum viverra egestas. Sed rhoncus, vitae leo elementum, volutpat imperdiet. Magna et mi nunc neque, sed dignissim quisque diam. Nunc, sed libero proin ipsum, magna vitae.</p>
-
-            <p>Orci lacinia dui, ut at et. Arcu, amet, quam facilisi enim nisi fringilla diam viverra. Ut nunc velit odio sed. Turpis cum sodales pellentesque sem lacus, in. Massa suspendisse amet vitae dolor iaculis nunc risus.</p>
-          </div>
-
-          <div class="fl-dft-overflow-controller">
-            <div class="fl-dft-lftimg-rgtdes clearfix fl-dft-rgtimg-lftdes">
-              <div class="fl-dft-lftimg-rgtdes-lft mHc" style="background-image: url(<?php echo THEME_URI; ?>/assets/images/dfp-img-05.jpg);"></div>
-              <div class="fl-dft-lftimg-rgtdes-rgt mHc">
-                <p>Aliquam tristique fermentum neque turpis magna arcu. Sit sit morbi donec sapien, consequat id. Hac gravida sagittis, ut tristique massa neque dignissim erat. Massa accumsan, commodo risus vitae est tempus dui, tincidunt. </p>
-
-                <p>Consectetur ipsum eget cursus cum viverra egestas. Sed rhoncus, vitae leo elementum, volutpat imperdiet. Magna et mi nunc neque, sed dignissim quisque diam. Nunc, sed libero proin ipsum, magna vitae. Consectetur ipsum eget cursus cum viverra egestas. Sed rhoncus, vitae leo elementum, volutpat imperdiet.</p>
-
-                <p>Orci lacinia dui, ut at et. Arcu, amet, quam facilisi enim nisi fringilla diam viverra. Ut nunc velit odio sed. Turpis cum sodales pellentesque sem lacus, in.</p>
-              </div>
-            </div>
-          </div>
-          <div class="dfp-text-module clearfix">
-            <p>Consectetur ipsum eget cursus cum viverra egestas. Sed rhoncus, vitae leo elementum, volutpat imperdiet. Magna et mi nunc neque, sed dignissim quisque diam. Nunc, sed libero proin ipsum, magna vitae.</p>
-
-            <p>Orci lacinia dui, ut at et. Arcu, amet, quam facilisi enim nisi fringilla diam viverra. Ut nunc velit odio sed. Turpis cum sodales pellentesque sem lacus, in. Massa suspendisse amet vitae dolor iaculis nunc risus.</p>
-            <p></p>
-            <p></p>
-          </div>
-          <div class="dft-fanshop-items">
-            <div class="sp-fanshop-gallery-wrp">
-              <ul class="ulc clearfix reset-list">
-                <li>
-                  <div class="sp-fanshop-gallery-inr">
-                    <div class="sp-fanshop-gallery-img" style="background: url(<?php echo THEME_URI; ?>/assets/images/sp-fanshop-gallery-img-1.png);">
-                      <a href="#" class="overlay-link"></a>
-                      <div class="sp-fanshop-gallery-dsc">
-                        <img src="<?php echo THEME_URI; ?>/assets/images/sp-fanshop-gallery-icon-1.png">
-                        <h3 class="sp-fanshop-gallery-title"><a href="#">Restaurant</a></h3>
-                        <p>Pretium egestas cras mattis quam dictum tempus lectus ultrices. Sed purus platea faucibus.</p>
-                        <a href="#">
-                          <i>  
-                            <svg class="sp-fanshop-gallery-arrows-svg" width="27" height="14" viewBox="0 0 27 14" fill="#F6C042">
-                              <use xlink:href="#sp-fanshop-gallery-arrows-svg"></use>
-                            </svg>
-                          </i>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-                <li>
-                  <div class="sp-fanshop-gallery-inr">
-                    <div class="sp-fanshop-gallery-img" style="background: url(<?php echo THEME_URI; ?>/assets/images/sp-fanshop-gallery-img-2.png);">
-                      <a href="#" class="overlay-link"></a>
-                      <div class="sp-fanshop-gallery-dsc">
-                        <img src="<?php echo THEME_URI; ?>/assets/images/sp-fanshop-gallery-icon-2.png">
-                        <h3 class="sp-fanshop-gallery-title"><a href="#">Business CLub</a></h3>
-                        <p>Commodo est quis pulvinar at senectus congue morbi. At lacus, montes, proin sodales elementum.</p>
-                        <a href="#">
-                          <i>  
-                            <svg class="sp-fanshop-gallery-arrows-svg" width="27" height="14" viewBox="0 0 27 14" fill="#F6C042">
-                              <use xlink:href="#sp-fanshop-gallery-arrows-svg"></use>
-                            </svg>
-                          </i>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="dfp-text-module clearfix">
-            <p>Pellentesque at sit at malesuada. Tristique risus sodales est phasellus. Amet lectus sodales donec lectus sed magna amet ipsum. Facilisis a, faucibus in commodo lorem vitae lacus at. Blandit adipiscing sagittis, in etiam. Massa ut arcu diam at. Ullamcorper leo aliquet lacinia non mattis ornare penatibus. Et non diam mauris velit proin ipsum eros. Semper eget a, nunc mi imperdiet consectetur. Eget odio tincidunt tincidunt elementum erat euismod gravida iaculis. Quam semper fames in magna tristique orci. Enim lobortis faucibus neque vitae congue enim egestas quis. </p>
-          </div>
-          <h2>Enim lobortis faucibus neque vitae congue</h2>
-
-          <div class="fl-dft-overflow-controller">
-            <div class="fl-dft-lftimg-rgtdes clearfix">
-              
-              <div class="fl-dft-lftimg-rgtdes-lft fl-dft-lftimg-rgtdes-lft-img-scale mHc">
-                <div class="fl-dft-lftimg-rgtdes-lft-img-inr" style="background-image: url(<?php echo THEME_URI; ?>/assets/images/dfp-img-02.jpg);"></div>
-              </div>
-              <div class="fl-dft-lftimg-rgtdes-rgt mHc">
-                <p>Aliquam tristique fermentum neque turpis magna arcu. Sit sit morbi donec sapien, consequat id. Hac gravida sagittis, ut tristique massa neque dignissim erat. Massa accumsan, commodo risus vitae est tempus dui, tincidunt. </p>
-
-                <p>Consectetur ipsum eget cursus cum viverra egestas. Sed rhoncus, vitae leo elementum, volutpat imperdiet. Magna et mi nunc neque, sed dignissim quisque diam. Nunc, sed libero proin ipsum, magna vitae. Consectetur ipsum eget cursus cum viverra egestas. Sed rhoncus, vitae leo elementum, volutpat imperdiet.</p>
-
-                <p>Orci lacinia dui, ut at et. Arcu, amet, quam facilisi enim nisi fringilla diam viverra. Ut nunc velit odio sed. Turpis cum sodales pellentesque sem lacus, in.</p>
-              </div>
-            </div>
-          </div>
-          <div class="dfp-text-module clearfix">
-            <p>Blandit adipiscing sagittis, in etiam. Massa ut arcu diam at. Ullamcorper leo aliquet lacinia non mattis ornare penatibus. Et non diam mauris velit proin ipsum eros. Semper eget a, nunc mi imperdiet consectetur. Eget odio tincidunt tincidunt elementum erat euismod gravida iaculis. Quam semper fames in magna tristique orci. Enim lobortis faucibus neque vitae congue enim egestas quis. </p>
-          </div>
-          <div class="dft-versus-match-cntlr">
-            <div class="hm-ranking-sec-lft-des">
-              <div class="versus-match-cntlr">
-                <div class="versus-match-title">
-                  <div class="fl-tabs match-tabs">
-                    <ul class="reset-list clearfix">
-                      <li><a class="tab-link current" href="#" data-tab="mt-tab-1">volgende wedstrijd</a></li>
-                      <li><a class="tab-link" href="#" data-tab="mt-tab-2">vorige wedstrijd</a></li>
-                    </ul>
-                  </div>
-                </div>
-                
-                <div id="mt-tab-1" class="fl-tab-content current">
-                  <div class="versus-match">
-                    <div class="versus-team versus-match-item">
-                      <div class="versus-team-logo versus-team-logo-lft">
-                        <img src="<?php echo THEME_URI; ?>/assets/images/versus-team-logo-img-01.png" alt="">
-                      </div>
-                      <h5 class="versus-team-name">E. aalst</h5>
-                    </div>
-                    <div class="versus-logo versus-match-item versus-team-logo-rgt" style="background: url('<?php echo THEME_URI; ?>/assets/images/vs-icon.png');">
-                      <div class="versus-play-time hide-sm">
-                        <span>zondag <br>
-                        29 maart 2020<br>
-                        15u00</span>
-                      </div>
-                    </div>
-                    <div class="versus-team2 versus-match-item">
-                      <div class="versus-team-logo">
-                        <img src="<?php echo THEME_URI; ?>/assets/images/versus-team-logo-img-02.png" alt="">
-                      </div>
-                      <h5 class="versus-team-name">KVK Tienen</h5>
-                    </div>
-                  </div>
-                  <div class="versus-play-time versus-play-time-sm show-sm">
-                    <span>zondag <br>
-                    29 maart 2020<br>
-                    15u00</span>
-                  </div>
-                  <div class="versus-btn">
-                    <a href="#">Voorbeschouwing
-                      <i>  
-                        <svg class="sp-fanshop-gallery-arrows-svg" width="27" height="14" viewBox="0 0 27 14" fill="#F6C042">
-                          <use xlink:href="#sp-fanshop-gallery-arrows-svg"></use>
-                        </svg>
-                      </i>
-                    </a>
-                  </div>
-                </div>
-                <div id="mt-tab-2" class="fl-tab-content">
-                  <div class="versus-match">
-                    <div class="versus-team versus-match-item">
-                      <div class="versus-team-logo">
-                        <img src="<?php echo THEME_URI; ?>/assets/images/versus-team-logo-img-01.png" alt="">
-                      </div>
-                      <h5 class="versus-team-name">E. aalst 2</h5>
-                    </div>
-                    <div class="versus-logo versus-match-item" style="background: url('<?php echo THEME_URI; ?>/assets/images/vs-icon.png');">
-                      <div class="versus-play-time">
-                        <span>zondag <br>
-                        29 maart 2020<br>
-                        15u00</span>
-                      </div>
-                    </div>
-                    <div class="versus-team2 versus-match-item">
-                      <div class="versus-team-logo">
-                        <img src="<?php echo THEME_URI; ?>/assets/images/versus-team-logo-img-02.png" alt="">
-                      </div>
-                      <h5 class="versus-team-name">KVK Tienen</h5>
-                    </div>
-                  </div>
-                  <div class="versus-btn">
-                    <a href="#">Voorbeschouwing
-                      <i>  
-                        <svg class="sp-fanshop-gallery-arrows-svg" width="27" height="14" viewBox="0 0 27 14" fill="#F6C042">
-                          <use xlink:href="#sp-fanshop-gallery-arrows-svg"></use>
-                        </svg>
-                      </i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-          <div class="dfp-text-module clearfix">
-            <p>Massa ut arcu diam at. Ullamcorper leo aliquet lacinia non mattis ornare penatibus. Et non diam mauris velit proin ipsum eros. Semper eget a, nunc mi imperdiet consectetur. Eget odio tincidunt tincidunt elementum erat euismod gravida iaculis. Quam semper fames in magna tristique orci. Enim lobortis faucibus neque vitae.</p>
-            <ol>
-              <li>Proin magnis ipsum cras morbi dictumst tellus.</li>
-              <li>Malesuada nisl rhoncus id viverra turpis turpis lacus lobortis.</li>
-              <li>Commodo senectus sed dictum egestas faucibus mi varius condimentum elit. </li>
-              <li>Egestas vulputate quam phasellus adipiscing a. Quis.</li>
-            </ol>
-            <p>Imperdiet pretium enim suspendisse nunc lorem lectus. Risus adipiscing orci, sem ultrices proin. Vulputate commodo habitant eget fames augue lobortis nam. Arcu, accumsan, porttitor sit mi maecenas cras. Sapien, euismod semper imperdiet tristique amet, nisi, lorem ac lorem. Cras urna, ornare sem quisque in. Tortor id mi nibh nulla. </p>
-          </div>
-
-
-          <div class="gallery-wrap clearfix">
-            <div class="gallery gallery-columns-2">
-              <figure class="gallery-item">
-                <div class="gallery-icon portrait">
-                  <img src="<?php echo THEME_URI; ?>/assets/images/dfp-img-04.jpg">
-                </div>
-              </figure>
-
-              <figure class="gallery-item">
-                <div class="gallery-icon portrait">
-                  <img src="<?php echo THEME_URI; ?>/assets/images/dfp-img-05.jpg">
-                </div>
-              </figure>
-            </div>
-          </div>
-
-          <div class="dfp-text-module clearfix">
-            <h3>Enim lobortis faucibus neque vitae congue</h3>
-            <p>Consectetur ipsum eget cursus cum viverra egestas. Sed rhoncus, vitae leo elementum, volutpat imperdiet. Magna et mi nunc neque, sed dignissim quisque diam. Nunc, sed libero proin ipsum, magna vitae. Consectetur ipsum eget cursus cum viverra egestas. Sed rhoncus, vitae leo elementum, volutpat imperdiet.</p>
-          </div>
-          <div class="dft-clint-logos">
-            <h5 class="dft-clint-logos-module-title">onze partners</h5>
-            <ul class="clearfix reset-list">
-              <li><div class="mHc"><img src="<?php echo THEME_URI; ?>/assets/images/brand-logo-tp-1.png"></div></li>
-              <li><div class="mHc"><img src="<?php echo THEME_URI; ?>/assets/images/brand-logo-tp-2.png"></div></li>
-              <li><div class="mHc"><img src="<?php echo THEME_URI; ?>/assets/images/brand-logo-tp-3.png"></div></li>
-              <li><div class="mHc"><img src="<?php echo THEME_URI; ?>/assets/images/brand-logo-tp-4.png"></div></li>
-            </ul>
-            <ul class="clearfix reset-list">
-              <li><div class="mHc"><img src="<?php echo THEME_URI; ?>/assets/images/brand-logo-tp-5.png"></div></li>
-              <li><div class="mHc"><img src="<?php echo THEME_URI; ?>/assets/images/brand-logo-tp-6.png"></div></li>
-              <li><div class="mHc"><img src="<?php echo THEME_URI; ?>/assets/images/brand-logo-tp-7.png"></div></li>
-            </ul>
-          </div>
-          <div class="dft-news-overview-grds">
-            <div class="clearfix dft-news-overview-slider dftNewsOverviewSlider">
-              <div class="dftNewsOverviewSlideItem">
-                <div class="eena-grd-item">
-                  <div class="eena-grd-item-fea-img-ctlr">
-                    <a href="#" class="overlay-link"></a>
-                    <div class="eena-grd-item-fea-img" style="background: url('<?php echo THEME_URI; ?>/assets/images/eena-grd-item-fea-img-2.jpg');"></div>
-                  </div>
-                  <div class="eena-grd-item-des mHc">
-                    <strong>VRIJDAG 27 MAART - 14U05</strong>
-                    <h3 class="eena-gid-title mHc1">
-                      <a href="#">Positief advies voor licentie eerste amateurliga!</a>
-
-                    </h3>
-                    <p class="mHc2">Et tellus quis mi id non facilisi ac nibh. In lectus etiam augue tristique turpis at. Eget sapien duis molestie in. Consectetur tincidunt arcu ac ornare a turpis fermentum. </p>
-                    <a href="#">LEES MEEr</a>
-                  </div>
-                </div>
-              </div>
-              <div>
-                <div class="eena-grd-item">
-                  <div class="eena-grd-item-fea-img-ctlr">
-                    <a href="#" class="overlay-link"></a>
-                    <div class="eena-grd-item-fea-img" style="background: url('<?php echo THEME_URI; ?>/assets/images/eena-grd-item-fea-img-3.jpg');"></div>
-                  </div>
-                  <div class="eena-grd-item-des mHc">
-                    <strong>VRIJDAG 27 MAART - 14U05</strong>
-                    <h3 class="eena-gid-title mHc1">
-                      <a href="#">Onze competities worden definitief stopgezet</a>
-
-                    </h3>
-                    <p class="mHc2">Et tellus quis mi id non facilisi ac nibh. In lectus etiam augue tristique turpis at. Eget sapien duis molestie in. Consectetur tincidunt arcu ac ornare a turpis fermentum. </p>
-                    <a href="#">LEES MEEr</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="dft-back-in-time-sec">
-            <div class="hm-back-in-time-sec clearfix">
-              <div class="hm-back-in-time-sec-angle"></div>
-              <div class="hm-back-in-time-sec-inr">
-                  <div class="hm-back-in-time-sec-fea-img">
-                      <div class="inline-bg" style="background: url(<?php echo THEME_URI; ?>/assets/images/hm-back-in-time-sec-fea-img.jpg);"></div>
-                  </div>
-                
-                <div class="row">
-                  <div class="col-md-5">
-
-                  </div>
-                  <div class="col-md-7">
-                    <div class="hm-back-in-time-sec-des">
-                      <div>
-                        <span class="black-anlge-lft"><img src="<?php echo THEME_URI; ?>/assets/images/black-anlge-lft-dft.png"></span>
-                        <strong>Purus in in at magna fermentum laoreet morbi vitae.</strong>
-                        <p>Natoque feugiat donec amet felis quisque morbi vitae leo nunc. Et mi gravida nisl, iaculis aliquam. </p>
-                        <div class="hmbits-btns">
-                          <div class="hmbits-btn hmbits-btn-1">
-                            <a href="#">Meer Info</a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>    
-            </div>
-          </div>
-          <div class="dfp-text-module clearfix list-module">
-            <h3>faucibus neque vitae congue</h3>
-            <p>Consectetur ipsum eget cursus cum viverra egestas. Sed rhoncus, vitae leo elementum, volutpat imperdiet. Magna et mi nunc neque, sed dignissim quisque diam. Nunc, sed libero proin ipsum, magna vitae. </p>
-            <div class="list-module-cntlr">
-              <ul class="reset-list">
-                <li>
-                  <div><strong>faucibus</strong> <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit nulla.</span></div>
-                </li>
-                <li>
-                  <div><strong>Consectetur</strong> <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </span></div>
-                </li>
-                <li>
-                  <div><strong>Eget ipsum</strong> <span>Neque lacinia dolor tincidunt id nunc auctor sed.</span></div>
-                </li>
-                <li>
-                  <div><strong>Sed voluptat</strong> <span>Laoreet enim.</span></div>
-                </li>
-                <li>
-                  <div><strong>Vitae magna</strong> <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </span></div>
-                </li>
-                <li>
-                  <div><strong>Nunc rhoncus</strong> <span>Amet viverra fames non ultricies.</span></div>
-                </li>
-                <li>
-                  <div><strong>Sed Libero</strong> <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </span></div>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="dfp-tbl-wrap">
-            <div class="table-dsc">
-              <table>
-                <thead class="dfp-thead">
-                  <tr>
-                    <th><span>EU</span></th>
-                    <th><span>S</span></th>
-                    <th><span>M</span></th>
-                    <th><span>L</span></th>
-                    <th><span>XL</span></th>
-                    <th><span>2xL</span></th>
-                    <th><span>3xL</span></th>
-                    <th><span>4xL</span></th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><span>Chest (Cm)</span></td>
-                    <td> <span>91 - 96</span></td>
-                    <td><span>91 - 96</span></td>
-                    <td><span>91 - 96</span></td>
-                    <td><span>91 - 96</span></td>
-                    <td><span>91 - 96</span></td>
-                    <td><span>91 - 96</span></td>
-                    <td><span>91 - 96</span></td>
-                  </tr>
-                  <tr>
-                    <td><span>Waist (Cm)</span></td>
-                    <td> <span>79 - 84</span></td>
-                    <td> <span>79 - 84</span></td>
-                    <td> <span>79 - 84</span></td>
-                    <td> <span>79 - 84</span></td>
-                    <td> <span>79 - 84</span></td>
-                    <td> <span>79 - 84</span></td>
-                    <td> <span>79 - 84</span></td>
-                  </tr>
-                  <tr>
-                    <td><span>Hips (Cm)</span></td>
-                    <td> <span>89 - 94</span></td>
-                    <td> <span>89 - 94</span></td>
-                    <td> <span>89 - 94</span></td>
-                    <td> <span>89 - 94</span></td>
-                    <td> <span>89 - 94</span></td>
-                    <td> <span>89 - 94</span></td>
-                    <td> <span>89 - 94</span></td>
-                  </tr>
-                  <tr>
-                    <td><span>Inseam (Cm)</span></td>
-                    <td> <span>77 - 79</span></td>
-                    <td> <span>77 - 79</span></td>
-                    <td> <span>77 - 79</span></td>
-                    <td> <span>77 - 79</span></td>
-                    <td> <span>77 - 79</span></td>
-                    <td> <span>77 - 79</span></td>
-                    <td> <span>77 - 79</span></td>
-                  </tr>
-                  <tr>
-                    <td><span>Body Height (Cm)</span></td>
-                    <td> <span>170 - 178</span></td>
-                    <td> <span>170 - 178</span></td>
-                    <td> <span>170 - 178</span></td>
-                    <td> <span>170 - 178</span></td>
-                    <td> <span>170 - 178</span></td>
-                    <td> <span>170 - 178</span></td>
-                    <td> <span>170 - 178</span></td>
-                  </tr>
-                  <tr>
-                    <td><span>Weight (KG)</span></td>
-                    <td> <span>55 - 65</span></td>
-                    <td> <span>55 - 65</span></td>
-                    <td> <span>55 - 65</span></td>
-                    <td> <span>55 - 65</span></td>
-                    <td> <span>55 - 65</span></td>
-                    <td> <span>55 - 65</span></td>
-                    <td> <span>55 - 65</span></td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div><!-- end of .dfp-tbl-wrap -->
-
+          <?php 
+            while ( have_rows('inhoud') ) : the_row(); 
+          if( get_row_layout() == 'introductietekst' ){
+              $title = get_sub_field('titel');
+              $fc_editor = get_sub_field('fc_teksteditor');
+              $afbeelding = get_sub_field('afbeelding');
+              echo '<div class="dfp-promo-module clearfix">';
+                if( !empty($title) ) printf('<div><strong class="dfp-promo-module-title">%s</strong></div>', $title);
+                if( !empty($fc_editor) ) echo wpautop( $fc_editor );
+                if( !empty($afbeelding) ){
+                  echo '<div class="dfp-plate-one-img-bx">', cbv_get_image_tag($afbeelding), '</div>';
+                }
+              echo '</div>';    
+          }elseif( get_row_layout() == 'teksteditor' ){
+              $beschrijving = get_sub_field('fc_teksteditor');
+              echo '<div class="dfp-text-module clearfix">';
+                if( !empty( $beschrijving ) ) echo wpautop($beschrijving);
+              echo '</div>';    
+            }elseif( get_row_layout() == 'afbeelding_tekst' ){
+              $fc_afbeelding = get_sub_field('fc_afbeelding');
+              $imgsrc = cbv_get_image_src($fc_afbeelding, 'dfpageg1');
+              $fc_tekst = get_sub_field('fc_tekst');
+              $positie_afbeelding = get_sub_field('positie_afbeelding');
+              $imgposcls = ( $positie_afbeelding == 'right' ) ? 'fl-dft-rgtimg-lftdes' : '';
+              echo '<div class="fl-dft-overflow-controller">
+                <div class="fl-dft-lftimg-rgtdes clearfix '.$imgposcls.'">';
+                      echo '<div class="fl-dft-lftimg-rgtdes-lft mHc" style="background: url('.$imgsrc.');"></div>';
+                echo '<div class="fl-dft-lftimg-rgtdes-rgt mHc">';
+                    echo wpautop($fc_tekst);
+                echo '</div>';
+              echo '</div></div>';      
+            }elseif( get_row_layout() == 'galerij' ){
+              $gallery_cn = get_sub_field('afbeeldingen');
+              $lightbox = get_sub_field('lightbox');
+              $kolom = get_sub_field('kolom');
+              if( $gallery_cn ):
+              echo "<div class='gallery-wrap clearfix'><div class='gallery gallery-columns-{$kolom}'>";
+                foreach( $gallery_cn as $image ):
+                $imgsrc = cbv_get_image_src($image['ID'], 'dfpageg1');  
+                echo "<figure class='gallery-item'><div class='gallery-icon portrait'>";
+                if( $lightbox ) echo "<a data-fancybox='gallery' href='{$image['url']}'>";
+                    //echo '<div class="dfpagegalleryitem" style="background: url('.$imgsrc.');"></div>';
+                    echo wp_get_attachment_image( $image['ID'], 'dfpageg1' );
+                if( $lightbox ) echo "</a>";
+                echo "</div></figure>";
+                endforeach;
+              echo "</div></div>";
+              endif;      
+            }elseif( get_row_layout() == 'troefs' ){
+              $fc_usps = get_sub_field('fc_troefs');
+              echo "<div class='dft-fea-boxs clearfix'>";
+                foreach( $fc_usps as $usp ):
+                  echo "<div class='dft-fea-box-item'>";
+                    echo "<div class='dft-fea-box-item-inr'>";
+                    if( $usp['knop'] ):
+                      echo '<a href="'.$usp['knop'].'" class="overlay-link"></a>';
+                    endif;
+                      echo '<div class="dft-fea-box-item-icon mHc1">';
+                      echo '<i><svg class="hm-fea-box-item-icon-svg" width="38" height="38" viewBox="0 0 38 38" fill="#fff">
+                      <use xlink:href="#hm-fea-box-item-icon-svg"></use></svg></i>';
+                      echo "</div>";
+                      printf('<h4 class="dft-fea-box-item-title mHc2">%s</h4>', $usp['titel']);
+                      if( !empty( $usp['beschrijving'] ) ) echo wpautop($usp['beschrijving']);
+                    echo "</div>";
+                  echo "</div>";
+                endforeach;
+              echo "</div>";
+            }elseif( get_row_layout() == 'producten' ){
+              $fc_prodcts = get_sub_field('fc_producten');
+                echo '<div class="dft-pro-items">
+                    <div class="dft-pro-item">
+                      <div class="hm-pro-bxe-item">
+                        <div class="hm-pro-bxe-item-icon mHc1">
+                          <i>
+                            <svg class="hm-pro-bxe-item-icon-01-svg" width="84" height="84" viewBox="0 0 84 84" fill="#000062">
+                              <use xlink:href="#hm-pro-bxe-item-icon-01-svg"></use>
+                            </svg> 
+                          </i>';
+                echo '</div>';
+                if( !empty( $fc_prodcts['titel'] ) ) printf( '<h3 class="hm-pro-bxe-item-title mHc2">%s</h3>', $fc_prodcts['titel']); 
+                if( !empty( $fc_prodcts['beschrijving'] ) ) echo wpautop($fc_prodcts['beschrijving']); 
+                if( !empty($fc_prodcts['knop']) ):
+                echo '<div class="hm-pro-bxe-item-more-link">'; 
+                  printf('<a href="%s">Ontdek onze oplossingen</a>', $fc_prodcts['knop']);
+                echo '</div>';
+                endif;
+                echo '</div></div></div>';
+            }elseif( get_row_layout() == 'logo' ){
+              $fc_logos = get_sub_field('fc_logo');
+              if( $fc_logos ):
+              echo '<div class="dft-overons-logos-cntlr">';
+                echo '<div class="hm-overons-sec-des-logos clearfix">';
+                foreach( $fc_logos as $fc_logo ):
+                echo '<div class="hm-overons-des-logo"><div class="hm-overons-des-logo-inr mHc">';
+                if( !empty($fc_logo['logo']) ) echo cbv_get_image_tag($fc_logo['logo']);
+                echo '</div></div>';
+                endforeach;
+                echo '</div>';
+              echo '</div>';
+            endif;
+            }elseif( get_row_layout() == 'gmap' ){
+              $fc_gmap = get_sub_field('fc_gmap');
+              $ghours = $fc_gmap['openingstijden'];
+              $address = get_field('address', 'options');
+              $gmapsurl = get_field('google_maps', 'options');
+              $gmaplink = !empty($gmapsurl)?$gmapsurl: 'javascript:void()';
+              if($fc_gmap):
+              echo '<div class="dft-map">';
+              echo '<div class="google-map">';
+              if( !empty($fc_gmap['map']) ) printf('%s', $fc_gmap['map']);
+              echo '</div>';
+              echo '<div class="contact-google-map-des">';
+              echo '<div class="contact-google-map-des-ctlr">';
+              echo '<div class="contact-google-map-des-inr">';
+              echo '<h5 class="cnt-gm-title">';
+              _e('Industrial Textile Products', THEME_NAME);
+              echo '</h5>';
+              echo '<div class="cnt-gm-location">';
+              echo '<strong class="cnt-gm-lctn-title">';
+              _e('Locatie', THEME_NAME);
+              echo '</strong>';
+              if( !empty($address) ) printf('<a href="%s">%s</a>', $gmaplink, $address);
+              echo '</div>';
+              echo '<div class="cnt-gm-opening-hours">';
+              echo '<strong class="cnt-gm-oh-title">';
+              _e('openingstijden', THEME_NAME);
+              echo '</strong>';
+              if($ghours):
+              echo '<ul class="reset-list">';
+                foreach( $ghours as $hour ):
+                if(!empty($hour['hours'])) printf('<li><strong>%s</strong></li>', $hour['hours']);
+                endforeach;
+              echo '</ul> '; 
+              endif;    
+              echo '</div>';
+              echo '</div>';
+              echo '</div>';
+              echo '</div>';
+              echo '</div>';
+              echo '<hr>';
+              endif;
+            }elseif( get_row_layout() == 'table' ){
+              $fc_table = get_sub_field('fc_table');
+              cbv_table($fc_table);
+            }elseif( get_row_layout() == 'horizontal_rule' ){
+              $fc_horizontal_rule = get_sub_field('fc_horizontal_rule');
+              echo '<div class="dft-2grd-img-content-separetor" style="height:'.$fc_horizontal_rule.'px"></div>';
+            }elseif( get_row_layout() == 'afbeelding' ){
+              $fc_afbeelding = get_sub_field('fc_afbeelding');
+              if( !empty( $fc_afbeelding ) ){
+                printf('<div class="dfp-plate-one-img-bx">%s</div>', cbv_get_image_tag($fc_afbeelding));
+              }
+            }elseif( get_row_layout() == 'horizontal_rule' ){
+              $rheight = get_sub_field('fc_horizontal_rule');
+              printf('<div class="dfhrule clearfix" style="height: %spx;"></div>', $rheight);
+          
+            }elseif( get_row_layout() == 'gap' ){
+             $gap = get_sub_field('fc_gap');
+             printf('<div class="gap clearfix" data-value="20" data-md="20" data-sm="20" data-xs="10" data-xxs="10"></div>', $rheight);
+            }
+          
+           endwhile;?>
         </article>
-      </div>
-    </div>
-  </div>
-</section>
 
-<section class="ftr-tp-brand-logo-sec-wrp">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="brand-logo-head">
-          <h2 class="brand-logo-head-title">onze partners</h2>
-        </div>
-        <div class="brand-logo-tp-wrp">
-          <ul class="clearfix reset-list">
-            <li>
-              <img src="<?php echo THEME_URI; ?>/assets/images/brand-logo-tp-1.png">
-            </li>
-            <li>
-              <img src="<?php echo THEME_URI; ?>/assets/images/brand-logo-tp-2.png">
-            </li>
-            <li>
-              <img src="<?php echo THEME_URI; ?>/assets/images/brand-logo-tp-3.png">
-            </li>
-            <li class="hide-md">
-              <img src="<?php echo THEME_URI; ?>/assets/images/brand-logo-tp-4.png">
-            </li>
-          </ul>
-          <ul class="clearfix reset-list">
-            <li class="show-md">
-              <img src="<?php echo THEME_URI; ?>/assets/images/brand-logo-tp-4.png">
-            </li>
-            <li>
-              <img src="<?php echo THEME_URI; ?>/assets/images/brand-logo-tp-5.png">
-            </li>
-            <li class="hide-md">
-              <img src="<?php echo THEME_URI; ?>/assets/images/brand-logo-tp-6.png">
-            </li>
-            <li>
-              <img src="<?php echo THEME_URI; ?>/assets/images/brand-logo-tp-7.png">
-            </li>
-            <li class="show-md">
-              <img src="<?php echo THEME_URI; ?>/assets/images/brand-logo-tp-6.png">
-            </li>
-          </ul>
-          <ul class="clearfix reset-list">
-            <li>
-              <img src="<?php echo THEME_URI; ?>/assets/images/brand-logo-btm-1.png">
-            </li>
-            <li>
-              <img src="<?php echo THEME_URI; ?>/assets/images/brand-logo-btm-2.png">
-            </li>
-            <li>
-              <img src="<?php echo THEME_URI; ?>/assets/images/brand-logo-btm-3.png">
-            </li>
-            <li>
-              <img src="<?php echo THEME_URI; ?>/assets/images/brand-logo-btm-4.png">
-            </li>
-            <li>
-              <img src="<?php echo THEME_URI; ?>/assets/images/brand-logo-btm-5.png">
-            </li>
-            <li>
-              <img src="<?php echo THEME_URI; ?>/assets/images/brand-logo-btm-6.png">
-            </li>
-          </ul>
-          <ul class="clearfix reset-list">
-            <li>
-              <img src="<?php echo THEME_URI; ?>/assets/images/brand-logo-btm-7.png">
-            </li>
-            <li>
-              <img src="<?php echo THEME_URI; ?>/assets/images/brand-logo-btm-8.png">
-            </li>
-            <li>
-              <img src="<?php echo THEME_URI; ?>/assets/images/brand-logo-btm-9.png">
-            </li>
-            <li>
-              <img src="<?php echo THEME_URI; ?>/assets/images/brand-logo-btm-10.png">
-            </li>
-            <li>
-              <img src="<?php echo THEME_URI; ?>/assets/images/brand-logo-btm-11.png">
-            </li>
-            <li>
-              <img src="<?php echo THEME_URI; ?>/assets/images/brand-logo-btm-12.png">
-            </li>
-            <li>
-              <img src="<?php echo THEME_URI; ?>/assets/images/brand-logo-btm-13.png">
-            </li>
-          </ul>
-        </div>
-        <div class="ena-xs-view-more-btn show-md">
-          <a href="#">View More</a>
-        </div>
       </div>
     </div>
   </div>
+<?php }else{ ?>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="default-page-con">
+                <?php the_content(); ?>
+                </div>
+            </div>
+        </div>
+    </div>
+<?php } ?>
 </section>
-<?php get_footer(); ?>
+<?php 
+
+endwhile;
+get_footer(); 
+
+?>

@@ -79,12 +79,22 @@
 <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
+<?php 
+  $logoObj = get_field('hdlogo', 'options');
+  if( is_array($logoObj) ){
+    $logo_tag = '<img src="'.$logoObj['url'].'" alt="'.$logoObj['alt'].'" title="'.$logoObj['title'].'">';
+  }else{
+    $logo_tag = '';
+  }
+?>
 <div class="bdoverlay"></div>
 <div class="hdr-cntlr page-hdr-cntlr">
 <div class="bnr-lft-angle-bg"></div>
 <div class="bnr-lft-angle"></div>
 <div class="logo">
-  <a href="#"><img src="<?php echo THEME_URI; ?>/assets/images/logo.png"></a>
+  <a href="<?php echo esc_url(home_url('/')); ?>">
+    <?php echo $logo_tag; ?>
+  </a>
   <div class="logo-txt hide-sm">
     <strong> EENDRACHT-AALST</strong>
     <span>OFFICIELE WEBSITE SC EENDRACHT AALST </span>
@@ -115,13 +125,15 @@
         <div class="row">
           <div class="col-md-12">
             <div class="hdr-topbar-inr">
-              <ul class="reset-list hdr-topbar-nav">
-                <li><a href="#">Webshop</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Archief</a></li>
-                <li><a href="#">Business</a></li>
-                <li><a href="#">Restaurant</a></li>
-              </ul>
+              <?php 
+                $menuOptions = array( 
+                    'theme_location' => 'cbv_top_menu', 
+                    'menu_class' => 'reset-list hdr-topbar-nav',
+                    'container' => '',
+                    'container_class' => ''
+                  );
+                wp_nav_menu( $menuOptions ); 
+              ?> 
             </div>
           </div>
         </div>
@@ -143,29 +155,15 @@
                   <strong class="menu-txt show-lg">Menu</strong>
                 </div>
                 <nav class="main-nav en-hide-lg">
-                  <ul class="clearfix reset-list">
-                    <li class="current-menu-item"><a href="#">Home</a></li>
-                    <li><a href="#">Nieuws</a></li>
-                    <li><a href="#">Team</a></li>
-                    <li class="menu-item-has-children">
-                      <a href="#">Seizoen</a>
-                      <ul class="sub-menu">
-                        <li class="menu-item-has-children">
-                          <a href="#">WEDSTRIJDEN</a>
-                          <ul class="sub-menu">
-                            <li><a href="#">CROKY CUP</a></li>
-                            <li><a href="#">VOORBEREIDING</a></li>
-                            <li><a href="#">TWEEDE AMATEURLIGA</a></li>
-                          </ul>
-                        </li>
-                        <li><a href="#">KLASSEMENT</a></li>
-                        <li><a href="#">TEGENSTANDERS</a></li>
-                      </ul>
-                    </li>
-                    <li><a href="#">Ticketing</a></li>
-                    <li><a href="#">Club</a></li>
-                    <li><a href="#">Supporters</a></li>
-                  </ul>
+                  <?php 
+                    $menuOptions = array( 
+                        'theme_location' => 'cbv_main_menu', 
+                        'menu_class' => 'clearfix reset-list',
+                        'container' => '',
+                        'container_class' => ''
+                      );
+                    wp_nav_menu( $menuOptions ); 
+                  ?>
                 </nav>
                 <div class="hdr-cart-btn">
                   <a href="#">
@@ -185,3 +183,62 @@
     </div>
   </div>
 </header>
+<?php
+$thisID = get_the_ID();
+$pageTitle = get_the_title($thisID);
+$standaardbanner = get_field('pagebanner', $thisID);
+if( empty($standaardbanner) ) $standaardbanner = THEME_URI.'/assets/images/page-bnr.jpg';
+?>
+  <section class="page-banner">
+    <div class="page-banner-bg inline-bg" style="background: url('<?php echo $standaardbanner; ?>');"></div>
+  </section>
+  <div class="fl-page-bnr-des-cntlr">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="fl-page-bnr-des">
+            <div class="breadcrumbs hide-639">
+              <?php cbv_breadcrumbs(); ?>              
+            </div>
+            <div class="show-639 xs-back-btn">
+              <a href="javascript:history.go(-1)">Terug</a>
+            </div>
+            <strong class="page-title"><?php echo $pageTitle; ?></strong>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="main-nav-cntlr main-nav-cntlr-sm">
+    <nav class="main-nav">
+      <div class="sm-popup-logo show-sm"><a href="#"><img src="<?php echo THEME_URI; ?>/assets/images/logo.png"></a></div>
+      <div class="popup-cart-btn"><a href="#"><img src="<?php echo THEME_URI; ?>/assets/images/popup-cart-btn.png"></a></div>
+      <div class="closebtn show-lg">
+        <span></span>
+        <span></span>
+      </div>
+      <?php 
+        $menuOptions = array( 
+            'theme_location' => 'cbv_main_menu', 
+            'menu_class' => 'clearfix reset-list',
+            'container' => '',
+            'container_class' => ''
+          );
+        wp_nav_menu( $menuOptions ); 
+      ?>
+      <div class="xs-popupmenu-2 show-md">
+        <?php 
+          $menuOptions = array( 
+              'theme_location' => 'cbv_top_menu', 
+              'menu_class' => 'reset-list hdr-topbar-nav',
+              'container' => '',
+              'container_class' => ''
+            );
+          wp_nav_menu( $menuOptions ); 
+        ?> 
+      </div>
+    </nav>
+  </div>
+
+</div>

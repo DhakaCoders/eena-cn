@@ -7,7 +7,7 @@ var windowWidth = $(window).width();
 $('.navbar-toggle').on('click', function(){
 	$('#mobile-nav').slideToggle(300);
 });
-	
+
   
 //matchHeightCol
 if($('.mHc').length){
@@ -557,5 +557,15 @@ headerObjects();
 $(window).on('resize', function(){
   headerObjects();
 });
+
+
+
+/*$('.entry-header-tab > ul > li a').on('click', function(){
+    $(this).addClass('active');
+    $(this).parent().siblings().find('a').removeClass('active');
+  
+});*/
+
+
 
 })(jQuery);

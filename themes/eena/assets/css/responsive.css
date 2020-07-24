@@ -118,7 +118,7 @@
 }
 @media(max-width: 639px){
 	.abo-frm-sec-wrp,.contact-form-sec-wrp,.history-entry-hdr-innr,.contact-form-sec-wrp,
-	.fanshop-catagory-sec-wrp{
+	.fanshop-catagory-sec-wrp,.entry-header-innr{
 		padding-top: 65px;
 	}
 }

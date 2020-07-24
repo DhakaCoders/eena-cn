@@ -873,6 +873,12 @@ fanshop-v1-post-sec-wrp
 	.hmNewsSecSliderPrevNext{
 		display: block;
 	}
+	.fanshop-post-grid-img{
+		height: 300px!important;
+	}
+	.fanshop-post-grid-title{
+		font-size: 20px;
+	}
 }
 
 @media(max-width: 479px){
@@ -891,6 +897,12 @@ fanshop-v1-post-sec-wrp
 	}
 	.fanshop-catagory-menu ul li {
 	    width: 100%;
+	}
+	.fanshop-post-grid-img{
+		height: 270px!important;
+	}
+	.fanshop-post-grid-title{
+		font-size: 18px;
 	}
 }
 

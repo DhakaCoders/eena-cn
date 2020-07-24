@@ -293,6 +293,13 @@
 		background: #f9f9f9;
 		padding: 30px 15px 27px 15px;
 	}
+	.classroom-sec-wrap .versus-logo {
+	    height: 63px;
+	    max-width: 99px;
+	}
+	.classroom-sec-wrap .versus-team-name{
+		font-size: 15px;
+	}
 }
 @media(max-width: 991px){
 	.classroom-sec-wrap{

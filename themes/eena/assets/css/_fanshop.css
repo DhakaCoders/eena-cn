@@ -807,6 +807,9 @@ fanshop-v1-post-sec-wrp
 	.single-product-sec{
 		padding-top: 30px;
 	}
+	.single-product-view-v2-img, .single-product-view-img{
+		height: 500px!important;
+	}
 }
 
 @media(max-width: 575px){
@@ -887,7 +890,9 @@ fanshop-v1-post-sec-wrp
 	.fanshop-post-grid-title{
 		font-size: 20px;
 	}
-
+	.single-product-view-v2-img, .single-product-view-img{
+		height: 440px!important;
+	}
 }
 
 @media(max-width: 479px){

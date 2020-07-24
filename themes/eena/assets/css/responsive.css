@@ -110,7 +110,11 @@
 		top: auto;
 		transform: initial;
 	}
-
+	.hmNewsSecSliderPrevNext .fl-prev, .hmNewsSecSliderPrevNext .fl-next {
+	    cursor: pointer;
+	    position: absolute;
+	    z-index: 20;
+	}
 }
 @media(max-width: 639px){
 	.abo-frm-sec-wrp,.contact-form-sec-wrp,.history-entry-hdr-innr,.contact-form-sec-wrp,

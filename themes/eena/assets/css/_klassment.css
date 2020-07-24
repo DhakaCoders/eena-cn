@@ -193,6 +193,10 @@
 	width: 40%;
 	padding: 0 5px;
 }
+.classroom-sec-wrap .versus-logo {
+    height: 68px;
+    max-width: 112px;
+ }
 .versus-logo{
 	height: 90px;
 	max-width: 140px;
@@ -260,7 +264,10 @@
 }
 /* responsive */
 @media(max-width: 1499px){
-
+	.classroom-desc-cntlr{
+		padding-left: 40px;
+		padding-right: 40px;
+	}
 }
 @media(max-width: 1399px){
 	.match-tabs ul{

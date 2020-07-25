@@ -1,5 +1,5 @@
 .eena-match-result-sec{
-	padding-top: 55px;
+	padding-top: 75px;
 }
 .eenamr-left-team,
 .eenamr-result,
@@ -137,6 +137,12 @@
 	box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.02);
 	padding: 60px 50px 45px 60px;
 }
+.eena-md-cr-des p img{
+	margin-left: auto;
+	margin-right: auto;
+	display: table;
+	padding: 35px 0 35px;
+}
 .eena-md-cr-right-event{
 	float: right;
 	width: 32.9629%;
@@ -191,7 +197,7 @@
 	letter-spacing: 0.01em;
 	color: #fff;
 	background: #111111;
-	padding: 15px 0 14px 24px;
+	padding: 15px 15px 14px 24px;
 }
 
 .md-cr-event ul li{
@@ -334,9 +340,6 @@
 }
 
 @media(max-width: 1199px){
-	.eena-match-result-sec {
-	    padding-top: 48px;
-	}
 	.eenamr-left-team-title, 
 	.eenamr-right-team-title {
 	    font-size: 30px;
@@ -378,9 +381,6 @@
 }
 
 @media(max-width: 991px){
-	.eena-match-result-sec {
-	    padding-top: 48px;
-	}
 	.eenamr-left-team {
 	    padding-left: 0px;
 	}
@@ -434,7 +434,6 @@
 
 @media(max-width: 767px){
 	.eena-match-result-sec {
-	    padding-top: 38px;
 	    padding-bottom: 38px;
 	}
 	.eena-match-result-sec-inr{
@@ -472,6 +471,15 @@
 	    padding-top: 30px;
 	}
 }
+@media(max-width: 639px){
+	.eena-match-result-sec{
+		padding-top: 40px;
+	}	
+	.eena-md-cr-des p img{
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+}
 
 @media(max-width: 575px){
 	.eena-md-cr-des {
@@ -492,6 +500,12 @@
 	.player-category-sec .xs-link{
 		margin-left: -20px;
 		margin-right: -20px;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	.md-cr-event-title,
+	.md-cr-wine-title,
+	.md-cr-aalst-title{
 		padding-left: 20px;
 		padding-right: 20px;
 	}

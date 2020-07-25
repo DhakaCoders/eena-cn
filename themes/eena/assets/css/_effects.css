@@ -34,7 +34,10 @@ a,input,img,textarea,button,svg,.sp-fanshop-gallery-dsc > img,
 .prv-nxt-page-btns a:hover i svg{
 	fill: #FFD056;
 }
-
+.hm-webshop-sec-btmbar-btn a:hover{
+	background: transparent;
+	color: #FFD056;
+}
 /**
 All Hovers
 */

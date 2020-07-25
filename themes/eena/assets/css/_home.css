@@ -11,7 +11,7 @@
 .hbits-topline{
 	position: absolute;
 	right: 0;
-	top: -13px;
+	top: -15px;
 	z-index: 2;
 	background: #f6c042;
 	height: 15px;
@@ -365,6 +365,7 @@
 	margin-left: -12px;
 	margin-right: -12px;
 	margin-bottom: 40px!important;
+	overflow: hidden;
 }
 .hmWebshopSlideItem{
 	padding: 0 12px;
@@ -407,7 +408,9 @@
 	border: 2px solid #F6C042;
 }
 
-
+body.home .eena-breadcrumbs-sec{
+	margin-top: 0!important;
+}
 
 @media(max-width: 1499px){
 

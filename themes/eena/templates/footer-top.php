@@ -39,7 +39,7 @@
           <?php endforeach; ?>
         </div>
         <div class="ena-xs-view-more-btn show-md">
-          <a href="#">View More</a>
+          <a href="<?php echo esc_url( home_url('sponsors') ); ?>"><?php _e('View More', THEME_NAME); ?></a>
         </div>
         <?php endif; ?>
       </div>

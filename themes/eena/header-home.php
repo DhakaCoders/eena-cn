@@ -151,7 +151,7 @@
                     <span></span>
                     <span></span>
                   </div>
-                  <strong class="menu-txt show-lg">Menu</strong>
+                  <strong class="menu-txt show-lg"><?php _e('Menu', THEME_NAME); ?></strong>
                 </div>
                 <nav class="main-nav en-hide-lg">
                   <?php 

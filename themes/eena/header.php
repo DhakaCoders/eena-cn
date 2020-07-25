@@ -152,7 +152,7 @@
                     <span></span>
                     <span></span>
                   </div>
-                  <strong class="menu-txt show-lg">Menu</strong>
+                  <strong class="menu-txt show-lg"><?php _e('Menu', THEME_NAME); ?></strong>
                 </div>
                 <nav class="main-nav en-hide-lg">
                   <?php 
@@ -201,7 +201,7 @@ if( empty($standaardbanner) ) $standaardbanner = THEME_URI.'/assets/images/page-
               <?php cbv_breadcrumbs(); ?>              
             </div>
             <div class="show-639 xs-back-btn">
-              <a href="javascript:history.go(-1)">Terug</a>
+              <a href="javascript:history.go(-1)"><?php _e('Terug', THEME_NAME); ?></a>
             </div>
             <strong class="page-title"><?php echo $pageTitle; ?></strong>
           </div>

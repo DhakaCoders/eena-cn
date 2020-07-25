@@ -22,7 +22,7 @@ if( !function_exists('cbv_theme_setup') ){
 		if(function_exists('add_theme_support')) {
 			add_theme_support('category-thumbnails');
 		}
-        //add_image_size( 'hmbanner', 1920, 832, true );
+        add_image_size( 'contimg', 422, 680, true );
 
 
 		

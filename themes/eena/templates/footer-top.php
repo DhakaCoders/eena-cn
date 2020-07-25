@@ -1,90 +1,50 @@
+<?php
+  $showhidep = get_field('showhide_partners', 'options');
+  $onzep = get_field('onzepartners', 'options');
+  if($showhidep):
+    if($onzep):
+      $partners = $onzep['partners'];
+?>
 <section class="ftr-tp-brand-logo-sec-wrp">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
         <div class="brand-logo-head">
-          <h2 class="brand-logo-head-title">onze partners</h2>
+          <?php if( !empty( $onzep['titel'] ) ) printf( '<h2 class="brand-logo-head-title">%s</h2>', $onzep['titel']); ?>
         </div>
+        <?php if( $partners ): ?>
         <div class="brand-logo-tp-wrp">
+          <?php 
+            foreach( $partners as $partner ): 
+              $logoObj = $partner['selectpartners'];
+          ?>
           <ul class="clearfix reset-list">
+            <?php 
+              if( $logoObj ): 
+              foreach( $logoObj as $logo_row ):
+                $iconobj = get_field('logo', $logo_row->ID);
+            ?>
             <li>
-              <img src="<?php echo THEME_URI; ?>/assets/images/brand-logo-tp-1.png">
+              <?php 
+                if( is_array($iconobj) ){
+                  echo'<img src="'.$iconobj['url'].'" alt="'.$iconobj['alt'].'" title="'.$iconobj['title'].'">';
+                }
+              ?>
             </li>
-            <li>
-              <img src="<?php echo THEME_URI; ?>/assets/images/brand-logo-tp-2.png">
-            </li>
-            <li>
-              <img src="<?php echo THEME_URI; ?>/assets/images/brand-logo-tp-3.png">
-            </li>
-            <li class="hide-md">
-              <img src="<?php echo THEME_URI; ?>/assets/images/brand-logo-tp-4.png">
-            </li>
+            <?php 
+              endforeach;
+              endif;
+            ?>
           </ul>
-          <ul class="clearfix reset-list">
-            <li class="show-md">
-              <img src="<?php echo THEME_URI; ?>/assets/images/brand-logo-tp-4.png">
-            </li>
-            <li>
-              <img src="<?php echo THEME_URI; ?>/assets/images/brand-logo-tp-5.png">
-            </li>
-            <li class="hide-md">
-              <img src="<?php echo THEME_URI; ?>/assets/images/brand-logo-tp-6.png">
-            </li>
-            <li>
-              <img src="<?php echo THEME_URI; ?>/assets/images/brand-logo-tp-7.png">
-            </li>
-            <li class="show-md">
-              <img src="<?php echo THEME_URI; ?>/assets/images/brand-logo-tp-6.png">
-            </li>
-          </ul>
-          <ul class="clearfix reset-list">
-            <li>
-              <img src="<?php echo THEME_URI; ?>/assets/images/brand-logo-btm-1.png">
-            </li>
-            <li>
-              <img src="<?php echo THEME_URI; ?>/assets/images/brand-logo-btm-2.png">
-            </li>
-            <li>
-              <img src="<?php echo THEME_URI; ?>/assets/images/brand-logo-btm-3.png">
-            </li>
-            <li>
-              <img src="<?php echo THEME_URI; ?>/assets/images/brand-logo-btm-4.png">
-            </li>
-            <li>
-              <img src="<?php echo THEME_URI; ?>/assets/images/brand-logo-btm-5.png">
-            </li>
-            <li>
-              <img src="<?php echo THEME_URI; ?>/assets/images/brand-logo-btm-6.png">
-            </li>
-          </ul>
-          <ul class="clearfix reset-list">
-            <li>
-              <img src="<?php echo THEME_URI; ?>/assets/images/brand-logo-btm-7.png">
-            </li>
-            <li>
-              <img src="<?php echo THEME_URI; ?>/assets/images/brand-logo-btm-8.png">
-            </li>
-            <li>
-              <img src="<?php echo THEME_URI; ?>/assets/images/brand-logo-btm-9.png">
-            </li>
-            <li>
-              <img src="<?php echo THEME_URI; ?>/assets/images/brand-logo-btm-10.png">
-            </li>
-            <li>
-              <img src="<?php echo THEME_URI; ?>/assets/images/brand-logo-btm-11.png">
-            </li>
-            <li>
-              <img src="<?php echo THEME_URI; ?>/assets/images/brand-logo-btm-12.png">
-            </li>
-            <li>
-              <img src="<?php echo THEME_URI; ?>/assets/images/brand-logo-btm-13.png">
-            </li>
-          </ul>
+          <?php endforeach; ?>
         </div>
         <div class="ena-xs-view-more-btn show-md">
           <a href="#">View More</a>
         </div>
+        <?php endif; ?>
       </div>
     </div>
   </div>
 </section>
+<?php endif; ?>
+<?php endif; ?>

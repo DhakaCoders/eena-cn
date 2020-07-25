@@ -6,14 +6,8 @@
 
   $thisID = get_the_ID();
   $spacialArry = array(".", "/", "+", " ", "(", ")");$replaceArray = '';
-  $address = get_field('address', 'options');
-  $gmapsurl = get_field('google_maps', 'options');
-  $emailadres = get_field('emailaddress', 'options');
-  $show_telefoon = get_field('telephone', 'options');
-  $telefoon = trim(str_replace($spacialArry, $replaceArray, $show_telefoon));
-  $gmaplink = !empty($gmapsurl)?$gmapsurl: 'javascript:void()';
-
   $intro = get_field('introsec', $thisID); 
+  $gmap = get_field('gmap', $thisID); 
   $cont = get_field('contacteer_ons', $thisID); 
 ?>
 <section class="contact-form-sec-wrp">
@@ -23,78 +17,59 @@
         <div class="contact-form-cntlr clearfix">
           <div class="contact-form-lft">
             <div class="contact-form-dsc">
-              <h2 class="contact-form-dsc-title">E-mail ons</h2>
-              <p>Et tellus quis mi id non facilisi ac nibh. In lectus etiam augue tristique turpis at. Eget sapien duis molestie in. Consectetur tincidunt arcu ac ornare a turpis fermentum.</p>
+              <?php 
+                if( !empty( $intro['titel'] ) ) printf( '<h2 class="contact-form-dsc-title">%s</h2>', $intro['titel']); 
+                if( !empty( $intro['beschrijving'] ) ) echo wpautop($intro['beschrijving']); 
+              ?>
             </div>
             <div class="contact-form-wrp clearfix">
               <div class="wpforms-container">
-                <form class="wpforms-form">
-                  
-                  <div class="wpforms-field-container">
-                    
-                    <div class="wpforms-field">
-                      <label class="wpforms-field-label">Voornaam</label>
-                      <input type="text" name="name" placeholder="Voornaam" required>
-                    </div>
-                    <div class="wpforms-field">
-                      <label class="wpforms-field-label">achternaam</label>
-                      <input type="text" name="name" placeholder="Achternaam" required>
-                    </div>
-
-                    <div class="wpforms-field">
-                      <label class="wpforms-field-label">Telefoon</label>
-                      <input type="text" name="text" placeholder="Telefoon" required>
-                    </div>
-
-                    <div class="wpforms-field wpforms-has-error">
-                      <label class="wpforms-field-label">e-mailadres</label>
-                      <input type="email" name="email" placeholder="E-mailadres" required>
-                    </div>
-
-                    <div class="wpforms-field wpforms-field-select">
-                      <label class="wpforms-field-label" for="select1">ONDERWERP</label>
-                      <select id="select1" name="select1">
-                        <option value="First Choice">Ticketing</option>
-                        <option value="Second Choice">Ticketing</option>
-                        <option value="Third Choice">Ticketing</option>
-                      </select>
-                    </div>
-
-                    <div class="wpforms-field wpforms-field-textarea">
-                      <label class="wpforms-field-label">Bericht</label>
-                      <textarea name="message" placeholder="Bericht"></textarea>
-                    </div>
-                  </div><!-- end of .wpforms-field-container-->
-
-                  <div class="wpforms-submit-container">
-                    <button type="submit" name="submit" class="wpforms-submit">verzenden</button>
-                  </div>
-
-                </form>
+              <?php if(!empty($intro['form_shortcode'])) echo do_shortcode( $intro['form_shortcode'] ); ?>
               </div>
             </div>
           </div>
           <div class="contact-form-rgt clearfix">
-            <div id="googlemap" data-latitude="38.03898" data-longitude="23.804699"></div>
+            <?php 
+              if( $gmap ): 
+              $map = $gmap['map'];
+              $adres = $gmap['adres'];
+              if( $map ):
+            ?>
+            <div id="googlemap" data-latitude="<?php echo $map['lat']; ?>" data-longitude="<?php echo $map['long']; ?>"></div>
+            <?php endif; ?>
             <div class="contact-map-info">
               <div class="contact-map-info-dsc">
                 <ul class="reset-list">
+                  <?php if( $adres ): ?>
+                    <?php 
+                      foreach( $adres as $adr  ):
+                      $gmapsurl = $adr['gmap_url']; 
+                      $gmaplink = !empty($gmapsurl)?$gmapsurl: 'javascript:void()';
+                    ?>
                   <li>
-                    <h6 class="contact-map-title">Stadion</h6>
-                    <a href="#">Bredestraat, 9300 Aalst</a>
+                    <?php 
+                      if( !empty( $adr['titel'] ) ) printf( '<h6 class="contact-map-title">%s</h6>', $adr['titel']);
+                      if( !empty( $adr['adres'] ) ) printf( '<a href="%s">%s</a>', $gmaplink, $adr['adres']);
+                    ?>
                   </li>
+                  <?php endforeach; ?>
+                  <?php endif; ?>
                   <li>
-                    <h6 class="contact-map-title">JEUGDCENTRUM</h6>
-                    <a href="#">Zandberg 4, 9300 Aalst</a>
-                  </li>
-                  <li>
-                    <h6 class="contact-map-title">COntact Info</h6>
-                    <span>Tel: <a href="tel:+32 (0)474 432 100"> +32 (0)474 432 100</a></span>
-                    <span>Mail: <a href="mailto:secretariaat@eendracht-aalst.be">secretariaat@eendracht-aalst.be</a></span>
+                    <h6 class="contact-map-title"><?php _e('Contact Info', THEME_NAME); ?></h6>
+                    <?php 
+                      if( !empty($gmap['telephone']) ){
+                        $telefoon = trim(str_replace($spacialArry, $replaceArray, $gmap['telephone']));
+                        printf('<span>Tel: <a href="tel:%s"> %s</a></span>', $telefoon, $gmap['telephone']); 
+                      }
+                      if( !empty($gmap['email']) ){
+                        printf('<span>Mail: <a href="mailto:%s">%s</a></span>', $gmap['email'], $gmap['email']); 
+                      }
+                    ?>
                   </li>
                 </ul>               
               </div>
             </div>
+            <?php endif; ?>
           </div>
         </div>
       </div>
@@ -102,102 +77,56 @@
   </div>    
 </section>
 
-
+<?php 
+if( $cont ): 
+?>
 <section class="contact-info-sec-wrp">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
         <div class="contact-info-wrp clearfix">
           <div class="contact-info-lft">
-            <div class="contact-info-lft-img" style="background: url(<?php echo THEME_URI; ?>/assets/images/contact-info-lft-img.png);"></div>
+            <div class="contact-info-lft-img" style="background: url(
+              <?php if( !empty($cont['afbeelding']) ) echo cbv_get_image_src($cont['afbeelding'], 'contimg'); ?>
+              );">
+            </div>
           </div>
           <div class="contact-info-rgt">
             <div class="contact-info-dsc">
-              <h3 class="contact-info-dsc-title">Contact</h3>
-              <p>S.C. Eendracht Aalst is een grote organisatie met tal van medewerkers, vrijwilligers, trainers en spelers. Hieronder kan u de belangrijkste contactpersonen vinden. Voor uw algemene vragen kan u het contactformulier rechts invulen.</p>
+              <?php 
+                if( !empty( $cont['titel'] ) ) printf( '<h3 class="contact-info-dsc-title">%s</h3>', $cont['titel']); 
+                if( !empty( $cont['beschrijving'] ) ) echo wpautop($cont['beschrijving']); 
+              ?>
             </div>
+
             <div class="contact-info-adrs-wrp clearfix">
+              <?php 
+                $conts = $cont['contacts'];
+                if( $conts ):
+              ?>
               <ul class="reset-list clearfix">
+                <?php foreach( $conts as $contt ): ?>
                 <li>
                   <div class="contact-info-adrs">
-                    <h5 class="contact-info-adrs-title">SECRETARIAAT / ADMINISTRATIE</h5>
-                    <a href="mailto:secretariaat@eendracht-aalst.be">
+                    <?php 
+                    if( !empty( $contt['titel'] ) ) printf( '<h5 class="contact-info-adrs-title">%s</h5>', $contt['titel']); 
+                    if( !empty( $contt['naam'] ) ) printf( '<span>%s</span>', $contt['naam']); 
+                    ?>
+                    <?php if( !empty($contt['email'] ) ): ?>
+                    <a href="mailto:<?php echo $contt['email']; ?>">
                     <i>  
                       <svg class="contact-info-email-svg" width="18" height="18" viewBox="0 0 18 18" fill="#6A6A6A">
                         <use xlink:href="#contact-info-email-svg"></use>
                       </svg>
                     </i>
-                    secretariaat@eendracht-aalst.be
+                    <?php echo $contt['email']; ?>
                    </a>
+                   <?php endif; ?>
                   </div>
                 </li>
-                <li>
-                  <div class="contact-info-adrs">
-                    <h5 class="contact-info-adrs-title">GERECHTIGDE CORRESPONDENT</h5>
-                    <span>Gregor DE VRIENDT</span>
-                    <a href="mailto:gregordevriendt@eendracht-aalst.be">
-                    <i>  
-                      <svg class="contact-info-email-svg" width="18" height="18" viewBox="0 0 18 18" fill="#6A6A6A">
-                        <use xlink:href="#contact-info-email-svg"></use>
-                      </svg>
-                    </i>
-                    gregordevriendt@eendracht-aalst.be</a>
-                  </div>
-                </li>
-                <li>
-                  <div class="contact-info-adrs">
-                    <h5 class="contact-info-adrs-title">COMMUNICATIE / PERS</h5>
-                    <span>Kenneth DEMARET</span>
-                    <a href="mailto:kennethdemaret@eendracht-aalst.be">
-                    <i>  
-                      <svg class="contact-info-email-svg" width="18" height="18" viewBox="0 0 18 18" fill="#6A6A6A">
-                        <use xlink:href="#contact-info-email-svg"></use>
-                      </svg>
-                    </i>
-                    kennethdemaret@eendracht-aalst.be</a>
-                  </div>
-                </li>
-                <li>
-                  <div class="contact-info-adrs">
-                    <h5 class="contact-info-adrs-title">TICKETING</h5>
-                    <span>Tamara MICHIELS</span>
-                    <a href="mailto:ticketing@eendracht-aalst.be">
-                    <i>  
-                      <svg class="contact-info-email-svg" width="18" height="18" viewBox="0 0 18 18" fill="#6A6A6A">
-                        <use xlink:href="#contact-info-email-svg"></use>
-                      </svg>
-                    </i>
-                    ticketing@eendracht-aalst.be</a>
-                  </div>
-                </li>
-                <li>
-                  <div class="contact-info-adrs">
-                    <h5 class="contact-info-adrs-title">VEILIGHEID</h5>
-                    <span>Filip DE SUTTER</span>
-                    <a href="mailto:filipdesutter@eendracht-aalst.be">
-                    <i>  
-                      <svg class="contact-info-email-svg" width="18" height="18" viewBox="0 0 18 18" fill="#6A6A6A">
-                        <use xlink:href="#contact-info-email-svg"></use>
-                      </svg>
-                    </i>
-                    filipdesutter@eendracht-aalst.be</a>
-                  </div>
-                </li>
-                <li>
-                  <div class="contact-info-adrs">
-                    <h5 class="contact-info-adrs-title">FACTURATIE</h5>
-                    <span>Tamara MICHIELS</span>
-                    <a href="mailto:facturatie@eendracht-aalst.be">
-                    <i>  
-                      <svg class="contact-info-email-svg" width="18" height="18" viewBox="0 0 18 18" fill="#6A6A6A">
-                        <use xlink:href="#contact-info-email-svg"></use>
-                      </svg>
-                    </i>
-                    facturatie@eendracht-aalst.be</a>
-                  </div>
-                </li>
-                
+                <?php endforeach; ?>
               </ul>
+              <?php endif; ?>
             </div>
           </div>
         </div>
@@ -205,5 +134,6 @@
     </div>
   </div>
 </section>
+<?php endif; ?>
 <?php get_template_part('templates/footer', 'top'); ?>
 <?php get_footer(); ?>

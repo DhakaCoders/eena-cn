@@ -1,13 +1,13 @@
 <?php 
 	/*
-	Template Name: Diner Resererveren
+	Template Name: ABO
 	*/
 	get_header(); 
 	$thisID = get_the_ID();
 	$intro = get_field('introsec', $thisID); 
 	$shop = get_field('shopinfo', $thisID); 
 ?>
-<section class="contact-form-sec-wrp rs-contact-form-sec">
+<section class="contact-form-sec-wrp abo-frm-sec-wrp">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
@@ -47,7 +47,10 @@
           <div class="contact-form-lft">
             <div class="contact-form-dsc">
               <?php 
-                if( !empty( $intro['titel'] ) ) printf( '<h2 class="contact-form-dsc-title">%s</h2>', $intro['titel']); 
+                echo '<h2 class="contact-form-dsc-title">'; 
+                if( !empty( $intro['titel'] ) ) printf( '%s', $intro['titel']);
+                if( !empty( $intro['subtitel'] ) ) printf( '<br>%s', $intro['subtitel']);
+                echo '</h2>'; 
                 if( !empty( $intro['beschrijving'] ) ) echo wpautop($intro['beschrijving']); 
               ?>
             </div>

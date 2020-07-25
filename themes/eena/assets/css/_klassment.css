@@ -387,9 +387,16 @@
 		padding-left: 30px;
 		padding-right: 30px;
 	}
-	.game-desc-cntlr{
+	.game-desc-cntlr,
+	.classroom-desc-cntlr{
 		margin-left: -20px;
 		margin-right: -20px;
+	}
+	.classroom-sec-wrap{
+		padding-top: 0;
+	}
+	.table-inr table{
+		font-size: 12px;
 	}
 }
 @media(max-width: 575px){
@@ -408,5 +415,8 @@
 	}
 }
 @media(max-width: 479px){
-	
+	.classroom-sec-wrap .versus-logo {
+	    height: 41px;
+	    max-width: 67px;
+	}
 }

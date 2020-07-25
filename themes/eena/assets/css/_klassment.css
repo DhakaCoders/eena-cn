@@ -193,6 +193,10 @@
 	width: 40%;
 	padding: 0 5px;
 }
+.classroom-sec-wrap .versus-logo {
+    height: 68px;
+    max-width: 112px;
+ }
 .versus-logo{
 	height: 90px;
 	max-width: 140px;
@@ -260,7 +264,10 @@
 }
 /* responsive */
 @media(max-width: 1499px){
-
+	.classroom-desc-cntlr{
+		padding-left: 40px;
+		padding-right: 40px;
+	}
 }
 @media(max-width: 1399px){
 	.match-tabs ul{
@@ -285,6 +292,13 @@
 	.classroom-table-wrap {
 		background: #f9f9f9;
 		padding: 30px 15px 27px 15px;
+	}
+	.classroom-sec-wrap .versus-logo {
+	    height: 63px;
+	    max-width: 99px;
+	}
+	.classroom-sec-wrap .versus-team-name{
+		font-size: 15px;
 	}
 }
 @media(max-width: 991px){

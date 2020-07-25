@@ -282,7 +282,8 @@
 	right: 28px;
 }
 .xs-link strong.md-tabs-btn-expend:after{
-	background: url(../images/md-up-arrow-xs.png);
+	transform: rotate(180deg);
+	margin-top: -5px;
 }
 
 .xs-link ul{
@@ -293,18 +294,20 @@
 	background: #fff;
 	text-align: center;
 	z-index: 40;
-	padding: 10px 10px 10px;
-	border-radius: 0 0 8px 8px;
+	padding: 25px 30px 10px;
 	display: none;
 }
 .xs-link ul li{
 	padding-bottom: 10px;
+	padding-right: 10px;
 }
 .xs-link ul li a{
 	color: #111111;
 	text-transform: uppercase;
 }
-
+.player-category-sec .xs-link ul li{
+	text-align: left;
+}
 
 
 @media(max-width: 1499px){
@@ -486,7 +489,12 @@
 	.eena-md-cr-des-title {
 	    font-size: 20px;
 	}
-
+	.player-category-sec .xs-link{
+		margin-left: -20px;
+		margin-right: -20px;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
 }
 
 @media(max-width: 479px){
@@ -496,6 +504,9 @@
 	.md-cr-wine ul li,
 	.md-cr-aalst ul li{
 		font-size: 14px;
+	}
+	.xs-link ul li a{
+		font-size: 13px;
 	}
 }
 

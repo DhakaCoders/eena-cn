@@ -371,6 +371,9 @@ nav.main-nav > ul > li.menu-item-has-children > ul.sub-menu > li.menu-item-has-c
 .fl-page-bnr-des .breadcrumbs ul li a{
 	color: inherit;
 }
+.fl-page-bnr-des .breadcrumbs ul li a:hover{
+	color: #fff;
+}
 .fl-page-bnr-des .breadcrumbs ul li:first-child{
 	padding-left: 0;
 }

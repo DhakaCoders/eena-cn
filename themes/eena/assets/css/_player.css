@@ -1,5 +1,5 @@
 .player-category-sec{
-	padding-top: 75px;
+	padding-top: 85px;
 	padding-bottom: 45px;
 }
 
@@ -304,7 +304,6 @@
 
 @media(max-width: 1199px){
 	.player-category-sec {
-	    padding-top: 60px;
 	    padding-bottom: 35px;
 	}
 	.player-targer {
@@ -417,6 +416,25 @@
 	    width: 50%;
 	    padding: 18px 10px 15px 0px;
 	    background: rgba(245, 245, 245, 0.56);
+	}
+	.list-grd ul li strong{
+		padding-right: 0;
+	}
+	.list-grd ul li span{
+		padding-left: 25px;
+	}
+	.list-grd ul li span.ntnl:before{
+		left: 22px;
+	}
+	.list-grd ul li span.ntnl{
+		padding-left: 58px;
+	}
+	.list-grd ul li{
+		line-height: 1;
+	}
+	.player-details-title strong{
+		display: block;
+		margin-left: 0;
 	}
 }
 

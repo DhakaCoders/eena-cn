@@ -137,6 +137,12 @@
 	box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.02);
 	padding: 60px 50px 45px 60px;
 }
+.eena-md-cr-des p img{
+	margin-left: auto;
+	margin-right: auto;
+	display: table;
+	padding: 35px 0 35px;
+}
 .eena-md-cr-right-event{
 	float: right;
 	width: 32.9629%;

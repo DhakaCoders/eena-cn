@@ -317,7 +317,10 @@
 	}
 	.classroom-aside-cntlr{
 		width: 100%;
-		padding: 0 180px;
+		padding: 0;
+		max-width: 450px;
+		margin-left: auto;
+		margin-right: auto;
 		margin-top: 30px;
 	}
 }
@@ -350,9 +353,6 @@
 		display: block;
 		padding: 25px 0;
 	}
-	.classroom-aside-cntlr{
-		padding: 0 100px;
-	}
 	.classroom-sec-wrap .versus-match-cntlr .versus-match-title >span{
 		display: block;
 		padding-left: 0;
@@ -379,9 +379,6 @@
 		overflow-y: hidden;
 		white-space: nowrap;
 	}
-	.classroom-aside-cntlr{
-		padding: 0 50px;
-	}
 	.match-tabs ul{
 		margin-left: -30px;
 		margin-right: -30px;
@@ -389,6 +386,10 @@
 	.match-tabs ul li{
 		padding-left: 30px;
 		padding-right: 30px;
+	}
+	.game-desc-cntlr{
+		margin-left: -20px;
+		margin-right: -20px;
 	}
 }
 @media(max-width: 575px){

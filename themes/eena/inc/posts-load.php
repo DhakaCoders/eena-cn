@@ -28,14 +28,14 @@ function ajax_post_script_load_more() {
       $ajax = true;
   }
   //number of posts per page default
-  $num = 4;
+  $num = 2;
   if(isset($_POST['cat']) && !empty($_POST['cat'])){
       $cat = $_POST['cat'];
   }
   $query = new WP_Query(array( 
       'post_type'=> 'post',
       'post_status' => 'publish',
-      'posts_per_page' =>$num,
+      'posts_per_page' => -1,
       'orderby' => 'date',
       'tax_query' => array(
           array(
@@ -46,8 +46,14 @@ function ajax_post_script_load_more() {
       ),
     ) 
   );
+  
   if($query->have_posts()){
-  $art_thumb = '';
+  echo '<div class="eena-nieuws-grid-items">';
+  echo '<ul class="reset-list clearfix" id="post-items">';
+  $thumb = $hide_class = '';
+  $totalPost = $query->found_posts;
+  $totalPages = ceil($totalPost/$num);
+  $j = 1;
   while($query->have_posts()): $query->the_post();
     $thumb_id = get_post_thumbnail_id(get_the_ID());
     if(!empty($thumb_id)){
@@ -55,8 +61,11 @@ function ajax_post_script_load_more() {
     } else {
       $thumb = THEME_URI.'/assets/images/eena-grd-item-fea-img-1.jpg';
     }
+    if( $j > $num ){
+      $hide_class = ' hidelist';
+    }
   ?>
-  <li>
+  <li class="<?php echo $hide_class; ?>">
   <div class="eena-grd-item">
     <div class="eena-grd-item-fea-img-ctlr">
       <a href="#" class="overlay-link"></a>
@@ -71,13 +80,23 @@ function ajax_post_script_load_more() {
   </div>
   </li>
   <?php
+  $j++;
   endwhile;
+  echo '</ul>';
+  echo '</div>';
+  if( $totalPages > 1):
+  echo '<div class="eena-pagination-wrp"><div class="fl-pagi-ctlr">';
+   echo '<ul class="page-numbers reset-list">';
+        for( $i = 1; $i <= $totalPages; $i++ ){
+          echo '<li><span class="page-numbers current">'.$i.'</span></li>';
+        }
+  echo '</ul></div></div>';
+  endif;
   }else{
-    echo '<style>.post-load-more-btn{display:none;}</style>';
+    echo '<div class="no-results">Geen resultaten</div>';
   }  
-
   wp_reset_postdata();
-
+  
   //check ajax call
   if($ajax) wp_die();
 }

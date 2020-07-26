@@ -210,7 +210,12 @@
   </div>
 </header>
 <?php
-$thisID = get_the_ID();
+if( is_blog() ){
+  $thisID = get_option('page_for_posts');
+}else{
+  $thisID = get_the_ID();
+}
+
 $pageTitle = get_the_title($thisID);
 $standaardbanner = get_field('pagebanner', $thisID);
 if( empty($standaardbanner) ) $standaardbanner = THEME_URI.'/assets/images/page-bnr.jpg';

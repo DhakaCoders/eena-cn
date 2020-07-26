@@ -11,7 +11,7 @@
 .hbits-topline{
 	position: absolute;
 	right: 0;
-	top: -13px;
+	top: -15px;
 	z-index: 2;
 	background: #f6c042;
 	height: 15px;
@@ -365,6 +365,7 @@
 	margin-left: -12px;
 	margin-right: -12px;
 	margin-bottom: 40px!important;
+	overflow: hidden;
 }
 .hmWebshopSlideItem{
 	padding: 0 12px;
@@ -407,7 +408,9 @@
 	border: 2px solid #F6C042;
 }
 
-
+body.home .eena-breadcrumbs-sec{
+	margin-top: 0!important;
+}
 
 @media(max-width: 1499px){
 
@@ -583,6 +586,14 @@
 		padding-left: 0!important;
 		padding-right: 0!important;
 	}
+	body.home .hm-webshop-sec-btmbar .fl-prev,
+	body.home .hm-webshop-sec-btmbar .fl-next{
+		position: static!important;
+		transform: initial!important;
+	}
+	body.home .hm-webshop-sec-btmbar .fl-prev{
+		margin-right: 20px;
+	}
 
 }
 @media(max-width: 639px){
@@ -592,6 +603,48 @@
 	}
 	.hm-news-section{
 		padding-top: 50px;
+	}
+	.hm-webshop-sec-btmbar{
+		display: block;
+	}
+	.hm-webshop-sec-btmbar-btn a{
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 328px;
+		width: 100%;
+	}
+	.hmWebshopSlider{
+		margin-bottom: 20px!important;
+	}
+	.slick-slider.hmWebshopSlider ul.slick-dots{
+		margin-top: 45px;
+	}
+	body.home .hm-webshop-sec-btmbar .fl-prev{
+		position: absolute!important;
+		left: -15px!important;
+		bottom: 20px!important;
+		top: auto!important;
+		margin-right: 0;
+	}
+	body.home .hm-webshop-sec-btmbar .fl-next{
+		position: absolute!important;
+		right: 20px!important;
+		bottom: 20px!important;
+		top: auto!important;
+	}
+	.hm-webshop-sec-btmbar{
+		position: relative;
+	}
+	.hmWebshopSlider{
+		margin-left: 0;
+		margin-right:0;
+	}
+	.hmWebshopSlideItem{
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.hm-webshop-sec-btmbar-btn{
+		padding-top: 25px;
 	}
 }
 

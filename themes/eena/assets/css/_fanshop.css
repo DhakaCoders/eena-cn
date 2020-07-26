@@ -187,7 +187,7 @@ fanshop-post-grid-sec-wrp
 .fanshop-post-grid-dsc > a i{
     position: absolute;
     right: 0;
-    top: -2px;
+    top: -1px;
     bottom: 0;
     transition: all 0.5s;
 	-ms-transition: all 0.5s;

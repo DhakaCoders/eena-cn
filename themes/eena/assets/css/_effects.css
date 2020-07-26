@@ -28,6 +28,16 @@ a,input,img,textarea,button,svg,.sp-fanshop-gallery-dsc > img,
 	-webkit-transform: scale(1.03);
 	-o-transform: scale(1.03);
 }
+.prv-nxt-page-btns a:hover{
+	color: #FFD056;
+}
+.prv-nxt-page-btns a:hover i svg{
+	fill: #FFD056;
+}
+.hm-webshop-sec-btmbar-btn a:hover{
+	background: transparent;
+	color: #FFD056;
+}
 /**
 All Hovers
 */

@@ -10,6 +10,19 @@ the_post();
     <div class="row">
       <div class="col-sm-12">
         <article class="default-page-con">
+          <strong class="post-date">VRIJDAG 27 MAART - 14U05</strong>
+          <div class="dfp-promo-module clearfix">
+            <div>
+              <strong class="dfp-promo-module-title"><?php the_title(); ?></strong>
+            </div>
+            <div class="social-media">
+              <strong>DELEN:</strong>
+              <ul class="reset-list">
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+              </ul>
+            </div>
+          </div>
           <?php 
             while ( have_rows('inhoud') ) : the_row(); 
           if( get_row_layout() == 'introductietekst' ){
@@ -194,8 +207,32 @@ the_post();
              printf('<div class="gap clearfix" data-value="20" data-md="20" data-sm="20" data-xs="10" data-xxs="10"></div>', $rheight);
             }
           
-           endwhile;
-          ?>
+           endwhile;?>
+          <div class="social-media">
+            <strong>DELEN:</strong>
+            <ul class="reset-list">
+              <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+              <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            </ul>
+          </div>
+          <div class="prv-nxt-page-btns clearfix">
+            <a class="prv-page-btn" href="#">
+              <i>
+                <svg class="prv-nxt-lft-arrow-icon-svg" width="30" height="30" viewBox="0 0 30 30" fill="#111111">
+                  <use xlink:href="#prv-nxt-lft-arrow-icon-svg"></use>
+                </svg> 
+              </i>
+              <span>vorig artikel</span>
+            </a>
+            <a class="nxt-page-btn" href="#">
+              <span>volgend artikel</span>
+              <i>
+                <svg class="prv-nxt-rgt-arrow-icon-svg" width="30" height="30" viewBox="0 0 30 30" fill="#111111">
+                  <use xlink:href="#prv-nxt-rgt-arrow-icon-svg"></use>
+                </svg> 
+              </i>
+            </a>
+          </div>
         </article>
 
       </div>
@@ -213,9 +250,6 @@ the_post();
     </div>
 <?php } ?>
 </section>
-<?php 
-
-endwhile;
-get_footer(); 
-
-?>
+<?php endwhile; ?>
+<?php get_template_part('templates/footer', 'top'); ?>
+<?php get_footer(); ?>

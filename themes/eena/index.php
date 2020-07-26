@@ -29,6 +29,7 @@
           <div class="eena-nieuws-link">
             <strong>Filter:</strong>
             <?php 
+                $first_term = '';
 				$terms = get_terms( array(
 				  'taxonomy' => 'category',
 				  'hide_empty' => false,
@@ -37,32 +38,23 @@
 			if( $terms ):
             ?>
             <ul class="reset-list">
-              <?php 
+              <?php
+              $i = 1; 
               foreach( $terms as $term ):
+              	if( $i == 1 ){
+              		$first_term = $term->slug;
+              	}
               	if( $term->slug !='uncategorized' ):
               ?>
               <li><a href="#" onclick='postCategory("<?php echo $term->slug; ?>"); return false'><?php echo $term->name; ?></a></li>
           		<?php endif; ?>
-              <?php endforeach; ?>
+              <?php $i++; endforeach; ?>
             </ul>
+            <span id="firstTerm" data-term="<?php echo $first_term; ?>" style="display: none;"></span>
         	<?php endif; ?>
-          </div>
-          <div class="eena-nieuws-grid-items">
-            <ul class="reset-list clearfix" id="post-content">
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-12">
-      <div class="eena-pagination-wrp">
-        <div class="fl-pagi-ctlr">
-          <ul class="page-numbers reset-list">
-            <li><span class="page-numbers current">1</span></li>
-            <li><a class="page-numbers" href="#">2</a></li>
-            <li><a class="page-numbers" href="#">3</a></li>
-            <li><a class="page-numbers" href="#">4</a></li>
-          </ul>
+          	</div>
+          	<div id="post-content">
+          	</div>
         </div>
       </div>
     </div>

@@ -166,6 +166,19 @@ if( $('.bdcmbSlider').length ){
       autoplaySpeed: 1000,
       speed: 300,
       slidesToShow: 3,
+      
+      pauseOnHover: true,
+      autoplay: true,
+      autoplaySpeed: 0.1,
+      infinite: true,
+      cssEase: 'linear',
+      arrows:false,
+      dots: false,
+      infinite: true,
+      speed: 9000,
+      slidesToShow: 3,
+      variableWidth: true,
+
       responsive: [
         {
           breakpoint: 1300,
@@ -394,18 +407,31 @@ if( $('.hmNewsSecSlider').length ){
 
 /*End of Rannojit*/
 if( $('.mainSlider').length ){
+    $('.mainSlider').on('init', function(event, slick, currentSlide, nextSlide){
+      cs = slick.currentSlide;
+    });
     $('.mainSlider').slick({
-      dots: false,
-      infinite: false,
-      autoplay: false,
-      autoplaySpeed: 700,
-      speed: 300,
+      dots: true,
+      infinite: true,
+      autoplay: true,
+      autoplaySpeed: 4000,
+      speed: 900,
       fade: true,
       slidesToShow: 1,
       slidesToScroll: 1, 
+      dotsClass: 'main-slider-custom-pagi',
       prevArrow: $('.home-banner-cntlr .fl-prev'),
       nextArrow: $('.home-banner-cntlr .fl-next'),
+      customPaging: function(slick,index) {
+          return '<span></span>';
+      }
     });
+    $('.mainSlider').on("beforeChange", function(event, slick, currentSlide, nextSlide){
+      cs = slick.currentSlide;
+      $('.mainSlideItemDesSlider .mainSlideItemDes').removeClass('itemDesActive');
+      $('.mainSlideItemDesSlider .mainSlideItemDes[data-slide="'+nextSlide+'"]').addClass('itemDesActive');
+    });
+    $('.main-slider-custom-pagi').appendTo('.cm-custom-dots');
 }
 
 if( $('.hmWebshopSlider').length ){
@@ -557,8 +583,20 @@ $(window).on('resize', function(){
   headerObjects();
 });
 
-
-
+/*if( $('.postSlider').length ){
+    $('.postSlider').slick({
+      dots: false,
+      infinite: false,
+      autoplay: false,
+      autoplaySpeed: 2000,
+      speed: 300,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      slidesPerRow: 3,
+      rows: 2,
+    });
+}
+*/
 /*$('.entry-header-tab > ul > li a').on('click', function(){
     $(this).addClass('active');
     $(this).parent().siblings().find('a').removeClass('active');
@@ -604,5 +642,7 @@ $("#postloadMore").on('click', function(e) {
         },
     });
 });
+
+
 
 })(jQuery);

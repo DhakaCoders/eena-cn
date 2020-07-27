@@ -278,8 +278,20 @@
 .eena-nieuws-grid-sec .eena-pagination-wrp {
     padding-top: 35px;
 }
-
-
+.eena-breadcrumbs-sec-Wrap{
+	position: relative;
+}
+.eena-breadcrumbs-sec-Wrap:after{
+	content: "";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	width: 200px;
+	background: linear-gradient(270deg, rgba(17, 17, 17, 0.3) 42.31%, rgba(246, 246, 246, 0) 115.81%);
+    -ms-background: linear-gradient(270deg, rgba(17, 17, 17, 0.3) 42.31%, rgba(246, 246, 246, 0) 115.81%);
+    -webkit-background: linear-gradient(270deg, rgba(17, 17, 17, 0.3) 42.31%, rgba(246, 246, 246, 0) 115.81%);	
+}
 
 @media(min-width: 1921px){
 	.eena-breadcrumbs-sec-inr{

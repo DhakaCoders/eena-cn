@@ -54,7 +54,7 @@
 				) );
 			if( $terms ):
             ?>
-            <ul class="reset-list">
+            <ul class="reset-list postSlider">
               <?php
               $i = 1; 
               foreach( $terms as $term ):

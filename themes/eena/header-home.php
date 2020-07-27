@@ -12,9 +12,10 @@
   <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]-->	
-
+<?php wp_head(); ?>
+</head>
+<body <?php body_class(); ?>>
   <svg style="display: none;">
-    <!-- Milon -->
     <symbol id="contact-info-email-svg" width="18" height="18" viewBox="0 0 18 18"  xmlns="http://www.w3.org/2000/svg">
     <path d="M15.8906 2.39062H2.10938C0.946266 2.39062 0 3.33689 0 4.5V13.5C0 14.6631 0.946266 15.6094 2.10938 15.6094H15.8906C17.0537 15.6094 18 14.6631 18 13.5V4.5C18 3.33689 17.0537 2.39062 15.8906 2.39062ZM16.5938 13.5C16.5938 13.8877 16.2783 14.2031 15.8906 14.2031H2.10938C1.72167 14.2031 1.40625 13.8877 1.40625 13.5V4.5C1.40625 4.1123 1.72167 3.79688 2.10938 3.79688H15.8906C16.2783 3.79688 16.5938 4.1123 16.5938 4.5V13.5Z"/>
     <path d="M16.4755 3.2673L9.00118 8.8268L1.52682 3.2673L0.6875 4.39564L9.00118 10.5794L17.3149 4.39564L16.4755 3.2673Z"/>
@@ -22,7 +23,6 @@
     <symbol id="md-cr-event-goal-svg" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
       <path d="M12 0C5.3835 0 0 5.3835 0 12C0 18.6165 5.3835 24 12 24C18.6165 24 24 18.6165 24 12C24 5.3835 18.6165 0 12 0ZM12.762 3.8985L15.8475 2.2395C17.556 2.916 19.047 4.0245 20.181 5.4345L19.446 8.8275L17.0925 9.981L12.762 6.8265V3.8985ZM8.178 2.2305L11.2635 3.8955V6.8265L6.936 9.981L4.5705 8.826L3.8355 5.412C4.9725 4.005 6.4665 2.9025 8.178 2.2305ZM3.345 17.931C2.3655 16.506 1.728 14.8305 1.5525 13.02L4.092 10.2615L6.408 11.394L8.1525 16.3485L6.678 18.1155L3.345 17.931ZM14.6745 22.1415C13.818 22.368 12.9255 22.5 12 22.5C10.881 22.5 9.804 22.32 8.7915 21.9945L7.848 19.0575L9.3525 17.25H14.6535L16.131 18.999L14.6745 22.1415ZM17.301 18.0645L15.8505 16.347L17.619 11.394L19.9245 10.2645L22.449 13.0215C22.2975 14.583 21.795 16.0395 21.0315 17.328L17.301 18.0645Z" fill="#111111"/>
     </symbol>
-
     <symbol id="md-cr-event-profile-svg" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
       <g clip-path="url(#clip0)">
       <path d="M19.0781 11.2969C17.1397 11.2969 15.5625 12.8741 15.5625 14.8125C15.5625 16.7509 17.1397 18.3281 19.0781 18.3281C21.0165 18.3281 22.5938 16.7509 22.5938 14.8125C22.5938 12.8741 21.0165 11.2969 19.0781 11.2969Z" fill="black"/>
@@ -38,7 +38,6 @@
       </clipPath>
       </defs>
     </symbol>
-
     <symbol id="sp-fanshop-gallery-arrows-svg" width="27" height="14" viewBox="0 0 27 14"  xmlns="http://www.w3.org/2000/svg">
     <path d="M1.05467 5.48437H23.3907L19.6907 1.80225C19.2778 1.39134 19.2762 0.723564 19.6871 0.310707C20.0981 -0.102203 20.7659 -0.103732 21.1787 0.307121L26.6897 5.79149C26.6901 5.79181 26.6903 5.79218 26.6906 5.79249C27.1024 6.2034 27.1038 6.87334 26.6907 7.28561C26.6904 7.28593 26.6901 7.2863 26.6898 7.28662L21.1788 12.771C20.766 13.1818 20.0982 13.1804 19.6873 12.7674C19.2763 12.3545 19.2779 11.6868 19.6908 11.2759L23.3907 7.59374H1.05467C0.472164 7.59374 -1.90735e-05 7.12156 -1.90735e-05 6.53905C-1.90735e-05 5.95655 0.472164 5.48437 1.05467 5.48437Z"/>
     </symbol>
@@ -48,25 +47,12 @@
     <symbol id="fl-next-icon-xs-svg" width="27" height="14" viewBox="0 0 27 14"  xmlns="http://www.w3.org/2000/svg">
     <path d="M1.05467 5.48437H23.3907L19.6907 1.80225C19.2778 1.39134 19.2762 0.723564 19.6871 0.310707C20.0981 -0.102203 20.7659 -0.103732 21.1787 0.307121L26.6897 5.79149C26.6901 5.79181 26.6903 5.79218 26.6906 5.79249C27.1024 6.2034 27.1038 6.87334 26.6907 7.28561C26.6904 7.28593 26.6901 7.2863 26.6898 7.28662L21.1788 12.771C20.766 13.1818 20.0982 13.1804 19.6873 12.7674C19.2763 12.3545 19.2779 11.6868 19.6908 11.2759L23.3907 7.59374H1.05467C0.472164 7.59374 -1.90735e-05 7.12156 -1.90735e-05 6.53905C-1.90735e-05 5.95655 0.472164 5.48437 1.05467 5.48437Z"/>
     </symbol>
-
     <symbol id="sp-fanshop-gallery-arrows-svg" width="27" height="14" viewBox="0 0 27 14"  xmlns="http://www.w3.org/2000/svg">
     <path d="M1.05467 5.48437H23.3907L19.6907 1.80225C19.2778 1.39134 19.2762 0.723564 19.6871 0.310707C20.0981 -0.102203 20.7659 -0.103732 21.1787 0.307121L26.6897 5.79149C26.6901 5.79181 26.6903 5.79218 26.6906 5.79249C27.1024 6.2034 27.1038 6.87334 26.6907 7.28561C26.6904 7.28593 26.6901 7.2863 26.6898 7.28662L21.1788 12.771C20.766 13.1818 20.0982 13.1804 19.6873 12.7674C19.2763 12.3545 19.2779 11.6868 19.6908 11.2759L23.3907 7.59374H1.05467C0.472164 7.59374 -1.90735e-05 7.12156 -1.90735e-05 6.53905C-1.90735e-05 5.95655 0.472164 5.48437 1.05467 5.48437Z"/>
     </symbol>
     <symbol id="fanshop-post-arrows-icon-svg" width="27" height="14" viewBox="0 0 27 14"  xmlns="http://www.w3.org/2000/svg">
     <path d="M1.05467 5.48437H23.3907L19.6907 1.80225C19.2778 1.39134 19.2762 0.723564 19.6871 0.310707C20.0981 -0.102203 20.7659 -0.103732 21.1787 0.307121L26.6897 5.79149C26.6901 5.79181 26.6903 5.79218 26.6906 5.79249C27.1024 6.2034 27.1038 6.87334 26.6907 7.28561C26.6904 7.28593 26.6901 7.2863 26.6898 7.28662L21.1788 12.771C20.766 13.1818 20.0982 13.1804 19.6873 12.7674C19.2763 12.3545 19.2779 11.6868 19.6908 11.2759L23.3907 7.59374H1.05467C0.472164 7.59374 -1.90735e-05 7.12156 -1.90735e-05 6.53905C-1.90735e-05 5.95655 0.472164 5.48437 1.05467 5.48437Z"/>
     </symbol>
-
-    <!-- Shoriful -->
-
-
-
-
-    <!-- Noyon -->
-
-    
-
-
-    <!-- Rannojit -->
     <symbol id="cart-icon-svg" width="34" height="34" viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg">
       <path d="M29.4327 29.3675L27.6201 9.46688C27.5712 8.91862 27.1122 8.5 26.5618 8.5H23.3743V6.375C23.3743 4.6665 22.7113 3.06425 21.5107 1.86362C20.3292 0.68 18.6845 0 16.9993 0C13.4846 0 10.6243 2.86025 10.6243 6.375V8.5H7.43683C6.88646 8.5 6.42746 8.91862 6.37858 9.46688L4.57021 29.3654C4.46183 30.5533 4.86133 31.7369 5.66458 32.6166C6.46783 33.4964 7.61108 34 8.80321 34H25.1976C26.3876 34 27.5308 33.4964 28.3341 32.6188C29.1395 31.739 29.5368 30.5532 29.4327 29.3675ZM21.2493 8.5H12.7493V6.375C12.7493 4.03113 14.6555 2.125 16.9993 2.125C18.1256 2.125 19.2221 2.5755 20.0083 3.36387C20.8095 4.165 21.2493 5.23387 21.2493 6.375V8.5Z"/>
     </symbol>
@@ -96,14 +82,7 @@
       </clipPath>
       </defs>
     </symbol>
-
-
-
-    
   </svg>
-<?php wp_head(); ?>
-</head>
-<body <?php body_class(); ?>>
 <?php 
   $logoObj = get_field('hdlogo', 'options');
   if( is_array($logoObj) ){
@@ -217,8 +196,8 @@
     <div class="mainSlideItem">
       <div class="mainSlideImg inline-bg" style="background: url('<?php echo THEME_URI; ?>/assets/images/mainSlideImg-01.jpg');"></div>
     </div>
-
   </div>
+
   <div class="main-slider-item-cntlr clearfix">
     <div class="main-slider-item-cntlr-inr">
       <span class="fl-prev">
@@ -228,12 +207,11 @@
           </svg> 
         </i>
       </span>
-      <ul class="reset-list main-slider-custom-pagi">
-        <li><span></span></li>
-        <li class="cm-pgi-active"><span></span></li>
-        <li><span></span></li>
-        <li><span></span></li>
-      </ul>
+      <div class="cm-custom-dots"></div>
+<!--       <ul class="reset-list main-slider-custom-pagi">
+        <li class="cm-pgi-active" data-slide="0"><span></span></li>
+        <li data-slide="1"><span></span></li>
+      </ul> -->
       <span class="fl-next">
         <i>
           <svg class="fl-next-icon-svg" width="34" height="16" viewBox="0 0 34 16" fill="#C8C8C8">
@@ -250,9 +228,17 @@
       <div class="row">
         <div class="col-md-12">
           <div class="mainSlideItemDesSlider">
-            <div class="mainSlideItemDes clearfix">
-                <div class="mainSlideItemDesInner">
-                  <span class="post-date">VRIJDAG 27 MAART - 14U05</span>
+            <div class="mainSlideItemDes itemDesActive" data-slide="0">
+                <div class="mainSlideItemDesInner clearfix">
+                  <span class="post-date">VRIJDAG 27 MAART - 14U05 1</span>
+                  <strong class="msdtitle">POSITIEF ADVIES VOOR LICENTIE EERSTE AMATEURLIGA</strong>
+                  <p>In deze barre tijden voor iedereen willen we jullie ook graag wat positief nieuws meegeven. Onze club kreeg zonet het bericht binnen</p>
+                  <a href="#">LEES MEEr</a>
+                </div>
+            </div>
+            <div class="mainSlideItemDes" data-slide="1">
+                <div class="mainSlideItemDesInner clearfix">
+                  <span class="post-date">VRIJDAG 27 MAART - 14U05 2</span>
                   <strong class="msdtitle">POSITIEF ADVIES VOOR LICENTIE EERSTE AMATEURLIGA</strong>
                   <p>In deze barre tijden voor iedereen willen we jullie ook graag wat positief nieuws meegeven. Onze club kreeg zonet het bericht binnen</p>
                   <a href="#">LEES MEEr</a>

@@ -16,20 +16,46 @@ global $product;
 
 	<?php
 	do_action( 'woocommerce_before_add_to_cart_quantity' );
-
-	woocommerce_quantity_input(
-		array(
-			'min_value'   => apply_filters( 'woocommerce_quantity_input_min', $product->get_min_purchase_quantity(), $product ),
-			'max_value'   => apply_filters( 'woocommerce_quantity_input_max', $product->get_max_purchase_quantity(), $product ),
-			'input_value' => isset( $_POST['quantity'] ) ? wc_stock_amount( wp_unslash( $_POST['quantity'] ) ) : $product->get_min_purchase_quantity(), // WPCS: CSRF ok, input var ok.
-		)
-	);
+	?>
+	<div class="custom-quantity">
+		<span class="d-an">Aantal</span>
+        <div class="pro-counter clearfix"> 
+			<div class="qty">
+		    <span class="minus"> <i class="fa fa-minus"></i> </span>
+		    <?php
+			woocommerce_quantity_input(
+				array(
+					'min_value'   => apply_filters( 'woocommerce_quantity_input_min', $product->get_min_purchase_quantity(), $product ),
+					'max_value'   => apply_filters( 'woocommerce_quantity_input_max', $product->get_max_purchase_quantity(), $product ),
+					'input_value' => isset( $_POST['quantity'] ) ? wc_stock_amount( wp_unslash( $_POST['quantity'] ) ) : $product->get_min_purchase_quantity(), // WPCS: CSRF ok, input var ok.
+				)
+			);
+			?>
+			<span class="plus"><i class="fa fa-plus"></i> </span>
+			</div>
+		</div>
+	</div>
+	<?php
 
 	do_action( 'woocommerce_after_add_to_cart_quantity' );
 	?>
 
-	<button type="submit" class="single_add_to_cart_button button alt"><?php echo esc_html( $product->single_add_to_cart_text() ); ?></button>
-
+	<div class="sp-single-form-wrp">
+		<h4 class="sp-single-form-title">Persoonlijk shirt</h4>
+		<div class="sp-d2-frm-fields clearfix">
+			<div class="sp-d2-frm-field">
+			  <label>Naam</label>
+			  <input type="text" name="email" placeholder="Naam">
+			</div>
+			<div class="sp-d2-frm-field">
+			  <label>Nummer</label>
+			  <input type="text" name="email" placeholder="Nummer">
+			</div>
+		</div>
+		<div class="sp-frm-submit clearfix">
+			<button type="submit" class="single_add_to_cart_button button alt sp-frm-submit-bdr"><?php echo esc_html( $product->single_add_to_cart_text() ); ?></button>
+		</div>
+	</div>
 	<?php do_action( 'woocommerce_after_add_to_cart_button' ); ?>
 
 	<input type="hidden" name="add-to-cart" value="<?php echo absint( $product->get_id() ); ?>" />

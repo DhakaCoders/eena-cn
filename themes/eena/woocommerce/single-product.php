@@ -64,6 +64,30 @@ get_header( 'shop' ); ?>
     </div>
   </div>    
 </section> 
+<?php 
+$terms = get_the_terms( get_the_ID(), 'product_cat' );
+$termid = '';
+if( !empty($terms) && !is_wp_error($terms) ){
+	foreach( $terms  as $term ){
+		$termid = $term->term_id;
+	}
+}
+if( !empty($termid) ): 
+$query = new WP_Query(array( 
+	'post_type'=> 'product',
+	'posts_per_page' => 3,
+	'order'=> 'DESC',
+	'tax_query' => array(
+		array(
+			'taxonomy' => 'product_cat',
+			'field' => 'term_id',
+			'terms' => $termid
+			)
+		)
+	) 
+);
+if($query->have_posts()):
+?>
 <section class="fanshop-v1-post-sec-wrp">
   <div class="container">
     <div class="row">
@@ -90,6 +114,13 @@ get_header( 'shop' ); ?>
             </span>
           </div>
           <div class="FanShopPostSlider">
+			<?php 
+
+			while($query->have_posts()): $query->the_post(); 
+				global $product;
+				$product_thumb = '';
+				$thumb_id = get_post_thumbnail_id(get_the_ID());
+			?>
             <div class="FanShopPostSlideItem">
               <div class="fanshop-post-grid-inr mHc clearfix">
                 <div class="fanshop-post-grid-img-cntlr">
@@ -98,9 +129,18 @@ get_header( 'shop' ); ?>
                   </div>
                 </div>
                 <div class="fanshop-post-grid-dsc">
-                  <strong>€ 58</strong>
-                  <h3 class="fanshop-post-grid-title mHc1"> <a href="#">WEDSTRIJDSHIRT 2017-2018</a></h3>
-                  <a href="#">
+                    <strong>
+                  	<?php 
+                        if($product->is_type('variable')): 
+                          echo wc_price($product->get_variation_regular_price( 'min' )); 
+                        else:
+                          echo $product->get_price_html();
+                        endif;
+                      ?>
+                  
+                    </strong>
+                  <h3 class="fanshop-post-grid-title mHc1"> <a href="<?php the_permalink();?>"><?php the_title(); ?></a></h3>
+                  <a href="<?php the_permalink();?>">
                     <i>  
                       <svg class="fanshop-post-arrows-icon-svg" width="27" height="14" viewBox="0 0 27 14" fill="#B4B4B4">
                         <use xlink:href="#fanshop-post-arrows-icon-svg"></use>
@@ -111,81 +151,14 @@ get_header( 'shop' ); ?>
                 </div>
               </div>
             </div>
-            <div class="FanShopPostSlideItem">
-              <div class="fanshop-post-grid-inr mHc clearfix">
-                <div class="info-stick-wrap">
-                  <span>PROMO</span>
-                </div>
-                <div class="fanshop-post-grid-img-cntlr">
-                 <a href="#" class="overlay-link"></a>
-                 <div class="fanshop-post-grid-img" style="background: url(<?php echo THEME_URI; ?>/assets/images/fanshop-post-grid-img.png);">
-                   
-                 </div>
-               </div>
-                <div class="fanshop-post-grid-dsc">
-                  <strong>€ 65</strong>
-                  <h3 class="fanshop-post-grid-title mHc1"> <a href="#">WEDSTRIJDSHIRT 2017-2018</a></h3>
-                  <a href="#">
-                    <i>  
-                      <svg class="fanshop-post-arrows-icon-svg" width="27" height="14" viewBox="0 0 27 14" fill="#B4B4B4">
-                        <use xlink:href="#fanshop-post-arrows-icon-svg"></use>
-                      </svg>
-                    </i>
-                   meer info
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="FanShopPostSlideItem">
-              <div class="fanshop-post-grid-inr mHc clearfix">
-                <div class="fanshop-post-grid-img-cntlr">
-                  <a href="#" class="overlay-link"></a>
-                  <div class="fanshop-post-grid-img" style="background: url(<?php echo THEME_URI; ?>/assets/images/fanshop-post-grid-img.png);">
-                    
-                  </div>
-                </div>
-                <div class="fanshop-post-grid-dsc">
-                  <strong>€ 58</strong>
-                  <h3 class="fanshop-post-grid-title mHc1"> <a href="#">WEDSTRIJDSHIRT 2017-2018</a></h3>
-                  <a href="#">
-                    <i>  
-                      <svg class="fanshop-post-arrows-icon-svg" width="27" height="14" viewBox="0 0 27 14" fill="#B4B4B4">
-                        <use xlink:href="#fanshop-post-arrows-icon-svg"></use>
-                      </svg>
-                    </i>
-                   meer info
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="FanShopPostSlideItem">
-              <div class="fanshop-post-grid-inr mHc clearfix">
-                <div class="fanshop-post-grid-img-cntlr">
-                  <a href="#" class="overlay-link"></a>
-                  <div class="fanshop-post-grid-img" style="background: url(<?php echo THEME_URI; ?>/assets/images/fanshop-post-grid-img.png);">
-                    
-                  </div>
-                </div>
-                <div class="fanshop-post-grid-dsc">
-                  <strong>€ 58</strong>
-                  <h3 class="fanshop-post-grid-title mHc1"> <a href="#">WEDSTRIJDSHIRT 2017-2018</a></h3>
-                  <a href="#">
-                    <i>  
-                      <svg class="fanshop-post-arrows-icon-svg" width="27" height="14" viewBox="0 0 27 14" fill="#B4B4B4">
-                        <use xlink:href="#fanshop-post-arrows-icon-svg"></use>
-                      </svg>
-                    </i>
-                   meer info
-                  </a>
-                </div>
-              </div>
-            </div>
+            <?php endwhile; ?>
           </div>
         </div>
       </div>
     </div>
   </div>
 </section>
+<?php endif; wp_reset_postdata(); endif;?>
 <?php get_template_part('templates/footer', 'top'); ?>
 <?php
 get_footer( 'shop' );

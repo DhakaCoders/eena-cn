@@ -650,6 +650,13 @@ fanshop-v1-post-sec-wrp
 	border-bottom: none;
 	padding-bottom: 0;
 }
+.woocommerce #content div.product .single-product-view div.images, 
+.woocommerce div.product .single-product-view div.images, 
+.woocommerce-page #content div.product .single-product-view div.images, 
+.woocommerce-page div.product .single-product-view div.images {
+    float: none !important;
+    width: 100% !important;
+}
 /*
 -----------------
  Responsive Css

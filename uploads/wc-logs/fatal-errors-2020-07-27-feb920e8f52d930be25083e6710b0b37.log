@@ -42,3 +42,15 @@ Stack trace:
 #3 {main}
   thrown in C:\xampp\htdocs\2020\07\eena\eena-cn\themes\eena\front-page.php on line 489
 
+2020-07-27T17:32:35+00:00 CRITICAL syntax error, unexpected ';', expecting ',' or ')' in C:\xampp\htdocs\2020\07\eena\eena-cn\themes\eena\header.php on line 203
+
+2020-07-27T18:21:53+00:00 CRITICAL syntax error, unexpected end of file, expecting elseif (T_ELSEIF) or else (T_ELSE) or endif (T_ENDIF) in C:\xampp\htdocs\2020\07\eena\eena-cn\themes\eena\woocommerce\single-product.php on line 167
+
+2020-07-27T19:12:24+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function WC_Product::is_type(), 0 passed in C:\xampp\htdocs\2020\07\eena\eena-cn\themes\eena\inc\wc-functions.php on line 46 and exactly 1 expected in C:\xampp\htdocs\2020\07\eena\eena-cn\plugins\woocommerce\includes\abstracts\abstract-wc-product.php:1432
+Stack trace:
+#0 C:\xampp\htdocs\2020\07\eena\eena-cn\themes\eena\inc\wc-functions.php(46): WC_Product->is_type()
+#1 C:\xampp\htdocs\2020\07\eena\wp-includes\class-wp-hook.php(287): wc_custom_single_addtocart_text('Add to cart', Object(WC_Product_Variable))
+#2 C:\xampp\htdocs\2020\07\eena\wp-includes\plugin.php(206): WP_Hook->apply_filters('Add to cart', Array)
+#3 C:\xampp\htdocs\2020\07\eena\eena-cn\plugins\woocommerce\includes\abstracts\abstract-wc-product.php(1819): apply_filters('woocommerce_pro...', 'Add to cart', Object(WC_Product_Variable))
+#4 C:\xampp\htdocs\2020\07\eena\eena-cn\themes\eena\woocommerce\single-product\add-to-cart\variation-add-to-cart-button.php(31): WC_Product->single_add_to_cart_text( in C:\xampp\htdocs\2020\07\eena\eena-cn\plugins\woocommerce\includes\abstracts\abstract-wc-product.php on line 1432
+

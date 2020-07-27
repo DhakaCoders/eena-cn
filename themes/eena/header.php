@@ -192,13 +192,18 @@
                   ?>
                 </nav>
                 <div class="hdr-cart-btn">
-                  <a href="#">
+                  <a href="<?php echo wc_get_cart_url(); ?>">
                     <i>
                       <svg class="cart-icon-svg" width="34" height="34" viewBox="0 0 34 34" fill="#F6C042">
                         <use xlink:href="#cart-icon-svg"></use>
                       </svg> 
                     </i>
-                    <strong>€0,00</strong>
+                    <?php 
+                      if(WC()->cart->cart_contents_total > 0) 
+                        echo '<strong>'.wc_price(WC()->cart->cart_contents_total).'</strong>';
+                      else 
+                       echo '<strong>€0,00</strong>';
+                    ?>
                   </a>
                 </div>
               </div>
@@ -212,11 +217,20 @@
 <?php
 if( is_blog() ){
   $thisID = get_option('page_for_posts');
+  $pageTitle = get_the_title($thisID);
+}elseif( is_shop() ){
+  $thisID = get_option('woocommerce_shop_page_id');
+  $pageTitle = get_the_title($thisID);
+}elseif(is_product()){
+  $shopID = get_option('woocommerce_shop_page_id');
+  $pageTitle = get_the_title($shopID);
+  $thisID = get_the_ID();
 }else{
   $thisID = get_the_ID();
+  $pageTitle = get_the_title($thisID);
 }
 
-$pageTitle = get_the_title($thisID);
+
 $standaardbanner = get_field('pagebanner', $thisID);
 if( empty($standaardbanner) ) $standaardbanner = THEME_URI.'/assets/images/page-bnr.jpg';
 ?>

@@ -86,14 +86,14 @@ return 50;
 }
 add_filter( 'excerpt_length', 'tn_custom_excerpt_length', 999 );
 
-function cbv_get_excerpt(){
-  global $post;
-  $link = ' <a href="'. get_permalink($post->ID) . '">Continue Reading...</a>';
-  $excerpt = explode(' ', get_the_excerpt());
-  array_pop($excerpt);
-  $excerpt = implode(" ",$excerpt);
-
-  $excerpt .= $link;
+function cbv_get_excerpt( $text, $limit = 20 ){
+  $excerpt = explode(' ', $text, $limit);
+  if (count($excerpt)>=$limit) {
+    array_pop($excerpt);
+    $excerpt = implode(" ",$excerpt);
+  } else {
+    $excerpt = implode(" ",$excerpt);
+  } 
   return $excerpt;
 }
 

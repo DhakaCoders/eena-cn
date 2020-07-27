@@ -126,6 +126,7 @@
     <?php if( !empty( $actua['titel'] ) ) printf( '<strong>%s</strong>', $actua['titel']); ?>
   </div>
     <div class="eena-breadcrumbs-sec-inr">
+      <div class="eena-breadcrumbs-sec-Wrap">
       <?php if( $arg_anieuws ): ?>
       <div class="eena-brdcrmb-sliders bdcmbSlider">
         <?php 
@@ -135,8 +136,16 @@
           <a href="<?php echo esc_url( get_permalink($anieuws_row) ); ?>"><?php echo get_the_date( 'l j F', $anieuws_row->ID ); ?> <span>- <?php echo $anieuws_row->post_title;?>...</span></a>
         </div>
         <?php endforeach; ?>
+        <?php 
+        foreach( $arg_anieuws as $anieuws_row ):
+        ?>
+        <div class="eena-brdcrmb-slider-item">
+          <a href="<?php echo esc_url( get_permalink($anieuws_row) ); ?>"><?php echo get_the_date( 'l j F', $anieuws_row->ID ); ?> <span>- <?php echo $anieuws_row->post_title;?>...</span></a>
+        </div>
+        <?php endforeach; ?>
       </div>
       <?php endif; ?>
+    </div>
     </div>
 </section>
 <?php endif; ?>

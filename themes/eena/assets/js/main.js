@@ -166,6 +166,19 @@ if( $('.bdcmbSlider').length ){
       autoplaySpeed: 1000,
       speed: 300,
       slidesToShow: 3,
+      
+      pauseOnHover: true,
+      autoplay: true,
+      autoplaySpeed: 0.1,
+      infinite: true,
+      cssEase: 'linear',
+      arrows:false,
+      dots: false,
+      infinite: true,
+      speed: 9000,
+      slidesToShow: 3,
+      variableWidth: true,
+
       responsive: [
         {
           breakpoint: 1300,

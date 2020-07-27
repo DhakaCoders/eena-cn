@@ -1,10 +1,35 @@
 <?php get_header('home'); ?>
+<?php 
+  $showhide_nieuws = get_field('showhide_nieuws', HOMEID);
+  if( $showhide_nieuws ):
+    $nieuws = get_field('nieuwssec', HOMEID);
+    if($nieuws):
+      $nieuwses = $nieuws['selecteernieuws'];
+?>
+<?php 
+  if( $nieuwses ){
+    $arg_nieuws = $nieuwses;
+  } else{
+    $args = array(
+      'post_type' => 'post',
+      'post_status' => 'publish',
+      'posts_per_page' => -1,
+    );
+    $arg_nieuws = get_posts( $args );
+  }
+?>
 <section class="hm-news-section">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
         <div class="hm-news-sec-hdr">
-          <h1 class="hmns-title"><span class="hide-sm">Nieuws</span> <span class="show-sm">E. Aalst Updates</span></h1>
+          <h1 class="hmns-title">
+            <?php 
+              if( !empty( $nieuws['dtitel'] ) ) printf( '<span class="hide-sm">%s</span>', $nieuws['dtitel']); 
+              if( !empty( $nieuws['mtitel'] ) ) printf( '<span class="show-sm">%s</span>', $nieuws['mtitel']); 
+            ?>
+          </h1>
+          <?php if( $arg_nieuws ): ?>
           <div class="fl-prev-next hmNewsSecSliderPrevNext hide-sm">
             <span class="fl-prev">
               <i>
@@ -21,67 +46,37 @@
               </i>
             </span>
           </div>
+          <?php endif; ?>
         </div>
       </div>
+      <?php if( $arg_nieuws ): ?>
       <div class="col-md-12">
         <div class="hm-news-sec-cntlr">
           <div class="hmNewsSecSlider clearfix">
+            <?php 
+            foreach( $arg_nieuws as $nieuws_row ):
+              $thumb_id = get_post_thumbnail_id($nieuws_row);
+              if(!empty($thumb_id)){
+                $thumb = cbv_get_image_src($thumb_id, 'artgrid');
+              } else {
+                $thumb = THEME_URI.'/assets/images/eena-grd-item-fea-img-1.jpg';
+              }
+            ?>
             <div class="hmNewsSecSlideItem">
               <div class="eena-grd-item">
                 <div class="eena-grd-item-fea-img-ctlr">
-                  <a href="#" class="overlay-link"></a>
-                  <div class="eena-grd-item-fea-img" style="background: url('<?php echo THEME_URI; ?>/assets/images/eena-grd-item-fea-img-1.jpg');"></div>
+                  <a href="<?php echo esc_url( get_permalink($nieuws_row) ); ?>" class="overlay-link"></a>
+                  <div class="eena-grd-item-fea-img" style="background: url('<?php echo $thumb; ?>');"></div>
                 </div>
                 <div class="eena-grd-item-des mHc">
-                  <strong>VRIJDAG 27 MAART - 14U05</strong>
-                  <h3 class="eena-gid-title mHc1"><a href="#">Individueel verder trainen en beelden bekijken</a></h3>
-                  <p class="mHc2">Et tellus quis mi id non facilisi ac nibh. In lectus etiam augue tristique turpis at. </p>
-                  <a href="#">LEES MEEr</a>
+                  <strong><?php echo get_the_date( 'l j F - g:i A', $nieuws_row->ID ); ?></strong>
+                  <h3 class="eena-gid-title mHc1"><a href="<?php echo esc_url( get_permalink($nieuws_row) ); ?>"><?php echo $nieuws_row->post_title;?></a></h3>
+                  <p class="mHc2"><?php echo cbv_get_excerpt($nieuws_row->post_content);?></p>
+                  <a href="<?php echo esc_url( get_permalink($nieuws_row) ); ?>">LEES MEEr</a>
                 </div>
               </div>
             </div>
-            <div class="hmNewsSecSlideItem">
-              <div class="eena-grd-item">
-                  <div class="eena-grd-item-fea-img-ctlr">
-                    <a href="#" class="overlay-link"></a>
-                    <div class="eena-grd-item-fea-img" style="background: url('<?php echo THEME_URI; ?>/assets/images/eena-grd-item-fea-img-2.jpg');"></div>
-                  </div>
-                  <div class="eena-grd-item-des mHc">
-                    <strong>VRIJDAG 27 MAART - 14U05</strong>
-                    <h3 class="eena-gid-title mHc1"><a href="#">Positief advies voor licentie eerste amateurliga!</a></h3>
-                    <p class="mHc2">Et tellus quis mi id non facilisi ac nibh. In lectus etiam augue tristique turpis at.</p>
-                    <a href="#">LEES MEEr</a>
-                  </div>
-                </div>
-            </div>
-            <div class="hmNewsSecSlideItem">
-              <div class="eena-grd-item">
-                  <div class="eena-grd-item-fea-img-ctlr">
-                    <a href="#" class="overlay-link"></a>
-                    <div class="eena-grd-item-fea-img" style="background: url('<?php echo THEME_URI; ?>/assets/images/eena-grd-item-fea-img-3.jpg');"></div>
-                  </div>
-                  <div class="eena-grd-item-des mHc">
-                    <strong>VRIJDAG 27 MAART - 14U05</strong>
-                    <h3 class="eena-gid-title mHc1"><a href="#">Onze competities worden definitief stopgezet</a></h3>
-                    <p class="mHc2">Et tellus quis mi id non facilisi ac nibh. In lectus etiam augue tristique turpis at. </p>
-                    <a href="#">LEES MEEr</a>
-                  </div>
-                </div>
-            </div>
-            <div class="hmNewsSecSlideItem">
-             <div class="eena-grd-item">
-                <div class="eena-grd-item-fea-img-ctlr">
-                  <a href="#" class="overlay-link"></a>
-                  <div class="eena-grd-item-fea-img" style="background: url('<?php echo THEME_URI; ?>/assets/images/eena-grd-item-fea-img-1.jpg');"></div>
-                </div>
-                <div class="eena-grd-item-des mHc">
-                  <strong>VRIJDAG 27 MAART - 14U05</strong>
-                  <h3 class="eena-gid-title mHc1"><a href="#">Individueel verder trainen en beelden bekijken</a></h3>
-                  <p class="mHc2">Et tellus quis mi id non facilisi ac nibh. In lectus etiam augue tristique turpis at. </p>
-                  <a href="#">LEES MEEr</a>
-                </div>
-              </div>
-            </div>
+            <?php endforeach; ?>
           </div>
           <div class="fl-prev-next hmNewsSecSliderPrevNext show-sm">
             <span class="fl-prev">
@@ -101,32 +96,52 @@
           </div>
         </div>
       </div>
+      <?php endif; ?>
     </div>
   </div>
 </section>
-
+<?php endif; ?>
+<?php endif; ?>
+<?php 
+  $showhide_actua = get_field('showhide_actua', HOMEID);
+  if( $showhide_actua ):
+    $actua = get_field('hactuasec', HOMEID);
+    if($actua):
+      $anieuwses = $actua['selecteernieuws'];
+?>
+<?php 
+  if( $anieuwses ){
+    $arg_anieuws = $anieuwses;
+  } else{
+    $args = array(
+      'post_type' => 'post',
+      'post_status' => 'publish',
+      'posts_per_page' => -1,
+    );
+    $arg_anieuws = get_posts( $args );
+  }
+?>
 <section class="eena-breadcrumbs-sec">
   <div class="eena-brdcrmb-left">
-    <strong>Actua</strong>
+    <?php if( !empty( $actua['titel'] ) ) printf( '<strong>%s</strong>', $actua['titel']); ?>
   </div>
     <div class="eena-breadcrumbs-sec-inr">
+      <?php if( $arg_anieuws ): ?>
       <div class="eena-brdcrmb-sliders bdcmbSlider">
+        <?php 
+        foreach( $arg_anieuws as $anieuws_row ):
+        ?>
         <div class="eena-brdcrmb-slider-item">
-          <a href="#">VRIJDAG 27 MAART <span>- Ladies gaan samenwerken met fc dames ternat...</span></a>
+          <a href="<?php echo esc_url( get_permalink($anieuws_row) ); ?>"><?php echo get_the_date( 'l j F', $anieuws_row->ID ); ?> <span>- <?php echo $anieuws_row->post_title;?>...</span></a>
         </div>
-        <div class="eena-brdcrmb-slider-item">
-          <a href="#">VRIJDAG 27 MAART <span>- Positief advies voor licentie eerste amateurliga!...</span></a>
-        </div>
-        <div class="eena-brdcrmb-slider-item">
-          <a href="#">VRIJDAG 27 MAART</a>
-        </div>
-        <div class="eena-brdcrmb-slider-item">
-          <a href="#">VRIJDAG 27 MAART <span>- Ladies gaan samenwerken met fc dames ternat...</span></a>
-        </div>
+        <?php endforeach; ?>
       </div>
+      <?php endif; ?>
     </div>
 </section>
-<section class="hm-ranking-section inline-bg">
+<?php endif; ?>
+<?php endif; ?>
+<section class="hm-ranking-section inline-bg" style="background:url(<?php echo THEME_URI; ?>/assets/images/hm-ranking-sec-bg.jpg);">
   <div class="container">
       <div class="row">
         <div class="col-lg-12 col-xl-6">
@@ -361,13 +376,26 @@
       </div>
   </div>    
 </section>
+<?php 
+  $showhide_promo = get_field('showhide_promo', HOMEID);
+  if( $showhide_promo ):
+    $hpromo = get_field('home_promo', HOMEID);
+    $ltype = $hpromo['layouttype'];
+    if( $ltype == 'promo' ){
+    $promo = $hpromo['promo'];
+    if($promo):
 
+    $bafbeelding = '';
+    if( !empty($promo['afbeelding']) ){
+      $bvafbeelding = cbv_get_image_src($promo['afbeelding'], 'overgrid');
+    }
+?>
 <section class="hm-back-in-time-sec clearfix">
   <span class="hbits-topline"></span>
   <div class="hm-back-in-time-sec-angle"></div>
   <div class="hm-back-in-time-sec-inr">
       <div class="hm-back-in-time-sec-fea-img">
-          <div class="inline-bg" style="background: url(<?php echo THEME_URI; ?>/assets/images/hm-back-in-time-sec-fea-img.jpg);"></div>
+          <div class="inline-bg" style="background: url(<?php echo $bvafbeelding; ?>);"></div>
       </div>
     
     <div class="container">
@@ -379,19 +407,24 @@
             <div class="hm-back-in-time-sec-des">
               <div>
                 <span class="black-anlge-lft"><img src="<?php echo THEME_URI; ?>/assets/images/black-anlge-lft.png"></span>
-                <h2 class="hmbitsdes-title">Back in time</h2>
-                <span class="hbitsdate">27 MAART 1988</span>
-                <strong>Purus in in at magna fermentum laoreet morbi vitae.</strong>
-                <p>Volutpat sagittis quisque feugiat hendrerit a sit amet. Sodales est commodo ultrices purus sit eget. Et tellus quis mi id non facilisi ac nibh. In lectus etiam augue tristique turpis at. Eget sapien duis molestie in. Consectetur tincidunt arcu ac ornare a turpis fermentum. </p>
-
-                <p>Natoque feugiat donec amet felis quisque morbi vitae leo nunc. Et mi gravida nisl, iaculis aliquam. </p>
+                <?php if( !empty( $promo['hoofdtitel'] ) ) printf( '<h2 class="hmbitsdes-title">%s</h2>', $promo['hoofdtitel']);?>
+                
+                <?php if( !empty( $promo['datum'] ) ) printf( '<span class="hbitsdate">%s</span>', date("d F Y", strtotime($promo['datum'])) ); ?>
+                <?php  
+                  if( !empty( $promo['titel'] ) ) printf( '<strong>%s</strong>', $promo['titel']); 
+                  if( !empty( $promo['beschrijving'] ) ) echo wpautop($promo['beschrijving']);  
+                ?>
                 <div class="hmbits-btns">
-                  <div class="hmbits-btn hmbits-btn-1">
-                    <a href="#">Meer Info</a>
-                  </div>
-                  <div class="hmbits-btn hmbits-btn-2">
-                    <a href="#">Historiek</a>
-                  </div>
+                  <?php 
+                  $pknop1 = $promo['knop_1'];
+                  $pknop2 = $promo['knop_2'];
+                  if( is_array( $pknop1 ) &&  !empty( $pknop1['url'] ) ){
+                      printf('<div class="hmbits-btn hmbits-btn-1"><a href="%s" target="%s">%s</a></div>', $pknop1['url'], $pknop1['target'], $pknop1['title']); 
+                  } 
+                  if( is_array( $pknop2 ) &&  !empty( $pknop2['url'] ) ){
+                      printf('<div class="hmbits-btn hmbits-btn-2"><a href="%s" target="%s">%s</a></div>', $pknop2['url'], $pknop2['target'], $pknop2['title']); 
+                  } 
+                ?>
                 </div>
               </div>
             </div>
@@ -400,23 +433,151 @@
     </div>
   </div>    
 </section>
+<?php endif; ?>
+<?php } else{ 
+$webshop = $hpromo['webshop'];
+if($webshop):
+
+$shopproducts = $webshop['selecteerproducten']; 
+  if( $shopproducts ){
+    $arg_products = $shopproducts;
+  } else{
+    $args = array(
+      'post_type' => 'product',
+      'post_status' => 'publish',
+      'posts_per_page' => -1,
+    );
+    $arg_products = get_posts( $args );
+  }
+?>
+<section class="hm-back-in-time-sec hm-webshop-sec clearfix">
+  <span class="hbits-topline"></span>
+  <div class="hm-back-in-time-sec-inr">
+    <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="hm-webshop-sec-cntlr">
+              <?php if( !empty( $webshop['titel'] ) ) printf( '<h2 class="hmws-title">%s</h2>', $webshop['titel']);?>
+              <?php if( $arg_products ): ?>
+              <div class="hm-webshop-slider hmWebshopSlider">
+              <?php 
+              foreach( $arg_products as $product_row ):
+                setup_postdata($product_row);
+                global $product;
+                $thumb_id = get_post_thumbnail_id($product_row);
+                if(!empty($thumb_id)){
+                  $thumb = cbv_get_image_src($thumb_id, 'artgrid');
+                } else {
+                  $thumb = THEME_URI.'/assets/images/fanshop-post-grid-img.png';
+                }
 
 
+              ?>
+                <div class="hmWebshopSlideItem">
+                  <div class="fanshop-post-grid-inr mHc clearfix">
+                    <div class="fanshop-post-grid-img-cntlr">
+                      <a href="<?php echo esc_url( get_permalink($product_row) ); ?>" class="overlay-link"></a>
+                      <div class="fanshop-post-grid-img" style="background: url(<?php echo $thumb; ?>);">
+                      </div>
+                    </div>
+                    <div class="fanshop-post-grid-dsc">
+                      <strong>
+                      <?php 
+                        if($product->is_type('variable')): 
+                          echo wc_price($product->get_variation_regular_price( 'min' )); 
+                        else:
+                          echo $product->get_price_html();
+                        endif;
+                      ?> 
+                      </strong>
+                      <h3 class="fanshop-post-grid-title mHc1"> <a href="<?php echo esc_url( get_permalink($product_row) ); ?>"><?php echo $product_row->post_title;?></a></h3>
+                      <a href="<?php echo esc_url( get_permalink($product_row) ); ?>">
+                        <i>  
+                          <svg class="fanshop-post-arrows-icon-svg" width="27" height="14" viewBox="0 0 27 14" fill="#B4B4B4">
+                            <use xlink:href="#fanshop-post-arrows-icon-svg"></use>
+                          </svg>
+                        </i>
+                       meer info
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <?php endforeach; ?>
+              </div>
+
+              <div class="hm-webshop-sec-btmbar">
+                <div class="fl-prev-next hmWebshopSliderPrevNext">
+                  <span class="fl-prev">
+                    <i>
+                      <svg class="fl-prev-icon-svg" width="34" height="16" viewBox="0 0 34 16" fill="#fff">
+                        <use xlink:href="#fl-prev-icon-svg"></use>
+                      </svg> 
+                    </i>
+                  </span>
+                  <span class="fl-next">
+                    <i>
+                      <svg class="fl-next-icon-svg" width="34" height="16" viewBox="0 0 34 16" fill="#fff">
+                        <use xlink:href="#fl-next-icon-svg"></use>
+                      </svg> 
+                    </i>
+                  </span>
+                </div>
+                <div class="hm-webshop-sec-btmbar-btn">
+                  <a href="<?php echo get_permalink( get_option( 'woocommerce_shop_page_id' ) ); ?>">Meer producten</a>
+                </div>
+              </div>
+              <?php endif; ?>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>    
+</section> 
+<?php endif; ?>
+<?php } ?>
+
+<?php endif; ?>
+<?php 
+  $showhide_shop = get_field('showhide_shop', HOMEID);
+  if( $showhide_shop ):
+    $shops = get_field('shopinfo', HOMEID);
+    if($shops):
+?>
 <section class="sp-fanshop-gallery-sec-wrp hm-sp-fanshop-gallery-sec-cntlr">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
         <div class="sp-fanshop-gallery-wrp">
           <ul class="ulc clearfix reset-list">
+            <?php $i = 1; 
+            $shoparray = array();
+            foreach( $shops as $shop_row ): 
+
+              if( $i >= 5 ){
+                $shoparray[] = $shop_row;
+              }
+              if( !empty($shop_row['knop']) )
+                $knopurl = $shop_row['knop'];
+              else
+                $knopurl = '#';
+              if( $i < 5 ){
+            ?>
             <li>
               <div class="sp-fanshop-gallery-inr">
-                <div class="sp-fanshop-gallery-img" style="background: url(<?php echo THEME_URI; ?>/assets/images/sp-fanshop-gallery-img-1.png);">
-                  <a href="#" class="overlay-link"></a>
+                <div class="sp-fanshop-gallery-img" style="background: url(<?php if( !empty($shop_row['afbeelding']) ) echo cbv_get_image_src($shop_row['afbeelding']); ?>);">
+                  <a href="<?php echo $knopurl; ?>" class="overlay-link"></a>
                   <div class="sp-fanshop-gallery-dsc">
-                    <img src="<?php echo THEME_URI; ?>/assets/images/sp-fanshop-gallery-icon-1.png">
-                    <h3 class="sp-fanshop-gallery-title"><a href="#">Restaurant</a></h3>
-                    <p>Pretium egestas cras mattis quam dictum tempus lectus ultrices. Sed purus platea faucibus.</p>
-                    <a href="#">
+                  <?php 
+                    $iconobj = $shop_row['icon'];
+                    if( is_array($iconobj) ){
+                      echo'<img src="'.$iconobj['url'].'" alt="'.$iconobj['alt'].'" title="'.$iconobj['title'].'">';
+                    }
+                  ?>
+                  <?php 
+                    if( !empty( $shop_row['titel'] ) ) printf( '<h3 class="sp-fanshop-gallery-title"><a href="%s">%s</a></h3>', $knopurl, $shop_row['titel']); 
+                    if( !empty( $shop_row['beschrijving'] ) ) echo wpautop($shop_row['beschrijving']); 
+                  ?>
+                    <a href="<?php echo $knopurl; ?>">
                       <i>  
                         <svg class="sp-fanshop-gallery-arrows-svg" width="27" height="14" viewBox="0 0 27 14" fill="#F6C042">
                           <use xlink:href="#sp-fanshop-gallery-arrows-svg"></use>
@@ -427,77 +588,32 @@
                 </div>
               </div>
             </li>
-            <li>
-              <div class="sp-fanshop-gallery-inr">
-                <div class="sp-fanshop-gallery-img" style="background: url(<?php echo THEME_URI; ?>/assets/images/sp-fanshop-gallery-img-2.png);">
-                  <a href="#" class="overlay-link"></a>
-                  <div class="sp-fanshop-gallery-dsc">
-                    <img src="<?php echo THEME_URI; ?>/assets/images/sp-fanshop-gallery-icon-2.png">
-                    <h3 class="sp-fanshop-gallery-title"><a href="#">Business CLub</a></h3>
-                    <p class="mHc">Commodo est quis pulvinar at senectus congue morbi. At lacus, montes, proin sodales elementum.</p>
-                    <a href="#">
-                      <i>  
-                        <svg class="sp-fanshop-gallery-arrows-svg" width="27" height="14" viewBox="0 0 27 14" fill="#F6C042">
-                          <use xlink:href="#sp-fanshop-gallery-arrows-svg"></use>
-                        </svg>
-                      </i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="sp-fanshop-gallery-inr">
-                <div class="sp-fanshop-gallery-img" style="background: url(<?php echo THEME_URI; ?>/assets/images/sp-fanshop-gallery-img-3.png);">
-                  <a href="#" class="overlay-link"></a>
-                  <div class="sp-fanshop-gallery-dsc">
-                    <img src="<?php echo THEME_URI; ?>/assets/images/sp-fanshop-gallery-icon-3.png">
-                    <h3 class="sp-fanshop-gallery-title"><a href="#">FanShop</a></h3>
-                    <p class="mHc">Leo sociis laoreet nullam malesuada pharetra enim mus suspendisse. Lectus mauris ut tortor.</p>
-                    <a href="#">
-                      <i>  
-                        <svg class="sp-fanshop-gallery-arrows-svg" width="27" height="14" viewBox="0 0 27 14" fill="#F6C042">
-                          <use xlink:href="#sp-fanshop-gallery-arrows-svg"></use>
-                        </svg>
-                      </i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="sp-fanshop-gallery-inr">
-                <div class="sp-fanshop-gallery-img" style="background: url(<?php echo THEME_URI; ?>/assets/images/sp-fanshop-gallery-img-4.png);">
-                  <a href="#" class="overlay-link"></a>
-                  <div class="sp-fanshop-gallery-dsc">
-                    <img src="<?php echo THEME_URI; ?>/assets/images/sp-fanshop-gallery-icon-4.png">
-                    <h3 class="sp-fanshop-gallery-title"><a href="#">EA-TV</a></h3>
-                    <p class="mHc">Leo sociis laoreet nullam malesuada pharetra enim mus suspendisse. Lectus mauris ut tortor.</p>
-                    <a href="#">
-                      <i>  
-                        <svg class="sp-fanshop-gallery-arrows-svg" width="27" height="14" viewBox="0 0 27 14" fill="#F6C042">
-                          <use xlink:href="#sp-fanshop-gallery-arrows-svg"></use>
-                        </svg>
-                      </i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </li>
+            <?php } $i++; endforeach; 
+            ?>
           </ul>
         </div>
       </div>
+      <?php if( $shoparray ): ?>
       <div class="col-md-12">
         <div class="sp-fanshop-gallery-btm">
           <ul class="clearfix reset-list">
+            <?php 
+            foreach( $shoparray as $shopr ): 
+              if( !empty($shopr['knop']) )
+                $rknopurl = $shopr['knop'];
+              else
+                $rknopurl = '#';
+            ?>
             <li>
               <div class="sp-fanshop-btm-gallery-item">
-                <div class="inline-bg sp-fanshop-btm-gallery-item-inr" style="background: url(<?php echo THEME_URI; ?>/assets/images/sp-fanshop-gallery-btm-fea-img-02.jpg);">
-                  <a href="#" class="overlay-link"></a>
+                <div class="inline-bg sp-fanshop-btm-gallery-item-inr" style="background: url(<?php if( !empty($shopr['afbeelding']) ) echo cbv_get_image_src($shopr['afbeelding']); ?>);">
+                  <a href="<?php echo $rknopurl; ?>" class="overlay-link"></a>
                   <div class="spfbg-item-des-cntlr">
-                    <h3><a href="#">Ladies</a></h3>
-                    <p class="mHc">Commodo est quis pulvinar at senectus congue morbi.</p>
-                    <a href="#">
+                    <?php 
+                    if( !empty( $shopr['titel'] ) ) printf( '<h3><a href="%s">%s</a></h3>', $rknopurl, $shopr['titel']); 
+                    if( !empty( $shopr['beschrijving'] ) ) printf( '<p class="mHc">%s</p>', $shopr['beschrijving']);
+                  ?>
+                    <a href="<?php echo $rknopurl; ?>">
                       <i>  
                         <svg class="sp-fanshop-gallery-arrows-svg" width="27" height="14" viewBox="0 0 27 14" fill="#F6C042">
                           <use xlink:href="#sp-fanshop-gallery-arrows-svg"></use>
@@ -508,121 +624,15 @@
                 </div>
               </div>
             </li>
-            <li>
-              <div class="sp-fanshop-btm-gallery-item">
-                <div class="inline-bg sp-fanshop-btm-gallery-item-inr" style="background: url(<?php echo THEME_URI; ?>/assets/images/sp-fanshop-gallery-btm-fea-img-02.jpg);">
-                  <a href="#" class="overlay-link"></a>
-                  <div class="spfbg-item-des-cntlr">
-                    <h3><a href="#">Jeugd</a></h3>
-                    <p class="mHc">Commodo est quis pulvinar at senectus congue morbi.</p>
-                    <a href="#">
-                      <i>  
-                        <svg class="sp-fanshop-gallery-arrows-svg" width="27" height="14" viewBox="0 0 27 14" fill="#F6C042">
-                          <use xlink:href="#sp-fanshop-gallery-arrows-svg"></use>
-                        </svg>
-                      </i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </li>
+            <?php endforeach; ?>
           </ul>
         </div>
       </div>
+      <?php endif; ?>
     </div>
   </div>
 </section>
-
-
-
-<section class="ftr-tp-brand-logo-sec-wrp">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="brand-logo-head">
-          <h2 class="brand-logo-head-title">onze partners</h2>
-        </div>
-        <div class="brand-logo-tp-wrp">
-          <ul class="clearfix reset-list">
-            <li>
-              <img src="<?php echo THEME_URI; ?>/assets/images/brand-logo-tp-1.png">
-            </li>
-            <li>
-              <img src="<?php echo THEME_URI; ?>/assets/images/brand-logo-tp-2.png">
-            </li>
-            <li>
-              <img src="<?php echo THEME_URI; ?>/assets/images/brand-logo-tp-3.png">
-            </li>
-            <li class="hide-md">
-              <img src="<?php echo THEME_URI; ?>/assets/images/brand-logo-tp-4.png">
-            </li>
-          </ul>
-          <ul class="clearfix reset-list">
-            <li class="show-md">
-              <img src="<?php echo THEME_URI; ?>/assets/images/brand-logo-tp-4.png">
-            </li>
-            <li>
-              <img src="<?php echo THEME_URI; ?>/assets/images/brand-logo-tp-5.png">
-            </li>
-            <li class="hide-md">
-              <img src="<?php echo THEME_URI; ?>/assets/images/brand-logo-tp-6.png">
-            </li>
-            <li>
-              <img src="<?php echo THEME_URI; ?>/assets/images/brand-logo-tp-7.png">
-            </li>
-            <li class="show-md">
-              <img src="<?php echo THEME_URI; ?>/assets/images/brand-logo-tp-6.png">
-            </li>
-          </ul>
-          <ul class="clearfix reset-list">
-            <li>
-              <img src="<?php echo THEME_URI; ?>/assets/images/brand-logo-btm-1.png">
-            </li>
-            <li>
-              <img src="<?php echo THEME_URI; ?>/assets/images/brand-logo-btm-2.png">
-            </li>
-            <li>
-              <img src="<?php echo THEME_URI; ?>/assets/images/brand-logo-btm-3.png">
-            </li>
-            <li>
-              <img src="<?php echo THEME_URI; ?>/assets/images/brand-logo-btm-4.png">
-            </li>
-            <li>
-              <img src="<?php echo THEME_URI; ?>/assets/images/brand-logo-btm-5.png">
-            </li>
-            <li>
-              <img src="<?php echo THEME_URI; ?>/assets/images/brand-logo-btm-6.png">
-            </li>
-          </ul>
-          <ul class="clearfix reset-list">
-            <li>
-              <img src="<?php echo THEME_URI; ?>/assets/images/brand-logo-btm-7.png">
-            </li>
-            <li>
-              <img src="<?php echo THEME_URI; ?>/assets/images/brand-logo-btm-8.png">
-            </li>
-            <li>
-              <img src="<?php echo THEME_URI; ?>/assets/images/brand-logo-btm-9.png">
-            </li>
-            <li>
-              <img src="<?php echo THEME_URI; ?>/assets/images/brand-logo-btm-10.png">
-            </li>
-            <li>
-              <img src="<?php echo THEME_URI; ?>/assets/images/brand-logo-btm-11.png">
-            </li>
-            <li>
-              <img src="<?php echo THEME_URI; ?>/assets/images/brand-logo-btm-12.png">
-            </li>
-            <li>
-              <img src="<?php echo THEME_URI; ?>/assets/images/brand-logo-btm-13.png">
-            </li>
-          </ul>
-        </div>
-        <div class="ena-xs-view-more-btn show-md">
-          <a href="#">View More</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+<?php endif; ?>
+<?php endif; ?>
+<?php get_template_part('templates/footer', 'top'); ?>
 <?php get_footer(); ?>

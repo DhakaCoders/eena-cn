@@ -1,26 +1,43 @@
 <?php get_header(); ?>
+<?php 
+  $showhide_actua = get_field('showhide_actua', HOMEID);
+  if( $showhide_actua ):
+    $actua = get_field('hactuasec', HOMEID);
+    if($actua):
+      $anieuwses = $actua['selecteernieuws'];
+?>
+<?php 
+  if( $anieuwses ){
+    $arg_anieuws = $anieuwses;
+  } else{
+    $args = array(
+      'post_type' => 'post',
+      'post_status' => 'publish',
+      'posts_per_page' => -1,
+    );
+    $arg_anieuws = get_posts( $args );
+  }
+?>
 <section class="eena-breadcrumbs-sec">
   <div class="eena-brdcrmb-left">
-    <strong>Actua</strong>
+    <?php if( !empty( $actua['dtitel'] ) ) printf( '<strong>%s</strong>', $actua['dtitel']); ?>
   </div>
     <div class="eena-breadcrumbs-sec-inr">
+      <?php if( $arg_anieuws ): ?>
       <div class="eena-brdcrmb-sliders bdcmbSlider">
+        <?php 
+          foreach( $arg_anieuws as $anieuws_row ):
+        ?>
         <div class="eena-brdcrmb-slider-item">
-          <a href="#">VRIJDAG 27 MAART <span>- Ladies gaan samenwerken met fc dames ternat...</span></a>
+          <a href="<?php echo esc_url( get_permalink($anieuws_row) ); ?>"><?php echo get_the_date( 'l j F', $anieuws_row->ID ); ?> <span>- <?php echo $anieuws_row->post_title;?>...</span></a>
         </div>
-        <div class="eena-brdcrmb-slider-item">
-          <a href="#">VRIJDAG 27 MAART <span>- Positief advies voor licentie eerste amateurliga!...</span></a>
-        </div>
-        <div class="eena-brdcrmb-slider-item">
-          <a href="#">VRIJDAG 27 MAART</a>
-        </div>
-        <div class="eena-brdcrmb-slider-item">
-          <a href="#">VRIJDAG 27 MAART <span>- Ladies gaan samenwerken met fc dames ternat...</span></a>
-        </div>
+        <?php endforeach; ?>
       </div>
+      <?php endif; ?>
     </div>
 </section>
-
+<?php endif; ?>
+<?php endif; ?>
 <section class="eena-nieuws-grid-sec">
   <div class="container">
     <div class="row">

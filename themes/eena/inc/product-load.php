@@ -74,7 +74,15 @@ function ajax_product_script_load_more() {
         </div>
       </div>
       <div class="fanshop-post-grid-dsc">
-        <strong><?php echo woocommerce_price($product->get_variation_regular_price( 'min' )); ?></strong>
+        <strong>
+          <?php 
+            if($product->is_type('variable')): 
+              echo wc_price($product->get_variation_regular_price( 'min' )); 
+            else:
+              echo $product->get_price_html();
+            endif;
+          ?>
+          </strong>
         <h3 class="fanshop-post-grid-title mHc1"> <a href="<?php the_permalink();?>"><?php the_title(); ?></a></h3>
         <a href="<?php the_permalink();?>">
           <i>  

@@ -217,11 +217,20 @@
 <?php
 if( is_blog() ){
   $thisID = get_option('page_for_posts');
+  $pageTitle = get_the_title($thisID);
+}elseif( is_shop() ){
+  $thisID = get_option('woocommerce_shop_page_id');
+  $pageTitle = get_the_title($thisID);
+}elseif(is_product()){
+  $shopID = get_option('woocommerce_shop_page_id');
+  $pageTitle = get_the_title($shopID);
+  $thisID = get_the_ID();
 }else{
   $thisID = get_the_ID();
+  $pageTitle = get_the_title($thisID);
 }
 
-$pageTitle = get_the_title($thisID);
+
 $standaardbanner = get_field('pagebanner', $thisID);
 if( empty($standaardbanner) ) $standaardbanner = THEME_URI.'/assets/images/page-bnr.jpg';
 ?>

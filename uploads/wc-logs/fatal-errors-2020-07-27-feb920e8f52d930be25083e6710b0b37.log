@@ -1,0 +1,44 @@
+2020-07-27T10:09:08+00:00 CRITICAL syntax error, unexpected 'endif' (T_ENDIF) in C:\xampp\htdocs\2020\07\eena\eena-cn\themes\eena\front-page.php on line 71
+
+2020-07-27T10:52:06+00:00 CRITICAL Uncaught Error: Call to undefined method WP_Post::post_excerpt() in C:\xampp\htdocs\2020\07\eena\eena-cn\themes\eena\front-page.php:66
+Stack trace:
+#0 C:\xampp\htdocs\2020\07\eena\wp-includes\template-loader.php(106): include()
+#1 C:\xampp\htdocs\2020\07\eena\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\2020\07\eena\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\2020\07\eena\eena-cn\themes\eena\front-page.php on line 66
+
+2020-07-27T12:14:04+00:00 CRITICAL syntax error, unexpected 'if' (T_IF) in C:\xampp\htdocs\2020\07\eena\eena-cn\themes\eena\front-page.php on line 384
+
+2020-07-27T12:53:55+00:00 CRITICAL Uncaught Error: Call to a member function get_variation_regular_price() on null in C:\xampp\htdocs\2020\07\eena\eena-cn\themes\eena\front-page.php:481
+Stack trace:
+#0 C:\xampp\htdocs\2020\07\eena\wp-includes\template-loader.php(106): include()
+#1 C:\xampp\htdocs\2020\07\eena\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\2020\07\eena\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\2020\07\eena\eena-cn\themes\eena\front-page.php on line 481
+
+2020-07-27T12:56:16+00:00 CRITICAL Uncaught Error: Call to a member function is_type() on null in C:\xampp\htdocs\2020\07\eena\eena-cn\themes\eena\front-page.php:485
+Stack trace:
+#0 C:\xampp\htdocs\2020\07\eena\wp-includes\template-loader.php(106): include()
+#1 C:\xampp\htdocs\2020\07\eena\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\2020\07\eena\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\2020\07\eena\eena-cn\themes\eena\front-page.php on line 485
+
+2020-07-27T13:36:42+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Variable::price_html() in C:\xampp\htdocs\2020\07\eena\eena-cn\themes\eena\front-page.php:489
+Stack trace:
+#0 C:\xampp\htdocs\2020\07\eena\wp-includes\template-loader.php(106): include()
+#1 C:\xampp\htdocs\2020\07\eena\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\2020\07\eena\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\2020\07\eena\eena-cn\themes\eena\front-page.php on line 489
+
+2020-07-27T13:36:55+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Variable::price_html() in C:\xampp\htdocs\2020\07\eena\eena-cn\themes\eena\front-page.php:489
+Stack trace:
+#0 C:\xampp\htdocs\2020\07\eena\wp-includes\template-loader.php(106): include()
+#1 C:\xampp\htdocs\2020\07\eena\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\2020\07\eena\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\2020\07\eena\eena-cn\themes\eena\front-page.php on line 489
+

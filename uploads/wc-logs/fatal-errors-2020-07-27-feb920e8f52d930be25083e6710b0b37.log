@@ -42,3 +42,5 @@ Stack trace:
 #3 {main}
   thrown in C:\xampp\htdocs\2020\07\eena\eena-cn\themes\eena\front-page.php on line 489
 
+2020-07-27T17:32:35+00:00 CRITICAL syntax error, unexpected ';', expecting ',' or ')' in C:\xampp\htdocs\2020\07\eena\eena-cn\themes\eena\header.php on line 203
+

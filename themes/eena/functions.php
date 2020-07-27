@@ -79,6 +79,7 @@ include_once(THEME_DIR .'/inc/cbv-functions.php');
 include_once(THEME_DIR .'/inc/posts-load.php');
 include_once(THEME_DIR .'/inc/history-load.php');
 include_once(THEME_DIR .'/inc/product-load.php');
+include_once(THEME_DIR .'/inc/wc-functions.php');
 /**
 ACF Option pages->>
 */

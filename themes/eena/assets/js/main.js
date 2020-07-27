@@ -394,18 +394,31 @@ if( $('.hmNewsSecSlider').length ){
 
 /*End of Rannojit*/
 if( $('.mainSlider').length ){
+    $('.mainSlider').on('init', function(event, slick, currentSlide, nextSlide){
+      cs = slick.currentSlide;
+    });
     $('.mainSlider').slick({
-      dots: false,
-      infinite: false,
-      autoplay: false,
-      autoplaySpeed: 700,
-      speed: 300,
+      dots: true,
+      infinite: true,
+      autoplay: true,
+      autoplaySpeed: 4000,
+      speed: 900,
       fade: true,
       slidesToShow: 1,
       slidesToScroll: 1, 
+      dotsClass: 'main-slider-custom-pagi',
       prevArrow: $('.home-banner-cntlr .fl-prev'),
       nextArrow: $('.home-banner-cntlr .fl-next'),
+      customPaging: function(slick,index) {
+          return '<span></span>';
+      }
     });
+    $('.mainSlider').on("beforeChange", function(event, slick, currentSlide, nextSlide){
+      cs = slick.currentSlide;
+      $('.mainSlideItemDesSlider .mainSlideItemDes').removeClass('itemDesActive');
+      $('.mainSlideItemDesSlider .mainSlideItemDes[data-slide="'+nextSlide+'"]').addClass('itemDesActive');
+    });
+    $('.main-slider-custom-pagi').appendTo('.cm-custom-dots');
 }
 
 if( $('.hmWebshopSlider').length ){

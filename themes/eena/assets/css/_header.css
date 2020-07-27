@@ -445,6 +445,60 @@ nav.main-nav > ul > li.menu-item-has-children > ul.sub-menu > li.menu-item-has-c
 	z-index: 20;
 	color: #fff;
 }
+.mainSlideItemDesSlider .mainSlideItemDes{
+	position: absolute;
+	z-index: -9;
+	opacity: 0;
+	visibility: hidden;
+}
+.mainSlideItemDesSlider .mainSlideItemDes.itemDesActive{
+	position: relative;
+	z-index: 3;
+	opacity: 1;
+	visibility: visible;
+}
+
+.mainSlideItemDesSlider .mainSlideItemDes.itemDesActive .post-date{
+  -webkit-animation-name: fadeInUpShort;
+  animation-name: fadeInUpShort;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;	
+  -webkit-animation-delay: 0.7s;
+  animation-delay: 0.7s;
+}
+.mainSlideItemDesSlider .mainSlideItemDes.itemDesActive .msdtitle{
+  -webkit-animation-name: fadeInUpShort;
+  animation-name: fadeInUpShort;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;	
+  -webkit-animation-delay: 1.2s;
+  animation-delay: 1.2s;	
+}
+.mainSlideItemDesSlider .mainSlideItemDes.itemDesActive p{
+  -webkit-animation-name: fadeInUpShort;
+  animation-name: fadeInUpShort;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;	
+  -webkit-animation-delay: 1.6s;
+  animation-delay: 1.6s;	
+}
+.mainSlideItemDesSlider .mainSlideItemDes.itemDesActive a{
+  -webkit-animation-name: fadeInUpShort;
+  animation-name: fadeInUpShort;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;	
+  -webkit-animation-delay: 1.9s;
+  animation-delay: 1.9s;	
+}
+
 .mainSlideItemDesInner{
 	max-width: 726px;
 	width: 100%;
@@ -533,12 +587,21 @@ nav.main-nav > ul > li.menu-item-has-children > ul.sub-menu > li.menu-item-has-c
 	right: 0;
 }
 ul.main-slider-custom-pagi{
+	padding: 0;
 	padding-top: 7px;
+	margin: 0;
+	list-style: none;
 }
 ul.main-slider-custom-pagi li{
 	display: inline-block;
 	vertical-align: baseline;
 	padding: 2px;
+	list-style: none;
+	margin: 0;
+}
+ul.main-slider-custom-pagi li:after,
+ul.main-slider-custom-pagi li:before{
+	display: none;
 }
 ul.main-slider-custom-pagi li span{
 	width: 12px;
@@ -547,7 +610,7 @@ ul.main-slider-custom-pagi li span{
 	border-radius: 100% 100%;
 	display: block;
 }
-ul.main-slider-custom-pagi li.cm-pgi-active span{
+ul.main-slider-custom-pagi li.slick-active span{
 	background: #F6C042;
 }
 

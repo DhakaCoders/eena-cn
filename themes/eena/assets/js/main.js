@@ -557,8 +557,20 @@ $(window).on('resize', function(){
   headerObjects();
 });
 
-
-
+/*if( $('.postSlider').length ){
+    $('.postSlider').slick({
+      dots: false,
+      infinite: false,
+      autoplay: false,
+      autoplaySpeed: 2000,
+      speed: 300,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      slidesPerRow: 3,
+      rows: 2,
+    });
+}
+*/
 /*$('.entry-header-tab > ul > li a').on('click', function(){
     $(this).addClass('active');
     $(this).parent().siblings().find('a').removeClass('active');
@@ -604,5 +616,7 @@ $("#postloadMore").on('click', function(e) {
         },
     });
 });
+
+
 
 })(jQuery);

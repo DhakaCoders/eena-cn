@@ -3,21 +3,21 @@
 	padding-bottom: 45px;
 }
 
-.player-targer{
+.player-1{
 	float: left;
 	width:  18.1481%;
 }
-.player-defender{
+.player-2{
 	float: left;
 	width: 29.2592%;
 	padding-right: 50px;
 }
-.player-mid{
+.player-3{
 	float: left;
 	width: 29.2592%;
 	padding-right: 40px;
 }
-.player-attact{
+.player-4{
 	float: left;
 	width: 23.3333%;
 }
@@ -25,7 +25,7 @@
 .pt-title,
 .pd-title,
 .pmid-title,
-.player-attact{
+.player-4{
 	display: block;
 	font-size: 20px;
 	line-height: 1;
@@ -36,7 +36,7 @@
 }
 
 
-.player-targer ul li,
+.player-1 ul li,
 .pd-list-ctlr ul li,
 .pmid-list-ctlr ul li,
 .pa-list-ctlr ul li{
@@ -48,10 +48,14 @@
 	float: left;
 	width: 50%;
 }
-.pd-list-ctlr ul li.active a{
+.pd-list-ctlr ul li.active a,
+.player-az ul li.active a{
 	color: #F6C042
 }
-.player-targer ul li a,
+.player-1 ul li a,
+.player-2 ul li a,
+.player-3 ul li a,
+.player-4 ul li a,
 .pd-list-ctlr ul li a,
 .pmid-list-ctlr ul li a,
 .pa-list-ctlr ul li a{
@@ -63,7 +67,7 @@
 	-webkit-transition: all 0.5s;
 	-ms-transition: all 0.5s;
 }
-.player-targer ul li a:hover,
+.player-1 ul li a:hover,
 .pd-list-ctlr ul li a:hover,
 .pmid-list-ctlr ul li a:hover,
 .pa-list-ctlr ul li a:hover{
@@ -291,10 +295,10 @@
 }
 
 @media(max-width: 1299px){
-	.player-defender {
+	.player-2 {
 	    padding-right: 35px;
 	}
-	.player-mid {
+	.player-3 {
 	    padding-right: 25px;
 	}
 	.player-des {
@@ -306,24 +310,24 @@
 	.player-category-sec {
 	    padding-bottom: 35px;
 	}
-	.player-targer {
+	.player-1 {
 	    width: 20%;
 	}
-	.player-defender {
+	.player-2 {
 	    padding-right: 0px;
 	    width: 25%;
 	}
-	.player-mid {
+	.player-3 {
 	    padding-right: 0px;
 	    width: 30%;
 	}
-	.player-attact {
+	.player-4 {
 	    width: 25%;
 	}
 	.pt-title, 
 	.pd-title, 
 	.pmid-title, 
-	.player-attact {
+	.player-4 {
 	    font-size: 18px;
 	    margin-bottom: 15px;
 	}

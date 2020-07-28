@@ -2,3 +2,7 @@
 
 2020-07-28T12:38:50+00:00 CRITICAL syntax error, unexpected '}' in C:\xampp\htdocs\2020\07\eena\eena-cn\themes\eena\single.php on line 260
 
+2020-07-28T16:45:52+00:00 CRITICAL Cannot redeclare getDate() in C:\xampp\htdocs\2020\07\eena\eena-cn\themes\eena\inc\cbv-functions.php on line 164
+
+2020-07-28T19:24:40+00:00 CRITICAL syntax error, unexpected 'endif' (T_ENDIF) in C:\xampp\htdocs\2020\07\eena\eena-cn\themes\eena\page-team.php on line 105
+

@@ -86,6 +86,8 @@
   </svg>
 <?php 
   $logoObj = get_field('hdlogo', 'options');
+  $logotitel = get_field('logotitel', 'options');
+  $logosubtitel = get_field('logosubtitel', 'options');
   if( is_array($logoObj) ){
     $logo_tag = '<img src="'.$logoObj['url'].'" alt="'.$logoObj['alt'].'" title="'.$logoObj['title'].'">';
   }else{
@@ -102,8 +104,10 @@
   </a>
   <a href="<?php echo esc_url(home_url('/')); ?>">
     <div class="logo-txt hide-sm">
-      <strong> EENDRACHT-AALST</strong>
-      <span>OFFICIELE WEBSITE SC EENDRACHT AALST </span>
+      <?php
+        if( !empty($logotitel) ) printf( '<strong> %s</strong>', $logotitel );
+        if( !empty($logosubtitel) ) printf( '<span> %s</span>', $logosubtitel );
+      ?>
     </div>
   </a>
 </div>

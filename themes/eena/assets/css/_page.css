@@ -65,3 +65,6 @@
 	background-size: 100% auto!important;
 	background-repeat: no-repeat!important;
 }
+.page-404.text-center {
+    padding: 120px 0;
+}

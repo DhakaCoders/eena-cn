@@ -42,8 +42,8 @@
         <div class="eena-mr-competition-report-sec-inr">
           <div class="mdetails-tabs history-entry-hdr-tab">
             <ul class="reset-list fl-tabs clearfix">
-                <li><a class="tab-link" data-tab="mdetails-tab-1" href="#">VERSLAG</a></li>
-                <li><a class="active tab-link current" data-tab="mdetails-tab-2"  href="#">VOORAF</a></li>
+                <li><a class="tab-link current" data-tab="mdetails-tab-1" href="#">VERSLAG</a></li>
+                <li><a class="tab-link" data-tab="mdetails-tab-2"  href="#">VOORAF</a></li>
                 <li><a class="tab-link" data-tab="mdetails-tab-3" href="#">Fases</a></li>
                 <li><a class="tab-link" data-tab="mdetails-tab-4" href="#">Video</a></li>
                 <li><a class="tab-link" data-tab="mdetails-tab-5" href="#">FOTOSPECIAL</a></li>

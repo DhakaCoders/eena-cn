@@ -595,8 +595,8 @@ $(window).on('resize', function(){
       slidesPerRow: 3,
       rows: 2,
     });
-}
-*/
+}*/
+
 /*$('.entry-header-tab > ul > li a').on('click', function(){
     $(this).addClass('active');
     $(this).parent().siblings().find('a').removeClass('active');

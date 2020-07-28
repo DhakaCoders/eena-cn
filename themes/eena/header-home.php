@@ -99,10 +99,12 @@
   <a href="<?php echo esc_url(home_url('/')); ?>">
     <?php echo $logo_tag; ?>
   </a>
-  <div class="logo-txt hide-sm">
-    <strong> EENDRACHT-AALST</strong>
-    <span>OFFICIELE WEBSITE SC EENDRACHT AALST </span>
-  </div>
+  <a href="<?php echo esc_url(home_url('/')); ?>">
+    <div class="logo-txt hide-sm">
+      <strong> EENDRACHT-AALST</strong>
+      <span>OFFICIELE WEBSITE SC EENDRACHT AALST </span>
+    </div>
+  </a>
 </div>
 <div class="sm-humberger-cntlr show-sm">
   <div class="hdr-cart-btn">
@@ -222,10 +224,6 @@
         </i>
       </span>
       <div class="cm-custom-dots"></div>
-<!--       <ul class="reset-list main-slider-custom-pagi">
-        <li class="cm-pgi-active" data-slide="0"><span></span></li>
-        <li data-slide="1"><span></span></li>
-      </ul> -->
       <span class="fl-next">
         <i>
           <svg class="fl-next-icon-svg" width="34" height="16" viewBox="0 0 34 16" fill="#C8C8C8">

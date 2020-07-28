@@ -603,6 +603,12 @@ $(window).on('resize', function(){
   
 });*/
 
+
+$(".fanshop-catagory-menu ul li, .eena-mr-cr-link ul li").on('click', function(e) {
+  e.preventDefault();
+    $(this).addClass('active').siblings().removeClass('active');
+  
+});
 $("#postloadMore").on('click', function(e) {
     e.preventDefault();
     var postSTR = '';

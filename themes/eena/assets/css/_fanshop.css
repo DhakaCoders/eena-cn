@@ -53,7 +53,9 @@ fanshop-catagory-sec-wrp
 	text-align: center;
 }
 .fanshop-catagory-menu ul li a:hover,
-.fanshop-catagory-menu ul li a.active{
+.fanshop-catagory-menu ul li a.active,
+.fanshop-catagory-menu ul li.active a,
+.eena-mr-cr-link ul li.active a{
 	background: #fed056;
 	color: #2B2B2B;
 }

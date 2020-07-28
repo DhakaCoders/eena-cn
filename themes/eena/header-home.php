@@ -195,14 +195,23 @@
   </div>
 </header>
 
+<?php
+  $hslides = get_field('slidersec', HOMEID);
+  if($hslides):
+?>
 <section class="home-banner-cntlr">
   <div class="main-slider mainSlider">
+    <?php 
+    $slidesrc = '';
+    foreach( $hslides as $hslide ):
+      if( !empty($hslide['afbeelding']) ){
+        $slidesrc = cbv_get_image_src($hslide['afbeelding'], 'homeslide');
+      } 
+    ?>
     <div class="mainSlideItem">
-      <div class="mainSlideImg inline-bg" style="background: url('<?php echo THEME_URI; ?>/assets/images/mainSlideImg-01.jpg');"></div>
+      <div class="mainSlideImg inline-bg" style="background: url('<?php echo $slidesrc; ?>');"></div>
     </div>
-    <div class="mainSlideItem">
-      <div class="mainSlideImg inline-bg" style="background: url('<?php echo THEME_URI; ?>/assets/images/mainSlideImg-01.jpg');"></div>
-    </div>
+    <?php endforeach; ?>
   </div>
 
   <div class="main-slider-item-cntlr clearfix">
@@ -231,27 +240,36 @@
       <div class="row">
         <div class="col-md-12">
           <div class="mainSlideItemDesSlider">
-            <div class="mainSlideItemDes itemDesActive" data-slide="0">
+            <?php 
+            $i = 0;
+            foreach( $hslides as $hslide ):
+            ?>
+            <div class="mainSlideItemDes<?php echo ($i==1)? ' itemDesActive':'';?>" data-slide="<?php echo $i; ?>">
                 <div class="mainSlideItemDesInner clearfix">
-                  <span class="post-date">VRIJDAG 27 MAART - 14U05 1</span>
-                  <strong class="msdtitle">POSITIEF ADVIES VOOR LICENTIE EERSTE AMATEURLIGA</strong>
-                  <p>In deze barre tijden voor iedereen willen we jullie ook graag wat positief nieuws meegeven. Onze club kreeg zonet het bericht binnen</p>
-                  <a href="#">LEES MEEr</a>
+                  <?php 
+                    if( !empty($hslide['datum']) ) {
+                      //date_default_timezone_set('asia/kolkata');
+                      $datatime = date('l j F - g:i A', strtotime($hslide['datum']));
+                      echo '<span class="post-date">'.$datatime.'</span>';
+                    }
+                  ?>
+                  <?php 
+                  if( !empty($hslide['titel']) ) printf('<strong class="msdtitle">%s</strong>', $hslide['titel']);
+                  if( !empty($hslide['beschrijving']) ) echo wpautop( $hslide['beschrijving'] );
+                  $knop = $hslide['knop'];
+                  if( is_array( $knop ) &&  !empty( $knop['url'] ) ){
+                      printf('<a href="%s" target="%s">%s</a>', $knop['url'], $knop['target'], $knop['title']); 
+                  } 
+                  ?>
                 </div>
             </div>
-            <div class="mainSlideItemDes" data-slide="1">
-                <div class="mainSlideItemDesInner clearfix">
-                  <span class="post-date">VRIJDAG 27 MAART - 14U05 2</span>
-                  <strong class="msdtitle">POSITIEF ADVIES VOOR LICENTIE EERSTE AMATEURLIGA</strong>
-                  <p>In deze barre tijden voor iedereen willen we jullie ook graag wat positief nieuws meegeven. Onze club kreeg zonet het bericht binnen</p>
-                  <a href="#">LEES MEEr</a>
-                </div>
-            </div>
+            <?php $i++; endforeach; ?>
           </div>
         </div>
       </div>
     </div>
   </div>
+<?php endif; ?>
 
   <div class="main-nav-cntlr main-nav-cntlr-sm">
     <nav class="main-nav">

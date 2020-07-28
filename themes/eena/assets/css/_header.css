@@ -1002,6 +1002,12 @@ ul.main-slider-custom-pagi li.slick-active span{
 }
 
 @media(max-width: 991px){
+	ul.hdr-topbar-nav{
+		display: none;
+	}
+	.xs-popupmenu-2 ul.hdr-topbar-nav{
+		display: block;
+	}
 	.page-title{
 		font-size: 43px;
 	}

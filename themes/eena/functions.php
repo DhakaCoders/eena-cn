@@ -23,7 +23,7 @@ if( !function_exists('cbv_theme_setup') ){
 			add_theme_support('category-thumbnails');
 		}
         add_image_size( 'contimg', 422, 680, true );
-
+        add_image_size( 'homeslide', 1464, 900, true );
 
 		
 		// add size to media uploader

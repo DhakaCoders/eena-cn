@@ -215,23 +215,41 @@ the_post();
               <li><a href="#"><i class="fab fa-twitter"></i></a></li>
             </ul>
           </div>
+
           <div class="prv-nxt-page-btns clearfix">
-            <a class="prv-page-btn" href="#">
-              <i>
-                <svg class="prv-nxt-lft-arrow-icon-svg" width="30" height="30" viewBox="0 0 30 30" fill="#111111">
-                  <use xlink:href="#prv-nxt-lft-arrow-icon-svg"></use>
-                </svg> 
-              </i>
-              <span>vorig artikel</span>
-            </a>
-            <a class="nxt-page-btn" href="#">
-              <span>volgend artikel</span>
-              <i>
-                <svg class="prv-nxt-rgt-arrow-icon-svg" width="30" height="30" viewBox="0 0 30 30" fill="#111111">
-                  <use xlink:href="#prv-nxt-rgt-arrow-icon-svg"></use>
-                </svg> 
-              </i>
-            </a>
+<?php
+$pagelist = get_posts('post_type=post&sort_column=menu_order&sort_order=asc');
+$pages = array();
+foreach ($pagelist as $page) {
+$pages[] += $page->ID;
+}
+
+$current = array_search(get_the_ID(), $pages);
+$prevID = $pages[$current-1];
+$nextID = $pages[$current+1];
+?>
+
+<?php if (!empty($prevID)) { ?>
+<a class="prv-page-btn" href="<?php echo get_permalink($prevID); ?>"
+title="<?php echo get_the_title($prevID); ?>">
+<i>
+  <svg class="prv-nxt-lft-arrow-icon-svg" width="30" height="30" viewBox="0 0 30 30" fill="#111111">
+    <use xlink:href="#prv-nxt-lft-arrow-icon-svg"></use>
+  </svg> 
+</i><span>vorig artikel</span>
+</a>
+<?php }
+if (!empty($nextID)) { ?>
+<a class="nxt-page-btn" href="<?php echo get_permalink($nextID); ?>"
+title="<?php echo get_the_title($nextID); ?>">
+<span>volgend artikel</span>
+<i>
+  <svg class="prv-nxt-rgt-arrow-icon-svg" width="30" height="30" viewBox="0 0 30 30" fill="#111111">
+    <use xlink:href="#prv-nxt-rgt-arrow-icon-svg"></use>
+  </svg> 
+</i>
+</a>
+<?php } ?>
           </div>
         </article>
 

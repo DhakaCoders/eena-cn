@@ -38,7 +38,7 @@ fanshop-catagory-sec-wrp
     font-size: 12px;
     line-height: 14px;
     font-weight: 800;
-    padding: 0 8px;
+    padding: 0 8px 10px;
     width: 25%;
 }
 .fanshop-catagory-menu ul li a{
@@ -48,7 +48,9 @@ fanshop-catagory-sec-wrp
 	color: #fff;
 	text-transform: uppercase;
 	background: #111111;
-	padding: 22px 55px;
+	padding: 22px 10px;
+	display: block;
+	text-align: center;
 }
 .fanshop-catagory-menu ul li a:hover,
 .fanshop-catagory-menu ul li a.active{
@@ -530,6 +532,8 @@ ul.pgajax li a.current{
   height: 100%;
   text-align:center;
   color:#2B2B2B;
+  position: absolute;
+  z-index: 1;
 }         
 .pro-counter .qty input[type=number]::-webkit-inner-spin-button, 
 .pro-counter .qty input[type=number]::-webkit-outer-spin-button { 
@@ -663,6 +667,10 @@ fanshop-v1-post-sec-wrp
 .woocommerce-page div.product .single-product-view div.images {
     float: none !important;
     width: 100% !important;
+}
+
+.woocommerce .sp-d2-frm-field input[type="text"]{
+	border-color: #fff!important;
 }
 /*
 -----------------

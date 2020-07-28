@@ -286,6 +286,27 @@ body.woocommerce-order-received h2.woocommerce-column__title {
 .woo-variation-swatches .variable-items-wrapper .variable-item span{
 	text-decoration: none!important;
 }
+.woo-variation-swatches.wvs-style-squared .variable-items-wrapper .variable-item,
+.woo-variation-swatches.wvs-style-squared .variable-items-wrapper .variable-item{
+	border-radius: 0!important;
+	border: none!important;
+	background: #fff!important;
+	color: #000!important;
+	box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05)!important;
+}
+.woo-variation-swatches.wvs-style-squared .variable-items-wrapper .variable-item.button-variable-item .variable-item-span{
+	color: #000;
+}
+.variable-items-wrapper [data-wvstooltip]:before{
+	content: none!important;
+}
+.woo-variation-swatches.wvs-style-squared .variable-items-wrapper .variable-item.button-variable-item.selected{
+	background: #F6C042!important;
+	color: #fff!important;
+}
+.woo-variation-swatches.wvs-style-squared .variable-items-wrapper .variable-item.button-variable-item.selected .variable-item-span{
+	color: #fff!important;
+}
 @media(max-width: 1199px){
 	body.woocommerce-order-received .woocommerce ul.order_details{
 		padding-left: 15px;

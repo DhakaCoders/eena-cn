@@ -218,7 +218,7 @@ the_post();
 
           <div class="prv-nxt-page-btns clearfix">
 <?php
-$pagelist = get_posts('sort_column=menu_order&sort_order=asc');
+$pagelist = get_posts('post_type=post&sort_column=menu_order&sort_order=asc');
 $pages = array();
 foreach ($pagelist as $page) {
 $pages[] += $page->ID;

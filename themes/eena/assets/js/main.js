@@ -621,6 +621,7 @@ $("#postloadMore").on('click', function(e) {
         },
         beforeSend: function ( xhr ) {
             $('#ajxaloader').show();
+            $('#post-content').addClass('loading-now');
              
         },
         
@@ -631,8 +632,10 @@ $("#postloadMore").on('click', function(e) {
                 //$('.post-load-more-btn').prepend('<div class="clearfix"></div><div class="text-center"><p>Geen producten meer om te laden.</p></div>');
                 $('.post-load-more-btn').hide();
                 $('#ajxaloader').hide();
+                $('#post-content').removeClass('loading-now');
             } else {
                 $('#ajxaloader').hide();
+                $('#post-content').removeClass('loading-now');
                 that.data('page', newPage);
                 $('#post-content').append(response.substr(response.length-1, 1) === '0'? response.substr(0, response.length-1) : response);
             }
@@ -643,6 +646,15 @@ $("#postloadMore").on('click', function(e) {
     });
 });
 
+//.eena-page-wrap, .pgajax
 
+$('body').on('click', '.pgajax li a', function(e){
+  e.preventDefault();
+  page = $(this).attr('data-page');
+  $('.eena-page-wrap .eena-pagination-page').hide();
+  $('.eena-page-wrap .eena-pagination-page[data-page="'+page+'"]').show();
+  $('.pgajax li a').removeClass('current');
+  $(this).addClass('current');
+});
 
 })(jQuery);

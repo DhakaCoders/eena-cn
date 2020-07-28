@@ -5,12 +5,12 @@ the_post();
 
 ?>
 <section class="innerpage-con-wrap">
-  <?php if(have_rows('inhoud')){  ?>
   <div class="container-sm">
     <div class="row">
       <div class="col-sm-12">
         <article class="default-page-con">
           <?php 
+            if(have_rows('inhoud')){ 
             while ( have_rows('inhoud') ) : the_row(); 
           if( get_row_layout() == 'introductietekst' ){
               $title = get_sub_field('titel');
@@ -30,10 +30,12 @@ the_post();
               $fc_afbeelding = get_sub_field('fc_afbeelding');
               $imgsrc = cbv_get_image_src($fc_afbeelding, 'dfpageg1');
               $fc_tekst = get_sub_field('fc_tekst');
+              $fc_title = get_sub_field('fctitel');
               $positie_afbeelding = get_sub_field('positie_afbeelding');
               $imgposcls = ( $positie_afbeelding == 'right' ) ? 'fl-dft-rgtimg-lftdes' : '';
-              echo '<div class="fl-dft-overflow-controller">
-                <div class="fl-dft-lftimg-rgtdes clearfix '.$imgposcls.'">';
+              echo '<div class="fl-dft-overflow-controller">';
+                if(!empty($fc_title)) printf('<h2>%s</h2>', $fc_title);
+                echo '<div class="fl-dft-lftimg-rgtdes clearfix '.$imgposcls.'">';
                       echo '<div class="fl-dft-lftimg-rgtdes-lft mHc" style="background: url('.$imgsrc.');"></div>';
                 echo '<div class="fl-dft-lftimg-rgtdes-rgt mHc">';
                     echo wpautop($fc_tekst);
@@ -177,6 +179,22 @@ the_post();
             }elseif( get_row_layout() == 'table' ){
               $fc_table = get_sub_field('fc_table');
               cbv_table($fc_table);
+            }elseif( get_row_layout() == 'lists' ){
+              $fc_lists = get_sub_field('fc_lists');
+              if( $fc_lists ):
+              echo'<div class="dfp-text-module clearfix list-module">';
+                echo'<div class="list-module-cntlr">';
+                  echo'<ul class="reset-list">';
+                  foreach( $fc_lists as $fc_list ):
+                    echo '<li><div>';
+                    if( !empty( $fc_list['titel'] ) ) printf( '<strong>%s</strong>', $fc_list['titel']); 
+                    if( !empty( $fc_list['beschrijving'] ) ) printf( '<span>%s</span>', $fc_list['beschrijving']); 
+                    echo '</div></li>';
+                  endforeach;
+                  echo'</ul>';
+                echo'</div>';
+              echo'</div>';
+              endif;
             }elseif( get_row_layout() == 'horizontal_rule' ){
               $fc_horizontal_rule = get_sub_field('fc_horizontal_rule');
               echo '<div class="dft-2grd-img-content-separetor" style="height:'.$fc_horizontal_rule.'px"></div>';
@@ -195,27 +213,21 @@ the_post();
             }
           
            endwhile;
-          ?>
+         } else{
+            echo '<div class="default-page-con">';
+              the_content();
+            echo '</div>';
+           }
+        ?>
         </article>
 
       </div>
     </div>
   </div>
-<?php }else{ ?>
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12">
-                <div class="default-page-con">
-                <?php the_content(); ?>
-                </div>
-            </div>
-        </div>
-    </div>
-<?php } ?>
 </section>
 <?php 
-
 endwhile;
+get_template_part('templates/footer', 'top'); 
 get_footer(); 
 
 ?>

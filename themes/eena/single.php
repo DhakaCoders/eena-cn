@@ -2,10 +2,10 @@
 get_header(); 
 while ( have_posts() ) :
 the_post();
-
+$permalink = get_the_permalink();
 ?>
 <section class="innerpage-con-wrap">
-  <?php if(have_rows('inhoud')){  ?>
+  
   <div class="container-sm">
     <div class="row">
       <div class="col-sm-12">
@@ -18,14 +18,15 @@ the_post();
             <div class="social-media">
               <strong>DELEN:</strong>
               <ul class="reset-list">
-                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo $permalink; ?>"><i class="fab fa-facebook-f"></i></a></li>
+              <li><a href="https://twitter.com/home?status=<?php echo $permalink; ?>"><i class="fab fa-twitter"></i></a></li>
               </ul>
             </div>
           </div>
           <?php 
-            while ( have_rows('inhoud') ) : the_row(); 
-          if( get_row_layout() == 'introductietekst' ){
+            if(have_rows('inhoud')){
+            while ( have_rows('inhoud') ) { the_row(); 
+            if( get_row_layout() == 'introductietekst' ){
               $title = get_sub_field('titel');
               $afbeelding = get_sub_field('afbeelding');
               echo '<div class="dfp-promo-module clearfix">';
@@ -34,7 +35,7 @@ the_post();
                   echo '<div class="dfp-plate-one-img-bx">', cbv_get_image_tag($afbeelding), '</div>';
                 }
               echo '</div>';    
-          }elseif( get_row_layout() == 'teksteditor' ){
+            }elseif( get_row_layout() == 'teksteditor' ){
               $beschrijving = get_sub_field('fc_teksteditor');
               echo '<div class="dfp-text-module clearfix">';
                 if( !empty( $beschrijving ) ) echo wpautop($beschrijving);
@@ -190,6 +191,22 @@ the_post();
             }elseif( get_row_layout() == 'table' ){
               $fc_table = get_sub_field('fc_table');
               cbv_table($fc_table);
+            }elseif( get_row_layout() == 'lists' ){
+              $fc_lists = get_sub_field('fc_lists');
+              if( $fc_lists ):
+              echo'<div class="dfp-text-module clearfix list-module">';
+                echo'<div class="list-module-cntlr">';
+                  echo'<ul class="reset-list">';
+                  foreach( $fc_lists as $fc_list ):
+                    echo '<li><div>';
+                    if( !empty( $fc_list['titel'] ) ) printf( '<strong>%s</strong>', $fc_list['titel']); 
+                    if( !empty( $fc_list['beschrijving'] ) ) printf( '<span>%s</span>', $fc_list['beschrijving']); 
+                    echo '</div></li>';
+                  endforeach;
+                  echo'</ul>';
+                echo'</div>';
+              echo'</div>';
+              endif;
             }elseif( get_row_layout() == 'horizontal_rule' ){
               $fc_horizontal_rule = get_sub_field('fc_horizontal_rule');
               echo '<div class="dft-2grd-img-content-separetor" style="height:'.$fc_horizontal_rule.'px"></div>';
@@ -207,66 +224,56 @@ the_post();
              printf('<div class="gap clearfix" data-value="20" data-md="20" data-sm="20" data-xs="10" data-xxs="10"></div>', $rheight);
             }
           
-           endwhile;?>
+           }
+           
+           }else{
+            echo '<div class="default-page-con">';
+              the_content();
+            echo '</div>';
+           }
+           ?>
           <div class="social-media">
             <strong>DELEN:</strong>
             <ul class="reset-list">
-              <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-              <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+              <li><a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo $permalink; ?>"><i class="fab fa-facebook-f"></i></a></li>
+              <li><a href="https://twitter.com/home?status=<?php echo $permalink; ?>"><i class="fab fa-twitter"></i></a></li>
             </ul>
           </div>
 
           <div class="prv-nxt-page-btns clearfix">
-<?php
-$pagelist = get_posts('post_type=post&sort_column=menu_order&sort_order=asc');
-$pages = array();
-foreach ($pagelist as $page) {
-$pages[] += $page->ID;
-}
+          <?php
+            $prevID = get_previous_post();
+            $nextID = get_next_post();
+          ?>
 
-$current = array_search(get_the_ID(), $pages);
-$prevID = $pages[$current-1];
-$nextID = $pages[$current+1];
-?>
-
-<?php if (!empty($prevID)) { ?>
-<a class="prv-page-btn" href="<?php echo get_permalink($prevID); ?>"
-title="<?php echo get_the_title($prevID); ?>">
-<i>
-  <svg class="prv-nxt-lft-arrow-icon-svg" width="30" height="30" viewBox="0 0 30 30" fill="#111111">
-    <use xlink:href="#prv-nxt-lft-arrow-icon-svg"></use>
-  </svg> 
-</i><span>vorig artikel</span>
-</a>
-<?php }
-if (!empty($nextID)) { ?>
-<a class="nxt-page-btn" href="<?php echo get_permalink($nextID); ?>"
-title="<?php echo get_the_title($nextID); ?>">
-<span>volgend artikel</span>
-<i>
-  <svg class="prv-nxt-rgt-arrow-icon-svg" width="30" height="30" viewBox="0 0 30 30" fill="#111111">
-    <use xlink:href="#prv-nxt-rgt-arrow-icon-svg"></use>
-  </svg> 
-</i>
-</a>
-<?php } ?>
+          <?php if (!empty($prevID)) { ?>
+          <a class="prv-page-btn" href="<?php echo get_permalink($prevID); ?>"
+          title="<?php echo get_the_title($prevID); ?>">
+          <i>
+            <svg class="prv-nxt-lft-arrow-icon-svg" width="30" height="30" viewBox="0 0 30 30" fill="#111111">
+              <use xlink:href="#prv-nxt-lft-arrow-icon-svg"></use>
+            </svg> 
+          </i><span>vorig artikel</span>
+          </a>
+          <?php }
+          if (!empty($nextID)) { ?>
+          <a class="nxt-page-btn" href="<?php echo get_permalink($nextID); ?>"
+          title="<?php echo get_the_title($nextID); ?>">
+          <span>volgend artikel</span>
+          <i>
+            <svg class="prv-nxt-rgt-arrow-icon-svg" width="30" height="30" viewBox="0 0 30 30" fill="#111111">
+              <use xlink:href="#prv-nxt-rgt-arrow-icon-svg"></use>
+            </svg> 
+          </i>
+          </a>
+          <?php } ?>
+          
           </div>
         </article>
 
       </div>
     </div>
   </div>
-<?php }else{ ?>
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12">
-                <div class="default-page-con">
-                <?php the_content(); ?>
-                </div>
-            </div>
-        </div>
-    </div>
-<?php } ?>
 </section>
 <?php endwhile; ?>
 <?php get_template_part('templates/footer', 'top'); ?>

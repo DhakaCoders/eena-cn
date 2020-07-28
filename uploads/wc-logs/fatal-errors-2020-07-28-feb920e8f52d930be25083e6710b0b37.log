@@ -1,0 +1,4 @@
+2020-07-28T12:22:04+00:00 CRITICAL Object of class WP_Post could not be converted to string in C:\xampp\htdocs\2020\07\eena\eena-cn\themes\eena\single.php on line 261
+
+2020-07-28T12:38:50+00:00 CRITICAL syntax error, unexpected '}' in C:\xampp\htdocs\2020\07\eena\eena-cn\themes\eena\single.php on line 260
+

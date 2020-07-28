@@ -1,6 +1,6 @@
 <?php 
 	/*
-	Template Name: Match
+	Template Name: Match Details
 	*/
 	get_header(); 
 	$thisID = get_the_ID();

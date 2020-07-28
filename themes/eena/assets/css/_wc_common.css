@@ -307,6 +307,16 @@ body.woocommerce-order-received h2.woocommerce-column__title {
 .woo-variation-swatches.wvs-style-squared .variable-items-wrapper .variable-item.button-variable-item.selected .variable-item-span{
 	color: #fff!important;
 }
+.product-thumb{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0 -10px;
+}
+.product-thumb > div{
+	width: 33.3333%;
+	padding: 10px;
+}
 @media(max-width: 1199px){
 	body.woocommerce-order-received .woocommerce ul.order_details{
 		padding-left: 15px;

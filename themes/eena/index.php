@@ -20,9 +20,10 @@
 ?>
 <section class="eena-breadcrumbs-sec">
   <div class="eena-brdcrmb-left">
-    <?php if( !empty( $actua['dtitel'] ) ) printf( '<strong>%s</strong>', $actua['dtitel']); ?>
+    <strong>ACTUA</strong>
   </div>
     <div class="eena-breadcrumbs-sec-inr">
+      <div class="eena-breadcrumbs-sec-Wrap">
       <?php if( $arg_anieuws ): ?>
       <div class="eena-brdcrmb-sliders bdcmbSlider">
         <?php 
@@ -32,6 +33,7 @@
           <a href="<?php echo esc_url( get_permalink($anieuws_row) ); ?>"><?php echo get_the_date( 'l j F', $anieuws_row->ID ); ?> <span>- <?php echo $anieuws_row->post_title;?>...</span></a>
         </div>
         <?php endforeach; ?>
+      </div>
       </div>
       <?php endif; ?>
     </div>
@@ -62,16 +64,19 @@
               		$first_term = $term->slug;
               	}
               	if( $term->slug !='uncategorized' ):
+              if( $i == 1 ){
               ?>
-              <li><a href="#" onclick='postCategory("<?php echo $term->slug; ?>"); return false'><?php echo $term->name; ?></a></li>
-          		<?php endif; ?>
+              <li class="current"><a href="#" onclick='postCategory("<?php echo $term->slug; ?>", this); return false'><?php echo $term->name; ?></a></li>
+          		<?php }else{ ?>
+              <li><a href="#" onclick='postCategory("<?php echo $term->slug; ?>", this); return false'><?php echo $term->name; ?></a></li>
+              <?php } endif; ?>
               <?php $i++; endforeach; ?>
             </ul>
             <span id="firstTerm" data-term="<?php echo $first_term; ?>" style="display: none;"></span>
         	<?php endif; ?>
           	</div>
-          	<div id="post-content">
-          	</div>
+          	<div id="post-content" class="loading-now">
+            </div>
         </div>
       </div>
     </div>

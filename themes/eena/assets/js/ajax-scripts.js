@@ -18,12 +18,13 @@
 
 })(jQuery);
 
-function postCategory(val){
+function postCategory(val, el){
     var ajaxurl = ajax_posts_object.ajaxurl;
     //ajax call
     jQuery.ajax({
         url: ajaxurl,
         type: 'post',
+        context: this,
         data: {
             cat: val,
             el_li: 'not',
@@ -31,6 +32,7 @@ function postCategory(val){
         },
         beforeSend: function ( xhr ) {
             jQuery('#ajxaloader').show();
+            jQuery('#post-content').addClass('loading-now');
              
         },
         success: function(response ) {
@@ -38,10 +40,13 @@ function postCategory(val){
             //console.log(response);
             if (response  == 0) {
                 //$('.post-load-more-btn').prepend('<div class="clearfix"></div><div class="text-center"><p>Geen producten meer om te laden.</p></div>');
+            jQuery('#post-content').removeClass('loading-now');
             } else {
                 jQuery('#post-content').html(response.substr(response.length-1, 1) === '0'? response.substr(0, response.length-1) : response);
-              listItemHide();
+                jQuery('#post-content').removeClass('loading-now');
             }
+            jQuery(el).parents('ul').find('li').removeClass('current');
+            jQuery(el).parent('li').addClass('current');
         },
         error: function(response ) {
             console.log('asdfsd');

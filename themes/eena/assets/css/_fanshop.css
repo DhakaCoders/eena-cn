@@ -233,9 +233,16 @@ fanshop-post-grid-sec-wrp
 	align-items: center;
 }
 .fl-pagi-ctlr ul.page-numbers li a:hover,
-.fl-pagi-ctlr ul.page-numbers li span.current{
+.fl-pagi-ctlr ul.page-numbers li span.current,
+.fl-pagi-ctlr ul.page-numbers li a.current{
 	background: #f6c042;
 	color: #fff;
+}
+ul.pgajax li a{
+	cursor: pointer;
+}
+ul.pgajax li a.current{
+	cursor: text;
 }
 .fanshop-service-wrp{
 	padding-top: 65px;

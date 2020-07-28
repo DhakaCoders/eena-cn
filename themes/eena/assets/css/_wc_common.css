@@ -5,7 +5,7 @@
 #wccart-wrapper .coupon .button,
 .woocommerce table.cart td.actions .button{
 	background: #F6C042!important;
-	color: #fff!important;
+	color: #000!important;
 	text-align: center;
 	font-size: 14px;
 	line-height: 16px;
@@ -306,6 +306,16 @@ body.woocommerce-order-received h2.woocommerce-column__title {
 }
 .woo-variation-swatches.wvs-style-squared .variable-items-wrapper .variable-item.button-variable-item.selected .variable-item-span{
 	color: #fff!important;
+}
+.product-thumb{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0 -10px;
+}
+.product-thumb > div{
+	width: 33.3333%;
+	padding: 10px;
 }
 @media(max-width: 1199px){
 	body.woocommerce-order-received .woocommerce ul.order_details{

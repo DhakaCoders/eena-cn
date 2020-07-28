@@ -36,7 +36,7 @@ ul.select2-results__options li{
 	background: #F6C042!important;
 	text-transform: uppercase;
     border: 2px solid #F6C042!important;
-    color: #fff!important;
+    color: #000!important;
     border-radius: 0!important;
 }
 .woocommerce .checkout-button.button:hover,

@@ -1,9 +1,9 @@
 /*
-Theme Name: Eena
+Theme Name: SC Eena
 Theme URI: N/A
 Author: Md. Foridul Islam
 Author URI: N/A
-Description: A custom wordpress theme for Eena.
+Description: A custom wordpress theme for SC Eena.
 Version: 1.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -31,3 +31,42 @@ Text Domain: eena
 	-webkit-background: linear-gradient(270deg, #111111 -28.16%, rgba(17, 17, 17, 0.34) 74.74%), #FFFFFF;
 	z-index: 15;
 }*/
+#post-content{
+    position: relative;
+}
+/*.loading-now:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+}*/
+.loading-now .eena-page-wrap{
+    opacity: 0.5;
+}
+.loading-now:after {
+    content: "\f110";
+    font-family: FontAwesome;
+    font-size: 40px;
+    position: absolute;
+    top: 0;
+    -webkit-animation: fa-spin 2s infinite linear;
+    animation: fa-spin 2s infinite linear;
+    color: #000;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 20%;
+    z-index: 3;
+}
+.eena-page-wrap .eena-pagination-page{
+    display: none;
+}
+.eena-page-wrap .eena-pagination-page:first-child{
+    display: block;
+}
+.no-results{
+    text-align: center;
+}

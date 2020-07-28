@@ -59,19 +59,19 @@ function ajax_post_script_load_more() {
   while($query->have_posts()): $query->the_post();
     $thumb_id = get_post_thumbnail_id(get_the_ID());
     if(!empty($thumb_id)){
-      $thumb = cbv_get_image_src($thumb_id, 'artgrid');
+      $thumb = cbv_get_image_src($thumb_id, 'hbloggrid');
     } else {
-      $thumb = THEME_URI.'/assets/images/eena-grd-item-fea-img-1.jpg';
+      $thumb = THEME_URI.'/assets/images/hdflt-img.jpg';
     }
   ?>
   <li class="<?php echo $hide_class; ?>">
   <div class="eena-grd-item">
     <div class="eena-grd-item-fea-img-ctlr">
-      <a href="#" class="overlay-link"></a>
+      <a href="<?php the_permalink();?>" class="overlay-link"></a>
       <div class="eena-grd-item-fea-img" style="background: url('<?php echo $thumb; ?>');"></div>
     </div>
     <div class="eena-grd-item-des mHc">
-      <strong>VRIJDAG 27 MAART - 14U05</strong>
+      <strong><?php echo get_the_date( 'l j F - g:i A', $nieuws_row->ID ); ?></strong>
       <h3 class="eena-gid-title mHc1"><a href="<?php the_permalink();?>"><?php the_title(); ?></a></h3>
       <p class="mHc2"><?php echo get_the_excerpt(); ?></p>
       <a href="<?php the_permalink();?>">LEES MEEr</a>

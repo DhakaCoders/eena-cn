@@ -10,7 +10,7 @@ $permalink = get_the_permalink();
     <div class="row">
       <div class="col-sm-12">
         <article class="default-page-con">
-          <strong class="post-date">VRIJDAG 27 MAART - 14U05</strong>
+          <strong class="post-date"><?php echo get_the_date( 'l j F - g:i A', get_the_ID() ); ?></strong>
           <div class="dfp-promo-module clearfix">
             <div>
               <strong class="dfp-promo-module-title"><?php the_title(); ?></strong>
@@ -60,11 +60,11 @@ $permalink = get_the_permalink();
               if( $gallery_cn ):
               echo "<div class='gallery-wrap clearfix'><div class='gallery gallery-columns-{$kolom}'>";
                 foreach( $gallery_cn as $image ):
-                $imgsrc = cbv_get_image_src($image['ID'], 'dfpageg1');  
+                $imgsrc = cbv_get_image_src($image['ID'], 'dfpageg2');  
                 echo "<figure class='gallery-item'><div class='gallery-icon portrait'>";
                 if( $lightbox ) echo "<a data-fancybox='gallery' href='{$image['url']}'>";
                     //echo '<div class="dfpagegalleryitem" style="background: url('.$imgsrc.');"></div>';
-                    echo wp_get_attachment_image( $image['ID'], 'dfpageg1' );
+                    echo wp_get_attachment_image( $image['ID'], 'dfpageg2' );
                 if( $lightbox ) echo "</a>";
                 echo "</div></figure>";
                 endforeach;
@@ -152,7 +152,7 @@ $permalink = get_the_permalink();
             }elseif( get_row_layout() == 'promo' ){
               $afbeeldingurl = '';
               $fc_afbeelding = get_sub_field('fc_afbeelding');
-              if( !empty($fc_afbeelding) ) $afbeeldingurl = cbv_get_image_src($fc_afbeelding);
+              if( !empty($fc_afbeelding) ) $afbeeldingurl = cbv_get_image_src($fc_afbeelding, 'dfpageg3');
               $fc_titel = get_sub_field('fc_titel');
               $fc_beschrijving = get_sub_field('fc_beschrijving');
               $fc_knop = get_sub_field('fc_knop');

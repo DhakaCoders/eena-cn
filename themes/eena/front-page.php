@@ -57,9 +57,9 @@
             foreach( $arg_nieuws as $nieuws_row ):
               $thumb_id = get_post_thumbnail_id($nieuws_row);
               if(!empty($thumb_id)){
-                $thumb = cbv_get_image_src($thumb_id, 'artgrid');
+                $thumb = cbv_get_image_src($thumb_id, 'hbloggrid');
               } else {
-                $thumb = THEME_URI.'/assets/images/eena-grd-item-fea-img-1.jpg';
+                $thumb = THEME_URI.'/assets/images/hdflt-img.jpg';
               }
             ?>
             <div class="hmNewsSecSlideItem">
@@ -289,7 +289,7 @@
 
     $bafbeelding = '';
     if( !empty($promo['afbeelding']) ){
-      $bvafbeelding = cbv_get_image_src($promo['afbeelding'], 'overgrid');
+      $bvafbeelding = cbv_get_image_src($promo['afbeelding'], 'hpromo');
     }
 ?>
 <section class="hm-back-in-time-sec clearfix">
@@ -368,9 +368,9 @@ $shopproducts = $webshop['selecteerproducten'];
                 global $product;
                 $thumb_id = get_post_thumbnail_id($product_row);
                 if(!empty($thumb_id)){
-                  $thumb = cbv_get_image_src($thumb_id, 'artgrid');
+                  $thumb = cbv_get_image_src($thumb_id, 'hproductgrid');
                 } else {
-                  $thumb = THEME_URI.'/assets/images/fanshop-post-grid-img.png';
+                  $thumb = THEME_URI.'/assets/images/dproductgrid.jpg';
                 }
 
 

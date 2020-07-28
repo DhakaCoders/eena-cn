@@ -1,0 +1,8 @@
+2020-07-28T11:00:24+00:00 CRITICAL Uncaught RuntimeException: Unable to claim actions. Database error. in E:\Development\server\htdocs\2020\07\eena\eena-cn\plugins\woocommerce\packages\action-scheduler\classes\data-stores\ActionScheduler_DBStore.php:675
+Stack trace:
+#0 E:\Development\server\htdocs\2020\07\eena\eena-cn\plugins\woocommerce\packages\action-scheduler\classes\data-stores\ActionScheduler_DBStore.php(599): ActionScheduler_DBStore->claim_actions(0, 25, NULL, Array, '')
+#1 E:\Development\server\htdocs\2020\07\eena\eena-cn\plugins\woocommerce\packages\action-scheduler\classes\ActionScheduler_QueueRunner.php(153): ActionScheduler_DBStore->stake_claim(25)
+#2 E:\Development\server\htdocs\2020\07\eena\eena-cn\plugins\woocommerce\packages\action-scheduler\classes\ActionScheduler_QueueRunner.php(132): ActionScheduler_QueueRunner->do_batch(25, 'WP Cron')
+#3 E:\Development\server\htdocs\2020\07\eena\wp-includes\class-wp-hook.php(287): ActionScheduler_QueueRunner->run('WP Cron')
+#4 E:\Development\server\htdocs\2020\07\eena\wp-includes\class-wp-h in E:\Development\server\htdocs\2020\07\eena\eena-cn\plugins\woocommerce\packages\action-scheduler\classes\data-stores\ActionScheduler_DBStore.php on line 675
+

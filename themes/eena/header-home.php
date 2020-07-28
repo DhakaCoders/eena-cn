@@ -249,7 +249,7 @@
                   <?php 
                     if( !empty($hslide['datum']) ) {
                       //date_default_timezone_set('asia/kolkata');
-                      $datatime = date('l j F - g:i A', strtotime($hslide['datum']));
+                      $datatime = $hslide['datum'];
                       echo '<span class="post-date">'.$datatime.'</span>';
                     }
                   ?>

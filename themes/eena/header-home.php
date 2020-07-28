@@ -252,7 +252,6 @@
                 <div class="mainSlideItemDesInner clearfix">
                   <?php 
                     if( !empty($hslide['datum']) ) {
-                      //date_default_timezone_set('asia/kolkata');
                       $datatime = $hslide['datum'];
                       echo '<span class="post-date">'.$datatime.'</span>';
                     }

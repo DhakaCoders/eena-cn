@@ -166,66 +166,71 @@
               </div>
               
               <div id="mt-tab-1" class="fl-tab-content current">
-                <div class="versus-match">
-                  <div class="versus-team versus-match-item">
-                    <div class="versus-team-logo versus-team-logo-lft">
-                      <img src="<?php echo THEME_URI; ?>/assets/images/versus-team-logo-img-01.png" alt="">
-                    </div>
-                    <h5 class="versus-team-name">E. aalst</h5>
-                  </div>
-                  <div class="versus-logo versus-match-item versus-team-logo-rgt" style="background: url('<?php echo THEME_URI; ?>/assets/images/vs-icon.png');">
-                    <div class="versus-play-time hide-sm">
-                      <span>zondag <br>
-                      29 maart 2020<br>
-                      15u00</span>
-                    </div>
-                  </div>
-                  <div class="versus-team2 versus-match-item">
-                    <div class="versus-team-logo">
-                      <img src="<?php echo THEME_URI; ?>/assets/images/versus-team-logo-img-02.png" alt="">
-                    </div>
-                    <h5 class="versus-team-name">KVK Tienen</h5>
-                  </div>
-                </div>
-                <div class="versus-play-time versus-play-time-sm show-sm">
-                  <span>zondag <br>
-                  29 maart 2020<br>
-                  15u00</span>
-                </div>
-                <div class="versus-btn">
-                  <a href="#">Voorbeschouwing
-                    <i>  
-                      <svg class="sp-fanshop-gallery-arrows-svg" width="27" height="14" viewBox="0 0 27 14" fill="#F6C042">
-                        <use xlink:href="#sp-fanshop-gallery-arrows-svg"></use>
-                      </svg>
-                    </i>
-                  </a>
-                </div>
+                <?php get_template_part('templates/upcomming', 'game'); ?>
               </div>
               <div id="mt-tab-2" class="fl-tab-content">
+                <?php 
+                  $query = new WP_Query(array( 
+                      'post_type'=> 'matches',
+                      'post_status' => 'publish',
+                      'posts_per_page' => 1,
+                      'orderby' => 'date',
+                      'tax_query' => array(
+                          array(
+                              'taxonomy' => 'match_cat',
+                              'field'    => 'slug',
+                              'terms'    => 'vorige-wedstrijd',
+                          ),
+                      ),
+                    ) 
+                  );
+                  
+                  if($query->have_posts()){
+                ?>
                 <div class="versus-match">
+                  <?php
+                    while($query->have_posts()): $query->the_post();
+                    $intro = get_field('intro', get_the_ID());
+                    $teama = get_field('teama', get_the_ID());
+                    $teamb = get_field('teamb', get_the_ID());
+                  ?>
                   <div class="versus-team versus-match-item">
+                    <?php if( $teama ): ?>
                     <div class="versus-team-logo">
-                      <img src="<?php echo THEME_URI; ?>/assets/images/versus-team-logo-img-01.png" alt="">
+                    <?php 
+                        $teamaobj = $teama['logo'];
+                        if( is_array($teamaobj) ){
+                          echo '<img src="'.$teamaobj['url'].'" alt="'.$teamaobj['alt'].'" title="'.$teamaobj['title'].'">';
+                        }
+                      ?>
                     </div>
-                    <h5 class="versus-team-name">E. aalst 2</h5>
+                    <?php if(  !empty($teama['naam'])) printf('<h5 class="versus-team-name">%s</h5>', $teama['naam']); ?>
+                    
+                  <?php endif; ?>
                   </div>
                   <div class="versus-logo versus-match-item" style="background: url('<?php echo THEME_URI; ?>/assets/images/vs-icon.png');">
                     <div class="versus-play-time">
-                      <span>zondag <br>
-                      29 maart 2020<br>
-                      15u00</span>
+                      <?php if( !empty($intro['datuum2']) ) printf('<span>%s</span>', $intro['datuum2']); ?>
                     </div>
                   </div>
                   <div class="versus-team2 versus-match-item">
+                    <?php if( $teamb ): ?>
                     <div class="versus-team-logo">
-                      <img src="<?php echo THEME_URI; ?>/assets/images/versus-team-logo-img-02.png" alt="">
+                    <?php 
+                        $teambobj = $teamb['logo'];
+                        if( is_array($teambobj) ){
+                          echo '<img src="'.$teambobj['url'].'" alt="'.$teambobj['alt'].'" title="'.$teambobj['title'].'">';
+                        }
+                      ?>
                     </div>
-                    <h5 class="versus-team-name">KVK Tienen</h5>
+                    <?php if(  !empty($teamb['naam'])) printf('<h5 class="versus-team-name">%s</h5>', $teamb['naam']); ?>
+                    
+                  <?php endif; ?>
                   </div>
+                  <?php endwhile; ?>
                 </div>
                 <div class="versus-btn">
-                  <a href="#">Voorbeschouwing
+                  <a href="<?php echo esc_url( home_url('wedstrijden') );?>">Voorbeschouwing
                     <i>  
                       <svg class="sp-fanshop-gallery-arrows-svg" width="27" height="14" viewBox="0 0 27 14" fill="#F6C042">
                         <use xlink:href="#sp-fanshop-gallery-arrows-svg"></use>
@@ -233,6 +238,7 @@
                     </i>
                   </a>
                 </div>
+                <?php } wp_reset_postdata();?>
               </div>
             </div>
 

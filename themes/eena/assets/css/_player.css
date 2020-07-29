@@ -284,7 +284,10 @@
 	display: none;
 }
 
-
+span.ntnl.flags {
+    background-repeat: no-repeat !important;
+    background-position: left center !important;
+}
 
 @media(max-width: 1499px){
 

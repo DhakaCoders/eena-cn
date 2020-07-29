@@ -210,6 +210,14 @@ if( is_blog() ){
   $shopID = get_option('woocommerce_shop_page_id');
   $pageTitle = get_the_title($shopID);
   $thisID = get_the_ID();
+}elseif(is_single() && 'matches' == get_post_type()){
+  $shopID = 481;
+  $pageTitle = get_the_title($shopID);
+  $thisID = get_the_ID();
+}elseif(is_single() && 'teams' == get_post_type()){
+  $shopID = 149;
+  $pageTitle = get_the_title($shopID);
+  $thisID = get_the_ID();
 }else{
   $thisID = get_the_ID();
   $pageTitle = get_the_title($thisID);

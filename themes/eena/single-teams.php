@@ -197,7 +197,13 @@ $overv = get_field('overviewsec', get_the_ID());
                   </li>
                   <li class="clearfix">
                     <strong>NATIONALITEIT</strong>
-                    <?php if( !empty($sabout['nationaliteit']) ) printf('<span class="ntnl">%s</span>', $sabout['nationaliteit']); ?>
+                    <?php if( !empty($sabout['nationaliteit']) ) {
+                      $ccode = strtolower($sabout['nationaliteit']['value']);
+                      $curl = '';
+                      if( !empty($ccode) ) $curl = "https://ipdata.co/flags/{$ccode}.png";
+                      printf('<span class="ntnl flags" style="background:url('.$curl.');">%s</span>', $sabout['nationaliteit']['label']); 
+                    }
+                    ?>
                   </li>
                   <li class="clearfix">
                     <strong>BIJ EA SINDS</strong>

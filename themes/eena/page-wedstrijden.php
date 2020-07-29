@@ -4,6 +4,8 @@
 	*/
 	get_header(); 
 	$thisID = get_the_ID();
+  $intro = get_field('introsec', $thisID); 
+  $shops = get_field('shopinfo', $thisID); 
 ?>
 <section class="classroom-sec-wrap">
   <div class="container">
@@ -12,7 +14,7 @@
         <div class="classroom-inr">
           <div class="classroom-desc">
             <div class="classroom-desc-cntlr game-desc-cntlr">
-              <h3 class="classroom-desc-title">2e Amateurliga 2019 - 2020</h3>
+              <?php if( !empty( $intro['titel'] ) ) printf( '<h3 class="classroom-desc-title">%s</h3>', $intro['titel']); ?>
               <div class="classroom-table-wrap">
                 <div class="table-inr">
                   <table>
@@ -25,113 +27,43 @@
                       <th><span class="">score</span></th>
                     </tr>
                   </thead>
+                  <?php 
+                    $query = new WP_Query(array( 
+                        'post_type'=> 'matches',
+                        'post_status' => 'publish',
+                        'posts_per_page' => -1,
+                        'orderby' => 'date'
+                      ) 
+                    );
+                    
+                    if($query->have_posts()){
+                  ?>
                   <tbody class="classroom-tbody Wed-am-tbody">
+                    <?php
+                      $i = 1;
+                      while($query->have_posts()): $query->the_post();
+                      $intro = get_field('intro', get_the_ID());
+                      $teama = get_field('teama', get_the_ID());
+                      $teamb = get_field('teamb', get_the_ID());
+                    ?>
                     <tr>
-                      <td><span class="">1.</span></td>
-                      <td> <span class="">Olympia Wijgmaal - Eendracht Aalst</span></td>
-                      <td><span class="">12/09/2019</span></td>
-                      <td><span class="">20u00</span></td>
-                      <td><span class="">2 - 2</span></td>
+                      <td><span class=""><?php echo $i; ?>.</span></td>
+                      <td> <span class=""><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></span></td>
+                      <td><span class=""><?php if( !empty($intro['datuum1']) ) printf('%s', $intro['datuum1']); ?></span></td>
+                      <td><span class=""><?php if( !empty($intro['uur']) ) printf('%s', $intro['uur']); ?></span></td>
+                      <td>
+                        <span class="">
+                          <?php 
+                            echo !empty($teama['score'])? $teama['score']:'0';
+                            echo ' - ';
+                            echo !empty($teamb['score'])? $teamb['score']:'0';
+                          ?>
+                        </span>
+                      </td>
                     </tr>
-                    <tr>
-                      <td><span class="">2.</span></td>
-                      <td> <span class="">Eendracht Aalst - SK Pepingen-Halle</span></td>
-                      <td><span class="">08/09/2019</span></td>
-                      <td><span class="">15u00</span></td>
-                      <td><span class="">5 - 0</span></td>
-                    </tr>
-                    <tr>
-                      <td><span class="">3.</span></td>
-                      <td> <span class="">Cappellen FC - Eendracht Aalst</span></td>
-                      <td><span class="">15/09/2019</span></td>
-                      <td><span class="">15u00</span></td>
-                      <td><span class="">2 - 2</span></td>
-                    </tr>
-                    <tr>
-                      <td><span class="">4.</span></td>
-                      <td> <span class="">Eendracht Aalst - KFC Duffel</span></td>
-                      <td><span class="">15/09/2019</span></td>
-                      <td><span class="">15u00</span></td>
-                      <td><span class="">3 - 3</span></td>
-                    </tr>
-                    <tr>
-                      <td><span class="">5.</span></td>
-                      <td> <span class="">ASV Geel - Eendracht Aalst</span></td>
-                      <td><span class="">15/09/2019</span></td>
-                      <td><span class="">15u00</span></td>
-                      <td><span class="">1 - 0</span></td>
-                    </tr>
-                    <tr>
-                      <td><span class="">6.</span></td>
-                      <td> <span class="">Eendracht Aalst - Sporting Hasselt</span></td>
-                      <td><span class="">15/09/2019</span></td>
-                      <td><span class="">15u00</span></td>
-                      <td><span class="">0 - 0</span></td>
-                    </tr>
-                    <tr>
-                      <td><span class="">7.</span></td>
-                      <td> <span class="">Eendracht Aalst - Hoogstraten VV</span></td>
-                      <td><span class="">15/09/2019</span></td>
-                      <td><span class="">15u00</span></td>
-                      <td><span class="">0 - 2</span></td>
-                    </tr>
-                    <tr>
-                      <td><span class="">8.</span></td>
-                      <td> <span class="">Spouwen-Mopert. - Eendracht Aalst</span></td>
-                      <td><span class="">15/09/2019</span></td>
-                      <td><span class="">15u00</span></td>
-                      <td><span class="">0 - 3</span></td>
-                    </tr>
-                    <tr>
-                      <td><span class="mHc">9.</span></td>
-                      <td> <span class="mHc">Eendracht Aalst - Diegem Sport</span></td>
-                      <td><span class="mHc">15/09/2019</span></td>
-                      <td><span class="mHc">15u00</span></td>
-                      <td><span class="mHc">3 - 0</span></td>
-                    </tr>
-                    <tr>
-                      <td><span class="mHc">10.</span></td>
-                      <td> <span class="mHc">RC Hades Hasselt - Eendracht Aalst</span></td>
-                      <td><span class="mHc">15/09/2019</span></td>
-                      <td><span class="mHc">15u00</span></td>
-                      <td><span class="mHc">3 - 1</span></td>
-                    </tr>
-                    <tr>
-                      <td><span class="mHc">11.</span></td>
-                      <td> <span class="mHc">Eendracht Aalst - VV Vosselaar</span></td>
-                      <td><span class="mHc">15/09/2019</span></td>
-                      <td><span class="mHc">15u00</span></td>
-                      <td><span class="mHc">1 - 0</span></td>
-                    </tr>
-                    <tr>
-                      <td><span class="mHc">12.</span></td>
-                      <td> <span class="mHc">Berchem Sport - Eendracht Aalst</span></td>
-                      <td><span class="mHc">15/09/2019</span></td>
-                      <td><span class="mHc">15u00</span></td>
-                      <td><span class="mHc">1 - 1</span></td>
-                    </tr>
-                    <tr>
-                      <td><span class="mHc">13.</span></td>
-                      <td> <span class="mHc">Eendracht Aalst - KVK Tienen</span></td>
-                      <td><span class="mHc">15/09/2019</span></td>
-                      <td><span class="mHc">15u00</span></td>
-                      <td><span class="mHc">3 - 0</span></td>
-                    </tr>
-                    <tr>
-                      <td><span class="mHc">14.</span></td>
-                      <td> <span class="mHc">SK Londerzeel - Eendracht Aalst</span></td>
-                      <td><span class="mHc">15/09/2019</span></td>
-                      <td><span class="mHc">15u00</span></td>
-                      <td><span class="mHc">2 - 2</span></td>
-                    </tr>
-                    <tr>
-                      <td><span class="mHc">16.</span></td>
-                      <td> <span class="mHc">Eendracht Aalst - Bocholter VV</span></td>
-                      <td><span class="mHc">15/09/2019</span></td>
-                      <td><span class="mHc">15u00</span></td>
-                      <td><span class="mHc">1 - 2</span></td>
-                    </tr>
+                    <?php $i++; endwhile; ?>
                   </tbody>
+                  <?php } wp_reset_postdata();?>
                 </table>
                 </div>
               </div>
@@ -149,67 +81,51 @@
               </div>
               
               <div id="mt-tab-1" class="fl-tab-content current">
-                <div class="versus-match">
-                  <div class="versus-team versus-match-item">
-                    <div class="versus-team-logo versus-team-logo-lft">
-                      <img src="<?php echo THEME_URI; ?>/assets/images/versus-team-logo-img-01.png" alt="">
-                    </div>
-                    <h5 class="versus-team-name">E. aalst</h5>
-                  </div>
-                  <div class="versus-logo versus-match-item versus-team-logo-rgt" style="background: url('<?php echo THEME_URI; ?>/assets/images/vs-icon.png');">
-                    <div class="versus-play-time hide-sm">
-                      <span>zondag <br>
-                      29 maart 2020<br>
-                      15u00</span>
-                    </div>
-                  </div>
-                  <div class="versus-team2 versus-match-item">
-                    <div class="versus-team-logo">
-                      <img src="<?php echo THEME_URI; ?>/assets/images/versus-team-logo-img-02.png" alt="">
-                    </div>
-                    <h5 class="versus-team-name">KVK Tienen</h5>
-                  </div>
-                </div>
-                <div class="versus-play-time versus-play-time-sm show-sm">
-                  <span>zondag <br>
-                  29 maart 2020<br>
-                  15u00</span>
-                </div>
-                <div class="versus-btn">
-                  <a href="#">Voorbeschouwing
-                    <i>  
-                      <svg class="sp-fanshop-gallery-arrows-svg" width="27" height="14" viewBox="0 0 27 14" fill="#F6C042">
-                        <use xlink:href="#sp-fanshop-gallery-arrows-svg"></use>
-                      </svg>
-                    </i>
-                  </a>
-                </div>
+                <?php get_template_part('templates/upcomming', 'game'); ?>
               </div>
             </div>
 
               
               <div class="classroom-aside-bottom">
+                <?php if( $shops ): ?>
                 <ul class="reset-list">
+                  <?php foreach( $shops as $shop ): ?>
                   <li>
-                  <div class="sp-fanshop-gallery-inr">
-                    <div class="sp-fanshop-gallery-img" style="background: url(<?php echo THEME_URI; ?>/assets/images/sp-fanshop-gallery-img-3.png);">
-                      <a href="#" class="overlay-link"></a>
-                      <div class="sp-fanshop-gallery-dsc">
-                        <img src="<?php echo THEME_URI; ?>/assets/images/sp-fanshop-gallery-icon-3.png">
-                        <h3 class="sp-fanshop-gallery-title">WebShop</h3>
-                        <p>Leo sociis laoreet nullam malesuada pharetra enim mus suspendisse. Lectus mauris ut tortor.</p>
-                        <a href="#">
-                          <i>  
-                            <svg class="sp-fanshop-gallery-arrows-svg" width="27" height="14" viewBox="0 0 27 14" fill="#F6C042">
-                              <use xlink:href="#sp-fanshop-gallery-arrows-svg"></use>
-                            </svg>
-                          </i>
-                        </a>
+                    <div class="sp-fanshop-gallery-inr">
+                      <div class="sp-fanshop-gallery-img" style="background: url(<?php if( !empty($shop['afbeelding']) ) echo cbv_get_image_src($shop['afbeelding']); ?>);">
+                        <div class="sp-fanshop-gallery-dsc">
+                        <?php 
+                          $iconobj = $shop['icon'];
+                          if( is_array($iconobj) ){
+                            echo'<img src="'.$iconobj['url'].'" alt="'.$iconobj['alt'].'" title="'.$iconobj['title'].'">';
+                          }
+                          if( !empty($shop['knop']) )
+                            $knopurl = $shop['knop'];
+                          else
+                            $knopurl = '#';
+
+                        ?>
+                          <?php 
+                            if( !empty( $shop['titel'] ) ) printf( '<h3 class="sp-fanshop-gallery-title"><a href="%s">%s</a></h3>', $knopurl, $shop['titel']); 
+                            if( !empty( $shop['beschrijving'] ) ) echo wpautop($shop['beschrijving']); 
+                          ?>
+
+                          <?php if( !empty($shop['knop']) ): ?>
+                          <a href="<?php echo $shop['knop']; ?>">
+                            <i>  
+                              <svg class="sp-fanshop-gallery-arrows-svg" width="27" height="14" viewBox="0 0 27 14" fill="#F6C042">
+                                <use xlink:href="#sp-fanshop-gallery-arrows-svg"></use>
+                              </svg>
+                            </i>
+                          </a>
+                          <?php endif; ?>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </li>
+                  </li>
+                  <?php endforeach; ?>
                 </ul>
+                <?php endif; ?>
               </div>
             </div>
           </div>

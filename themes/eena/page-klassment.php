@@ -4,6 +4,8 @@
 	*/
 	get_header(); 
 	$thisID = get_the_ID();
+  $intro = get_field('introsec', $thisID); 
+  $shops = get_field('shopinfo', $thisID); 
 ?>
 <section class="classroom-sec-wrap">
   <div class="container">
@@ -12,7 +14,7 @@
         <div class="classroom-inr">
           <div class="classroom-desc">
             <div class="classroom-desc-cntlr">
-              <h3 class="classroom-desc-title">2e Amateurliga 2019 - 2020</h3>
+              <?php if( !empty( $intro['titel'] ) ) printf( '<h3 class="classroom-desc-title">%s</h3>', $intro['titel']); ?>
               <div class="classroom-table-wrap">
                 <div class="table-inr">
                   <table>
@@ -205,84 +207,49 @@
                   </div>
                 </div>
                 <div id="mt-tab-1" class="fl-tab-content current">
-                  <div class="versus-match">
-                    <div class="versus-team versus-match-item">
-                      <div class="versus-team-logo versus-team-logo-lft">
-                        <img src="<?php echo THEME_URI; ?>/assets/images/versus-team-logo-img-01.png" alt="">
-                      </div>
-                      <h5 class="versus-team-name">E. aalst</h5>
-                    </div>
-                    <div class="versus-logo versus-match-item versus-team-logo-rgt" style="background: url('<?php echo THEME_URI; ?>/assets/images/vs-icon.png');">
-                      <div class="versus-play-time hide-sm">
-                        <span>zondag <br>
-                        29 maart 2020<br>
-                        15u00</span>
-                      </div>
-                    </div>
-                    <div class="versus-team2 versus-match-item">
-                      <div class="versus-team-logo">
-                        <img src="<?php echo THEME_URI; ?>/assets/images/versus-team-logo-img-02.png" alt="">
-                      </div>
-                      <h5 class="versus-team-name">KVK Tienen</h5>
-                    </div>
-                  </div>
-                  <div class="versus-play-time versus-play-time-sm show-sm">
-                    <span>zondag <br>
-                    29 maart 2020<br>
-                    15u00</span>
-                  </div>
-                  <div class="versus-btn">
-                    <a href="#">Voorbeschouwing
-                      <i>  
-                        <svg class="sp-fanshop-gallery-arrows-svg" width="27" height="14" viewBox="0 0 27 14" fill="#F6C042">
-                          <use xlink:href="#sp-fanshop-gallery-arrows-svg"></use>
-                        </svg>
-                      </i>
-                    </a>
-                  </div>
+                  <?php get_template_part('templates/upcomming', 'game'); ?>
                 </div>
               </div>
               <div class="classroom-aside-bottom">
+                <?php if( $shops ): ?>
                 <ul class="reset-list">
+                  <?php foreach( $shops as $shop ): ?>
                   <li>
                     <div class="sp-fanshop-gallery-inr">
-                      <div class="sp-fanshop-gallery-img classroom-aside-gallery-img" style="background: url(<?php echo THEME_URI; ?>/assets/images/sp-fanshop-gallery-img-4.png);">
-                        <a href="#" class="overlay-link"></a>
+                      <div class="sp-fanshop-gallery-img" style="background: url(<?php if( !empty($shop['afbeelding']) ) echo cbv_get_image_src($shop['afbeelding']); ?>);">
                         <div class="sp-fanshop-gallery-dsc">
-                          <img src="<?php echo THEME_URI; ?>/assets/images/sp-fanshop-gallery-icon-4.png">
-                          <h3 class="sp-fanshop-gallery-title">EA-TV</h3>
-                          <p>Leo sociis laoreet nullam malesuada pharetra enim mus suspendisse. Lectus mauris ut tortor.</p>
-                          <a href="#">
+                        <?php 
+                          $iconobj = $shop['icon'];
+                          if( is_array($iconobj) ){
+                            echo'<img src="'.$iconobj['url'].'" alt="'.$iconobj['alt'].'" title="'.$iconobj['title'].'">';
+                          }
+                          if( !empty($shop['knop']) )
+                            $knopurl = $shop['knop'];
+                          else
+                            $knopurl = '#';
+
+                        ?>
+                          <?php 
+                            if( !empty( $shop['titel'] ) ) printf( '<h3 class="sp-fanshop-gallery-title"><a href="%s">%s</a></h3>', $knopurl, $shop['titel']); 
+                            if( !empty( $shop['beschrijving'] ) ) echo wpautop($shop['beschrijving']); 
+                          ?>
+
+                          <?php if( !empty($shop['knop']) ): ?>
+                          <a href="<?php echo $shop['knop']; ?>">
                             <i>  
                               <svg class="sp-fanshop-gallery-arrows-svg" width="27" height="14" viewBox="0 0 27 14" fill="#F6C042">
                                 <use xlink:href="#sp-fanshop-gallery-arrows-svg"></use>
                               </svg>
                             </i>
                           </a>
+                          <?php endif; ?>
                         </div>
                       </div>
                     </div>
                   </li>
-                  <li>
-                    <div class="sp-fanshop-gallery-inr">
-                      <div class="sp-fanshop-gallery-img classroom-aside-gallery-img" style="background: url(<?php echo THEME_URI; ?>/assets/images/sp-fanshop-gallery-img-1.png);">
-                        <a href="#" class="overlay-link"></a>
-                        <div class="sp-fanshop-gallery-dsc">
-                          <img src="<?php echo THEME_URI; ?>/assets/images/sp-fanshop-gallery-icon-1.png">
-                          <h3 class="sp-fanshop-gallery-title">Restaurant</h3>
-                          <p>Pretium egestas cras mattis quam dictum tempus lectus ultrices. Sed purus platea faucibus.</p>
-                          <a href="#">
-                            <i>  
-                              <svg class="sp-fanshop-gallery-arrows-svg" width="27" height="14" viewBox="0 0 27 14" fill="#F6C042">
-                                <use xlink:href="#sp-fanshop-gallery-arrows-svg"></use>
-                              </svg>
-                            </i>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
+                  <?php endforeach; ?>
                 </ul>
+                <?php endif; ?>
               </div>
             </div>
           </div>

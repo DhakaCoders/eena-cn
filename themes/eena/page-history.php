@@ -39,7 +39,7 @@ get_header();
 	              	}
 	              	if( $term->slug !='uncategorized' ):
 	            ?>
-                <li><a class="active tab-link<?php echo ($first_term == $term->slug)? ' current': ''; ?>" href="#" onclick='historyCategory("<?php echo $term->slug; ?>"); return false'><?php echo $term->name; ?></a></li>
+                <li><a class="tab-link<?php echo ($first_term == $term->slug)? ' current': ''; ?>" href="#" onclick='historyCategory("<?php echo $term->slug; ?>", this); return false'><?php echo $term->name; ?></a></li>
                 <?php endif; ?>
                 <?php $i++; endforeach; ?>
               </ul>
@@ -51,8 +51,8 @@ get_header();
       </div>
     </div>
   </div>
-
-  <div id="history-tab-1" class="history-timeline-sec"> 
+  <div class="middleElement"></div>
+  <div id="history-tab" class="history-timeline-sec loading-now"> 
     <div class="container">
       <div class="row">
         <div class="col-sm-12">
@@ -61,9 +61,8 @@ get_header();
               <div class="history-timeline-main historyInit">
                 <div class="firstLine"></div>
                 <div class="activeLine"></div>
-                <ul class="reset-list" id="history-content">
-
-                </ul>
+                <div id="history-content">
+                </div>
               </div>
             </div>
           </div>

@@ -335,9 +335,9 @@ if( $('#googlemap').length ){
           mapTypeControl:false,
           scrollwheel: false,
 
-          zoomControl: false,
+          zoomControl: true,
           disableDefaultUI: true,
-          zoom:17,
+          zoom:12,
           streetViewControl: false,
           rotateControl: false,
           mapTypeId:google.maps.MapTypeId.ROADMAP,
@@ -663,4 +663,23 @@ $('body').on('click', '.pgajax li a', function(e){
   $(this).addClass('current');
 });
 
+if( $('.middleElement').length ){
+  window.onscroll=function(){
+    scrollTimeline();
+  };
+  function scrollTimeline(){
+    var mE = $('.middleElement').offset().top;
+    var fL = $('.firstLine').offset().top;
+    ofH = mE - fL;
+      $('.activeLine').css('height', ofH);
+    $('.time-line-des-hdng span').each(function(){
+      var bot = $(this).offset().top;
+      if( mE > bot ){
+        $(this).parent().addClass('nowactive');
+      }else{
+        $(this).parent().removeClass('nowactive');
+      }
+    });
+  }
+}
 })(jQuery);

@@ -45,7 +45,7 @@
                       </div>
                       <div class="team-player-img-hover inline-bg" style="background: url('<?php echo THEME_URI; ?>/assets/images/team-player-img-002.jpg');">
                       </div>
-                      <a href="#" class="overlay-link"></a>
+                      <a href="/player/" class="overlay-link"></a>
                     </div>
                     <div class="team-player-hdng mHc">
                       <h5 class="team-player-title"><a href="#">naam speler</a></h5>
@@ -61,7 +61,7 @@
                       </div>
                       <div class="team-player-img-hover inline-bg" style="background: url('<?php echo THEME_URI; ?>/assets/images/team-player-img-002.jpg');">
                       </div>
-                      <a href="#" class="overlay-link"></a>
+                      <a href="/player/" class="overlay-link"></a>
                     </div>
                     <div class="team-player-hdng mHc">
                       <h5 class="team-player-title"><a href="#">naam speler</a></h5>
@@ -77,7 +77,7 @@
                       </div>
                       <div class="team-player-img-hover inline-bg" style="background: url('<?php echo THEME_URI; ?>/assets/images/team-player-img-002.jpg');">
                       </div>
-                      <a href="#" class="overlay-link"></a>
+                      <a href="/player/" class="overlay-link"></a>
                     </div>
                     <div class="team-player-hdng mHc">
                       <h5 class="team-player-title"><a href="#">naam speler</a></h5>
@@ -93,7 +93,7 @@
                       </div>
                       <div class="team-player-img-hover inline-bg" style="background: url('<?php echo THEME_URI; ?>/assets/images/team-player-img-002.jpg');">
                       </div>
-                      <a href="#" class="overlay-link"></a>
+                      <a href="/player/" class="overlay-link"></a>
                     </div>
                     <div class="team-player-hdng mHc">
                       <h5 class="team-player-title"><a href="#">naam speler</a></h5>
@@ -109,7 +109,7 @@
                       </div>
                       <div class="team-player-img-hover inline-bg" style="background: url('<?php echo THEME_URI; ?>/assets/images/team-player-img-002.jpg');">
                       </div>
-                      <a href="#" class="overlay-link"></a>
+                      <a href="/player/" class="overlay-link"></a>
                     </div>
                     <div class="team-player-hdng mHc">
                       <h5 class="team-player-title"><a href="#">naam speler</a></h5>
@@ -134,7 +134,7 @@
                       </div>
                       <div class="team-player-img-hover inline-bg" style="background: url('<?php echo THEME_URI; ?>/assets/images/team-player-img-002.jpg');">
                       </div>
-                      <a href="#" class="overlay-link"></a>
+                      <a href="/player/" class="overlay-link"></a>
                     </div>
                     <div class="team-player-hdng mHc">
                       <h5 class="team-player-title"><a href="#">naam speler</a></h5>
@@ -150,7 +150,7 @@
                       </div>
                       <div class="team-player-img-hover inline-bg" style="background: url('<?php echo THEME_URI; ?>/assets/images/team-player-img-002.jpg');">
                       </div>
-                      <a href="#" class="overlay-link"></a>
+                      <a href="/player/" class="overlay-link"></a>
                     </div>
                     <div class="team-player-hdng mHc">
                       <h5 class="team-player-title"><a href="#">naam speler</a></h5>
@@ -166,7 +166,7 @@
                       </div>
                       <div class="team-player-img-hover inline-bg" style="background: url('<?php echo THEME_URI; ?>/assets/images/team-player-img-002.jpg');">
                       </div>
-                      <a href="#" class="overlay-link"></a>
+                      <a href="/player/" class="overlay-link"></a>
                     </div>
                     <div class="team-player-hdng mHc">
                       <h5 class="team-player-title"><a href="#">naam speler</a></h5>
@@ -182,7 +182,7 @@
                       </div>
                       <div class="team-player-img-hover inline-bg" style="background: url('<?php echo THEME_URI; ?>/assets/images/team-player-img-002.jpg');">
                       </div>
-                      <a href="#" class="overlay-link"></a>
+                      <a href="/player/" class="overlay-link"></a>
                     </div>
                     <div class="team-player-hdng mHc">
                       <h5 class="team-player-title"><a href="#">naam speler</a></h5>
@@ -198,7 +198,7 @@
                       </div>
                       <div class="team-player-img-hover inline-bg" style="background: url('<?php echo THEME_URI; ?>/assets/images/team-player-img-002.jpg');">
                       </div>
-                      <a href="#" class="overlay-link"></a>
+                      <a href="/player/" class="overlay-link"></a>
                     </div>
                     <div class="team-player-hdng mHc">
                       <h5 class="team-player-title"><a href="#">naam speler</a></h5>
@@ -214,7 +214,7 @@
                       </div>
                       <div class="team-player-img-hover inline-bg" style="background: url('<?php echo THEME_URI; ?>/assets/images/team-player-img-002.jpg');">
                       </div>
-                      <a href="#" class="overlay-link"></a>
+                      <a href="/player/" class="overlay-link"></a>
                     </div>
                     <div class="team-player-hdng mHc">
                       <h5 class="team-player-title"><a href="#">naam speler</a></h5>
@@ -230,7 +230,7 @@
                       </div>
                       <div class="team-player-img-hover inline-bg" style="background: url('<?php echo THEME_URI; ?>/assets/images/team-player-img-002.jpg');">
                       </div>
-                      <a href="#" class="overlay-link"></a>
+                      <a href="/player/" class="overlay-link"></a>
                     </div>
                     <div class="team-player-hdng mHc">
                       <h5 class="team-player-title"><a href="#">naam speler</a></h5>
@@ -246,7 +246,7 @@
                       </div>
                       <div class="team-player-img-hover inline-bg" style="background: url('<?php echo THEME_URI; ?>/assets/images/team-player-img-002.jpg');">
                       </div>
-                      <a href="#" class="overlay-link"></a>
+                      <a href="/player/" class="overlay-link"></a>
                     </div>
                     <div class="team-player-hdng mHc">
                       <h5 class="team-player-title"><a href="#">naam speler</a></h5>
@@ -262,7 +262,7 @@
                       </div>
                       <div class="team-player-img-hover inline-bg" style="background: url('<?php echo THEME_URI; ?>/assets/images/team-player-img-002.jpg');">
                       </div>
-                      <a href="#" class="overlay-link"></a>
+                      <a href="/player/" class="overlay-link"></a>
                     </div>
                     <div class="team-player-hdng mHc">
                       <h5 class="team-player-title"><a href="#">naam speler</a></h5>
@@ -287,7 +287,7 @@
                       </div>
                       <div class="team-player-img-hover inline-bg" style="background: url('<?php echo THEME_URI; ?>/assets/images/team-player-img-002.jpg');">
                       </div>
-                      <a href="#" class="overlay-link"></a>
+                      <a href="/player/" class="overlay-link"></a>
                     </div>
                     <div class="team-player-hdng mHc">
                       <h5 class="team-player-title"><a href="#">naam speler</a></h5>
@@ -303,7 +303,7 @@
                       </div>
                       <div class="team-player-img-hover inline-bg" style="background: url('<?php echo THEME_URI; ?>/assets/images/team-player-img-002.jpg');">
                       </div>
-                      <a href="#" class="overlay-link"></a>
+                      <a href="/player/" class="overlay-link"></a>
                     </div>
                     <div class="team-player-hdng mHc">
                       <h5 class="team-player-title"><a href="#">naam speler</a></h5>
@@ -319,7 +319,7 @@
                       </div>
                       <div class="team-player-img-hover inline-bg" style="background: url('<?php echo THEME_URI; ?>/assets/images/team-player-img-002.jpg');">
                       </div>
-                      <a href="#" class="overlay-link"></a>
+                      <a href="/player/" class="overlay-link"></a>
                     </div>
                     <div class="team-player-hdng mHc">
                       <h5 class="team-player-title"><a href="#">naam speler</a></h5>
@@ -335,7 +335,7 @@
                       </div>
                       <div class="team-player-img-hover inline-bg" style="background: url('<?php echo THEME_URI; ?>/assets/images/team-player-img-002.jpg');">
                       </div>
-                      <a href="#" class="overlay-link"></a>
+                      <a href="/player/" class="overlay-link"></a>
                     </div>
                     <div class="team-player-hdng mHc">
                       <h5 class="team-player-title"><a href="#">naam speler</a></h5>
@@ -351,7 +351,7 @@
                       </div>
                       <div class="team-player-img-hover inline-bg" style="background: url('<?php echo THEME_URI; ?>/assets/images/team-player-img-002.jpg');">
                       </div>
-                      <a href="#" class="overlay-link"></a>
+                      <a href="/player/" class="overlay-link"></a>
                     </div>
                     <div class="team-player-hdng mHc">
                       <h5 class="team-player-title"><a href="#">naam speler</a></h5>
@@ -367,7 +367,7 @@
                       </div>
                       <div class="team-player-img-hover inline-bg" style="background: url('<?php echo THEME_URI; ?>/assets/images/team-player-img-002.jpg');">
                       </div>
-                      <a href="#" class="overlay-link"></a>
+                      <a href="/player/" class="overlay-link"></a>
                     </div>
                     <div class="team-player-hdng mHc">
                       <h5 class="team-player-title"><a href="#">naam speler</a></h5>
@@ -383,7 +383,7 @@
                       </div>
                       <div class="team-player-img-hover inline-bg" style="background: url('<?php echo THEME_URI; ?>/assets/images/team-player-img-002.jpg');">
                       </div>
-                      <a href="#" class="overlay-link"></a>
+                      <a href="/player/" class="overlay-link"></a>
                     </div>
                     <div class="team-player-hdng mHc">
                       <h5 class="team-player-title"><a href="#">naam speler</a></h5>
@@ -399,7 +399,7 @@
                       </div>
                       <div class="team-player-img-hover inline-bg" style="background: url('<?php echo THEME_URI; ?>/assets/images/team-player-img-002.jpg');">
                       </div>
-                      <a href="#" class="overlay-link"></a>
+                      <a href="/player/" class="overlay-link"></a>
                     </div>
                     <div class="team-player-hdng mHc">
                       <h5 class="team-player-title"><a href="#">naam speler</a></h5>
@@ -415,7 +415,7 @@
                       </div>
                       <div class="team-player-img-hover inline-bg" style="background: url('<?php echo THEME_URI; ?>/assets/images/team-player-img-002.jpg');">
                       </div>
-                      <a href="#" class="overlay-link"></a>
+                      <a href="/player/" class="overlay-link"></a>
                     </div>
                     <div class="team-player-hdng mHc">
                       <h5 class="team-player-title"><a href="#">naam speler</a></h5>
@@ -440,7 +440,7 @@
                       </div>
                       <div class="team-player-img-hover inline-bg" style="background: url('<?php echo THEME_URI; ?>/assets/images/team-player-img-002.jpg');">
                       </div>
-                      <a href="#" class="overlay-link"></a>
+                      <a href="/player/" class="overlay-link"></a>
                     </div>
                     <div class="team-player-hdng mHc">
                       <h5 class="team-player-title"><a href="#">naam speler</a></h5>
@@ -456,7 +456,7 @@
                       </div>
                       <div class="team-player-img-hover inline-bg" style="background: url('<?php echo THEME_URI; ?>/assets/images/team-player-img-002.jpg');">
                       </div>
-                      <a href="#" class="overlay-link"></a>
+                      <a href="/player/" class="overlay-link"></a>
                     </div>
                     <div class="team-player-hdng mHc">
                       <h5 class="team-player-title"><a href="#">naam speler</a></h5>
@@ -472,7 +472,7 @@
                       </div>
                       <div class="team-player-img-hover inline-bg" style="background: url('<?php echo THEME_URI; ?>/assets/images/team-player-img-002.jpg');">
                       </div>
-                      <a href="#" class="overlay-link"></a>
+                      <a href="/player/" class="overlay-link"></a>
                     </div>
                     <div class="team-player-hdng mHc">
                       <h5 class="team-player-title"><a href="#">naam speler</a></h5>
@@ -488,7 +488,7 @@
                       </div>
                       <div class="team-player-img-hover inline-bg" style="background: url('<?php echo THEME_URI; ?>/assets/images/team-player-img-002.jpg');">
                       </div>
-                      <a href="#" class="overlay-link"></a>
+                      <a href="/player/" class="overlay-link"></a>
                     </div>
                     <div class="team-player-hdng mHc">
                       <h5 class="team-player-title"><a href="#">naam speler</a></h5>

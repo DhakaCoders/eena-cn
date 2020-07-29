@@ -70,15 +70,15 @@ fanshop-post-grid-sec-wrp
 	padding-bottom: 80px;
 	background: #f9f9f9;
 }
-.fanshop-post-grid-wrp > ul{
+.fanshop-post-grid-wrp ul.productItems{
 	margin: 0 -10px;
 }
-.fanshop-post-grid-wrp > ul > li{
+.fanshop-post-grid-wrp ul.productItems > li{
 	float: left;
 	width: 33.3333%;
 	padding: 0 10px 24px;
 }
-.fanshop-post-grid-wrp > ul > li:nth-child(3n+1){
+.fanshop-post-grid-wrp ul.productItems > li:nth-child(3n+1){
 	clear: left;
 }
 .FanShopPostSlider{
@@ -773,13 +773,13 @@ fanshop-v1-post-sec-wrp
 	    margin: 0 auto;
 	    text-align: center;
 	}
-	.fanshop-post-grid-wrp > ul > li {
+	.fanshop-post-grid-wrp ul.productItems > li {
 	    width: 50%;
 	}
-	.fanshop-post-grid-wrp > ul > li:nth-child(3n+1) {
+	.fanshop-post-grid-wrp ul.productItems > li:nth-child(3n+1) {
 	    clear: none;
 	}
-	.fanshop-post-grid-wrp > ul > li:nth-child(2n+1) {
+	.fanshop-post-grid-wrp ul.productItems > li:nth-child(2n+1) {
 	    clear: left;
 	}
 	.fanshop-service-wrp ul li {

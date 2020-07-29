@@ -28,105 +28,105 @@
                   <tbody class="classroom-tbody Wed-am-tbody">
                     <tr>
                       <td><span class="">1.</span></td>
-                      <td> <span class="">Olympia Wijgmaal - Eendracht Aalst</span></td>
+                      <td> <span class=""><a href="#">Olympia Wijgmaal - Eendracht Aalst</a></span></td>
                       <td><span class="">12/09/2019</span></td>
                       <td><span class="">20u00</span></td>
                       <td><span class="">2 - 2</span></td>
                     </tr>
                     <tr>
                       <td><span class="">2.</span></td>
-                      <td> <span class="">Eendracht Aalst - SK Pepingen-Halle</span></td>
+                      <td> <span class=""><a href="#">Eendracht Aalst - SK Pepingen-Halle</a></span></td>
                       <td><span class="">08/09/2019</span></td>
                       <td><span class="">15u00</span></td>
                       <td><span class="">5 - 0</span></td>
                     </tr>
                     <tr>
                       <td><span class="">3.</span></td>
-                      <td> <span class="">Cappellen FC - Eendracht Aalst</span></td>
+                      <td> <span class=""><a href="#">Cappellen FC - Eendracht Aalst</a></span></td>
                       <td><span class="">15/09/2019</span></td>
                       <td><span class="">15u00</span></td>
                       <td><span class="">2 - 2</span></td>
                     </tr>
                     <tr>
                       <td><span class="">4.</span></td>
-                      <td> <span class="">Eendracht Aalst - KFC Duffel</span></td>
+                      <td> <span class=""><a href="#">Eendracht Aalst - KFC Duffel</a></span></td>
                       <td><span class="">15/09/2019</span></td>
                       <td><span class="">15u00</span></td>
                       <td><span class="">3 - 3</span></td>
                     </tr>
                     <tr>
                       <td><span class="">5.</span></td>
-                      <td> <span class="">ASV Geel - Eendracht Aalst</span></td>
+                      <td> <span class=""><a href="#">ASV Geel - Eendracht Aalst</a></span></td>
                       <td><span class="">15/09/2019</span></td>
                       <td><span class="">15u00</span></td>
                       <td><span class="">1 - 0</span></td>
                     </tr>
                     <tr>
                       <td><span class="">6.</span></td>
-                      <td> <span class="">Eendracht Aalst - Sporting Hasselt</span></td>
+                      <td> <span class=""><a href="#">Eendracht Aalst - Sporting Hasselt</a></span></td>
                       <td><span class="">15/09/2019</span></td>
                       <td><span class="">15u00</span></td>
                       <td><span class="">0 - 0</span></td>
                     </tr>
                     <tr>
                       <td><span class="">7.</span></td>
-                      <td> <span class="">Eendracht Aalst - Hoogstraten VV</span></td>
+                      <td> <span class=""><a href="#">Eendracht Aalst - Hoogstraten VV</a></span></td>
                       <td><span class="">15/09/2019</span></td>
                       <td><span class="">15u00</span></td>
                       <td><span class="">0 - 2</span></td>
                     </tr>
                     <tr>
                       <td><span class="">8.</span></td>
-                      <td> <span class="">Spouwen-Mopert. - Eendracht Aalst</span></td>
+                      <td> <span class=""><a href="#">Spouwen-Mopert. - Eendracht Aalst</a></span></td>
                       <td><span class="">15/09/2019</span></td>
                       <td><span class="">15u00</span></td>
                       <td><span class="">0 - 3</span></td>
                     </tr>
                     <tr>
                       <td><span class="mHc">9.</span></td>
-                      <td> <span class="mHc">Eendracht Aalst - Diegem Sport</span></td>
+                      <td> <span class="mHc"><a href="#">Eendracht Aalst - Diegem Sport</a></span></td>
                       <td><span class="mHc">15/09/2019</span></td>
                       <td><span class="mHc">15u00</span></td>
                       <td><span class="mHc">3 - 0</span></td>
                     </tr>
                     <tr>
                       <td><span class="mHc">10.</span></td>
-                      <td> <span class="mHc">RC Hades Hasselt - Eendracht Aalst</span></td>
+                      <td> <span class="mHc"><a href="#">RC Hades Hasselt - Eendracht Aalst</a></span></td>
                       <td><span class="mHc">15/09/2019</span></td>
                       <td><span class="mHc">15u00</span></td>
                       <td><span class="mHc">3 - 1</span></td>
                     </tr>
                     <tr>
                       <td><span class="mHc">11.</span></td>
-                      <td> <span class="mHc">Eendracht Aalst - VV Vosselaar</span></td>
+                      <td> <span class="mHc"><a href="#">Eendracht Aalst - VV Vosselaar</a></span></td>
                       <td><span class="mHc">15/09/2019</span></td>
                       <td><span class="mHc">15u00</span></td>
                       <td><span class="mHc">1 - 0</span></td>
                     </tr>
                     <tr>
                       <td><span class="mHc">12.</span></td>
-                      <td> <span class="mHc">Berchem Sport - Eendracht Aalst</span></td>
+                      <td> <span class="mHc"><a href="#">Berchem Sport - Eendracht Aalst</a></span></td>
                       <td><span class="mHc">15/09/2019</span></td>
                       <td><span class="mHc">15u00</span></td>
                       <td><span class="mHc">1 - 1</span></td>
                     </tr>
                     <tr>
                       <td><span class="mHc">13.</span></td>
-                      <td> <span class="mHc">Eendracht Aalst - KVK Tienen</span></td>
+                      <td> <span class="mHc"><a href="#">Eendracht Aalst - KVK Tienen</a></span></td>
                       <td><span class="mHc">15/09/2019</span></td>
                       <td><span class="mHc">15u00</span></td>
                       <td><span class="mHc">3 - 0</span></td>
                     </tr>
                     <tr>
                       <td><span class="mHc">14.</span></td>
-                      <td> <span class="mHc">SK Londerzeel - Eendracht Aalst</span></td>
+                      <td> <span class="mHc"><a href="#">SK Londerzeel - Eendracht Aalst</a></span></td>
                       <td><span class="mHc">15/09/2019</span></td>
                       <td><span class="mHc">15u00</span></td>
                       <td><span class="mHc">2 - 2</span></td>
                     </tr>
                     <tr>
                       <td><span class="mHc">16.</span></td>
-                      <td> <span class="mHc">Eendracht Aalst - Bocholter VV</span></td>
+                      <td> <span class="mHc"><a href="#">Eendracht Aalst - Bocholter VV</a></span></td>
                       <td><span class="mHc">15/09/2019</span></td>
                       <td><span class="mHc">15u00</span></td>
                       <td><span class="mHc">1 - 2</span></td>

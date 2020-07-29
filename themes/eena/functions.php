@@ -105,7 +105,7 @@ if( function_exists('acf_add_options_page') ) {
 
 }
 function my_acf_google_map_api( $api ){
-	$api['key'] = 'AIzaSyBo2-QJ7RdCkLw3NFZEu71mEKJ_8LczG-c';
+	$api['key'] = 'AIzaSyBaRQsAJCZyyD6MbCg0jB_0sdLGEOxt97Y';
 	return $api;
 }
 add_filter('acf/fields/google_map/api', 'my_acf_google_map_api');

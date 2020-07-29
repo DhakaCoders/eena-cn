@@ -10,7 +10,7 @@
     <div class="row">
       <div class="col-md-12">
         <div class="player-category-sec-inr clearfix">
-          <div class="player-targer">
+          <div class="player-targer player-1">
             <h4 class="pt-title">DOELMANNEN</h4>
             <ul class="reset-list">
               <li><a href="#">VAN GERVEN</a></li>
@@ -18,7 +18,7 @@
               <li><a href="#">VANDENBOSSCHE</a></li>
             </ul>
           </div>
-          <div class="player-defender">
+          <div class="player-defender player-2">
             <h4 class="pd-title">VERDEDIGERS</h4>
             <div class="pd-list-ctlr clearfix">
               <ul class="reset-list">
@@ -34,7 +34,7 @@
               </ul>
             </div>
           </div>
-          <div class="player-mid">
+          <div class="player-mid player-3">
             <h4 class="pmid-title">MIDDENVELDERS</h4>
             <div class="pmid-list-ctlr">
               <ul class="reset-list clearfix">
@@ -50,7 +50,7 @@
               </ul>
             </div>
           </div>
-          <div class="player-attact">
+          <div class="player-attact player-4">
             <h4 class="pa-title">AANVALLERS</h4>
             <div class="pa-list-ctlr">
               <ul class="reset-list clearfix">

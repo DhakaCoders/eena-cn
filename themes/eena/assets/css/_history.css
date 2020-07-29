@@ -128,10 +128,11 @@
     border-radius: 100%;
     background: #ebebeb;
     z-index: 11;
+    transition: all 0.3s;
 }
-.history-timeline-main ul li:first-child .time-line-des .time-line-des-hdng:after{
+/*.history-timeline-main ul li:first-child .time-line-des .time-line-des-hdng:after{
     background: #f6c042;
-}
+}*/
 .history-timeline-main ul li .time-line-des .time-line-des-hdng span{
 	content: "";
     position: absolute;
@@ -139,9 +140,12 @@
     transform: translateY(-50%);
     right: -144px;
     width: 36px;
-    height: 110px;
+    height: 80px;
     background: #f9f9f9;
     z-index: 11;
+}
+.history-timeline-main ul li .time-line-des .time-line-des-hdng.nowactive:after{
+	background: #f6c042;
 }
 .history-timeline-main ul li .time-line-des .time-line-des-hdng .pointBullet{
 	position: absolute;
@@ -170,15 +174,20 @@
 	overflow: hidden;
 	position: relative;
 }
-.firstLine{
+.firstLine,
+.activeLine{
     position: absolute;
     left: 50%;
-    top: 50px;
-    bottom: 240px;
+    top: 0;
+    bottom: 0;
     transform: translateX(-50%);
     width: 2px;
     background: #ebebeb;
     z-index: 1;
+}
+.activeLine{
+	bottom: auto;
+	background: #f6c042;
 }
 .historyActiveWrap .firstLine{
 	background: #002853;
@@ -206,6 +215,13 @@
 .historyActiveWrap .time-line-des p{
 	opacity: 0;
 	visibility: hidden;
+}
+.middleElement {
+    position: fixed;
+    height: 1px;
+    width: 1px;
+    left: 50%;
+    top: 50%;
 }
 /* responsive */
 @media (max-width: 1199px){

@@ -30,7 +30,8 @@
                     'theme_location' => 'cbv_fta_menu', 
                     'menu_class' => 'ulc',
                     'container' => '',
-                    'container_class' => ''
+                    'container_class' => '',
+                    'depth' => 1
                   );
                 wp_nav_menu( $fmenuOptions ); 
               ?>
@@ -42,7 +43,8 @@
                     'theme_location' => 'cbv_ftb_menu', 
                     'menu_class' => 'ulc',
                     'container' => '',
-                    'container_class' => ''
+                    'container_class' => '',
+                    'depth' => 1
                   );
                 wp_nav_menu( $fmenuOptionsb ); 
               ?>           
@@ -54,7 +56,8 @@
                     'theme_location' => 'cbv_ftc_menu', 
                     'menu_class' => 'ulc',
                     'container' => '',
-                    'container_class' => ''
+                    'container_class' => '',
+                    'depth' => 1
                   );
                 wp_nav_menu( $fmenuOptionsc ); 
               ?>           
@@ -66,7 +69,8 @@
                     'theme_location' => 'cbv_ftd_menu', 
                     'menu_class' => 'ulc',
                     'container' => '',
-                    'container_class' => ''
+                    'container_class' => '',
+                    'depth' => 1
                   );
                 wp_nav_menu( $fmenuOptionsd ); 
               ?>           
@@ -85,7 +89,7 @@
               <?php if( !empty( $copyright_text ) ) printf( '<span>%s</span>', $copyright_text); ?>
             </div>
             <div class="ftr-btm-col-2 text-right">
-              <a href="#">webdesign by conversal</a>
+              <a target="_blank" href="https://www.conversal.be/">webdesign by conversal</a>
             </div>
           </div>
         </div>

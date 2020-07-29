@@ -34,8 +34,9 @@ $intro = get_field('introsec', $shopID);
                   if( $i == 1 ){
                     $first_term = $term->slug;
                   }
+                  if( $i == 1 ){ $accls = 'active'; }else{ $accls = ''; }
               ?>
-              <li><a href="#" onclick='productCategory("<?php echo $term->slug; ?>"); return false'><?php echo $term->name; ?></a></li>
+              <li><a class="<?php echo $accls; ?>" href="#" onclick='productCategory("<?php echo $term->slug; ?>", this); return false'><?php echo $term->name; ?></a></li>
               <?php $i++; endif; ?>
               <?php endforeach; ?>
             </ul>
@@ -52,7 +53,7 @@ $intro = get_field('introsec', $shopID);
   <div class="container">
     <div class="row">
       <div class="col-md-12">
-        <div class="product-shop" id="product-content">
+        <div class="product-shop loading-now" id="product-content">
           
         </div>
       </div>

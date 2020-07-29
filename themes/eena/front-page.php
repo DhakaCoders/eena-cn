@@ -272,7 +272,7 @@
         </div>
         <div class="col-lg-12 col-xl-6">
           <div class="hm-ranking-sec-rgt-des">
-            <?php get_template_part('templates/hm', 'klassement'); ?>
+            <?php get_template_part('templates/home', 'klassement'); ?>
           </div>
         </div>
       </div>

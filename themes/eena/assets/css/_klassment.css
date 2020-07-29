@@ -52,6 +52,9 @@
 	text-align: center;
 	padding: 14px 0;
 }
+.classroom-tbody tr td a{
+	color: #111111;
+}
 .classroom-thead tr th:nth-last-child(2),
 .classroom-tbody tr td:nth-last-child(2){
 	width: 105px;

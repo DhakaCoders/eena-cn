@@ -40,7 +40,7 @@ function postCategory(val, el){
             //console.log(response);
             if (response  == 0) {
                 //$('.post-load-more-btn').prepend('<div class="clearfix"></div><div class="text-center"><p>Geen producten meer om te laden.</p></div>');
-            jQuery('#post-content').removeClass('loading-now');
+                jQuery('#post-content').removeClass('loading-now');
             } else {
                 jQuery('#post-content').html(response.substr(response.length-1, 1) === '0'? response.substr(0, response.length-1) : response);
                 jQuery('#post-content').removeClass('loading-now');
@@ -61,7 +61,7 @@ function listItemHide(){
   });
 }
 
-function historyCategory(val){
+function historyCategory(val, el){
     var ajaxurl = ajax_history_object.ajaxurl;
     //ajax call
     jQuery.ajax({
@@ -74,6 +74,7 @@ function historyCategory(val){
         },
         beforeSend: function ( xhr ) {
             jQuery('#ajxaloader').show();
+            jQuery('#history-tab').addClass('loading-now');
              
         },
         success: function(response ) {
@@ -81,10 +82,12 @@ function historyCategory(val){
             console.log(response);
             if (response  == 0) {
                 //$('.post-load-more-btn').prepend('<div class="clearfix"></div><div class="text-center"><p>Geen producten meer om te laden.</p></div>');
+                jQuery('#history-tab').removeClass('loading-now');
             } else {
                 jQuery('#history-content').html(response.substr(response.length-1, 1) === '0'? response.substr(0, response.length-1) : response);
-              listItemHide();
+                jQuery('#history-tab').removeClass('loading-now');
             }
+            
         },
         error: function(response ) {
             console.log('asdfsd');
@@ -93,7 +96,7 @@ function historyCategory(val){
 }
 
 
-function productCategory(val){
+function productCategory(val, el){
     var ajaxurl = ajax_product_object.ajaxurl;
     //ajax call
     jQuery.ajax({
@@ -106,6 +109,7 @@ function productCategory(val){
         },
         beforeSend: function ( xhr ) {
             jQuery('#ajxaloader').show();
+            jQuery('#product-content').addClass('loading-now');
              
         },
         success: function(response ) {
@@ -113,9 +117,13 @@ function productCategory(val){
             //console.log(response);
             if (response  == 0) {
                 //$('.post-load-more-btn').prepend('<div class="clearfix"></div><div class="text-center"><p>Geen producten meer om te laden.</p></div>');
+                jQuery('#product-content').removeClass('loading-now');
             } else {
                 jQuery('#product-content').html(response.substr(response.length-1, 1) === '0'? response.substr(0, response.length-1) : response);
+                jQuery('#product-content').removeClass('loading-now');
             }
+            jQuery(el).parents('ul').find('li a').removeClass('active');
+            jQuery(el).parent('li').addClass('active');
         },
         error: function(response ) {
             console.log('asdfsd');

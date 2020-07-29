@@ -304,6 +304,9 @@ nav.main-nav ul.sub-menu li a{
 	text-transform: uppercase;
 	position: relative;
 }
+nav.main-nav ul.sub-menu li a:hover{
+	color: #fff;
+}
 nav.main-nav > ul > li.menu-item-has-children > ul.sub-menu:after{
 	content: "";
 	position: absolute;
@@ -595,7 +598,7 @@ ul.main-slider-custom-pagi{
 ul.main-slider-custom-pagi li{
 	display: inline-block;
 	vertical-align: baseline;
-	padding: 2px;
+	padding: 2px 4px;
 	list-style: none;
 	margin: 0;
 }

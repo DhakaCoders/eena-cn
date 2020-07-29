@@ -23,6 +23,9 @@
     <strong>ACTUA</strong>
   </div>
     <div class="eena-breadcrumbs-sec-inr">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
       <div class="eena-breadcrumbs-sec-Wrap">
       <?php if( $arg_anieuws ): ?>
       <div class="eena-brdcrmb-sliders bdcmbSlider">
@@ -34,8 +37,11 @@
         </div>
         <?php endforeach; ?>
       </div>
+        <?php endif; ?>
       </div>
-      <?php endif; ?>
+    </div>
+    </div>
+    </div>
     </div>
 </section>
 <?php endif; ?>

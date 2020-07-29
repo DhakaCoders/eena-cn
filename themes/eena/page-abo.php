@@ -54,10 +54,8 @@
                 if( !empty( $intro['beschrijving'] ) ) echo wpautop($intro['beschrijving']); 
               ?>
             </div>
-            <div class="contact-form-wrp clearfix">
-              <div class="wpforms-container">
-                <?php if(!empty($intro['form_shortcode'])) echo do_shortcode( $intro['form_shortcode'] ); ?>
-              </div>
+            <div class="contact-form-wrp aboform clearfix">
+              <?php if(!empty($intro['form_shortcode'])) echo do_shortcode( $intro['form_shortcode'] ); ?>
             </div>
           </div>
         </div>

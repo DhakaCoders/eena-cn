@@ -22,9 +22,6 @@
     font-weight: 900;
     margin-bottom: 27px;
     margin-top: -15px;
-	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-	-ms-text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-	-webkit-text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .contact-form-dsc {
     font-size: 16px;
@@ -160,7 +157,7 @@
     background-color: #ffffff !important;
     border: 0;
     padding: 18px 16px;
-    font-size: 12px !important;
+    font-size: 14px !important;
     line-height: 14px;
     color: #111111 !important;
     font-weight: 600 !important;
@@ -546,8 +543,125 @@
 	color: #fed056;
 }
 
-
-
+.contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field.sectionTitle{
+	width: 100%;
+}
+.contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field.tribune{
+	width: 50%!important;
+	clear: left;
+}
+.aboform .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field.wpforms-field-checkbox input{
+	display: none;
+}
+.aboform .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field.wpforms-field-checkbox li:before{
+	display: none;
+}
+.aboform .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field.wpforms-field-checkbox li label{
+	line-height: 24px;
+	position: relative;
+}
+.aboform .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field.wpforms-field-checkbox li label:before{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    box-sizing: border-box;
+    left: 0;
+    top: 2px;
+    background: #fff;
+}
+.aboform .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field.wpforms-field-checkbox li label:after{
+	left: 7px;
+    top: 4px;
+    width: 6px;
+    height: 12px;
+    border: solid #111111;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    position: absolute;
+    content: "";	
+    display: none;
+}
+.aboform .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field.wpforms-field-checkbox li input:checked ~ label:after{
+	display: block;	
+}
+.aboform .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field.sectionTwo {
+	position: relative;
+    padding-top: 35px;
+    padding-bottom: 0;
+    margin-top: 15px;
+}
+.aboform .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field.sectionTwo:before{
+	content: "";
+	height: 3px;
+	background: #fff;
+	top: 0;
+	left: 12px;
+	right: 12px;
+	position: absolute;
+}
+.aboform .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field.isPersonTwo .wpforms-field-label,
+.aboform .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field.isPersonTwo li label:after,
+.aboform .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field.isPersonTwo li label:before{
+	display: none;
+}
+.aboform .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field.isPersonTwo li label {
+    display: block;
+    vertical-align: baseline;
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 14px;
+    color: #2B2B2B;
+    text-transform: uppercase;
+    border: 2px solid#111111;
+    padding: 16px 45px 15px 45px;
+    font-weight: 800;
+    max-width: 260px;
+    width: 100%;
+}
+.aboform .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field.isPersonTwo{
+	padding-bottom: 35px;
+	margin-bottom: 25px;
+	position: relative;
+}
+.aboform .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field.isPersonTwo:after{
+	content: "";
+	height: 3px;
+	background: #fff;
+	bottom: 0;
+	left: 12px;
+	right: 12px;
+	position: absolute;	
+}
+.aboform .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field.isPersonTwo i {
+    padding-right: 10px;
+}
+.aboform .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field.isPersonTwo li input{
+	display: none;
+}
+.aboform .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field.endPersonTwo{
+	padding-bottom: 35px;
+	position: relative;
+}
+.aboform .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field.endPersonTwo:after{
+	content: "";
+	height: 3px;
+	background: #fff;
+	bottom: 0;
+	left: 12px;
+	right: 12px;
+	position: absolute;		
+}
+.aboform .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field.isPersonTwo li input:checked + label{
+    color: #fff;
+    text-transform: uppercase;
+    background: #111111;	
+}
+.ab-frm-text{
+	text-transform: uppercase;
+}
 /*
 -----------------
  Responsive Css

@@ -159,13 +159,13 @@ $(".eena-brdcrmb-left").css({
 
 if( $('.bdcmbSlider').length ){
     $('.bdcmbSlider').slick({
-      dots: false,
+/*      dots: false,
       arrows: false,
       infinite: true,
       autoplay: false,
       autoplaySpeed: 1000,
       speed: 300,
-      slidesToShow: 3,
+      slidesToShow: 3,*/
       
       pauseOnHover: true,
       autoplay: true,
@@ -176,14 +176,14 @@ if( $('.bdcmbSlider').length ){
       dots: false,
       infinite: true,
       speed: 9000,
-      slidesToShow: 3,
+      slidesToShow: 1,
       variableWidth: true,
 
       responsive: [
         {
           breakpoint: 1300,
           settings: {
-            slidesToShow: 2
+            slidesToShow: 1
           }
         },
         {
@@ -335,9 +335,9 @@ if( $('#googlemap').length ){
           mapTypeControl:false,
           scrollwheel: false,
 
-          zoomControl: false,
+          zoomControl: true,
           disableDefaultUI: true,
-          zoom:17,
+          zoom:12,
           streetViewControl: false,
           rotateControl: false,
           mapTypeId:google.maps.MapTypeId.ROADMAP,
@@ -663,4 +663,23 @@ $('body').on('click', '.pgajax li a', function(e){
   $(this).addClass('current');
 });
 
+if( $('.middleElement').length ){
+  window.onscroll=function(){
+    scrollTimeline();
+  };
+  function scrollTimeline(){
+    var mE = $('.middleElement').offset().top;
+    var fL = $('.firstLine').offset().top;
+    ofH = mE - fL;
+      $('.activeLine').css('height', ofH);
+    $('.time-line-des-hdng span').each(function(){
+      var bot = $(this).offset().top;
+      if( mE > bot ){
+        $(this).parent().addClass('nowactive');
+      }else{
+        $(this).parent().removeClass('nowactive');
+      }
+    });
+  }
+}
 })(jQuery);

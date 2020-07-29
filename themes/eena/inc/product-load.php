@@ -29,6 +29,7 @@ function ajax_product_script_load_more() {
   }
   //number of products per page default
   $num = 2;
+  $divider = 2;
   if(isset($_POST['cat']) && !empty($_POST['cat'])){
       $cat = $_POST['cat'];
   }
@@ -48,12 +49,14 @@ function ajax_product_script_load_more() {
   );
   
   if($query->have_posts()){
-  echo '<div class="fanshop-post-grid-wrp btm-bdr-none">';
-  echo '<ul class="reset-list clearfix" id="product-items">';
   $thumb = $hide_class = '';
   $totalproduct = $query->found_posts;
   $totalPages = ceil($totalproduct/$num);
   $j = 1;
+  $i = 0;
+  echo '<div class="fanshop-post-grid-wrp btm-bdr-none eena-page-wrap">';
+  echo '<div class="eena-pagination-page" data-page="'.$j.'">';
+  echo '<ul class="reset-list productItems clearfix">';
   while($query->have_posts()): $query->the_post();
     global $product;
     $thumb_id = get_post_thumbnail_id(get_the_ID());
@@ -62,11 +65,8 @@ function ajax_product_script_load_more() {
     } else {
       $thumb = THEME_URI.'/assets/images/eena-grd-item-fea-img-1.jpg';
     }
-    if( $j > $num ){
-      $hide_class = ' hidelist';
-    }
   ?>
-  <li class="<?php echo $hide_class; ?>">
+  <li>
     <div class="fanshop-post-grid-inr mHc clearfix">
       <div class="fanshop-post-grid-img-cntlr">
         <a href="<?php the_permalink();?>" class="overlay-link"></a>
@@ -96,15 +96,21 @@ function ajax_product_script_load_more() {
     </div>
   </li>
   <?php
+  if( $j == $divider ){ echo '</ul></div><div class="eena-pagination-page" data-page="'.$j.'"><ul class="reset-list productItems clearfix">'; $divider += $num; }
+
   $j++;
   endwhile;
   echo '</ul>';
   echo '</div>';
   if( $totalPages > 1):
   echo '<div class="eena-pagination-wrp"><div class="fl-pagi-ctlr">';
-   echo '<ul class="page-numbers reset-list">';
+   echo '<ul class="page-numbers reset-list pgajax">';
         for( $i = 1; $i <= $totalPages; $i++ ){
-          echo '<li><span class="page-numbers current">'.$i.'</span></li>';
+          if( $i == 1 ){
+            echo '<li><a href="#" class="page-numbers current" data-page="'.$i.'">'.$i.'</a></li>';
+          }else{
+            echo '<li><a href="#" class="page-numbers" data-page="'.$i.'">'.$i.'</a></li>';
+          }
         }
   echo '</ul></div></div>';
   endif;

@@ -1,16 +1,15 @@
 /*
 Theme Name: SC Eena
 Theme URI: N/A
-Author: Md. Foridul Islam
-Author URI: N/A
+Author: Conversal Team
+Author URI: https://www.conversal.be/
 Description: A custom wordpress theme for SC Eena.
 Version: 1.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Tags: Html5, Css3, PHP5, Custom post type, Blog, Wpml
+Tags: Html5, Css3, PHP5, Custom post type, Blog
 Text Domain: eena
 */
-
 @import url('assets/css/main.css');
 /*.hdr-cntlr{
 	display: none;
@@ -44,7 +43,12 @@ Text Domain: eena
     background: rgba(0, 0, 0, 0.5);
     z-index: 2;
 }*/
-.loading-now .eena-page-wrap{
+.loading-now{
+    min-height: 500px;
+    position: relative;
+}
+.loading-now .eena-page-wrap,
+.loading-now .history-timeline-innr{
     opacity: 0.5;
 }
 .loading-now:after {
@@ -61,6 +65,11 @@ Text Domain: eena
     top: 20%;
     z-index: 3;
 }
+.history-timeline-sec.loading-now:after {
+    top: 40px;
+    z-index: 999;
+    margin-left: -18px;
+}
 .eena-page-wrap .eena-pagination-page{
     display: none;
 }
@@ -69,4 +78,7 @@ Text Domain: eena
 }
 .no-results{
     text-align: center;
+}
+nav.main-nav > ul{
+    height: 64px;
 }

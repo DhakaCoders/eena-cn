@@ -41,7 +41,211 @@ the_post();
                     echo wpautop($fc_tekst);
                 echo '</div>';
               echo '</div></div>';      
-            }elseif( get_row_layout() == 'galerij' ){
+            }elseif( get_row_layout() == 'wedstrijden' ){
+              $fc_volgende_wedstrijd = get_sub_field('fc_volgende_wedstrijd');
+              $fc_vorige_wedstrijd = get_sub_field('fc_vorige_wedstrijd');
+            ?>
+            <div class="dft-versus-match-cntlr">
+            <div class="hm-ranking-sec-lft-des">
+            <div class="versus-match-cntlr">
+              <div class="versus-match-title">
+                <div class="fl-tabs match-tabs">
+                  <ul class="reset-list clearfix">
+                    <li><a class="tab-link current" href="#" data-tab="mt-tab-1">volgende wedstrijd</a></li>
+                    <li><a class="tab-link" href="#" data-tab="mt-tab-2">vorige wedstrijd</a></li>
+                  </ul>
+                </div>
+              </div>
+              
+              <div id="mt-tab-1" class="fl-tab-content current">
+                <?php 
+                  if( !empty($fc_volgende_wedstrijd) ):
+                  $query = new WP_Query(array( 
+                      'post_type'=> 'matches',
+                      'post_status' => 'publish',
+                      'posts_per_page' => 1,
+                      'post__in' => array($fc_volgende_wedstrijd),
+                      'tax_query' => array(
+                          array(
+                              'taxonomy' => 'match_cat',
+                              'field'    => 'slug',
+                              'terms'    => 'volgende-wedstrijd',
+                          ),
+                      ),
+                    ) 
+                  );
+                  else:
+                    $query = new WP_Query(array( 
+                      'post_type'=> 'matches',
+                      'post_status' => 'publish',
+                      'posts_per_page' => 1,
+                      'orderby' => 'date',
+                      'order' => 'DESC',
+                      'tax_query' => array(
+                          array(
+                              'taxonomy' => 'match_cat',
+                              'field'    => 'slug',
+                              'terms'    => 'volgende-wedstrijd',
+                          ),
+                      ),
+                    ) 
+                  );
+                  endif;
+
+                  
+                  if($query->have_posts()){
+                ?>
+                <div class="versus-match">
+                  <?php
+                    $i = 1;
+                    while($query->have_posts()): $query->the_post();
+                    $intro = get_field('intro', get_the_ID());
+                    $teama = get_field('teama', get_the_ID());
+                    $teamb = get_field('teamb', get_the_ID());
+                  ?>
+                  <div class="versus-team versus-match-item">
+                    <?php if( $teama ): ?>
+                    <div class="versus-team-logo versus-team-logo-lft">
+                      <?php 
+                        $teamaobj = $teama['logo'];
+                        if( is_array($teamaobj) ){
+                          echo '<img src="'.$teamaobj['url'].'" alt="'.$teamaobj['alt'].'" title="'.$teamaobj['title'].'">';
+                        }
+                      ?>
+                    </div>
+                    <?php if(  !empty($teama['naam'])) printf('<h5 class="versus-team-name">%s</h5>', $teama['naam']); ?>
+                    
+                  <?php endif; ?>
+                  </div>
+                  <div class="versus-logo versus-match-item versus-team-logo-rgt" style="background: url('<?php echo THEME_URI; ?>/assets/images/vs-icon.png');">
+                    <div class="versus-play-time hide-sm">
+                    <?php if( !empty($intro['datuum2']) ) printf('<span>%s</span>', $intro['datuum2']); ?>
+                    </div>
+                  </div>
+                  <div class="versus-team2 versus-match-item">
+                    <?php if( $teamb ): ?>
+                    <div class="versus-team-logo">
+                      <?php 
+                        $teambobj = $teamb['logo'];
+                        if( is_array($teambobj) ){
+                          echo '<img src="'.$teambobj['url'].'" alt="'.$teambobj['alt'].'" title="'.$teambobj['title'].'">';
+                        }
+                      ?>
+                    </div>
+                    <?php if(  !empty($teamb['naam'])) printf('<h5 class="versus-team-name">%s</h5>', $teamb['naam']); ?>
+                    
+                  <?php endif; ?>
+                  </div>
+                </div>
+
+                <div class="versus-play-time versus-play-time-sm show-sm">
+                <?php if( !empty($intro['datuum2']) ) printf('<span>%s</span>', $intro['datuum2']); ?>
+                </div>
+                <div class="versus-btn">
+                  <a href="<?php echo esc_url( home_url('wedstrijden') );?>">Voorbeschouwing
+                    <i>  
+                      <svg class="sp-fanshop-gallery-arrows-svg" width="27" height="14" viewBox="0 0 27 14" fill="#F6C042">
+                        <use xlink:href="#sp-fanshop-gallery-arrows-svg"></use>
+                      </svg>
+                    </i>
+                  </a>
+                </div>
+                <?php $i++; endwhile; ?>
+                <?php } wp_reset_postdata();?>
+              </div>
+              <div id="mt-tab-2" class="fl-tab-content">
+                <?php 
+                  if( !empty($fc_vorige_wedstrijd) ):
+                  $query = new WP_Query(array( 
+                      'post_type'=> 'matches',
+                      'post_status' => 'publish',
+                      'posts_per_page' => 1,
+                      'post__in' => array($fc_vorige_wedstrijd),
+                      'tax_query' => array(
+                          array(
+                              'taxonomy' => 'match_cat',
+                              'field'    => 'slug',
+                              'terms'    => 'vorige-wedstrijd',
+                          ),
+                      ),
+                    ) 
+                  );
+                  else:
+                    $query = new WP_Query(array( 
+                      'post_type'=> 'matches',
+                      'post_status' => 'publish',
+                      'posts_per_page' => 1,
+                      'orderby' => 'date',
+                      'order' => 'DESC',
+                      'tax_query' => array(
+                          array(
+                              'taxonomy' => 'match_cat',
+                              'field'    => 'slug',
+                              'terms'    => 'vorige-wedstrijd',
+                          ),
+                      ),
+                    ) 
+                  );
+                  endif;
+                  if($query->have_posts()){
+                ?>
+                <div class="versus-match">
+                  <?php
+                    while($query->have_posts()): $query->the_post();
+                    $intro = get_field('intro', get_the_ID());
+                    $teama = get_field('teama', get_the_ID());
+                    $teamb = get_field('teamb', get_the_ID());
+                  ?>
+                  <div class="versus-team versus-match-item">
+                    <?php if( $teama ): ?>
+                    <div class="versus-team-logo">
+                    <?php 
+                        $teamaobj = $teama['logo'];
+                        if( is_array($teamaobj) ){
+                          echo '<img src="'.$teamaobj['url'].'" alt="'.$teamaobj['alt'].'" title="'.$teamaobj['title'].'">';
+                        }
+                      ?>
+                    </div>
+                    <?php if(  !empty($teama['naam'])) printf('<h5 class="versus-team-name">%s</h5>', $teama['naam']); ?>
+                    
+                  <?php endif; ?>
+                  </div>
+                  <div class="versus-logo versus-match-item" style="background: url('<?php echo THEME_URI; ?>/assets/images/vs-icon.png');">
+                    <div class="versus-play-time">
+                      <?php if( !empty($intro['datuum2']) ) printf('<span>%s</span>', $intro['datuum2']); ?>
+                    </div>
+                  </div>
+                  <div class="versus-team2 versus-match-item">
+                    <?php if( $teamb ): ?>
+                    <div class="versus-team-logo">
+                    <?php 
+                        $teambobj = $teamb['logo'];
+                        if( is_array($teambobj) ){
+                          echo '<img src="'.$teambobj['url'].'" alt="'.$teambobj['alt'].'" title="'.$teambobj['title'].'">';
+                        }
+                      ?>
+                    </div>
+                    <?php if(  !empty($teamb['naam'])) printf('<h5 class="versus-team-name">%s</h5>', $teamb['naam']); ?>
+                    
+                  <?php endif; ?>
+                  </div>
+                  <?php endwhile; ?>
+                </div>
+                <div class="versus-btn">
+                  <a href="<?php echo esc_url( home_url('wedstrijden') );?>">Voorbeschouwing
+                    <i>  
+                      <svg class="sp-fanshop-gallery-arrows-svg" width="27" height="14" viewBox="0 0 27 14" fill="#F6C042">
+                        <use xlink:href="#sp-fanshop-gallery-arrows-svg"></use>
+                      </svg>
+                    </i>
+                  </a>
+                </div>
+                <?php } wp_reset_postdata();?>
+              </div>
+            </div>
+            </div>
+            </div>
+            <?php }elseif( get_row_layout() == 'galerij' ){
               $gallery_cn = get_sub_field('afbeeldingen');
               $lightbox = get_sub_field('lightbox');
               $kolom = get_sub_field('kolom');
@@ -96,26 +300,57 @@ the_post();
                 endforeach;
                 echo '</ul>';
               echo "</div></div>";
-            }elseif( get_row_layout() == 'producten' ){
-              $fc_prodcts = get_sub_field('fc_producten');
-                echo '<div class="dft-pro-items">
-                    <div class="dft-pro-item">
-                      <div class="hm-pro-bxe-item">
-                        <div class="hm-pro-bxe-item-icon mHc1">
-                          <i>
-                            <svg class="hm-pro-bxe-item-icon-01-svg" width="84" height="84" viewBox="0 0 84 84" fill="#000062">
-                              <use xlink:href="#hm-pro-bxe-item-icon-01-svg"></use>
-                            </svg> 
-                          </i>';
-                echo '</div>';
-                if( !empty( $fc_prodcts['titel'] ) ) printf( '<h3 class="hm-pro-bxe-item-title mHc2">%s</h3>', $fc_prodcts['titel']); 
-                if( !empty( $fc_prodcts['beschrijving'] ) ) echo wpautop($fc_prodcts['beschrijving']); 
-                if( !empty($fc_prodcts['knop']) ):
-                echo '<div class="hm-pro-bxe-item-more-link">'; 
-                  printf('<a href="%s">Ontdek onze oplossingen</a>', $fc_prodcts['knop']);
-                echo '</div>';
-                endif;
-                echo '</div></div></div>';
+            }elseif( get_row_layout() == 'nieuws' ){
+              $fc_nieuws = get_sub_field('fc_nieuws');
+              if( !empty($fc_nieuws ) ){
+                $query = new WP_Query(array( 
+                    'post_type'=> 'post',
+                    'post_status' => 'publish',
+                    'posts_per_page' => count($fc_nieuws),
+                    'post__in' => $fc_nieuws
+                  ) 
+                );
+              }else{
+                $query = new WP_Query(array( 
+                    'post_type'=> 'post',
+                    'post_status' => 'publish',
+                    'posts_per_page' => 2,
+                    'orderby' => 'date',
+                    'order' => 'DESC'
+                  ) 
+                );
+              }
+                
+              if($query->have_posts()){
+              echo '<div class="dft-news-overview-grds">
+                <div class="clearfix dft-news-overview-slider dftNewsOverviewSlider">';
+                  while($query->have_posts()): $query->the_post();
+                  $thumb_id = get_post_thumbnail_id(get_the_ID());
+                  if(!empty($thumb_id)){
+                    $thumb = cbv_get_image_src($thumb_id, 'hbloggrid');
+                  } else {
+                    $thumb = THEME_URI.'/assets/images/hdflt-img.jpg';
+                  }
+                  echo '<div class="dftNewsOverviewSlideItem"><div class="eena-grd-item">';
+                    echo '<div class="eena-grd-item-fea-img-ctlr">'; 
+                      echo '<a href="'.get_the_permalink().'" class="overlay-link"></a>'; 
+                      echo '<div class="eena-grd-item-fea-img" style="background: url('.$thumb.');"></div>'; 
+                    echo '</div>'; 
+                    echo '<div class="eena-grd-item-des mHc">'; 
+                    echo '<strong>';
+                    echo get_the_date( 'l j F - g:i A');
+                    echo '</strong>'; 
+                    echo '<h3 class="eena-gid-title mHc1">'; 
+                    echo '<a href="'.get_the_permalink().'">'.get_the_title().'</a>'; 
+
+                    echo '</h3>'; 
+                    echo get_the_excerpt();
+                  echo '<a href="'.get_the_permalink().'">LEES MEEr</a>'; 
+                    echo '</div>'; 
+                  echo '</div></div>'; 
+                  endwhile;
+              echo '</div></div>'; 
+              } wp_reset_postdata();
             }elseif( get_row_layout() == 'partners' ){
               $fc_partners = get_sub_field('fc_partners');
               $fc_titel = get_sub_field('fc_titel');

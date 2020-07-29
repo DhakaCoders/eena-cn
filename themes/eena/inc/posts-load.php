@@ -71,7 +71,7 @@ function ajax_post_script_load_more() {
       <div class="eena-grd-item-fea-img" style="background: url('<?php echo $thumb; ?>');"></div>
     </div>
     <div class="eena-grd-item-des mHc">
-      <strong><?php echo get_the_date( 'l j F - g:i A', $nieuws_row->ID ); ?></strong>
+      <strong><?php echo get_the_date( 'l j F - g:i A'); ?></strong>
       <h3 class="eena-gid-title mHc1"><a href="<?php the_permalink();?>"><?php the_title(); ?></a></h3>
       <p class="mHc2"><?php echo get_the_excerpt(); ?></p>
       <a href="<?php the_permalink();?>">LEES MEEr</a>

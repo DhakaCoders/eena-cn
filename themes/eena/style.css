@@ -79,3 +79,6 @@ Text Domain: eena
 .no-results{
     text-align: center;
 }
+nav.main-nav > ul{
+    height: 64px;
+}

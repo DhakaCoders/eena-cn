@@ -159,13 +159,13 @@ $(".eena-brdcrmb-left").css({
 
 if( $('.bdcmbSlider').length ){
     $('.bdcmbSlider').slick({
-      dots: false,
+/*      dots: false,
       arrows: false,
       infinite: true,
       autoplay: false,
       autoplaySpeed: 1000,
       speed: 300,
-      slidesToShow: 3,
+      slidesToShow: 3,*/
       
       pauseOnHover: true,
       autoplay: true,
@@ -176,14 +176,14 @@ if( $('.bdcmbSlider').length ){
       dots: false,
       infinite: true,
       speed: 9000,
-      slidesToShow: 3,
+      slidesToShow: 1,
       variableWidth: true,
 
       responsive: [
         {
           breakpoint: 1300,
           settings: {
-            slidesToShow: 2
+            slidesToShow: 1
           }
         },
         {

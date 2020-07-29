@@ -126,6 +126,9 @@
     <?php if( !empty( $actua['titel'] ) ) printf( '<strong>%s</strong>', $actua['titel']); ?>
   </div>
     <div class="eena-breadcrumbs-sec-inr">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
       <div class="eena-breadcrumbs-sec-Wrap">
       <?php if( $arg_anieuws ): ?>
       <div class="eena-brdcrmb-sliders bdcmbSlider">
@@ -145,6 +148,9 @@
         <?php endforeach; ?>
       </div>
       <?php endif; ?>
+    </div>
+    </div>
+    </div>
     </div>
     </div>
 </section>

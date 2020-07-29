@@ -23,10 +23,10 @@ a,input,img,textarea,button,svg,.sp-fanshop-gallery-dsc > img,
 	-o-transform: scale(1.1);
 }
 .sp-fanshop-gallery-img:hover .sp-fanshop-gallery-dsc > img{
-		transform: scale(1.03);
-	-ms-transform: scale(1.03);
-	-webkit-transform: scale(1.03);
-	-o-transform: scale(1.03);
+		transform: scale(1.07);
+	-ms-transform: scale(1.07);
+	-webkit-transform: scale(1.07);
+	-o-transform: scale(1.07);
 }
 .prv-nxt-page-btns a:hover{
 	color: #FFD056;

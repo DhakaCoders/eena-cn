@@ -132,7 +132,7 @@
 	padding-left: 38px;
 	position: relative;
 }
-.list-grd ul li span.ntnl:before{
+/*.list-grd ul li span.ntnl:before{
 	content: "";
 	position: absolute;
 	top: 52%;
@@ -144,7 +144,7 @@
 	background-position: center center!important;
 	background-repeat: no-repeat!important;
 	transform: translateY(-50%);
-}
+}*/
 
 .player-fac-img{
 	border: 8px solid #fff;

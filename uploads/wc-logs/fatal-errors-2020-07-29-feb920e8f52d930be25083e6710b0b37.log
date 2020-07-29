@@ -1,2 +1,6 @@
 2020-07-29T15:52:32+00:00 CRITICAL syntax error, unexpected 'printf' (T_STRING) in C:\xampp\htdocs\2020\07\eena\eena-cn\themes\eena\single-teams.php on line 204
 
+2020-07-29T16:58:02+00:00 CRITICAL syntax error, unexpected 'echo' (T_ECHO) in C:\xampp\htdocs\2020\07\eena\eena-cn\themes\eena\page.php on line 207
+
+2020-07-29T16:58:03+00:00 CRITICAL syntax error, unexpected 'echo' (T_ECHO) in C:\xampp\htdocs\2020\07\eena\eena-cn\themes\eena\page.php on line 207
+

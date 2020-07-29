@@ -139,13 +139,6 @@
           <a href="<?php echo esc_url( get_permalink($anieuws_row) ); ?>"><?php echo get_the_date( 'l j F', $anieuws_row->ID ); ?> <span>- <?php echo $anieuws_row->post_title;?>...</span></a>
         </div>
         <?php endforeach; ?>
-        <?php 
-        foreach( $arg_anieuws as $anieuws_row ):
-        ?>
-        <div class="eena-brdcrmb-slider-item">
-          <a href="<?php echo esc_url( get_permalink($anieuws_row) ); ?>"><?php echo get_the_date( 'l j F', $anieuws_row->ID ); ?> <span>- <?php echo $anieuws_row->post_title;?>...</span></a>
-        </div>
-        <?php endforeach; ?>
       </div>
       <?php endif; ?>
     </div>
@@ -249,30 +242,47 @@
             </div>
 
           </div>
+          <?php 
+            $showhide_schema = get_field('showhide_schema', HOMEID);
+            if( $showhide_schema ):
+              $schemas = get_field('schemasec', HOMEID);
+              if($schemas):
+                $training = $schemas['selecteer_schedule'];
+          ?>
+          <?php 
+            if( $training ){
+              $arg_training = $training;
+            } else{
+              $args = array(
+                'post_type' => 'trainingschema',
+                'post_status' => 'publish',
+                'posts_per_page' => 3,
+                'orderby' => 'date',
+                'order'=> 'DESC',
+              );
+              $arg_training = get_posts( $args );
+            }
+          ?>
           <div class="hm-training-schedule">
-            <h4 class="hm-training-schedule-title">TRAININGSSCHEMA</h4>
+            <?php if( !empty( $schemas['titel'] ) ) printf( '<h4 class="hm-training-schedule-title">%s</h4>', $schemas['titel']); ?>
+            <?php if( $arg_training ): ?>
             <ul class="reset-list">
-              <li>
-                <div>
-                  <strong>DONDERDAG   -  17/01/2020  -  18u15</strong>
-                  <span>Zandberg</span>
-                </div>
-              </li>
-              <li>
-                <div>
-                  <strong>Zondag  -  17/01/2020  -  18u15</strong>
-                  <span>EA-Châtelet</span>
-                </div>
-              </li>
-              <li>
-                <div>
-                  <strong>DONDERDAG  -  17/01/2020  -  18u15</strong>
-                  <span>Dender-EA</span>
-                </div>
-              </li>
+              
+            <?php 
+            foreach( $arg_training as $train_row ):
+              $train_intro = get_field('intro', $train_row->ID);
+            ?>
+            <li>
+              <div>
+                <strong><?php echo $train_row->post_title;?>   -  
+                  <?php if( !empty($train_intro['datum']) ) printf('%s', $train_intro['datum']); ?></strong>
+                  <?php if( !empty($train_intro['evenementenlocatie']) ) printf('<span>%s</span>', $train_intro['evenementenlocatie']); ?>
+              </div>
+            </li>
+            <?php endforeach; ?>
             </ul>
             <div class="versus-btn">
-                <a href="#">Voorbeschouwing
+                <a href="<?php echo esc_url( home_url('wedstrijden') );?>">Voorbeschouwing
                   <i>  
                     <svg class="sp-fanshop-gallery-arrows-svg" width="27" height="14" viewBox="0 0 27 14" fill="#F6C042">
                       <use xlink:href="#sp-fanshop-gallery-arrows-svg"></use>
@@ -280,7 +290,10 @@
                   </i>
                 </a>
               </div>
+            <?php endif; ?>
           </div>
+          <?php endif; ?>
+          <?php endif; ?>
         </div>
         <div class="col-lg-12 col-xl-6">
           <div class="hm-ranking-sec-rgt-des">

@@ -179,6 +179,50 @@ the_post();
             }elseif( get_row_layout() == 'table' ){
               $fc_table = get_sub_field('fc_table');
               cbv_table($fc_table);
+            }elseif( get_row_layout() == 'trainingschema' ){
+              $schemas = get_sub_field('fc_titel');
+              $training = get_sub_field('fc_trainingschema'); 
+              if( $training ){
+              $arg_training = $training;
+              } else{
+              $args = array(
+                'post_type' => 'trainingschema',
+                'post_status' => 'publish',
+                'posts_per_page' => 3,
+                'orderby' => 'date',
+                'order'=> 'DESC',
+              );
+              $arg_training = get_posts( $args );
+              }
+
+              echo '<div class="hm-training-schedule">';
+              if( !empty( $schemas ) ) printf( '<h4 class="hm-training-schedule-title">%s</h4>', $schemas); 
+              if( $arg_training ): 
+              echo '<ul class="reset-list">';
+
+              foreach( $arg_training as $train_row ):
+              $train_intro = get_field('intro', $train_row->ID);
+
+              echo '<li><div><strong>';
+                 echo $train_row->post_title.' - ';  
+                  if( !empty($train_intro['datum']) ) printf('%s', $train_intro['datum']);
+              echo '</strong>';
+              if( !empty($train_intro['evenementenlocatie']) ) printf('<span>%s</span>', $train_intro['evenementenlocatie']); 
+              echo '</div></li>';
+              endforeach; 
+              echo '</ul>';
+              echo '<div class="versus-btn">';
+              echo '<a href="'.esc_url( home_url('wedstrijden') ).'">Voorbeschouwing
+                  <i>  
+                    <svg class="sp-fanshop-gallery-arrows-svg" width="27" height="14" viewBox="0 0 27 14" fill="#F6C042">
+                      <use xlink:href="#sp-fanshop-gallery-arrows-svg"></use>
+                    </svg>
+                  </i>
+                </a>';
+              echo '</div>';
+              endif;
+              echo '</div>';
+          
             }elseif( get_row_layout() == 'lists' ){
               $fc_lists = get_sub_field('fc_lists');
               if( $fc_lists ):
